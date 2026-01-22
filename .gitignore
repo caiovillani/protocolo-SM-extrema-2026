@@ -25,6 +25,9 @@ htmlcov/
 _tmp_extract/
 nul
 
+# WAT Framework temp files
+.tmp/
+
 # OS files
 .DS_Store
 Thumbs.db
