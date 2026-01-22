@@ -1,0 +1,50 @@
+# Fluxo da Linha de Cuidado em Saude Mental - Extrema/MG
+
+```mermaid
+flowchart TD
+  %% Entradas intersetoriais e de servicos
+  subgraph Entradas
+    EDU[Educacao] --> APS
+    ASS[Assistencia Social] --> APS
+    TER[3o Setor] --> APS
+    DEM_CAPS[Demanda espontanea CAPS I] --> ACOL
+    UPA[UPA PS] --> CRISE
+    SAMU[SAMU 192] --> CRISE
+  end
+
+  APS[APS/ESF + e-Multi] --> ACOL[Acolhimento + Classificacao de risco]
+
+  %% Decisao de risco
+  ACOL -->|Vermelho/Laranja| CRISE[Urgencia/Crise]
+  ACOL -->|Amarelo/Verde/Azul| AVAL[Avaliacao clinica + CuidaSM]
+
+  %% Crise e urgencia
+  CRISE --> UPA
+  CRISE -->|Regulacao| NIR[NIRSM R]
+  NIR --> CAPS[CAPS I]
+  NIR --> CSM[Centro de Saude Mental]
+  NIR --> CINT[Centro Integrar]
+  NIR --> HOSP[Hospital geral SUSfacil]
+
+  %% Escalonamento e PTS
+  AVAL --> ESTR[Escalonamento MACC]
+  ESTR -->|Nivel 1-3| APS
+  ESTR -->|Nivel 4| COMP[Cuidado compartilhado APS e Especializada]
+  ESTR -->|Nivel 5| CAPS
+  APS --> PTS[PTS e plano de cuidado]
+  COMP --> CSM
+  COMP --> CINT
+
+  %% Matriciamento e contrarreferencia
+  APS --> MAT[Matriciamento / Telematriciamento]
+  MAT --> CSM
+  MAT --> CAPS
+  CSM --> CONTRA[Contrarreferencia estruturada]
+  CAPS --> CONTRA
+  CINT --> CONTRA
+  CONTRA --> APS
+
+  %% Intersetorialidade de apoio
+  APS --> PSE[PSE e Escola]
+  APS --> CRAS[CRAS CREAS]
+```

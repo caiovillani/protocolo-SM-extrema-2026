@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Project temp files
+.snapshots/
+_tmp_extract/
+nul
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Credentials (never commit)
+.env
+*.pem
+credentials.json
+token.json
+
+# Large files (optional - uncomment if needed)
+# *.pdf
+# *.pptx
+# *.docx

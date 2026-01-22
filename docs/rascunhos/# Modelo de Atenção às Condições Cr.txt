@@ -1,0 +1,39 @@
+# Modelo de Atenção às Condições Crônicas em Saúde Mental
+
+Nesse vídeo, vamos aprofundar nos conceitos que permitem compreender o transtorno mental como uma condição crônica e assim facilitar o entendimento do modelo de atenção às condições crônicas adotado para a organização da linha de cuidado em saúde mental na APS. Para iniciar, vamos relembrar o conceito de condições de saúde, condição crônica e doença.
+
+Vamos aprofundar nos conceitos que permitem compreender o transtorno mental como uma condição crônica e assim facilitar o entendimento do modelo de atenção às condições crônicas adotado para a organização da linha de cuidado em saúde mental na APS. Para iniciar, vamos relembrar o conceito de condições de saúde. Condição crônica e doença crônica são a mesma coisa?
+
+Classicamente, as doenças foram divididas em doenças transmissíveis e em doenças crônicas não transmissíveis, tendo como critério o que provoca a doença. Essa forma de divisão não se mostrou suficiente para dar suporte à organização do sistema de atenção à saúde. Por isso, surgiu a proposta de uma nova tipologia, denominada condições de saúde, que tem como critério as formas como se organizam os sistemas de atenção à saúde para responder socialmente a essas condições.
+
+E o que define uma condição de saúde? São as circunstâncias que se apresentam de forma mais ou menos persistentes na saúde das pessoas e que exigem respostas sociais reativas ou proativas, episódicas ou contínuas, e fragmentadas ou integradas do sistema de atenção à saúde, dos profissionais de saúde e das pessoas usuárias. As condições de saúde são divididas em condições agudas e condições crônicas.
+
+As condições crônicas são aquelas condições de saúde de curso mais ou menos longo ou permanente, que exigem respostas e ações contínuas, proativas e integradas no sistema de atenção à saúde, dos profissionais de saúde e das pessoas usuárias para o seu controle efetivo, eficiente e com qualidade. Através dessa definição, podemos dizer que as condições de saúde mental que afetam uma população são condições crônicas, uma vez que se apresentam com circunstâncias de curso geralmente longo, para as quais a resposta do sistema de atenção à saúde e dos profissionais necessita ser fundamentalmente contínua, proativa e integrada.
+
+Mas de que forma os sistemas de saúde estão organizados para responder às condições crônicas? Existem vários modelos de atenção às condições crônicas relatados na literatura internacional. O referencial teórico utilizado na saúde mental na APS é o modelo de atenção às condições crônicas, o MACC. A base do MACC é o modelo de atenção crônica de Wagner, a pirâmide de risco da Kaiser Permanente e o modelo da determinação social da saúde.
+
+Ele deve ser analisado em três colunas. Na coluna da esquerda, sob a influência do modelo da pirâmide de risco, está a população total estratificada em subpopulações por estratos de risco. Na coluna do meio, estão sob a influência do modelo de atenção crônica os 5 níveis das intervenções de saúde sobre os determinantes e suas populações: intervenções promocionais, preventivas e de gestão da clínica. Na coluna da direita, sobre a influência do modelo da determinação social da saúde, estão os diferentes determinantes sociais da saúde, os determinantes intermediários, proximais e individuais.
+
+E como o MACC se relaciona ao cuidar das condições crônicas em saúde mental? Ao analisarmos o lado central da imagem, encontramos as diferentes subpopulações de uma população total sob a responsabilidade da APS. A população sem fatores de risco precisa ser cuidada sob a lógica da integralidade, mantendo sua saúde física e mental através de práticas de promoção da saúde como atividade física, meditação e técnicas de relaxamento e manejo de estresse.
+
+Nesse nível, é importante também considerar intervenções por meio de projetos intersetoriais que articulem ações de serviços de saúde com ações de melhoria habitacional, de geração de emprego e renda, de ampliação do acesso ao saneamento básico, de melhoria educacional, melhoria da infraestrutura urbana e outros.
+
+Subindo um pouco mais no nível 2, encontramos a população sem doença específica, mas com fatores de risco. Nesse nível, são necessárias as intervenções de prevenção das condições de saúde e com foco nos determinantes proximais da saúde ligados aos comportamentos e aos estilos de vida com fatores de risco modificáveis e potenciados pelos determinantes sociais intermediários e digitais.
+
+Os mais importantes são o tabagismo, a alimentação inadequada, a inatividade física, o excesso de peso e o uso excessivo de álcool. E para o cuidado em saúde mental também incluem a dificuldade de manejar pensamentos e emoções, os relacionamentos interpessoais, conflituosos e violentos.
+
+A partir do nível 3 do MACC é que temos de fato instalado uma condição de saúde cuja gravidade e nível de complexidade de cuidado que é exigido convoca intervenções diferenciadas no sistema de atenção à saúde. O que diferencia os níveis 3, 4 e 5 do MACC é o nível de densidade tecnológica para a gestão da condição de saúde exigida.
+
+Não apenas tecnologias duras de cuidado, mas para o cuidado de saúde mental importam especialmente as tecnologias leves, como escutativa, condução de grupos, intervenções familiares e outras intervenções. Também diferenciamos os níveis 3, 4 e 5 através da avaliação do tipo de manejo de determinada condição e do quanto ele é consequência do autocuidado apoiado.
+
+Observe a linha transversal que cruza o MACC representada na figura: ela expressa o percentual de participação do autocuidado apoiado ou do cuidado profissional na gestão da condição de saúde.
+
+Por exemplo, no nível 3, encontra-se usuários com condições em que a melhora desses quadros acontece principalmente por meio das intervenções de autocuidado apoiado, mudanças comportamentais que são realizadas pelo próprio usuário, apoiadas por uma equipe da APS, com ênfase na atenção multiprofissional.
+
+Já no nível 4, há a necessidade de equilibrar no projeto terapêutico as propostas de autocuidado apoiado e as intervenções profissionais, que são a soma de diversos saberes que compõem o campo da saúde mental na APS: médicos, enfermeiros, psicólogos, assistentes sociais, profissionais de educação física, dentre outros. Todos podem contribuir para a construção, junto com o usuário, de um plano de cuidado efetivo.
+
+É neste nível do MACC que a equipe da APS pode se valer do cuidado colaborativo com a equipe de especialistas em saúde mental existente na rede, através de ações de matriciamento.
+
+Já o nível 5 destina-se a atenção às condições crônicas muito complexas, que convocam tecnologias de cuidado especializadas. Há aqui alta concentração de cuidado profissional.
+
+Geralmente, o usuário frequenta um ou mais serviços especializados da rede, enquanto a APS deve coordenar a atenção com os outros pontos de atenção à saúde e nos sistemas de apoio ao longo do tempo.

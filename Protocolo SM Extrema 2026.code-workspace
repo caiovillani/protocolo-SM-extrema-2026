@@ -1,0 +1,62 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../Licitacoes_Compras_e_Contratos"
+		},
+		{
+			"path": "../../Protocolo Compartilhamento do Cuidado"
+		},
+		{
+			"path": "../../../../PROJETOS EM CURSO"
+		},
+		{
+			"path": "../../../../../../Downloads/projeto_Repositorio_Planifica_SUS"
+		},
+		{
+			"path": "../../../../../../Downloads/skillsfiles"
+		},
+		{
+			"path": "../../../../../../Downloads/neurodev-doc-sus"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"workbench.editor.autoLockGroups": {
+			"notebookOutputEditor": true,
+			"default": true,
+			"workbench.editor.chatSession": true,
+			"workbench.editorinputs.searchEditorInput": true,
+			"jupyter-notebook": true,
+			"imagePreview.previewEditor": true,
+			"workbench.editors.gettingStartedInput": true,
+			"repl": true,
+			"vscode.audioPreview": true,
+			"vscode.videoPreview": true,
+			"jsProfileVisualizer.cpuprofile.table": true,
+			"jsProfileVisualizer.heapprofile.table": true,
+			"jsProfileVisualizer.heapsnapshot.table": true,
+			"al.designer": true,
+			"al.settings": true,
+			"jupyter-data-wrangler": true,
+			"java.formatterSettingsEditor": true,
+			"pdf.preview": true,
+			"alProfileVisualizer.bottomUp": true,
+			"alProfileVisualizer.topDown": true,
+			"chatgpt.conversationEditor": true,
+			"decompiled.javaClass": true,
+			"workbench.input.interactive": true,
+			"mainThreadWebview-markdown.preview": true
+		},
+		"claudeCode.allowDangerouslySkipPermissions": true,
+		"claudeCode.initialPermissionMode": "plan",
+		"claudeCode.useCtrlEnterToSend": true,
+		"claudeCode.useTerminal": true,
+		"chat.useAgentSkills": true,
+		"github.copilot.chat.anthropic.tools.websearch.enabled": true
+	}
+}

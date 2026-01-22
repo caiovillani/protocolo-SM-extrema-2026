@@ -1,0 +1,183 @@
+﻿# corpus_index.md
+
+## Snapshot do corpus relevante
+Gerado em: 2026-01-18 23:30:51
+
+- # ESCALONAMENTO DO CUIDADO EM SAÚDE.txt | txt | 4892 bytes | 2026-01-18 15:31:35
+- # Gestão do Cuidado em Saúde Mental.txt | txt | 17283 bytes | 2026-01-18 15:44:00
+- # Modelo de Atenção às Condições Cr.txt | txt | 7340 bytes | 2026-01-18 15:35:29
+- [RASCUNHO]_Linha_de_Cuidado_Saude_Mental_Extrema_v1_FINAL.docx | docx | 32986 bytes | 2026-01-18 15:49:19
+- _tmp_extract\20190215-MH-GAP-OMS_portuguese.txt | txt | 254743 bytes | 2026-01-18 19:20:00
+- _tmp_extract\a_crianca_no_centro_da_rede.txt | txt | 56 bytes | 2026-01-18 19:25:44
+- _tmp_extract\a_crianca_no_centro_da_rede_ocr.txt | txt | 13056 bytes | 2026-01-18 21:06:59
+- _tmp_extract\acesso_raps_pela_aps.txt | txt | 59463 bytes | 2026-01-18 18:43:42
+- _tmp_extract\apresentacao_01.txt | txt | 20910 bytes | 2026-01-18 19:27:10
+- _tmp_extract\apresentacao_02.txt | txt | 11120 bytes | 2026-01-18 19:28:13
+- _tmp_extract\apresentacao_controle_etapa2.txt | txt | 1837 bytes | 2026-01-18 19:30:28
+- _tmp_extract\apresentacao_planejamento_sms_etapa1.txt | txt | 2240 bytes | 2026-01-18 19:29:36
+- _tmp_extract\caso_luis_psicose.txt | txt | 12341 bytes | 2026-01-18 19:37:20
+- _tmp_extract\caso_marina_etilismo.txt | txt | 12377 bytes | 2026-01-18 19:35:58
+- _tmp_extract\caso_patricia_depressao.txt | txt | 10533 bytes | 2026-01-18 19:34:55
+- _tmp_extract\caso_rodrigo_ansiedade.txt | txt | 10917 bytes | 2026-01-18 19:32:45
+- _tmp_extract\clinica_ampliada_atencao_basica.txt | txt | 50987 bytes | 2026-01-18 19:50:41
+- _tmp_extract\demanda_sm_atencao_psicossocial_fiocruz.txt | txt | 57665 bytes | 2026-01-18 19:53:31
+- _tmp_extract\dialogos_sm_aps.txt | txt | 50689 bytes | 2026-01-18 19:54:24
+- _tmp_extract\eixo04_mod14_abordagem_sm.txt | txt | 308513 bytes | 2026-01-18 19:55:12
+- _tmp_extract\emergencias_psiquiatricas_baldacara.txt | txt | 1322954 bytes | 2026-01-18 19:43:20
+- _tmp_extract\formacao_trabalho_saude_mental.txt | txt | 49387 bytes | 2026-01-18 19:57:37
+- _tmp_extract\gestao_em_saude.txt | txt | 11951 bytes | 2026-01-18 20:00:01
+- _tmp_extract\gestao_trabalho_saude_mental.txt | txt | 17132 bytes | 2026-01-18 19:58:46
+- _tmp_extract\guia_bolso_acs.txt | txt | 21311 bytes | 2026-01-18 19:00:13
+- _tmp_extract\guia_desenvolvimento_tutor_etapa1.txt | txt | 36095 bytes | 2026-01-18 20:05:53
+- _tmp_extract\guia_desenvolvimento_tutor_etapa2.txt | txt | 39248 bytes | 2026-01-18 20:06:52
+- _tmp_extract\guia_desenvolvimento_tutor_etapa3.txt | txt | 47470 bytes | 2026-01-18 20:07:51
+- _tmp_extract\guia_desenvolvimento_tutor_etapa4.txt | txt | 134492 bytes | 2026-01-18 20:08:41
+- _tmp_extract\guia_etapa_controle.txt | txt | 39704 bytes | 2026-01-18 20:04:57
+- _tmp_extract\guia_etapa_preparatoria.txt | txt | 69350 bytes | 2026-01-18 20:01:09
+- _tmp_extract\guia_gerenciamento_etapa1.txt | txt | 50812 bytes | 2026-01-18 20:09:29
+- _tmp_extract\guia_gerenciamento_etapa2.txt | txt | 49230 bytes | 2026-01-18 20:10:15
+- _tmp_extract\guia_gerenciamento_etapa3.txt | txt | 68318 bytes | 2026-01-18 20:11:05
+- _tmp_extract\guia_gerenciamento_etapa4.txt | txt | 70351 bytes | 2026-01-18 20:11:55
+- _tmp_extract\guia_tutoria_etapa1.txt | txt | 38234 bytes | 2026-01-18 20:01:52
+- _tmp_extract\guia_tutoria_etapa3.txt | txt | 59011 bytes | 2026-01-18 20:02:41
+- _tmp_extract\guia_tutoria_etapa4_gestao_cuidado.txt | txt | 58096 bytes | 2026-01-18 20:03:31
+- _tmp_extract\guia_workshop_1.txt | txt | 63071 bytes | 2026-01-18 20:12:49
+- _tmp_extract\guia_workshop_2.txt | txt | 58537 bytes | 2026-01-18 20:13:48
+- _tmp_extract\guia_workshop_3_acesso.txt | txt | 71213 bytes | 2026-01-18 20:14:50
+- _tmp_extract\guia_workshop_4.txt | txt | 98126 bytes | 2026-01-18 20:15:56
+- _tmp_extract\integralidade_clinica_ampliada.txt | txt | 60083 bytes | 2026-01-18 20:19:40
+- _tmp_extract\linha_cuidado_caderno1.txt | txt | 215383 bytes | 2026-01-18 18:37:27
+- _tmp_extract\manual_autoavaliacao_processos_estrategicos.txt | txt | 42820 bytes | 2026-01-18 19:39:59
+- _tmp_extract\manual_caso_rodrigo.txt | txt | 10917 bytes | 2026-01-18 19:33:48
+- _tmp_extract\manual_oficina_escalonamento.txt | txt | 105164 bytes | 2026-01-18 19:38:19
+- _tmp_extract\manual_residente_psiquiatria_2023.txt | txt | 1670412 bytes | 2026-01-18 20:22:14
+- _tmp_extract\modelos_clinico_psicossocial.txt | txt | 43097 bytes | 2026-01-18 20:26:28
+- _tmp_extract\nota_tecnica_organizacao_rede_sm_aps_ae.pdf.txt | txt | 137400 bytes | 2026-01-18 18:42:47
+- _tmp_extract\nota_tecnica_saude_mental.txt | txt | 136659 bytes | 2026-01-18 19:41:09
+- _tmp_extract\praxis_enfermeiro_psf_saude_mental.txt | txt | 36921 bytes | 2026-01-18 19:23:16
+- _tmp_extract\principios_gestao_clinica.txt | txt | 39688 bytes | 2026-01-18 20:31:12
+- _tmp_extract\projeto_cuidado_saude_mental_aps.txt | txt | 43406 bytes | 2026-01-18 19:52:41
+- _tmp_extract\proposta_programacao_mi_mhgap.txt | txt | 20243 bytes | 2026-01-18 20:32:40
+- _tmp_extract\protocolo_compartilhamento_csm_aps.txt | txt | 12439 bytes | 2026-01-18 19:10:13
+- _tmp_extract\raps_rede_atencao_psicossocial.txt | txt | 91927 bytes | 2026-01-18 18:41:11
+- _tmp_extract\rascunho_linha_cuidado_extrema.txt | txt | 9890 bytes | 2026-01-18 19:49:52
+- _tmp_extract\reforma_psiquiatrica_15_anos_caracas.txt | txt | 125059 bytes | 2026-01-18 20:33:36
+- _tmp_extract\roteiro_cuidaSM.txt | txt | 31584 bytes | 2026-01-18 19:01:31
+- _tmp_extract\roteiro_diagnostico_situacional_aps.txt | txt | 5324 bytes | 2026-01-18 19:31:35
+- _tmp_extract\saude_mental_esf_integrar_aps.txt | txt | 31836 bytes | 2026-01-18 20:35:00
+- _tmp_extract\saude_mental_qualidade_organizacional_aps.txt | txt | 52848 bytes | 2026-01-18 20:36:21
+- _tmp_extract\saude_publica_saude_coletiva.txt | txt | 56714 bytes | 2026-01-18 20:37:24
+- _tmp_extract\trabalho_gestao_servicos_substitutivos.txt | txt | 52160 bytes | 2026-01-18 20:29:29
+- 10. Ficha de atendimento de classificação de risco.pdf | pdf | 266385 bytes | 2026-01-17 16:30:48
+- 10. Plano de cuidado familiar.pdf | pdf | 223836 bytes | 2026-01-17 16:24:00
+- 11. Orientação para implantação do time de resposta rápida.pdf | pdf | 392584 bytes | 2026-01-17 16:32:43
+- 20190215-MH-GAP-OMS_portuguese.pdf | pdf | 1004545 bytes | 2025-11-16 17:12:13
+- 3. Plano Controle.xlsx | xlsx | 201289 bytes | 2026-01-17 16:34:26
+- 4. A utilização da Escala CuidaSM para apoiar o processo de escalonamento.pdf | pdf | 321726 bytes | 2026-01-17 16:33:02
+- 4. Instrumento para análise do balanço do atendimento semanal.xlsx | xlsx | 216896 bytes | 2026-01-17 16:26:59
+- 4. Modelo para Folha de Registro eSCALONAMENTO sAUDE mENTAL.pdf | pdf | 240942 bytes | 2026-01-17 16:08:25
+- 4. Texto de apoio - Os macroprocessos de atenção aos eventos agudos em SM.pdf | pdf | 776679 bytes | 2026-01-17 16:29:27
+- 5. Direcionadores para organização de grupos na APS.pdf | pdf | 225805 bytes | 2026-01-17 16:24:29
+- 5. Fluxogramas para atendimento com classificação de risco em saúde mental.pdf | pdf | 508520 bytes | 2026-01-17 16:28:09
+- 5. Guia de Bolso do ACS.pdf | pdf | 914419 bytes | 2026-01-17 16:38:04
+- 5. Instrumento para mapeamento dos processos da recepção.xlsx | xlsx | 452982 bytes | 2026-01-17 16:26:16
+- 5. Planilha de programação assistencial para a APS_com linha SM_final.xlsx | xlsx | 695078 bytes | 2026-01-17 16:28:53
+- 6. Ficha complementar - Sinais de alerta para o cuidado em Saúde Mental.pdf | pdf | 199328 bytes | 2026-01-17 16:21:25
+- 6. Instrumento para avaliar mapa de fluxo e ciclo de atendimento.pdf | pdf | 314255 bytes | 2026-01-17 16:27:35
+- 6. Materiais e procedimentos para assistência às emergências em saúde mental na APS.pdf | pdf | 329646 bytes | 2026-01-17 16:30:14
+- 7. Instrumento para avaliar a implantação do bloco de horas.xlsx | xlsx | 299077 bytes | 2026-01-17 16:50:39
+- 7. Texto de apoio - O processo de estratificação de risco familiar.pdf | pdf | 275232 bytes | 2026-01-17 16:21:59
+- 8. Escala de Risco Familiar de Coelho-Savassi.pdf | pdf | 247211 bytes | 2026-01-17 16:22:16
+- 9. Instrumento para implantação do acolhimento com classificação de risco em SM.xlsx | xlsx | 196125 bytes | 2026-01-17 16:32:08
+- 9. Mapeamento da população com necessidades de cuidado em saúde mental.xlsx | xlsx | 205348 bytes | 2026-01-17 16:23:28
+- A práxis do enfermeiro no programa saúde da família na atenção à saúde mental.pdf | pdf | 111214 bytes | 2025-11-16 17:12:13
+- A_Criança_no_Centro_da_Rede.pdf | pdf | 14761819 bytes | 2025-11-26 12:00:07
+- ACESSO À RAPS PELA APS.pdf | pdf | 2160674 bytes | 2026-01-17 16:02:04
+- AGENTS.md | md | 2799 bytes | 2026-01-18 19:19:41
+- Anexo 01.docx | docx | 855133 bytes | 2026-01-17 16:42:12
+- Apresentação 01.pptx | pptx | 12327438 bytes | 2026-01-17 16:41:33
+- Apresentação 02 (1).pptx | pptx | 6013370 bytes | 2026-01-18 13:12:45
+- Apresentação Padrão - Oficina Planejamento SMS_Etapa 1.pptx | pptx | 2699692 bytes | 2026-01-17 15:30:20
+- Apresentação PowerPoint® Padrão Etapa Controle 2.pptx | pptx | 4804669 bytes | 2026-01-17 16:20:29
+- Caderno_Institucional_RAPS_Extrema_MG_2026.docx | docx | 15566 bytes | 2026-01-16 08:12:23
+- Caderno_Institucional_Rede_Municipal_Saude_Mental_Extrema_01-2026.pdf | pdf | 9251 bytes | 2026-01-16 06:49:48
+- Caso Luís Psicose Esquizofrenia Escalonamento do Cuidado em Saúde Mental.pdf | pdf | 596307 bytes | 2026-01-17 16:45:08
+- Caso Marina Etilismo Escalonamento do Cuidado em Saúde Mental.pdf | pdf | 525371 bytes | 2026-01-17 16:48:54
+- Caso Patrícia Depressão Escalonamento do Cuidado em Saúde Mental.pdf | pdf | 588153 bytes | 2026-01-17 16:47:29
+- Caso Rodrigo Ansiedade Escalonamento do Cuidado em Saúde Mental.pdf | pdf | 521309 bytes | 2026-01-17 16:49:29
+- Clinica amplianda na atenção basica.pdf | pdf | 696533 bytes | 2025-11-16 17:12:13
+- CONHECIMENTO DE APOIO.docx | docx | 939518 bytes | 2026-01-18 13:50:37
+- Construção de um Projeto de Cuidado em Saúde Mental na Atenção Básica.pdf | pdf | 822673 bytes | 2025-11-16 17:12:13
+- context.md | md | 390 bytes | 2026-01-18 18:29:17
+- Demanda em Saúde Mental e Atenção Psicossocial FIOCRUZ.pdf | pdf | 581597 bytes | 2025-11-16 17:12:13
+- Dialogos entre SM E APS.pdf | pdf | 451980 bytes | 2025-11-16 17:12:13
+- Eixo 04 - Mód. 14 - Abordagem a Problemas de Saúde Mental.pdf | pdf | 8052046 bytes | 2025-11-25 21:50:05
+- Emergencias-psiquiatricas-Leonardo-Baldacara.pdf.pdf | pdf | 10491702 bytes | 2026-01-16 14:38:38
+- Fluxo Geral Saúde Mental APS.pdf | pdf | 546306 bytes | 2025-11-14 12:18:16
+- Fluxo Macro Saúde Mental APS II .png | png | 172828 bytes | 2025-12-03 22:08:14
+- fluxo_linha_cuidado_saude_mental_extrema.md | md | 1325 bytes | 2026-01-18 23:22:50
+- fluxo_linha_cuidado_saude_mental_extrema.mmd | mmd | 1298 bytes | 2026-01-18 23:23:05
+- fluxo_linha_cuidado_saude_mental_extrema.png | png | 31490 bytes | 2026-01-18 23:23:19
+- Formação para o trabalho em saúde mental.pdf | pdf | 351976 bytes | 2025-11-16 17:12:13
+- Gestão do Trabalho em Saúde Mental.pdf | pdf | 74722 bytes | 2025-11-16 17:12:13
+- Gestão em Saúde.pdf | pdf | 222631 bytes | 2025-11-16 17:12:13
+- Guia de orientação para a etapa preparatoria.pdf | pdf | 2506173 bytes | 2026-01-17 16:18:16
+- Guia de Orientacao para a Tutoria da Etapa 1.pdf | pdf | 7711876 bytes | 2026-01-17 16:13:13
+- Guia de Orientacao para a Tutoria da Etapa 3_e-planifica.pdf | pdf | 2160674 bytes | 2026-01-17 16:15:18
+- GUIA DE ORIENTAÇÃO PARA A TUTORIA DA ETAPA 4  GESTÃO DO CUIDADO EM SAUDE MENTAL NA APS.pdf | pdf | 2310579 bytes | 2026-01-17 16:00:56
+- Guia de Orientação para a Tutoria da Etapa 4.pdf | pdf | 15429981 bytes | 2026-01-17 16:17:14
+- Guia de Orientacao para a Tutoria da Etapa 4_e-Planifica.pdf | pdf | 2310579 bytes | 2026-01-17 16:15:54
+- Guia para a Etapa Controle.pdf | pdf | 2162100 bytes | 2026-01-17 16:36:37
+- Guia para Desenvolvimento do Tutor Etapa 1.pdf | pdf | 7696374 bytes | 2026-01-17 16:12:47
+- Guia para Desenvolvimento do Tutor Etapa 2.pdf | pdf | 1855686 bytes | 2026-01-17 16:14:12
+- Guia para Desenvolvimento do Tutor Etapa 3.pdf | pdf | 14464408 bytes | 2026-01-17 16:15:03
+- Guia para Desenvolvimento do Tutor Etapa 4_Final.pdf | pdf | 4082643 bytes | 2026-01-17 16:16:45
+- Guia para Gerenciamento da Etapa 1.pdf | pdf | 8692735 bytes | 2026-01-17 16:12:30
+- Guia para Gerenciamento da Etapa 2.pdf | pdf | 14709609 bytes | 2026-01-17 16:13:52
+- Guia para Gerenciamento da Etapa 3_e-planifica.pdf | pdf | 1873078 bytes | 2026-01-17 16:14:45
+- Guia para Gerenciamento da Etapa 4.pdf | pdf | 1892495 bytes | 2026-01-17 16:16:27
+- Guia Workshop 1.pdf | pdf | 9402207 bytes | 2026-01-17 16:12:17
+- Guia Workshop 2.pdf | pdf | 14122090 bytes | 2026-01-17 16:13:36
+- Guia Workshop 3 Acesso a RAPS na APS.pdf | pdf | 12798038 bytes | 2026-01-17 16:05:52
+- Guia Workshop 3.pdf | pdf | 12798038 bytes | 2026-01-17 16:14:31
+- Guia Workshop 4_e-Planifica.pdf | pdf | 2702845 bytes | 2026-01-17 16:16:12
+- insights.md | md | 55745 bytes | 2026-01-18 21:10:30
+- Instrumento para avaliação das práticas de qualidade e segurança do paciente.xlsx | xlsx | 274245 bytes | 2026-01-17 16:19:26
+- Integralidade e clinica ampliada.pdf | pdf | 394560 bytes | 2025-11-16 17:12:13
+- Linha de Cuidado e Diretrizes Assistenciais - Saúde Mental  (caderno nº1).pdf | pdf | 1804654 bytes | 2026-01-11 16:57:44
+- linha_de_cuidado_saude_mental_extrema_draft.md | md | 9754 bytes | 2026-01-18 23:17:02
+- Linha-cuidado-integral (1).pdf | pdf | 79933 bytes | 2025-11-23 01:26:37
+- Manual do residente de psiquiatria 2023 - Paulo Clemente Sallet.pdf | pdf | 4806987 bytes | 2025-12-26 15:15:43
+- Manual para a organizacao da oficina sobre escalonamento do cuidado em saude mental (1).pdf | pdf | 1978291 bytes | 2026-01-17 16:17:32
+- Manual para a organizacao da oficina sobre escalonamento do cuidado em saude mental.pdf | pdf | 1978291 bytes | 2026-01-17 16:10:50
+- Manual para a organizacao da oficina sobre escalonamento do cuidado em saude mental2.pdf | pdf | 1978291 bytes | 2026-01-18 13:31:55
+- Manual para utilização do instrumento de autoavaliação dos processos estratégicos da linha de cuidado em saúde mental (1).pdf | pdf | 769246 bytes | 2026-01-17 16:37:26
+- Manual para utilização do instrumento de autoavaliação dos processos estratégicos da linha de cuidado em saúde mental.pdf | pdf | 769246 bytes | 2026-01-17 16:18:35
+- Manual_Caso Rodrigo.pdf | pdf | 521309 bytes | 2026-01-17 16:40:59
+- Matriz de Gerenciamento Etapa Controle 2.docx | docx | 1255930 bytes | 2026-01-17 16:19:50
+- Matriz Oficina de Monitoramento SMS.docx | docx | 997120 bytes | 2026-01-17 15:33:10
+- Matriz Oficina de Planejamento SMS.docx | docx | 1013755 bytes | 2026-01-17 15:32:18
+- Modelo de Plano de Ação Escalonamento do Cuidado em Saúde Mental.pdf | pdf | 160790 bytes | 2026-01-17 16:48:03
+- Modelo Padronizado de Avaliação Psiquiátrica.docx | docx | 15462 bytes | 2025-12-26 18:24:22
+- modelo plano de cuidados APS.PDF | PDF | 171901 bytes | 2026-01-17 15:41:39
+- Modelos Clinicos e psicossocial de atenção ao individuo.pdf | pdf | 272760 bytes | 2025-11-16 17:12:13
+- Nota Técnica Saúde Mental.pdf | pdf | 1350571 bytes | 2025-12-08 11:33:23
+- O trabalho na gestão dos serviços substitutivos de saúde mental aproximações entre Saúde Coletiva, Saúde Mental e Psicanális.pdf | pdf | 196140 bytes | 2025-11-16 17:12:13
+- ORGANIZAÇÃO_DA_REDE_DE_ATENÇÃO_À_SAÚDE_COM_FOCO_NA_SAÚDE_MENTAL_APS_AES.pdf | pdf | 1350571 bytes | 2026-01-17 15:47:04
+- Orientação metodológica para utilização da matriz FOFA.pdf | pdf | 298156 bytes | 2026-01-17 16:33:43
+- Orientações para a organização do trabalho interdisciplinar em saúde mental na APS Saúde Mental na APS.pdf | pdf | 261033 bytes | 2026-01-17 16:51:45
+- Orientações para organização do trabalho interdisciplinar em saúde mental na APS.PDF | PDF | 261033 bytes | 2026-01-17 16:25:10
+- Piloto_Prt_Comp_Cuidado_CSM_APS.docx | docx | 32187 bytes | 2026-01-16 13:05:13
+- planejamento_executivo_digital_twin_caio_villani.md | md | 30650 bytes | 2026-01-06 22:41:23
+- Principios para a gestão da clínica, conectando gestão, atenção à saúde e educação na saúde.pdf | pdf | 173258 bytes | 2025-11-17 09:22:22
+- Proposta de Programação MI-mhGAP.pdf | pdf | 345670 bytes | 2026-01-17 16:42:33
+- Rede de Atenção Psicossocial - RAPS (2).pdf | pdf | 4374996 bytes | 2025-11-16 17:12:13
+- Reforma psiquiátrica e política de saúde mental no Brasil relatório 15 anos depois de Caracas.pdf | pdf | 1122769 bytes | 2025-11-16 17:12:13
+- Roteiro para Diagnóstico Situacional da Unidade APS.pptx | pptx | 2406859 bytes | 2026-01-17 15:42:12
+- Roteiro para Utilização da Escala de Avaliação da Necessidade de Cuidado em Saúde Mental (CuidaSM)_e-planifica.pdf | pdf | 1727638 bytes | 2026-01-17 16:07:36
+- Roteiro Rodada de Fechamento  Escalonamento do Cuidado em Saúde Mental.pdf | pdf | 309118 bytes | 2026-01-17 16:43:24
+- Saúde mental como as equipes de ESF podem integrar esse cuidado na Atenção básica.pdf | pdf | 76807 bytes | 2025-11-16 17:12:13
+- Saúde mental e a qualidade organizacional dos serviços de atenção primária no Brasil.pdf | pdf | 224781 bytes | 2025-11-17 09:22:35
+- Saúde mental e a qualidade organizacional dos serviços de atenção primária no Brasil.pdf | pdf | 224781 bytes | 2025-11-16 17:12:13
+- saúde publica e saúde coletiva.pdf | pdf | 103305 bytes | 2025-11-16 17:12:13
+- todos.md | md | 16314 bytes | 2026-01-18 21:10:47
