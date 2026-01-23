@@ -18,7 +18,7 @@ RESOURCE_ROOT = os.getenv(
 )
 
 # Simple in‑memory cache
-_ CACHE: Dict[str, Any] = {}
+_CACHE: Dict[str, Any] = {}
 
 
 def _load_yaml(relative_path: str) -> Any:
