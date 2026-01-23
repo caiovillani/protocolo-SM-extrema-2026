@@ -9,6 +9,7 @@ Supported shortcuts:
 - /conformidade [questao]
 - /comparar [tipo1] [tipo2]
 - /pips <subcomando> [argumentos] - Protocolo de Processamento Iterativo
+- /contexto <caminho> [opções] - Motor de Contexto de Alta Qualidade
 """
 
 from dataclasses import dataclass
@@ -64,7 +65,7 @@ def parse_command(user_input: str) -> Command:
     name = parts[0][1:]  # remove leading '/'
     args = parts[1:]
     # Simple validation for known commands
-    known = {"template", "auditoria", "orientacao", "conformidade", "comparar", "pips"}
+    known = {"template", "auditoria", "orientacao", "conformidade", "comparar", "pips", "contexto"}
     if name not in known:
         return Command(
             raw=user_input,

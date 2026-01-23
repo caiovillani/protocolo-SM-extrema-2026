@@ -84,6 +84,8 @@ def process_request(command: Any, context: Dict[str, Any]) -> str:
         return "[Auditoria] – análise de conformidade gerada aqui."
     elif command.name == "pips":
         return process_pips_request(command, context)
+    elif command.name == "contexto":
+        return process_contexto_request(command, context)
     else:
         return f"Comando '{command.name}' processado (placeholder)."
 
@@ -471,3 +473,161 @@ def _pips_delete(cmd: Any) -> str:
 
     except Exception as e:
         return f"Erro ao remover projeto: {e}"
+
+
+# ---------------------------------------------------------------------------
+# Contexto Processing
+# ---------------------------------------------------------------------------
+
+def process_contexto_request(command: Any, context: Dict[str, Any]) -> str:
+    """Process /contexto command for high-quality context extraction.
+
+    Args:
+        command: Parsed command object
+        context: Loaded context dictionary
+
+    Returns:
+        Formatted string with processing results
+    """
+    from pathlib import Path
+    from .context_cache import CachedContextProcessor
+
+    if not command.args:
+        return (
+            "Uso: /contexto <caminho> [opções]\n\n"
+            "Opções:\n"
+            "  --no-cache    Ignorar cache e reprocessar\n"
+            "  --stats       Mostrar estatísticas do cache\n\n"
+            "Exemplos:\n"
+            "  /contexto referencias/\n"
+            "  /contexto documento.md\n"
+            "  /contexto .pips/_source/ --no-cache"
+        )
+
+    path_arg = command.args[0]
+    force_reload = "--no-cache" in command.args
+    show_stats = "--stats" in command.args
+
+    # Handle stats request
+    if show_stats:
+        processor = CachedContextProcessor()
+        stats = processor.get_cache_stats()
+        return (
+            "═══════════════════════════════════════════════════\n"
+            "  ESTATÍSTICAS DO CACHE DE CONTEXTO\n"
+            "═══════════════════════════════════════════════════\n\n"
+            f"📊 Hits: {stats.get('hits', 0)}\n"
+            f"📊 Misses: {stats.get('misses', 0)}\n"
+            f"📊 Taxa de acerto: {stats.get('hit_rate', 0):.1%}\n"
+            f"📁 Entradas em cache: {stats.get('entries', 0)}\n"
+            f"💾 Tamanho total: {stats.get('size_mb', 0):.2f} MB"
+        )
+
+    target_path = Path(path_arg)
+
+    # Resolve relative paths
+    if not target_path.is_absolute():
+        target_path = Path.cwd() / target_path
+
+    if not target_path.exists():
+        return f"Erro: Caminho não encontrado: {path_arg}"
+
+    try:
+        processor = CachedContextProcessor()
+
+        if target_path.is_file():
+            # Process single file
+            doc = processor.process_file(target_path, force_reload=force_reload)
+            return _format_document_result(doc)
+
+        elif target_path.is_dir():
+            # Process directory
+            documents, index = processor.process_directory(
+                target_path, force_reload=force_reload
+            )
+            return _format_directory_result(documents, index, target_path)
+
+        else:
+            return f"Erro: Caminho inválido: {path_arg}"
+
+    except (FileNotFoundError, PermissionError) as e:
+        return f"Erro ao processar: {e}"
+    except ValueError as e:
+        return f"Erro de validação: {e}"
+
+
+def _format_document_result(doc: Any) -> str:
+    """Format single document processing result."""
+    output = (
+        "═══════════════════════════════════════════════════\n"
+        f"  CONTEXTO: {doc.metadata.file_path.name}\n"
+        "═══════════════════════════════════════════════════\n\n"
+    )
+
+    output += f"📄 Tipo: {doc.metadata.file_type}\n"
+    output += f"📏 Linhas: {doc.metadata.lines_count}\n"
+    output += f"🔢 Tokens estimados: {doc.metadata.tokens_estimate:,}\n"
+    output += f"⏱️ Tempo de processamento: {doc.metadata.processing_time_ms:.1f}ms\n\n"
+
+    if doc.sections:
+        output += "📑 Seções:\n"
+        for section in doc.sections[:10]:
+            indent = "  " * section.level
+            output += f"  {indent}• {section.title}\n"
+        if len(doc.sections) > 10:
+            output += f"  ... e mais {len(doc.sections) - 10} seções\n"
+        output += "\n"
+
+    if doc.concepts:
+        output += f"💡 Conceitos extraídos: {len(doc.concepts)}\n"
+        top_concepts = doc.get_top_concepts(5)
+        for concept in top_concepts:
+            output += f"  • [{concept.type.value}] {concept.text[:50]}...\n"
+        output += "\n"
+
+    if doc.relationships:
+        output += f"🔗 Relacionamentos: {len(doc.relationships)}\n"
+
+    if doc.summary:
+        output += f"\n📝 Resumo:\n{doc.summary[:500]}{'...' if len(doc.summary) > 500 else ''}\n"
+
+    return output
+
+
+def _format_directory_result(documents: List[Any], index: Any, directory: Path) -> str:
+    """Format directory processing result."""
+    output = (
+        "═══════════════════════════════════════════════════\n"
+        f"  CONTEXTO: {directory.name}/\n"
+        "═══════════════════════════════════════════════════\n\n"
+    )
+
+    output += f"📁 Arquivos processados: {len(documents)}\n"
+
+    total_concepts = sum(len(d.concepts) for d in documents)
+    total_relationships = sum(len(d.relationships) for d in documents)
+    total_tokens = sum(d.metadata.tokens_estimate for d in documents)
+
+    output += f"💡 Total de conceitos: {total_concepts}\n"
+    output += f"🔗 Total de relacionamentos: {total_relationships}\n"
+    output += f"🔢 Tokens estimados: {total_tokens:,}\n\n"
+
+    # Concepts by type summary
+    if index.concepts_by_type:
+        output += "📊 Conceitos por tipo:\n"
+        for concept_type, concept_ids in sorted(index.concepts_by_type.items()):
+            output += f"  • {concept_type}: {len(concept_ids)}\n"
+        output += "\n"
+
+    # Top keywords
+    if index.concepts_by_keyword:
+        sorted_keywords = sorted(
+            index.concepts_by_keyword.items(),
+            key=lambda x: len(x[1]),
+            reverse=True
+        )[:10]
+        output += "🏷️ Palavras-chave frequentes:\n"
+        for keyword, concept_ids in sorted_keywords:
+            output += f"  • {keyword}: {len(concept_ids)} ocorrências\n"
+
+    return output
