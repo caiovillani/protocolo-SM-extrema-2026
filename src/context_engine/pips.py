@@ -110,8 +110,7 @@ class PIPSEngine:
         if not objective or len(objective.strip()) < 10:
             raise ValueError("Objetivo deve ter pelo menos 10 caracteres.")
 
-        if not source_files:
-            raise ValueError("Nenhum arquivo fonte especificado.")
+        # source_files pode ser vazio - usuário adicionará arquivos depois
 
         # Criar estrutura de diretórios
         self._create_directory_structure()
@@ -170,12 +169,24 @@ class PIPSEngine:
 
         return self._config, self._state
 
-    def delete_project(self) -> bool:
+    def delete_project(self, confirm: bool = False) -> bool:
         """Remove projeto PIPS completamente.
+
+        Args:
+            confirm: Deve ser True para confirmar a operação destrutiva
 
         Returns:
             True se removido com sucesso
+
+        Raises:
+            ValueError: Se confirm=False (proteção contra deleção acidental)
         """
+        if not confirm:
+            raise ValueError(
+                "Operação destrutiva requer confirmação. "
+                "Use delete_project(confirm=True) para confirmar."
+            )
+
         if not self.project_exists():
             return False
 
@@ -238,6 +249,19 @@ class PIPSEngine:
         item = next((i for i in self._state.queue if i.id == item_id), None)
         if item is None:
             raise ValueError(f"Item '{item_id}' não encontrado na fila.")
+
+        # Validar status - item deve estar em progresso para ser salvo
+        if item.status == TodoStatus.CONCLUIDO:
+            raise ValueError(
+                f"Item '{item_id}' já foi concluído. "
+                "Não é possível salvar resultado novamente."
+            )
+
+        if item.status not in (TodoStatus.PENDENTE, TodoStatus.EM_PROGRESSO):
+            raise ValueError(
+                f"Item '{item_id}' está com status '{item.status.value}'. "
+                "Apenas itens pendentes ou em progresso podem ser salvos."
+            )
 
         # Atualizar item
         item.status = TodoStatus.CONCLUIDO
@@ -373,22 +397,38 @@ class PIPSEngine:
         self._save_state()
 
     @staticmethod
-    def estimate_tokens(file_path: Path) -> int:
+    def estimate_tokens(file_path: Path, fallback_estimate: int = 1000) -> int:
         """Estima tokens para arquivo (chars / 4 aproximadamente).
 
         Args:
             file_path: Caminho do arquivo
+            fallback_estimate: Estimativa conservadora se arquivo não puder ser lido
 
         Returns:
-            Estimativa de tokens
+            Estimativa de tokens (nunca retorna 0 para arquivos existentes)
         """
         if not file_path.exists():
             return 0
+
         try:
+            # Tentar ler o arquivo
             content = file_path.read_text(encoding='utf-8', errors='ignore')
-            return len(content) // 4
+            estimated = len(content) // 4
+            # Garantir mínimo de 1 token para arquivos não vazios
+            return max(1, estimated) if content else fallback_estimate
+        except PermissionError:
+            # Arquivo existe mas não pode ser lido - usar fallback
+            return fallback_estimate
+        except MemoryError:
+            # Arquivo muito grande - estimar pelo tamanho em bytes
+            try:
+                file_size = file_path.stat().st_size
+                return file_size // 4  # Aproximação conservadora
+            except Exception:
+                return fallback_estimate * 10  # Arquivo grande
         except Exception:
-            return 0
+            # Outros erros - usar fallback conservador
+            return fallback_estimate
 
     # =========================================================================
     # Todo Management
@@ -635,9 +675,12 @@ class PIPSEngine:
         context_path = self.project_path / CONFIG_DIR / CONTEXT_FILE
         schema_path = self.project_path / CONFIG_DIR / SCHEMA_FILE
 
-        # Parse context.md (simplificado)
+        # Parse context.md
         context_content = context_path.read_text(encoding='utf-8')
         objective = self._extract_objective_from_context(context_content)
+
+        # Extrair parâmetros de execução do context.md
+        config_params = self._extract_config_params_from_context(context_content)
 
         # Load schema.yaml
         output_schema = {}
@@ -645,14 +688,25 @@ class PIPSEngine:
             with open(schema_path, 'r', encoding='utf-8') as f:
                 output_schema = yaml.safe_load(f) or {}
 
-        # Reconstruir config (parcial)
+        # Carregar source_files do progress.yaml se existir
+        source_files = []
+        progress_path = self.project_path / STATE_DIR / PROGRESS_FILE
+        if progress_path.exists():
+            with open(progress_path, 'r', encoding='utf-8') as f:
+                state_dict = yaml.safe_load(f) or {}
+                source_files = [Path(p) for p in state_dict.get('source_files', [])]
+
+        # Reconstruir config completa
         self._config = PIPSConfig(
             project_name=self.project_name,
             objective=objective,
             output_schema=output_schema,
-            source_files=[],  # Será carregado do state
-            created_at=datetime.now(),  # Simplificado
-            trigger_reason="carregado do disco",
+            source_files=source_files,
+            created_at=config_params.get('created_at', datetime.now()),
+            trigger_reason=config_params.get('trigger_reason', 'carregado do disco'),
+            chunk_size=config_params.get('chunk_size', 10000),
+            auto_consolidate=config_params.get('auto_consolidate', True),
+            consolidate_interval=config_params.get('consolidate_interval', 5),
         )
 
     def _save_state(self) -> None:
@@ -662,6 +716,12 @@ class PIPSEngine:
 
         # Salvar progress.yaml
         progress_path = self.project_path / STATE_DIR / PROGRESS_FILE
+
+        # Incluir source_files da config para persistência
+        source_files = []
+        if self._config and self._config.source_files:
+            source_files = [str(f) for f in self._config.source_files]
+
         state_dict = {
             'project_name': self._state.project_name,
             'status': self._state.status.value,
@@ -669,6 +729,7 @@ class PIPSEngine:
             'last_updated': self._state.last_updated.isoformat(),
             'tokens_processed': self._state.tokens_processed,
             'estimated_remaining': self._state.estimated_remaining,
+            'source_files': source_files,
             'queue': [
                 {
                     'id': item.id,
@@ -807,6 +868,45 @@ Checksum: {self._calculate_checksum()}
 
         return '\n'.join(objective_lines).strip()
 
+    def _extract_config_params_from_context(self, content: str) -> Dict[str, Any]:
+        """Extrai parâmetros de configuração do context.md.
+
+        Returns:
+            Dicionário com: chunk_size, auto_consolidate, consolidate_interval,
+            created_at, trigger_reason
+        """
+        params: Dict[str, Any] = {}
+
+        # Extrair granularidade (chunk_size)
+        match = re.search(r'Granularidade:\s*(\d+)\s*tokens', content)
+        if match:
+            params['chunk_size'] = int(match.group(1))
+
+        # Extrair auto_consolidate
+        match = re.search(r'Consolidação automática:\s*(Sim|Não)', content)
+        if match:
+            params['auto_consolidate'] = match.group(1) == 'Sim'
+
+        # Extrair consolidate_interval
+        match = re.search(r'Intervalo de consolidação:\s*(\d+)\s*itens', content)
+        if match:
+            params['consolidate_interval'] = int(match.group(1))
+
+        # Extrair data de criação
+        match = re.search(r'Data de criação:\s*(\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2})', content)
+        if match:
+            try:
+                params['created_at'] = datetime.strptime(match.group(1), '%Y-%m-%d %H:%M')
+            except ValueError:
+                pass
+
+        # Extrair motivo de ativação
+        match = re.search(r'Motivo de ativação:\s*(.+?)(?:\n|$)', content)
+        if match:
+            params['trigger_reason'] = match.group(1).strip()
+
+        return params
+
     def _calculate_checksum(self) -> str:
         """Calcula checksum do contexto."""
         if self._config is None:
@@ -912,10 +1012,73 @@ Pendentes: {pending}
             f.write(entry)
 
     def _auto_consolidate(self) -> None:
-        """Consolidação automática de insights."""
-        # Simplificado: apenas marca que consolidação é necessária
-        # Em implementação completa, chamaria LLM para sintetizar
-        pass
+        """Consolidação automática de insights.
+
+        Cria uma síntese básica dos insights raw coletados até o momento.
+        Em implementação completa, chamaria LLM para sintetizar.
+        """
+        if self._state is None:
+            return
+
+        raw_path = self.project_path / OUTPUT_DIR / INSIGHTS_RAW_FILE
+        if not raw_path.exists():
+            return
+
+        try:
+            raw_content = raw_path.read_text(encoding='utf-8')
+
+            # Extrair apenas os insights (ignorar cabeçalhos e metadados)
+            insights = []
+            current_insight = []
+            in_insight = False
+
+            for line in raw_content.split('\n'):
+                if line.startswith('## Ciclo'):
+                    if current_insight:
+                        insights.append('\n'.join(current_insight).strip())
+                    current_insight = []
+                    in_insight = True
+                elif line.startswith('---') and in_insight:
+                    if current_insight:
+                        insights.append('\n'.join(current_insight).strip())
+                    current_insight = []
+                    in_insight = False
+                elif in_insight and line.strip():
+                    current_insight.append(line)
+
+            if current_insight:
+                insights.append('\n'.join(current_insight).strip())
+
+            # Criar síntese básica
+            if insights:
+                completed = sum(
+                    1 for i in self._state.queue if i.status == TodoStatus.CONCLUIDO
+                )
+                total = len(self._state.queue)
+
+                synthesis = f"""## Resumo de Processamento
+
+**Itens processados:** {completed}/{total}
+**Ciclo atual:** {self._state.current_cycle}
+
+## Insights Coletados
+
+"""
+                for i, insight in enumerate(insights[-10:], 1):  # Últimos 10
+                    # Limitar tamanho de cada insight
+                    truncated = insight[:500] + '...' if len(insight) > 500 else insight
+                    synthesis += f"### Insight {i}\n{truncated}\n\n"
+
+                if len(insights) > 10:
+                    synthesis += f"*... e mais {len(insights) - 10} insight(s) anteriores*\n"
+
+                self.update_consolidated(synthesis)
+                self.create_checkpoint(
+                    "consolidate",
+                    f"Consolidação automática: {len(insights)} insights processados"
+                )
+        except Exception as e:
+            self.log_error(f"Erro na consolidação automática: {e}")
 
 
 # =============================================================================
@@ -979,14 +1142,20 @@ def list_projects(pips_root: Optional[Path] = None) -> List[str]:
     return sorted(projects)
 
 
-def delete_project(project_name: str, pips_root: Optional[Path] = None) -> bool:
+def delete_project(
+    project_name: str,
+    pips_root: Optional[Path] = None,
+    confirm: bool = False,
+) -> bool:
     """Remove projeto PIPS.
 
     Args:
         project_name: Nome do projeto
+        pips_root: Raiz do diretório PIPS (opcional)
+        confirm: Deve ser True para confirmar operação
 
     Returns:
         True se removido com sucesso
     """
     engine = PIPSEngine(project_name, pips_root)
-    return engine.delete_project()
+    return engine.delete_project(confirm=confirm)

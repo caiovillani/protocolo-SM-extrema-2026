@@ -166,11 +166,21 @@ def _pips_init(cmd: Any) -> str:
                 f"/pips status {project_name} para ver detalhes."
             )
 
-        # Criar projeto sem arquivos fonte inicialmente
-        # O usuário deve adicionar arquivos à pasta _source/ depois
+        # Verificar se há arquivos no diretório _source/
+        source_dir = engine.project_path / "_source"
+        source_dir.mkdir(parents=True, exist_ok=True)
+
+        # Coletar arquivos .md e .txt existentes no _source/
+        source_files = list(source_dir.glob("*.md")) + list(source_dir.glob("*.txt"))
+
+        # Se não há arquivos, criar projeto vazio (usuário adicionará depois)
+        if not source_files:
+            # Usar lista vazia - projeto será inicializado sem fila
+            source_files = []
+
         state = engine.init_project(
             objective=objective,
-            source_files=[Path(".")],  # Placeholder
+            source_files=source_files,
             trigger_reason="criado via /pips init",
         )
 
@@ -448,8 +458,8 @@ def _pips_delete(cmd: Any) -> str:
         if not engine.project_exists():
             return f"Projeto '{project_name}' não encontrado."
 
-        # Confirmar deleção (simplificado - em produção pederia confirmação)
-        success = engine.delete_project()
+        # Deleção confirmada via comando explícito do usuário
+        success = engine.delete_project(confirm=True)
 
         if success:
             return (

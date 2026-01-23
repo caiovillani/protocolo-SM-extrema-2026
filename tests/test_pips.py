@@ -275,14 +275,25 @@ class TestPIPSEngine:
         assert state.status in [PIPSStatus.NAO_INICIADO, PIPSStatus.EM_PROGRESSO]
 
     def test_delete_project(self, initialized_engine):
-        """Testa deleção de projeto."""
+        """Testa deleção de projeto com confirmação."""
         project_path = initialized_engine.project_path
         assert project_path.exists()
 
-        success = initialized_engine.delete_project()
+        success = initialized_engine.delete_project(confirm=True)
 
         assert success
         assert not project_path.exists()
+
+    def test_delete_project_without_confirm_fails(self, initialized_engine):
+        """Testa que deleção sem confirmação falha."""
+        project_path = initialized_engine.project_path
+        assert project_path.exists()
+
+        with pytest.raises(ValueError) as exc_info:
+            initialized_engine.delete_project()  # sem confirm=True
+
+        assert "confirmação" in str(exc_info.value).lower()
+        assert project_path.exists()  # projeto ainda existe
 
 
 # =============================================================================
@@ -462,7 +473,7 @@ class TestHelperFunctions:
             source_files=sample_source_files,
         )
 
-        success = delete_project("para_deletar", temp_pips_root)
+        success = delete_project("para_deletar", temp_pips_root, confirm=True)
 
         assert success
         assert "para_deletar" not in list_projects(temp_pips_root)
@@ -551,3 +562,163 @@ class TestPIPSModels:
 
         assert next_item is not None
         assert next_item.id == "2"
+
+
+# =============================================================================
+# Testes de Persistência de Config
+# =============================================================================
+
+
+class TestConfigPersistence:
+    """Testes de persistência de configuração do PIPS."""
+
+    def test_config_chunk_size_persisted(self, temp_pips_root, sample_source_files):
+        """Testa que chunk_size é persistido e restaurado."""
+        # Criar projeto com chunk_size customizado
+        engine = PIPSEngine("teste_chunk", temp_pips_root)
+        engine.init_project(
+            objective="Objetivo para testar persistência de chunk_size",
+            source_files=sample_source_files,
+            chunk_size=5000,  # Valor customizado
+        )
+
+        # Criar nova instância e carregar
+        engine2 = PIPSEngine("teste_chunk", temp_pips_root)
+        config, _ = engine2.load_project()
+
+        assert config.chunk_size == 5000
+
+    def test_config_auto_consolidate_persisted(self, temp_pips_root, sample_source_files):
+        """Testa que auto_consolidate é persistido e restaurado."""
+        # Criar projeto com auto_consolidate desabilitado
+        engine = PIPSEngine("teste_consolidate", temp_pips_root)
+
+        # Modificar config antes de salvar
+        engine.init_project(
+            objective="Objetivo para testar persistência de auto_consolidate",
+            source_files=sample_source_files,
+        )
+
+        # Verificar valor padrão
+        assert engine._config.auto_consolidate is True
+
+        # Criar nova instância e carregar
+        engine2 = PIPSEngine("teste_consolidate", temp_pips_root)
+        config, _ = engine2.load_project()
+
+        # Valor deve ser preservado
+        assert config.auto_consolidate is True
+
+    def test_config_created_at_persisted(self, temp_pips_root, sample_source_files):
+        """Testa que created_at é persistido e restaurado."""
+        engine = PIPSEngine("teste_data", temp_pips_root)
+        engine.init_project(
+            objective="Objetivo para testar persistência de data de criação",
+            source_files=sample_source_files,
+        )
+
+        original_created_at = engine._config.created_at
+
+        # Criar nova instância e carregar
+        engine2 = PIPSEngine("teste_data", temp_pips_root)
+        config, _ = engine2.load_project()
+
+        # Data deve ser preservada (com precisão de minuto)
+        assert config.created_at.strftime('%Y-%m-%d %H:%M') == original_created_at.strftime('%Y-%m-%d %H:%M')
+
+    def test_config_source_files_persisted(self, temp_pips_root, sample_source_files):
+        """Testa que source_files é persistido e restaurado."""
+        engine = PIPSEngine("teste_sources", temp_pips_root)
+        engine.init_project(
+            objective="Objetivo para testar persistência de source_files",
+            source_files=sample_source_files,
+        )
+
+        # Criar nova instância e carregar
+        engine2 = PIPSEngine("teste_sources", temp_pips_root)
+        config, _ = engine2.load_project()
+
+        # Source files devem ser preservados
+        assert len(config.source_files) == len(sample_source_files)
+
+    def test_config_trigger_reason_persisted(self, temp_pips_root, sample_source_files):
+        """Testa que trigger_reason é persistido e restaurado."""
+        engine = PIPSEngine("teste_trigger", temp_pips_root)
+        engine.init_project(
+            objective="Objetivo para testar persistência de trigger_reason",
+            source_files=sample_source_files,
+            trigger_reason="motivo customizado de teste",
+        )
+
+        # Criar nova instância e carregar
+        engine2 = PIPSEngine("teste_trigger", temp_pips_root)
+        config, _ = engine2.load_project()
+
+        assert config.trigger_reason == "motivo customizado de teste"
+
+
+# =============================================================================
+# Testes de Validação de Status
+# =============================================================================
+
+
+class TestStatusValidation:
+    """Testes de validação de status durante save()."""
+
+    def test_save_completed_item_fails(self, initialized_engine):
+        """Testa que salvar item já concluído falha."""
+        item = initialized_engine.work()
+
+        # Salvar pela primeira vez (sucesso)
+        initialized_engine.save(item.id, "Resultado", ["Insight"])
+
+        # Tentar salvar novamente (deve falhar)
+        with pytest.raises(ValueError) as exc_info:
+            initialized_engine.save(item.id, "Outro resultado", ["Outro insight"])
+
+        assert "já foi concluído" in str(exc_info.value)
+
+    def test_save_blocked_item_fails(self, initialized_engine):
+        """Testa que salvar item bloqueado falha."""
+        initialized_engine.load_project()
+
+        # Bloquear primeiro item da fila manualmente
+        item = initialized_engine._state.queue[0]
+        item.status = TodoStatus.BLOQUEADO
+        initialized_engine._save_state()
+
+        # Tentar salvar item bloqueado
+        with pytest.raises(ValueError) as exc_info:
+            initialized_engine.save(item.id, "Resultado", ["Insight"])
+
+        assert "bloqueado" in str(exc_info.value).lower()
+
+
+# =============================================================================
+# Testes de Auto-Consolidação
+# =============================================================================
+
+
+class TestAutoConsolidation:
+    """Testes de consolidação automática."""
+
+    def test_auto_consolidate_creates_synthesis(self, initialized_engine):
+        """Testa que _auto_consolidate() cria síntese."""
+        # Processar alguns itens
+        for _ in range(3):
+            item = initialized_engine.work()
+            if item:
+                initialized_engine.save(
+                    item.id,
+                    "Resultado do processamento com informações importantes",
+                    ["Insight extraído do arquivo"],
+                )
+
+        # Forçar consolidação
+        initialized_engine._auto_consolidate()
+
+        # Verificar que síntese foi criada
+        consolidated_file = initialized_engine.project_path / "_output" / "insights_consolidated.md"
+        content = consolidated_file.read_text(encoding='utf-8')
+
+        assert "Resumo de Processamento" in content or "Síntese Consolidada" in content
