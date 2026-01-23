@@ -27,9 +27,11 @@ py -3.13 -m py_compile src/context_engine/*.py
 ### Context Engine (`src/context_engine/`)
 Multi-stage pipeline for processing protocol-related commands:
 - **main.py** - REPL entry point
-- **commands.py** - Command parsing (`/template`, `/auditoria`, `/orientacao`, `/conformidade`, `/comparar`)
+- **commands.py** - Command parsing (`/template`, `/auditoria`, `/orientacao`, `/conformidade`, `/comparar`, `/pips`)
 - **pipeline.py** - 5-stage processing: parse → classify → validate input → load context → process → validate output
 - **resources.py** - YAML resource loader with caching (normativas, taxonomias, templates)
+- **pips.py** - PIPS engine for iterative processing with state persistence
+- **pips_models.py** - Dataclasses for PIPS state management
 
 ### WAT Framework
 - **Workflows** (`/workflows/`) - Standard Operating Procedures in Markdown
@@ -38,6 +40,44 @@ Multi-stage pipeline for processing protocol-related commands:
 
 ### Resource System
 YAML files loaded from configurable root (via `RESOURCE_ROOT` env var). Three types: normativas, taxonomias, templates. In-memory caching enabled by default.
+
+### PIPS - Protocolo de Processamento Iterativo com Persistência de Estado
+
+Sistema para processamento de tarefas de longa duração com persistência de estado em arquivos externos.
+
+**Quando usar:**
+- Processamento de múltiplos arquivos (>3)
+- Volume de dados >50.000 tokens
+- Síntese de informações distribuídas
+
+**Comandos PIPS:**
+```bash
+# Via REPL
+/pips init <nome> <objetivo>    # Criar projeto
+/pips status [nome]             # Ver status
+/pips resume <nome>             # Retomar processamento
+/pips list                      # Listar projetos
+/pips validate <nome>           # Validar integridade
+/pips finalize <nome>           # Gerar entrega final
+/pips delete <nome>             # Remover projeto
+
+# Via CLI Tools
+python tools/pips_init.py --name <nome> --objective <texto> --sources <dir>
+python tools/pips_validate.py --project <nome> --fix
+python tools/pips_consolidate.py --project <nome>
+python tools/pips_export.py --project <nome> --format md
+```
+
+**Estrutura de diretórios:**
+```
+.pips/projeto_<nome>/
+├── _config/    # Objetivo e configuração imutáveis
+├── _state/     # Estado de processamento
+├── _output/    # Insights e entregas
+└── _source/    # Arquivos fonte
+```
+
+**Ciclo:** Work → Save → Validate → Reset → Resume
 
 ## Key Conventions
 

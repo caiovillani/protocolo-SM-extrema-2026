@@ -13,6 +13,23 @@ Este diretório contém os SOPs (Standard Operating Procedures) em Markdown que 
 | Workflow | Descrição | Status |
 |----------|-----------|--------|
 | _template.md | Template para novos workflows | - |
+| PIPS.md | Protocolo de Processamento Iterativo com Persistência de Estado | ✅ Ativo |
+
+---
+
+### PIPS - Processamento Iterativo
+
+O workflow PIPS permite processar tarefas de longa duração que excedem limites de contexto,
+mantendo estado persistente em arquivos externos. Útil para:
+
+- Análise de múltiplos arquivos
+- Processamento de grandes volumes de dados
+- Síntese de informações distribuídas
+
+**Comandos principais:**
+- `/pips init <nome> <objetivo>` - Criar projeto
+- `/pips resume <nome>` - Retomar processamento
+- `/pips status <nome>` - Ver status
 
 ---
 

@@ -29,6 +29,9 @@ nul
 # WAT Framework temp files
 .tmp/
 
+# PIPS state files
+.pips/
+
 # OS files
 .DS_Store
 Thumbs.db
