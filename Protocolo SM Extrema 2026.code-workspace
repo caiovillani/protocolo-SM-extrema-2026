@@ -55,7 +55,7 @@
 		"claudeCode.allowDangerouslySkipPermissions": true,
 		"claudeCode.initialPermissionMode": "plan",
 		"claudeCode.useCtrlEnterToSend": true,
-		"claudeCode.useTerminal": true,
+		"claudeCode.useTerminal": false,
 		"chat.useAgentSkills": true,
 		"github.copilot.chat.anthropic.tools.websearch.enabled": true
 	}
