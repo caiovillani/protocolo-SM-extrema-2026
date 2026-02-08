@@ -1,0 +1,4501 @@
+metadata:
+  generated_at: '2026-02-08T14:51:44.561994'
+  total_documents: 72
+  generator: tools/generate_reference_index.py
+  project: Protocolo SM Extrema 2026
+summary:
+  by_taxonomy:
+    clinicos/abordagens:
+      total: 7
+      with_doc_id: 7
+    clinicos/manuais:
+      total: 4
+      with_doc_id: 4
+    formacao/guias_desenvolvimento:
+      total: 4
+      with_doc_id: 4
+    formacao/guias_gerenciamento:
+      total: 4
+      with_doc_id: 4
+    formacao/guias_tutoria:
+      total: 5
+      with_doc_id: 5
+    formacao/oficinas:
+      total: 8
+      with_doc_id: 8
+    formacao/workshops:
+      total: 5
+      with_doc_id: 5
+    artigos:
+      total: 11
+      with_doc_id: 11
+    casos_clinicos:
+      total: 5
+      with_doc_id: 5
+    instrumentos:
+      total: 15
+      with_doc_id: 15
+    normativos:
+      total: 4
+      with_doc_id: 4
+  quality_metrics:
+    total: 72
+    with_frontmatter: 72
+    with_doc_id: 72
+    with_title: 72
+    with_topics: 66
+    with_summary: 70
+    needs_human_review: 48
+documents:
+- doc_id: REF-ART-001
+  title: Gestão do Trabalho em Saúde Mental
+  transcript_file: referencias\artigos\Gestão do Trabalho em Saúde Mental.md
+  source_file: ''
+  taxonomy: artigos
+  doc_type: ''
+  pages_total: 0
+  authors:
+  - name: Túlio Batista Franco
+    credentials: Psicólogo, Doutor em Saúde Coletiva (Unicamp)
+    affiliation: Universidade Federal Fluminense (UFF)
+  year: ~2009
+  topics:
+  - gestão do trabalho em saúde mental
+  - micropolítica do trabalho vivo
+  - subjetividade do trabalhador
+  - produção do cuidado
+  - liberdade e captura no processo de trabalho
+  - encontros e afetos na gestão
+  - educação permanente em saúde
+  - reforma psiquiátrica e práticas de cuidado
+  key_concepts:
+  - trabalho_vivo_em_ato: Conceito de Merhy (2002) que designa o trabalho em saúde
+      como atividade relacional, criativa e governada pelo próprio trabalhador no
+      ato do cuidado, em contraposição ao trabalho morto (instrumentos, protocolos
+      fixos).
+  - micropolítica_do_trabalho: Dimensão das relações cotidianas, modos de agir, manejar
+      casos e interagir no espaço social de trabalho — onde o trabalhador exerce governabilidade
+      sobre seu processo produtivo.
+  - subjetividade_nômade: Subjetividade dinâmica, criativa, em movimento, que não
+      se fixa em conceitos prévios sobre saúde mental, conecta-se à diferença e produz
+      um agir libertário no cuidado.
+  - subjetividade_capturada: Subjetividade aprisionada em práticas serializadas, burocráticas,
+      que repete padrões prescritivos e reduz o usuário a elemento padronizado de
+      um conjunto.
+  - bons_encontros: Conceito derivado de Espinosa via Deleuze (2002) — encontros que
+      produzem 'paixões alegres', aumentando a potência de agir do trabalhador e do
+      usuário. Contrapostos às 'paixões tristes' que reduzem potência vital.
+  - autopoiese: Capacidade de autoprodução de vida — o usuário como sujeito que produz
+      vida em si mesmo quando sua potência vital é sustentada por bons encontros de
+      cuidado.
+  - liberdade_e_captura: 'Tensão imanente ao trabalho em saúde mental: de um lado
+      a liberdade do trabalhador para governar seu processo de trabalho, de outro
+      os instrumentos de captura (normas, protocolos, gestão disciplinar) que tentam
+      padronizar o trabalho vivo.'
+  - educação_permanente: Estratégia formativa que parte de fragmentos do cotidiano
+      e dos cenários de práticas, operando processos auto-analíticos para desconstruir
+      velhas práticas e produzir novas possibilidades de cuidar.
+  related_protocols:
+  - POP-05 (Elaboração de PTS — o PTS como tecnologia que opera no trabalho vivo)
+  - PCC-01 (Protocolo Intersetorial APS-NIRSM — gestão de fluxos entre pontos de atenção)
+  - PCC-04 (Educação Permanente — estratégia formativa mencionada no texto)
+  clinical_relevance: Alta relevância para gestão de dispositivos da RAPS. O texto
+    fundamenta teoricamente por que abordagens exclusivamente prescritivas de gestão
+    (protocolos rígidos, normas verticais) são insuficientes para produzir mudança
+    nas práticas de cuidado em saúde mental. Oferece base conceitual para políticas
+    de valorização do trabalhador (carreira, remuneração, EP, gestão colegiada) como
+    condição necessária para cuidado de qualidade. Diretamente aplicável ao planejamento
+    de processos de Educação Permanente, matriciamento e organização de equipes CAPS/NIRSM.
+  target_audience:
+  - gestores de saúde mental
+  - coordenadores de CAPS e dispositivos RAPS
+  - equipes multiprofissionais de saúde mental
+  - profissionais de Educação Permanente em Saúde
+  - pesquisadores em saúde coletiva e micropolítica do trabalho
+  references_count: 3
+  needs_review: true
+- doc_id: REF-ART-003
+  title: 'Saude Mental: como as equipes de Saude da Familia podem integrar esse cuidado
+    na Atencao Basica?'
+  transcript_file: referencias\artigos\Saúde mental como as equipes de ESF podem integrar
+    esse cuidado na Atenção básica.md
+  source_file: ''
+  taxonomy: artigos
+  doc_type: artigo_revisao_literatura
+  pages_total: 8
+  authors:
+  - name: Guilherme Gryschek
+    affiliation: Programa de Clinica Medica-Ensino em Saude, Faculdade de Ciencias
+      Medicas, Unicamp
+    email: ggryschek@gmail.com
+  - name: Adriana Avanzi Marques Pinto
+    affiliation: Programa de Pos-Graduacao em Enfermagem, Faculdade de Medicina de
+      Botucatu, Universidade Estadual Paulista (UNESP)
+  year: 2015
+  topics:
+  - saude_mental
+  - atencao_basica
+  - estrategia_saude_familia
+  - apoio_matricial
+  - integracao_esf_sm
+  - medicalizacao
+  - caps
+  - reforma_psiquiatrica
+  - desinstitucionalização
+  - terapia_comunitaria
+  - agente_comunitario_saude
+  - visita_domiciliar
+  - gestao_redes_cuidado
+  - capacitacao_profissional
+  - modelo_biomedico
+  - integralidade
+  - intersetorialidade
+  key_concepts:
+  - apoio_matricial: Arranjo institucional que integra profissionais de saude mental
+      na APS, promovendo interlocucao horizontal entre equipamentos de SM e Unidades
+      de Saude. Descrito em 7 dos 11 artigos revisados como principal estrategia para
+      desenvolver habilidades e novas abordagens em SM na AB.
+  - medicalizacao: Pratica comum nas ESF, onde o cuidado em SM e centrado na prescricao
+      de medicamentos e encaminhamentos especializados, perpetuando a logica do modelo
+      biomedico.
+  - terapia_comunitaria: Forma de atuacao em espaco publico com resignificacao de
+      relacoes, eliminacao de hierarquias e fortalecimento de vinculos comunitarios
+      como recurso terapeutico.
+  - integralidade: Principio do SUS que na SM se viabiliza pelo modelo de Matriciamento,
+      superando a fragmentacao do cuidado entre AB e atencao especializada.
+  - desinstitucionalização: Processo de deslocamento do cuidado em SM de instituicoes
+      manicomiais para dispositivos territoriais comunitarios, eixo central da Reforma
+      Psiquiatrica.
+  - transtorno_mental_comum: Quadros de sofrimento psiquico nao-psicotico (depressao
+      leve, ansiedade, somatizacoes) que representam de 1/3 a 50% da demanda da AB.
+  - corresponsabilizacao: Principio do AM em que a decisao de encaminhamento ao nivel
+      especializado e tomada conjuntamente entre equipes de ESF e SM, evitando encaminhamentos
+      precipitados.
+  related_protocols:
+  - PCC-01
+  - PCC-03
+  - POP-05
+  - CLI-01
+  clinical_relevance: high
+  target_audience:
+  - equipes_esf
+  - emulti
+  - gestores_aps
+  - profissionais_caps
+  - acs
+  - coordenadores_sm
+  - residentes_mfc
+  references_count: 20
+  needs_review: true
+- doc_id: REF-ART-005
+  title: Construção de um Projeto de Cuidado em Saúde Mental na Atenção Básica
+  transcript_file: referencias\artigos\Construção de um Projeto de Cuidado em Saúde
+    Mental na Atenção Básica.md
+  source_file: artigos\Construção de um Projeto de Cuidado em Saúde Mental na Atenção
+    Básica.pdf
+  taxonomy: artigos
+  doc_type: ''
+  pages_total: 12
+  authors:
+  - family: Ramos
+    given: Priscila Freitas
+    affiliation: Programa de Aprimoramento Profissional em Saúde da Família Multiprofissional,
+      Faculdade de Medicina de Marília (FAMEMA), Marília, SP, Brasil
+    role: primeira_autora
+  - family: Pio
+    given: Danielle Abdel Massih
+    affiliation: Faculdade de Medicina de Marília (FAMEMA), Marília, SP, Brasil
+    role: supervisora
+  year: ''
+  topics: []
+  key_concepts: []
+  related_protocols: []
+  clinical_relevance:
+    target_population: Pessoas egressas de internações psiquiátricas acompanhadas
+      na Atenção Básica
+    care_setting: Unidade de Saúde da Família (USF), município do interior paulista
+      (Marília-SP)
+    clinical_domains:
+    - sofrimento_psiquico_grave
+    - reinternacao_psiquiatrica
+    - desmedicalizacao
+    - reinsercao_social
+    - cuidado_territorial
+    instruments_tools:
+    - Método da Roda (Campos, 2003)
+    - Perspectiva Construtivista da Psicologia Social da Saúde (Spink, 2003)
+    sample_size: 4
+    intervention_duration: 9 meses (36 encontros semanais, 90 min cada)
+    outcomes_reported:
+    - Ausência de reinternações psiquiátricas durante o período
+    - Aumento da autonomia e protagonismo dos participantes
+    - Fortalecimento de vínculos interpessoais e reconstrução de relações sociais
+    - 'Emergência de tema coletivo: desmedicalização'
+    - Promoção de saúde via atividades comunitárias (caminhadas, visitas)
+  target_audience: []
+  references_count: 12
+  needs_review: false
+- doc_id: REF-ART-006
+  title: Saúde mental e a qualidade organizacional dos serviços de atenção primária
+    no Brasil
+  transcript_file: referencias\artigos\Saúde mental e a qualidade organizacional dos
+    serviços de atenção primária no Brasil.md
+  source_file: artigos\Saúde mental e a qualidade organizacional dos serviços de atenção
+    primária no Brasil.pdf
+  taxonomy: artigos
+  doc_type: ''
+  pages_total: 13
+  authors:
+  - name: Patricia Rodrigues Sanine
+    orcid: 0000-0002-7668-0327
+    affiliation: Faculdade de Medicina, Universidade Estadual Paulista, Botucatu,
+      Brasil
+    corresponding: true
+    email: patsanine@yahoo.com.br
+  - name: Letícia Isabel Ferreira Silva
+    orcid: 0000-0003-2370-103X
+    affiliation: Faculdade de Medicina, Universidade Estadual Paulista, Botucatu,
+      Brasil
+  year: 2021
+  topics: []
+  key_concepts: []
+  related_protocols: []
+  clinical_relevance: ''
+  target_audience: []
+  references_count: 0
+  needs_review: false
+- doc_id: REF-ART-007
+  title: 'O trabalho na gestao dos servicos substitutivos de saude mental: aproximacoes
+    entre Saude Coletiva, Saude Mental e Psicanalise'
+  transcript_file: referencias\artigos\O trabalho na gestão dos serviços substitutivos
+    de saúde mental aproximações entre Saúde Coletiva, Saúde Mental e Psicanális.md
+  source_file: ''
+  taxonomy: artigos
+  doc_type: artigo_cientifico
+  pages_total: 20
+  authors:
+  - name: Rosangela Machado Moreira
+    affiliation: Departamento de Acoes em Saude, Secretaria Estadual de Saude do Rio
+      Grande do Sul, Porto Alegre-RS
+    orcid: 0000-0002-6694-4528
+    email: romoreirapsico@gmail.com
+  - name: Katia Bones Rocha
+    affiliation: Pos-Graduacao em Psicologia, Pontificia Universidade Catolica do
+      Rio Grande do Sul, Porto Alegre-RS
+    orcid: 0000-0001-7603-1709
+    email: katiabonesrocha@gmail.com
+  year: 2019
+  topics:
+  - gestao_servicos_saude_mental
+  - reforma_psiquiatrica
+  - psicanalise
+  - saude_coletiva
+  - servicos_substitutivos
+  - caps
+  - nasf
+  - logica_manicomial
+  - logica_reformista
+  - transferencia
+  - inconsciente
+  - cogestao
+  - gestao_participativa
+  - residencia_multiprofissional
+  - educacao_permanente
+  - raps
+  - sus
+  - desinstitucionalização
+  - subjetividade
+  - trabalho_vivo
+  key_concepts:
+  - servicos_substitutivos: Rede de servicos criada para substituir o modelo hospitalocentrico,
+      incluindo CAPS e NASF, permitindo ao sujeito em sofrimento psiquico ter cuidado
+      no territorio e viver em comunidade.
+  - logica_manicomial: Modelo de cuidado pautado pelo vies biomedico, focado em medicalizacao,
+      fragmentacao do cuidado, centralizacao em diagnosticos e ausencia de processos
+      democraticos de trabalho.
+  - logica_reformista: Modelo orientado pela Reforma Psiquiatrica, voltado a desinstitucionalizacao,
+      escuta do sujeito, cuidado territorial, gestao compartilhada e respeito a singularidade.
+  - campo_transferencial: Conceito psicanalitico que designa o processo pelo qual
+      desejos inconscientes se atualizam nas relacoes interpessoais, inseridos no
+      conjunto da cultura e sociedade.
+  - gestao_como_espaco_de_intervencao: A gestao nos servicos substitutivos como funcao
+      de criar espacos de circulacao da palavra, intercambios autorreflexivos e suporte
+      a grupalidade operativa (Onocko-Campos, 2007).
+  - manicomializacao: Risco de reproducao da logica manicomial dentro dos proprios
+      servicos substitutivos, por meio de praticas fragmentadas, medicalizacao e ausencia
+      de participacao social.
+  - trabalho_vivo_em_ato: 'Conceito de Merhy (2002): micropolitica exercida por cada
+      ator social como espaco de resistencia e producao de novas formas de cuidado.'
+  - residencia_multiprofissional: Formacao pela experiencia no trabalho que qualifica
+      a atuacao em gestao, promovendo compartilhamento de decisoes e olhar ampliado
+      sobre saude coletiva.
+  related_protocols:
+  - PCC-01
+  - PCC-03
+  - POP-05
+  clinical_relevance: high
+  target_audience:
+  - gestores_saude_mental
+  - coordenadores_caps
+  - coordenadores_nasf
+  - psicologos_raps
+  - residentes_saude_coletiva
+  - equipes_multiprofissionais
+  - gestao_municipal_saude
+  references_count: 35
+  needs_review: true
+- doc_id: REF-ART-008
+  title: 'Demanda em Saúde Mental: uma proposta de Classificação de Risco em Saúde
+    Mental'
+  transcript_file: referencias\artigos\Demanda em Saúde Mental e Atenção Psicossocial
+    FIOCRUZ.md
+  source_file: artigos\Demanda em Saúde Mental e Atenção Psicossocial FIOCRUZ.pdf
+  taxonomy: artigos
+  doc_type: cartilha_tecnica_formativa
+  pages_total: 31
+  authors:
+  - name: Ana Cecília Andrade de Moraes Weintraub
+    role: autora_principal
+    affiliation: Fiocruz Brasília
+  - name: Adriana Silveira Cogo
+    role: coautora
+    affiliation: Fiocruz
+  - name: Bernardo Dolabella Melo
+    role: coautor
+    affiliation: Fiocruz
+  - name: Carolyne César Lima
+    role: coautora
+    affiliation: Fiocruz
+  - name: Débora da Silva Noal
+    role: coautora_revisao_tecnica
+    affiliation: Fiocruz
+  - name: Ionara Vieira Moura Rabelo
+    role: coautora
+    affiliation: Fiocruz
+  - name: Lara Gonçalves Coelho
+    role: coautora
+    affiliation: Fiocruz
+  - name: Maíra Lopes Mazoto
+    role: coautora
+    affiliation: Fiocruz
+  - name: Milene Tramansoli Resende
+    role: coautora
+    affiliation: Fiocruz
+  - name: Sandra Maria Sales Fagundes
+    role: coautora_revisao_tecnica
+    affiliation: Fiocruz
+  - name: Sônia Regina Pereira Fernandes
+    role: coautora
+    affiliation: Fiocruz
+  - name: Verônica Erthal
+    role: coautora
+    affiliation: Fiocruz
+  year: 2022
+  topics: []
+  key_concepts: []
+  related_protocols: []
+  clinical_relevance:
+    conditions:
+    - F00-F99 (Transtornos mentais e comportamentais — escopo geral)
+    - F20-F29 (Esquizofrenia, transtornos esquizotípicos e delirantes)
+    - F30-F39 (Transtornos do humor/afetivos)
+    - F40-F48 (Transtornos neuróticos, relacionados ao estresse)
+    - F10-F19 (Transtornos mentais e comportamentais devidos ao uso de substâncias
+      psicoativas)
+    - F50 (Transtornos da alimentação)
+    - F70-F79 (Deficiência intelectual)
+    - X60-X84 (Lesões autoprovocadas intencionalmente)
+    populations:
+    - população geral em contexto pós-desastre/emergência
+    - crianças e adolescentes
+    - mulheres
+    - idosos
+    - pessoas em extrema pobreza
+    - pessoas em situação de rua
+    - refugiados e migrantes
+    - pessoas com deficiência
+    - pessoas institucionalizadas
+    - profissionais de saúde da linha de frente
+    instruments:
+    - Classificação de Risco por Cores (Vermelho/Laranja/Amarelo/Verde/Azul/Branco)
+    - Quadro de Fatores de Risco e Proteção (individuais, familiares/comunitários,
+      contextuais)
+    - Fluxograma de acolhimento ao sofrimento psíquico
+    - Pirâmide de estratificação do cuidado SMAPS
+    service_levels:
+    - Comunidade e Rede Intersetorial
+    - Atenção Primária/Básica (UBS, ESF)
+    - Atenção Especializada/Secundária (CAPS, ambulatórios)
+    - Urgência e Emergência (UPA, Pronto-Socorro)
+    - Enfermarias de Saúde Mental/Psiquiatria
+  target_audience: []
+  references_count: 0
+  needs_review: false
+- doc_id: REF-ART-009
+  title: 'Saúde Pública e Saúde Coletiva: campo e núcleo de saberes e práticas'
+  transcript_file: referencias\artigos\saúde publica e saúde coletiva.md
+  source_file: ''
+  taxonomy: artigos
+  doc_type: ''
+  pages_total: 0
+  authors:
+  - name: Gastão Wagner de Sousa Campos
+    credentials: Médico Sanitarista, Doutor em Saúde Coletiva
+    affiliation: Departamento de Medicina Preventiva e Social, Faculdade de Ciências
+      Médicas, Universidade Estadual de Campinas (UNICAMP)
+    contact: gastao@mpc.com.br
+  year: 2000
+  topics:
+  - saúde pública e saúde coletiva — distinção conceitual
+  - campo e núcleo de saberes e práticas
+  - dialética aplicada à saúde coletiva
+  - superação do positivismo e do estruturalismo na saúde
+  - produção social da saúde
+  - construtivismo sociohistórico aplicado à saúde
+  - papel do sanitarista e identidade profissional
+  - modelos de atenção e modos de produção de saúde
+  - defesa da vida como valor fundante
+  - fortalecimento de sujeitos individuais e coletivos
+  - valor de uso e necessidades sociais em saúde
+  - reforma sanitária brasileira e SUS
+  key_concepts:
+  - nucleo_e_campo: 'Reformulação conceitual proposta por Campos et al. (1997): Núcleo
+      designa a aglutinação de conhecimentos e o padrão concreto de compromisso com
+      a produção de valores de uso, demarcando a identidade de uma área de saber e
+      prática profissional. Campo designa um espaço de limites imprecisos onde cada
+      disciplina e profissão busca em outras apoio para cumprir suas tarefas teóricas
+      e práticas. Difere de Bourdieu (campo/corpus) por negar o sentido polar e antagônico
+      entre os termos, propondo institucionalização flexível e aberta.'
+  - producao_social_da_saude: Conceito central à saúde coletiva que reconhece os determinantes
+      sociais, políticos e econômicos dos processos saúde/doença/intervenção, sem
+      atribuir transcendência automática à determinação social — a hierarquia entre
+      fatores é situacional e variável.
+  - dialética_aplicada: Método filosófico que sustenta relação dialética entre pensar
+      e agir, sujeito e mundo, ser e não ser. Campos recorre a Marx, Gramsci, Lefebvre,
+      Sartre, Merleau-Ponty e Bourdieu para fundamentar uma saúde coletiva que supere
+      o positivismo (objetivismo asséptico) e o estruturalismo (determinismo das estruturas)
+      sem abrir mão da objetividade ou da análise estrutural.
+  - construtivismo_sociohistorico: Corrente epistemológica (Vygotsky, Paulo Freire)
+      que propõe que o conhecimento resulta da relação dialética entre atividades
+      interpessoais (relações sociais) e atividades intrapessoais (capacidade de ação
+      reflexiva do sujeito). Aplicável à saúde coletiva via educação em saúde e empoderamento
+      de sujeitos.
+  - defesa_da_vida: 'Valor fundante proposto para o sanitarista: compromisso ético
+      explícito com a vida das pessoas e grupos com quem trabalha, operando com autonomia
+      relativa frente ao Estado, partidos e ideologias. Intelectual orgânico (Gramsci)
+      comprometido com uma teoria de produção da saúde.'
+  - valor_de_uso_em_saude: 'Conceito marxiano (O Capital, vol. I) aplicado à saúde:
+      a utilidade que bens ou serviços de saúde têm para pessoas concretas em situações
+      específicas. Mesmo no SUS, onde a saúde é direito universal (não mercadoria),
+      ela conserva caráter de valor de uso socialmente construído.'
+  - fortalecimento_de_sujeitos: 'Perspectiva que desloca a ênfase da saúde coletiva:
+      da doença (positivismo biomédico) e das estruturas (estruturalismo) para a capacidade
+      reflexiva, cidadania e autonomia de sujeitos individuais e coletivos. Inspirada
+      em Basaglia (invenção de saúde, reprodução social do paciente) e Sartre (grupo
+      sujeito vs. serialidade).'
+  - modos_de_producao_de_saude: 'Quatro modos básicos identificados: (a) transformações
+      econômicas/sociais/políticas — promoção, Cidades Saudáveis; (b) vigilância à
+      saúde — promoção e prevenção; (c) clínica e reabilitação — assistência e cuidados
+      individuais; (d) urgência e emergência. Limites entre eles são imprecisos e
+      complementares.'
+  - transcendencia_da_saude_coletiva: 'Tendência criticada pelo autor: a saúde coletiva
+      se constitui como metadiscurso capaz de criticar e reconstruir todos os saberes
+      de saúde, hipervalorizando a determinação social e desqualificando fatores subjetivos
+      e biológicos. Campos propõe que a saúde coletiva é um saber entre outros no
+      campo da saúde.'
+  - filosofia_da_praxis: Termo gramsciano para o marxismo, enfatizando método que
+      não anula relações entre abstrato/concreto, individual/coletivo, pensar/agir.
+      Campos o mobiliza para fundamentar uma saúde coletiva que articule política,
+      gestão, epidemiologia com clínica, psicanálise, pedagogia e análise institucional.
+  related_protocols:
+  - PCC-01 (Protocolo Intersetorial APS-NIRSM — organização de campo e núcleo entre
+    pontos de atenção)
+  - PCC-04 (Educação Permanente — construtivismo sociohistórico e fortalecimento de
+    sujeitos)
+  - POP-05 (Elaboração de PTS — produção de saúde como valor de uso, co-construção
+    com sujeitos)
+  - GN-01 (Guia Narrativo APS — inserção horizontal da saúde coletiva nas práticas
+    da eESF/eMulti)
+  clinical_relevance: Alta relevância epistemológica e organizacional para o planejamento
+    da RAPS. O artigo fornece o marco conceitual de núcleo e campo que fundamenta
+    a organização das profissões de saúde no SUS, a lógica do matriciamento e a inserção
+    da saúde coletiva como saber transversal a todas as práticas sanitárias. A distinção
+    entre quatro modos de produção de saúde oferece base para a construção de modelos
+    de atenção que articulem clínica, vigilância, promoção e emergência. A crítica
+    à postura de transcendência da saúde coletiva é diretamente aplicável à organização
+    de equipes multiprofissionais e ao planejamento de serviços que integrem saberes
+    biomédicos, psicossociais e epidemiológicos sem subordinação de um ao outro. O
+    conceito de fortalecimento de sujeitos fundamenta abordagens participativas em
+    saúde mental.
+  target_audience:
+  - gestores de saúde pública e saúde coletiva
+  - coordenadores de RAPS e dispositivos SUS
+  - equipes de Atenção Primária à Saúde (eESF, eMulti)
+  - sanitaristas e profissionais de vigilância em saúde
+  - pesquisadores em saúde coletiva e epistemologia da saúde
+  - docentes de graduação e pós-graduação em saúde coletiva
+  - profissionais envolvidos com educação em saúde e educação permanente
+  references_count: 41
+  needs_review: true
+- doc_id: REF-ART-010
+  title: A práxis do enfermeiro no Programa Saúde da Família na atenção à saúde mental
+  transcript_file: referencias\artigos\A práxis do enfermeiro no programa saúde da
+    família na atenção à saúde mental.md
+  source_file: ''
+  taxonomy: artigos
+  doc_type: artigo
+  pages_total: 0
+  authors:
+  - name: Khívia Kiss Barbosa de Sousa
+    affiliation: Programa de Pós-Graduação em Enfermagem, Universidade Federal da
+      Paraíba (UFPB)
+    role: Autora principal / Mestranda
+  - name: Maria de Oliveira Ferreira Filha
+    affiliation: Departamento de Enfermagem de Saúde Pública e Psiquiatria, UFPB
+    role: Orientadora / Doutora em Enfermagem
+  - name: Ana Tereza Medeiros Cavalcanti da Silva
+    affiliation: Departamento de Enfermagem de Saúde Pública e Psiquiatria, UFPB
+    role: Co-orientadora / Doutora em Enfermagem
+  year: 2004
+  topics:
+  - Práxis de enfermagem em saúde mental
+  - Programa Saúde da Família (PSF)
+  - Processo de trabalho em enfermagem
+  - Reforma Psiquiátrica brasileira
+  - Integralidade da assistência no SUS
+  - Materialismo Histórico e Dialético (MHD)
+  - Desinstitucionalização
+  - Atenção básica e saúde mental
+  - Modelo de assistência psiquiátrica
+  - Concepção saúde-doença mental
+  key_concepts:
+  - term: Práxis
+    definition: Ação articulada com reflexão, autoquestionamento e teoria, cujo aprofundamento
+      exige verificação de acertos e desacertos cotejando-os com a prática (Konder,
+      1992)
+  - term: Processo de trabalho em saúde
+    definition: 'Sucessão de momentos essenciais definidos por três elementos: objeto,
+      finalidade e instrumentos, legitimados pelas práticas quando agregam novos significados'
+  - term: Modelo de Assistência
+    definition: 'Abstração apoiada em três pilares articulados: políticas de saúde,
+      serviços e trabalho (Silva, 2003)'
+  - term: Integralidade
+    definition: Princípio do SUS que não concebe disjunção mente-corpo e pressupõe
+      cuidado abrangendo promoção, prevenção, proteção, tratamento e recuperação
+  - term: Desinstitucionalização
+    definition: Diretriz da Reforma Psiquiátrica que nega o hospital psiquiátrico
+      tradicional como instrumento terapêutico e busca a inclusão social da pessoa
+      com doença mental
+  - term: Materialismo Histórico e Dialético (MHD)
+    definition: Método composto por teoria científica e crítica da história (materialismo
+      histórico) e teoria filosófica (materialismo dialético), cujo pressuposto é
+      que nada é eterno, absoluto ou fixo
+  related_protocols:
+  - protocol_id: PCC-01
+    relevance: 'Fluxo intersetorial APS-NIRSM: o artigo documenta a ausência de mecanismos
+      de referência/contrarreferência em saúde mental na APS, problema que o PCC-01
+      visa resolver'
+  - protocol_id: POP-05
+    relevance: 'Elaboração de PTS: o estudo revela que o objeto de trabalho das enfermeiras
+      permanece a ''doença mental'' e não a pessoa em sofrimento, contrariando a lógica
+      do PTS como tecnologia de gestão do cuidado'
+  - protocol_id: CLI-02
+    relevance: 'Protocolo TEA: as conclusões sobre formação insuficiente e persistência
+      do modelo biomédico na APS aplicam-se diretamente ao desafio de implementar
+      vigilância do neurodesenvolvimento nas eSF'
+  clinical_relevance: alta
+  target_audience:
+  - Enfermeiros da Estratégia Saúde da Família (eSF)
+  - Equipes multiprofissionais de atenção básica
+  - Coordenadores de saúde mental municipal
+  - Gestores de atenção primária
+  - Pesquisadores em enfermagem psiquiátrica e saúde coletiva
+  references_count: 13
+  needs_review: true
+- doc_id: REF-ART-010
+  title: 'Diálogos entre Saúde Mental e Atenção Básica: relato de experiência do PET-Saúde
+    no município de Parnaíba-PI'
+  transcript_file: referencias\artigos\Dialogos entre SM E APS.md
+  source_file: ''
+  taxonomy: artigos
+  doc_type: ''
+  pages_total: 0
+  authors:
+  - name: Francisco Jander de Sousa Nogueira
+    credentials: Professor dos Cursos de Medicina e Psicologia
+    affiliation: Universidade Federal do Piauí (UFPI) – Campus Ministro Reis Velloso,
+      Parnaíba
+    email: jander.sociosaude@gmail.com
+  - name: Francisco Marcos Gomes de Brito
+    credentials: Acadêmico de Psicologia
+    affiliation: Universidade Federal do Piauí (UFPI) – Campus Ministro Reis Velloso,
+      Parnaíba
+  year: 2017
+  topics:
+  - integração saúde mental e atenção básica
+  - PET-Saúde e Rede de Atenção Psicossocial (RAPS)
+  - linhas de cuidado em saúde mental
+  - apoio matricial
+  - observação participante
+  - Reforma Psiquiátrica
+  - Projeto Terapêutico Singular (PTS)
+  - educação permanente em saúde
+  - tecnologias leves de cuidado
+  - integração ensino-serviço-comunidade
+  - agentes comunitários de saúde e saúde mental
+  - rotatividade profissional na Estratégia Saúde da Família
+  - vulnerabilidade social e determinantes sociais da saúde
+  key_concepts:
+  - linhas_de_cuidado: Itinerário ou caminho do usuário dentro da rede de saúde —
+      incluindo dispositivos intersetoriais (assistência social, educação) — que assegura
+      integralidade e acompanhamento contínuo. Classificadas em transtornos leves/moderados
+      e transtornos severos/persistentes (Franco & Magalhães Júnior, 2004; Malta et
+      al., 2004).
+  - apoio_matricial: Tecnologia de cuidado que integra eSF, dispositivos de saúde
+      mental e equipamentos territoriais de suporte social, cultural e educativo,
+      promovendo retaguarda especializada às equipes de Atenção Básica (Cunha & Campos,
+      2011).
+  - pet_saude_raps: 'Programa de Educação pelo Trabalho para a Saúde — Rede de Atenção
+      Psicossocial: dispositivo que promove integração ensino-serviço-comunidade por
+      meio de tutoria (docentes), preceptoria (profissionais da rede) e inserção de
+      estudantes de graduação nos serviços do SUS.'
+  - tecnologias_leves: Produtoras de trabalho vivo (Merhy & Franco, 2003), centradas
+      na relação, vínculo, escuta e acolhimento — contrapostas a tecnologias duras
+      (equipamentos) e leve-duras (protocolos, saberes estruturados).
+  - projeto_terapeutico_singular: Dispositivo de cuidado que consiste em conjunto
+      de propostas para ações terapêuticas voltadas a um indivíduo ou coletivo, construído
+      coletivamente pela equipe de saúde, serviços especializados e o próprio usuário/família.
+  - educacao_permanente_saude: Estratégia formativa baseada em problemas do cotidiano
+      dos serviços, que opera processos auto-analíticos para desconstruir práticas
+      hegemônicas e produzir novos paradigmas de cuidado (Ceccim, 2004).
+  - cultura_manicomial: Persistência de lógicas asilares, centradas na internação
+      hospitalar como resposta ao sofrimento psíquico, que fragiliza dispositivos
+      substitutivos e impede consolidação da rede de atenção psicossocial.
+  - observacao_participante: Abordagem metodológica que pressupõe convívio, compartilhamento
+      de experiências e uso dos sentidos humanos para apreender realidades institucionais
+      e comunitárias (Angrosino, 2009).
+  related_protocols:
+  - PCC-01 (Protocolo Intersetorial APS-NIRSM — fluxo referência/contrarreferência
+    entre AB e CAPS)
+  - PCC-04 (Educação Permanente — estratégia formativa para equipes de AB em saúde
+    mental)
+  - POP-05 (Elaboração de PTS — instrumento central mencionado no relato)
+  - GN-01 (Guia Narrativo APS — papel do ACS na identificação e acompanhamento)
+  clinical_relevance: 'Alta relevância para planejamento de integração APS-Saúde Mental
+    na RAPS. O relato documenta desafios concretos na construção de linhas de cuidado
+    em saúde mental na Atenção Básica: dificuldade de reconhecimento/identificação
+    de casos pela eSF, rotatividade profissional, cronogramas sem espaço para discussão
+    de casos, ausência de Apoio Matricial, fragilidade da rede intersetorial e persistência
+    de cultura manicomial. Oferece evidência qualitativa de que ACS são os profissionais
+    com maior vinculação e compromisso com o cuidado em saúde mental no território.
+    Diretamente aplicável ao desenho de estratégias de integração APS-CAPS em Extrema-MG,
+    especialmente na definição de papéis do ACS, implementação de matriciamento e
+    organização de Educação Permanente.'
+  target_audience:
+  - gestores municipais de saúde mental
+  - coordenadores de CAPS e eSF
+  - equipes multiprofissionais de Atenção Básica
+  - agentes comunitários de saúde
+  - profissionais de Educação Permanente em Saúde
+  - docentes e estudantes em formação para o SUS
+  references_count: 20
+  needs_review: true
+- doc_id: REF-ART-011
+  title: 'Formação para o trabalho em Saúde Mental: reflexões a partir das concepções
+    de Sujeito, Coletivo e Instituição'
+  transcript_file: referencias\artigos\Formação para o trabalho em saúde mental.md
+  source_file: artigos/Formação para o trabalho em saúde mental.pdf
+  taxonomy: artigos
+  doc_type: ''
+  pages_total: 15
+  authors:
+  - name: Bruno Ferrari Emerich
+    affiliation: Departamento de Saúde Coletiva, Faculdade de Ciências Médicas, Universidade
+      Estadual de Campinas (Unicamp)
+    email: brunofemerich@gmail.com
+    role: Primeiro autor
+  - name: Rosana Onocko-Campos
+    affiliation: Departamento de Saúde Coletiva, Faculdade de Ciências Médicas, Universidade
+      Estadual de Campinas (Unicamp)
+    email: rosanaoc@mpc.com.br
+    role: Coautora sênior
+  year: 2019
+  topics: []
+  key_concepts:
+  - concept: Três eixos formativos
+    definition: Sujeito, Coletivo e Instituição como eixos estruturantes da formação
+      em saúde mental
+  - concept: Saber da experiência
+    definition: Formação processual baseada na experiência vivida, não no acúmulo
+      de informações (Bondía)
+  - concept: Quadrilátero da formação
+    definition: Ensino, Gestão, Atenção e Controle Social como parâmetros integrados
+      (Ceccim & Feuerwerker)
+  - concept: Tripla finalidade do trabalho
+    definition: Produção social/subjetiva, produção de bens/serviços, reprodução organizacional
+      (Campos)
+  - concept: Sociabilidade sincrética e integrada
+    definition: Coexistência de aspectos indiferenciados (vínculo) e integrados (interação)
+      no grupo (Bleger)
+  - concept: Complementaridade
+    definition: Potência formativa dos diferentes estilos profissionais e modos de
+      atuação (Oury)
+  - concept: Plasticidade psíquica do trabalhador
+    definition: Capacidade de transformação subjetiva necessária ao enfrentamento
+      de contextos difíceis (Lancetti)
+  - concept: Controle a céu aberto
+    definition: Risco de reprodução da exclusão manicomial nos serviços territoriais
+  related_protocols: []
+  clinical_relevance: ''
+  target_audience: []
+  references_count: 36
+  needs_review: false
+- doc_id: REF-ART-011
+  title: Gestão em Saúde
+  transcript_file: referencias\artigos\Gestão em Saúde.md
+  source_file: ''
+  taxonomy: artigos
+  doc_type: verbete
+  pages_total: 0
+  authors:
+  - name: Gastão Wagner de Sousa Campos
+    credentials: Médico Sanitarista, Doutor em Saúde Coletiva
+    affiliation: Universidade Estadual de Campinas (Unicamp) — Departamento de Saúde
+      Coletiva
+  - name: Rosana Teresa Onocko Campos
+    credentials: Médica Psiquiatra, Doutora em Saúde Coletiva
+    affiliation: Universidade Estadual de Campinas (Unicamp) — Departamento de Saúde
+      Coletiva
+  year: ~2009
+  topics:
+  - gestão em saúde como campo de conhecimento
+  - administração científica e taylorismo
+  - centralização de poder e controle do trabalho
+  - gerencialismo e ideologia do controle
+  - atenção gerenciada (managed care) em saúde
+  - administração sanitária e Saúde Pública
+  - sistemas nacionais de saúde e atenção primária
+  - gestão participativa e co-gestão
+  - democratização da gestão em saúde
+  - planejamento e organização de serviços de saúde
+  key_concepts:
+  - gestao_e_politica: Gestão e administração referem-se ao ato de governar pessoas,
+      organizações e instituições — portanto, são atividades inerentemente políticas.
+      Na Grécia clássica, 'política' significava a capacidade de fazer a gestão democrática
+      das cidades-estado.
+  - ruptura_gestao_politica: A constituição da administração como campo estruturado
+      de conhecimento (Taylor, 1911) pretendeu produzir descontinuidade entre política
+      e gestão, propondo uma gestão 'técnica' e 'baseada em evidências', desvinculada
+      de disputas de interesses e valores.
+  - taylorismo_e_controle: Os princípios tayloristas — separação entre concepção e
+      execução (2o princípio) e centralização do poder de planejar e decidir na direção
+      (4o princípio) — buscam limitar a autonomia e iniciativa do trabalhador. A disciplina
+      e o controle permanecem como eixo central dos métodos de gestão contemporâneos.
+  - gerencialismo: Nova ideologia que ampliou o controle sobre o trabalho em grau
+      sem precedentes. Autores contemporâneos o descrevem como 'doença social' (Gaulejac,
+      2007). A Qualidade Total e reengenharia exacerbam a concorrência entre trabalhadores
+      e aumentam a dependência da chefia.
+  - atencao_gerenciada: Modelo (managed care) que propõe reduzir custos e aumentar
+      eficácia retirando dos profissionais a capacidade de decisão sobre o trabalho
+      clínico, transferindo poder para gerentes que controlam condutas via protocolos
+      minuciosos de padronização diagnóstica e terapêutica.
+  - administracao_sanitaria: Campo de conhecimento que se distingue da Administração
+      de Empresas por articular gestão às 'práticas' consideradas eficazes para combater
+      problemas coletivos de saúde. Nasceu nos primórdios da Saúde Pública, importando
+      conceitos do campo militar (erradicação, controle, vigilância, risco, planejamento
+      estratégico).
+  - sistemas_nacionais_de_saude: Em meados do século XX, países como Grã-Bretanha,
+      Suécia e URSS construíram sistemas públicos de saúde segundo o conceito de integração
+      sanitária, hierarquização e regionalização, incluindo a atenção clínica individual
+      — o que expandiu radicalmente o objeto da gestão em saúde.
+  - co_gestao: Perspectiva que busca superar a gestão restritiva das teorias administrativas
+      tradicionais, incorporando gestão participativa, controle social pela sociedade
+      civil e formas compartilhadas de governar organizações de saúde.
+  related_protocols:
+  - PCC-01 (Protocolo Intersetorial APS-NIRSM — organização de fluxos entre pontos
+    de atenção requer gestão participativa)
+  - PCC-04 (Educação Permanente — instrumento de democratização da gestão do trabalho)
+  - POP-05 (Elaboração de PTS — tecnologia de co-gestão do cuidado entre profissionais
+    e usuários)
+  - PCC-06 (Macrofluxo DI/TEA — hierarquização e regionalização de serviços mencionadas
+    no verbete)
+  clinical_relevance: Relevância estruturante para gestão de serviços da RAPS. O verbete
+    oferece genealogia crítica do campo da gestão em saúde, demonstrando como os paradigmas
+    administrativos tradicionais (taylorismo, managed care, qualidade total) operam
+    pela centralização do poder e controle do trabalhador — lógica incompatível com
+    a produção de cuidado em saúde mental, que requer autonomia profissional e relações
+    horizontais. Fundamenta teoricamente a opção por modelos de co-gestão e gestão
+    participativa nos dispositivos da rede (CAPS, NIRSM, matriciamento), e contextualiza
+    por que protocolos clínicos devem ser instrumentos de orientação e não de cerceamento
+    da autonomia técnica. Diretamente aplicável ao planejamento estratégico da RAPS
+    de Extrema-MG.
+  target_audience:
+  - gestores de saúde pública e saúde mental
+  - coordenadores de dispositivos RAPS (CAPS, NIRSM, UBS)
+  - equipes multiprofissionais da Atenção Primária à Saúde
+  - profissionais de planejamento e avaliação em saúde
+  - pesquisadores em Saúde Coletiva e Políticas de Saúde
+  references_count: 11
+  needs_review: true
+- doc_id: REF-CC-001
+  title: Caso Marina — Etilismo e Escalonamento do Cuidado em Saúde Mental
+  transcript_file: referencias\casos_clinicos\Caso Marina Etilismo Escalonamento do
+    Cuidado em Saúde Mental.md
+  source_file: ''
+  taxonomy: casos_clinicos
+  doc_type: caso_clinico
+  pages_total: 5
+  authors:
+  - Ministério da Saúde — Secretaria de Atenção Primária à Saúde (SAPS)
+  year: 2023
+  topics:
+  - etilismo
+  - alcoolismo
+  - escalonamento_cuidado
+  - saude_mental
+  - aps
+  - caps_ad
+  - sofrimento_psiquico
+  - escala_cuidasm
+  - risco_familiar_coelho_savassi
+  - intervenções_psicossociais
+  - genograma
+  - ecomapa
+  - violencia
+  - sobrecarga_cuidador
+  key_concepts:
+  - escala_cuidasm: Instrumento de 31 itens para estratificação da necessidade de
+      cuidado em saúde mental (0-11 pontos). No caso, resultado = 3 pontos (moderada
+      necessidade).
+  - mi_mhgap: Mental Health Gap Action Programme — protocolo OMS adaptado para investigação
+      de sintomas depressivos e ansiosos na APS.
+  - escalonamento_cuidado: Modelo de organização do cuidado em saúde mental na APS
+      que gradua intervenções conforme nível de necessidade identificado, partindo
+      de intervenções psicossociais até encaminhamento especializado.
+  - risco_familiar_coelho_savassi: Escala de Risco Familiar baseada em sentinelas
+      de risco socioambientais e clínicas para estratificação familiar (R1/R2/R3).
+  - genograma_ecomapa: Ferramentas de abordagem familiar para mapeamento de relações,
+      vínculos, conflitos e rede de apoio.
+  - intervencoes_psicossociais: Técnicas de enfrentamento de problemas, fortalecimento
+      de rede de apoio e relaxamento como primeira linha de cuidado para sofrimento
+      psíquico sem transtorno instalado.
+  - avaliacao_risco_suicida: Protocolo de rastreio de ideação suicida, autoagressão
+      e histórico, integrado à Escala CuidaSM.
+  - avaliacao_violencia: Investigação de vitimização, testemunho e perpetração de
+      violência como dimensão obrigatória da avaliação em saúde mental.
+  related_protocols:
+  - CLI-01
+  - PCC-03
+  - POP-05
+  clinical_relevance: high
+  target_audience:
+  - equipes_esf
+  - emulti
+  - caps_ad
+  - acs
+  - enfermagem_aps
+  - psicologia_aps
+  references_count: 0
+  needs_review: true
+- doc_id: REF-CC-002
+  title: 'Caso Patrícia: Depressão e Escalonamento do Cuidado em Saúde Mental'
+  transcript_file: referencias\casos_clinicos\Caso Patrícia Depressão Escalonamento
+    do Cuidado em Saúde Mental.md
+  source_file: casos_clinicos/Caso Patrícia Depressão Escalonamento do Cuidado em
+    Saúde Mental.pdf
+  taxonomy: casos_clinicos
+  doc_type: caso_clinico
+  pages_total: 5
+  authors: []
+  year: ''
+  topics:
+  - depressao
+  - escalonamento_cuidado
+  - saude_mental
+  - aps
+  - transtorno_humor_bipolar
+  - escala_cuidasm
+  - visita_domiciliar
+  - risco_suicidio
+  - genograma
+  - ecomapa
+  - escala_coelho_savassi
+  - matriciamento_nasf
+  - estratificacao_risco
+  key_concepts: []
+  related_protocols:
+  - CLI-03
+  - PCC-03
+  - POP-05
+  - PCC-01
+  clinical_relevance: high
+  target_audience: []
+  references_count: 0
+  needs_review: false
+- doc_id: REF-CC-003
+  title: 'Caso Rodrigo: Ansiedade e Escalonamento do Cuidado em Saude Mental'
+  transcript_file: referencias\casos_clinicos\Caso Rodrigo Ansiedade Escalonamento
+    do Cuidado em Saúde Mental.md
+  source_file: casos_clinicos/Caso Rodrigo Ansiedade Escalonamento do Cuidado em Saude
+    Mental.pdf
+  taxonomy: casos_clinicos
+  doc_type: caso_clinico
+  pages_total: 5
+  authors: []
+  year: ''
+  topics:
+  - ansiedade
+  - tag
+  - escalonamento_cuidado
+  - saude_mental
+  - aps
+  - gad7
+  - ataque_panico
+  - escala_cuidasm
+  - genograma
+  - ecomapa
+  - escala_coelho_savassi
+  - mi_mhgap
+  - estratificacao_risco
+  - acs
+  - esf
+  key_concepts: []
+  related_protocols:
+  - CLI-05
+  - PCC-03
+  - POP-05
+  - PCC-01
+  clinical_relevance: high
+  target_audience: []
+  references_count: 0
+  needs_review: false
+- doc_id: REF-CC-004
+  title: 'Caso Luís — Psicose (Esquizofrenia): Escalonamento do Cuidado em Saúde Mental'
+  transcript_file: referencias\casos_clinicos\Caso Luís Psicose Esquizofrenia Escalonamento
+    do Cuidado em Saúde Mental.md
+  source_file: casos_clinicos/Caso Luís Psicose Esquizofrenia Escalonamento do Cuidado
+    em Saúde Mental.pdf
+  taxonomy: casos_clinicos
+  doc_type: caso_clinico
+  pages_total: 5
+  authors: []
+  year: ''
+  topics:
+  - psicose
+  - esquizofrenia
+  - escalonamento_cuidado
+  - saude_mental
+  - caps
+  - antipsicoticos
+  - escala_cuidasm
+  - reabilitacao_psicossocial
+  - pts
+  - genograma
+  - ecomapa
+  - risco_familiar
+  - mi_mhgap
+  - aps
+  - esf
+  - violencia
+  - bpc
+  - direitos_humanos
+  - carcere_privado_domiciliar
+  key_concepts: []
+  related_protocols:
+  - CLI-04
+  - PCC-03
+  - POP-05
+  clinical_relevance: very_high
+  target_audience: []
+  references_count: 0
+  needs_review: false
+- doc_id: REF-CC-005
+  title: Caso Rodrigo — Manual para Organização da Oficina sobre Escalonamento do
+    Cuidado em Saúde Mental
+  transcript_file: referencias\casos_clinicos\Manual_Caso Rodrigo.md
+  source_file: casos_clinicos/Manual_Caso Rodrigo.pdf
+  taxonomy: casos_clinicos
+  doc_type: manual_caso_clinico
+  pages_total: 5
+  authors: []
+  year: ''
+  topics:
+  - caso_clinico
+  - manual_facilitador
+  - escalonamento_cuidado
+  - saude_mental
+  - metodologia_ativa
+  - transtorno_ansiedade
+  - ataques_panico
+  - escala_cuidasm
+  - mi_mhgap
+  - genograma
+  - ecomapa
+  - escala_coelho_savassi
+  - aps
+  - esf
+  - plano_cuidados
+  key_concepts: []
+  related_protocols:
+  - CLI-01
+  - PCC-03
+  clinical_relevance: high
+  target_audience: []
+  references_count: 0
+  needs_review: false
+- doc_id: REF-CLI-001
+  title: MI-GAP Manual de Intervenções para Transtornos Mentais, Neurológicos e por
+    Uso de Álcool e outras Drogas na Rede de Atenção Básica à Saúde
+  transcript_file: clinicos\manuais\20190215-MH-GAP-OMS_portuguese.md
+  source_file: clinicos/manuais/20190215-MH-GAP-OMS_portuguese.pdf
+  taxonomy: clinicos/manuais
+  doc_type: manual_clinico
+  pages_total: 120
+  authors:
+  - Organização Mundial da Saúde (OMS/WHO)
+  - 'Coordenação: Tarun Dua, Nicolas Clark, Edwige Faydi, Alexandra Fleischmann, Vladimir
+    Poznyak, Mark van Ommeren, M Taghi Yasamy, Shekhar Saxena'
+  - 'Tradução: José Manoel Bertolote'
+  year: 2010
+  topics:
+  - depression
+  - psychosis
+  - bipolar_disorder
+  - epilepsy
+  - developmental_disorders
+  - autism
+  - intellectual_disability
+  - behavioral_disorders
+  - ADHD
+  - dementia
+  - alcohol_use_disorders
+  - substance_use_disorders
+  - self_harm
+  - suicide_prevention
+  - child_mental_health
+  - advanced_psychosocial_interventions
+  - CBT
+  - interpersonal_therapy
+  - motivational_interviewing
+  - family_therapy
+  key_concepts:
+  - Programa de Ação Mundial em Saúde Mental (mhGAP)
+  - Condições prioritárias em saúde mental
+  - Manejo integrado por não-especialistas
+  - Fluxograma Avalie-Decida-Maneje
+  - Intervenções farmacológicas e psicossociais baseadas em evidências
+  - ISRSs e ATCs para depressão
+  - Antipsicóticos (haloperidol, clorpromazina)
+  - Estabilizadores do humor (lítio, valproato, carbamazepina)
+  - Anticonvulsivantes (fenobarbital, fenitoína, carbamazepina, valproato)
+  - Metilfenidato para THDA
+  - Terapia de substituição de opioides (TSO)
+  - Intervenções breves para uso de álcool
+  - Reabilitação na comunidade (RNC/CBR)
+  - Direitos humanos em saúde mental
+  - Princípios gerais de cuidados
+  - Adaptação e implementação local
+  related_protocols:
+  - CLI-01 (Depressão)
+  - CLI-02 (TEA/Transtornos do Desenvolvimento)
+  - CLI-03 (Psicose/Transtorno Bipolar)
+  - CLI-04 (Epilepsia)
+  - CLI-05 (Uso de Álcool e Drogas)
+  - POP-05 (Elaboração PTS)
+  - GN-01 (Guia Narrativo APS)
+  clinical_relevance: very_high
+  target_audience:
+  - Prestadores de cuidados de saúde não especializados
+  - Equipes de atenção primária à saúde (APS)
+  - Médicos clínicos gerais e de família
+  - Enfermeiras e auxiliares de saúde
+  - Agentes comunitários de saúde
+  - Gestores de serviços de saúde
+  references_count: 0
+  needs_review: true
+- doc_id: REF-CLI-002
+  title: Emergencias Psiquiatricas - 2a Edicao
+  transcript_file: clinicos\manuais\Emergencias-psiquiatricas-Leonardo-Baldacara.pdf.md
+  source_file: clinicos/manuais/Emergencias-psiquiatricas-Leonardo-Baldacara.pdf
+  taxonomy: clinicos/manuais
+  doc_type: manual_clinico
+  pages_total: 967
+  authors:
+  - Leonardo Baldacara
+  - Daniel Cruz Cordeiro
+  - Elie De Barros Calfat
+  - Quirino Cordeiro
+  - Teng Chei Tung
+  year: 2018
+  topics:
+  - emergencias_psiquiatricas
+  - agitacao_psicomotora
+  - risco_suicida
+  - contencao_fisica
+  - contencao_quimica
+  - tranquilizacao_rapida
+  - classificacao_de_risco
+  - delirium
+  - psicose_aguda
+  - transtornos_de_humor
+  - transtornos_ansiosos
+  - intoxicacao_exogena
+  - uso_de_substancias_psicoativas
+  - sindrome_de_abstinencia
+  - trauma_psiquico_tept
+  - transtornos_dissociativos
+  - disturbios_do_sono
+  - transtornos_alimentares
+  - emergencias_pediatricas
+  - emergencias_geriatricas
+  - emergencias_perinatais
+  - transtornos_de_personalidade
+  - psicofarmacologia_emergencia
+  - efeitos_colaterais_psicotropicos
+  - sindrome_neuroleptica_maligna
+  - enfermagem_psiquiatrica
+  - aspectos_eticos_legais
+  - referencias_farmacologicas
+  key_concepts:
+  - Servico de Emergencia Psiquiatrica (SEP)
+  - Acolhimento e Classificacao de Risco
+  - Tranquilizacao Rapida (TR)
+  - Contencao Mecanica e Quimica
+  - Avaliacao de Risco de Suicidio
+  - Delirium tremens e Sindrome de Abstinencia
+  - Primeiro Episodio Psicotico (PEP)
+  - Sindrome Neuroleptica Maligna (SNM)
+  - Sindrome Serotoninergica
+  - Intoxicacao por Litio
+  - Projeto Terapeutico Singular (PTS)
+  - Lei 10.216/2001
+  - Internacao Involuntaria e Compulsoria
+  - Posvencao do Suicidio
+  - CIWA-Ar (Clinical Institute Withdrawal Assessment)
+  - Columbia-Suicide Severity Rating Scale
+  - Escala de Glasgow
+  - Modelo de Estresse-Diatese
+  related_protocols:
+  - CLI-01
+  - PCC-03
+  - POP-02
+  - POP-06
+  clinical_relevance: very_high
+  target_audience:
+  - equipes_emergencia_psiquiatrica
+  - medicos_plantonistas
+  - enfermagem_saude_mental
+  - CAPS
+  - SAMU
+  - UPA
+  - residentes_psiquiatria
+  - equipes_multiprofissionais
+  references_count: 29 secoes de referencias (uma por capitulo + apendice), estimativa
+    500+ entradas individuais
+  needs_review: true
+- doc_id: REF-CLI-003
+  title: Manual do Residente de Psiquiatria
+  transcript_file: clinicos\manuais\Manual do residente de psiquiatria 2023 - Paulo
+    Clemente Sallet.md
+  source_file: clinicos/manuais/Manual do residente de psiquiatria 2023 - Paulo Clemente
+    Sallet.pdf
+  taxonomy: clinicos/manuais
+  doc_type: manual_clinico
+  pages_total: 990
+  authors:
+  - Paulo Clemente Sallet (Editor)
+  - Antonio Paulo Rinaldi Asciutti (Coeditor)
+  - Daniela Andrea Medina Macaya (Coeditor)
+  - Luís Fernando Amarante Fernandes (Coeditor)
+  year: 2023
+  topics:
+  - psiquiatria_geral
+  - psicopatologia
+  - psicofarmacologia
+  - psicoses_esquizofrenia
+  - transtornos_depressivos
+  - transtorno_bipolar
+  - transtornos_ansiedade
+  - transtornos_trauma_estresse
+  - transtorno_obsessivo_compulsivo
+  - transtornos_alimentares
+  - transtornos_impulso
+  - transtornos_uso_substancias
+  - transtornos_personalidade
+  - transtornos_somaticos
+  - transtornos_dissociativos
+  - epilepsia_psiquiatria
+  - transtornos_sexualidade
+  - transtornos_sono
+  - interconsulta_psiquiatrica
+  - psicoterapias
+  - terapias_biologicas_neuromodulacao
+  - psiquiatria_forense
+  - psiquiatria_infancia_adolescencia
+  - desenvolvimento_infantil
+  - deficiencia_intelectual_TEA
+  - TDAH
+  - psicoses_infancia
+  - transtornos_humor_infancia
+  - maus_tratos_TEPT_infancia
+  - psicogeriatria
+  - demencias_neurodegeneracao
+  - emergencias_psiquiatricas
+  - intoxicacao_abstinencia
+  - sindromes_toxicologicas
+  - escalas_avaliacao_clinica
+  - residencia_medica_psiquiatria
+  - educacao_medica
+  key_concepts:
+  - avaliacao_psiquiatrica_entrevista
+  - exame_psiquico_sistematizado
+  - formulacao_diagnostica_biopsicossocial
+  - DSM-5_CID-11_criterios_diagnosticos
+  - psicofarmacologia_bases_mecanismos
+  - antidepressivos_antipsicoticos_estabilizadores
+  - ECT_EMT_tDCS_neuromodulacao
+  - psicoterapias_modalidades_TCC_psicodinamica
+  - diagnostico_diferencial_primaria_secundaria
+  - manejo_emergencias_agitacao_suicidio
+  - desenvolvimento_infantil_marcos
+  - TEA_DI_avaliacao_intervencao
+  - psicogeriatria_demencias_delirium
+  - psiquiatria_forense_capacidade_imputabilidade
+  - AMDP_PANSS_Y-BOCS_HAM-A_MADRS_escalas
+  related_protocols:
+  - CLI-01
+  - CLI-03
+  - CLI-05
+  clinical_relevance: high
+  target_audience:
+  - residentes_psiquiatria
+  - psiquiatras
+  - equipes_saude_mental
+  - medicos_generalistas
+  - preceptores_educacao_medica
+  references_count: 46
+  needs_review: true
+- doc_id: REF-CLI-004
+  title: A Criança no Centro da Rede
+  transcript_file: clinicos\manuais\A_Criança_no_Centro_da_Rede.md
+  source_file: clinicos/manuais/A_Criança_no_Centro_da_Rede.pdf
+  taxonomy: clinicos/manuais
+  doc_type: manual_clinico
+  pages_total: 29
+  authors:
+  - Nao identificados — documento escaneado sem texto extraivel
+  year: '[Nao determinado — provavel decada de 2010]'
+  topics:
+  - saude_mental_infantojuvenil
+  - rede_de_cuidados
+  - atencao_psicossocial
+  - primeira_infancia
+  - desenvolvimento_infantil
+  - RAPS
+  - CAPSi
+  - intersetorialidade
+  - protecao_integral
+  - cuidado_territorial
+  key_concepts:
+  - '[Nao extraiveis — documento inteiramente escaneado como imagem]'
+  related_protocols:
+  - CLI-02
+  - PCC-06
+  - GN-01
+  clinical_relevance: high
+  target_audience:
+  - equipes_aps
+  - equipes_caps_capsi
+  - gestores_raps
+  - profissionais_rede_intersetorial
+  - psicologos_infantis
+  - pediatras
+  references_count: 0
+  needs_review: true
+- doc_id: REF-CLI-006
+  title: Nota Técnica de Saúde Mental para Organização da Rede de Atenção à Saúde
+    com Foco nos Processos da Atenção Primária à Saúde e da Atenção Especializada
+  transcript_file: clinicos\abordagens\ORGANIZAÇÃO_DA_REDE_DE_ATENÇÃO_À_SAÚDE_COM_FOCO_NA_SAÚDE_MENTAL_APS_AES.md
+  source_file: clinicos/abordagens/ORGANIZAÇÃO_DA_REDE_DE_ATENÇÃO_À_SAÚDE_COM_FOCO_NA_SAÚDE_MENTAL_APS_AES.pdf
+  taxonomy: clinicos/abordagens
+  doc_type: nota_tecnica
+  pages_total: 44
+  authors:
+  - Aline Teles de Andrade
+  - Aluísio Ferreira Lima
+  - Sandra Lucia Correia Lima Fortes
+  year: 2021
+  topics:
+  - organizacao_rede
+  - atencao_saude
+  - saude_mental
+  - aps
+  - atencao_especializada
+  - raps
+  - cuidado_escalonado
+  - matriciamento
+  - macc
+  - caps
+  - equipe_multiprofissional
+  - pts
+  - reabilitacao_psicossocial
+  - intervencoes_psicossociais
+  - mi_gap
+  - planificasus
+  - indicadores_saude_mental
+  - gestao_caso
+  - intersetorialidade
+  - audit
+  key_concepts:
+  - Modelo de Atenção às Condições Crônicas (MACC) aplicado à saúde mental em 5 níveis
+  - Cuidado escalonado (stepped care) com integração APS–Atenção Especializada
+  - Matriciamento como regulador do compartilhamento do cuidado
+  - Equipes multiprofissionais especializadas em saúde mental para casos moderados
+    (Portaria 3.588/2017)
+  - CAPS como dispositivo para TMG e persistentes; equipes ambulatoriais para casos
+    moderados
+  - Projeto Terapêutico Singular (PTS) como ferramenta de gestão de caso
+  - MI-GAP (OMS) como referência para capacitação da APS em saúde mental
+  - Intervenções psicossociais de baixa intensidade como primeira linha na APS
+  - 'Parâmetros epidemiológicos: 20% dos adultos com TM; 80-85% manejáveis na APS;
+    3% CAPS; 12-17% equipes especializadas'
+  - Gestão de listas de pacientes para monitoramento longitudinal
+  - Critérios de estabilidade/instabilidade clínica para transição entre níveis de
+    cuidado
+  - Reabilitação psicossocial ancorada em contratualidade, cidadania e intersetorialidade
+  related_protocols:
+  - PCC-01_PROTOCOLO_INTERSETORIAL_APS_NIRSM_AES
+  - PCC-06_MACROFLUXO_NARRATIVO_DI_TEA
+  - POP-05_ELABORACAO_PTS
+  - CLI-02_TRANSTORNO_ESPECTRO_AUTISTA
+  clinical_relevance: very_high
+  target_audience:
+  - gestores_municipais
+  - gestores_estaduais
+  - equipes_esf
+  - equipes_nasf
+  - equipes_caps
+  - equipes_ambulatoriais_especializadas
+  - coordenadores_raps
+  references_count: 51
+  needs_review: true
+- doc_id: REF-CLI-007
+  title: 'Abordagem a Problemas de Saude Mental - Modulo 14 (Eixo 4: Atencao a Saude)'
+  transcript_file: clinicos\abordagens\Eixo 04 - Mód. 14 - Abordagem a Problemas de
+    Saúde Mental.md
+  source_file: ''
+  taxonomy: clinicos/abordagens
+  doc_type: ''
+  pages_total: 150
+  authors:
+  - name: Luciano Nader de Araujo
+    role: Conteudista
+    affiliation: Hospital Sirio-Libanes / USP-SP
+  - name: Larissa Bordalo de Figueiredo Pinto
+    role: Conteudista
+    affiliation: Prefeitura do Rio de Janeiro
+  - name: Wilka Emanoely Cunha Castro
+    role: Conteudista
+    affiliation: EBSERH HU/UFMA
+  - name: Maria Eugenia Bresolin Pinto
+    role: Revisora tecnico-cientifica
+    affiliation: MS/SAPS
+  - name: Paula Zeni Miessa Lawall
+    role: Revisora tecnico-cientifica
+    affiliation: UNA-SUS
+  - name: Rodrigo Pastor Alves Pereira
+    role: Revisor tecnico-cientifico
+    affiliation: UNA-SUS
+  - name: Rodrigo Luciano Bandeira de Lima
+    role: Revisor tecnico-cientifico
+    affiliation: UNA-SUS
+  year: 2022
+  topics:
+  - Saude mental na Atencao Primaria a Saude
+  - Entrevista clinica em saude mental
+  - Funcoes psiquicas elementares
+  - Sofrimento mental comum (TMC)
+  - Politica Nacional de Saude Mental
+  - Reforma Psiquiatrica
+  - Rede de Atencao Psicossocial (RAPS)
+  - Projeto Terapeutico Singular (PTS)
+  - Abordagem nao medicamentosa
+  - Ferramentas de abordagem familiar (Genograma, Ecomapa, FIRO, PRACTICE)
+  - Terapia Interpessoal (TIP)
+  - Terapia de Solucao de Problemas
+  - Terapia de Reatribuicao
+  - Terapia Comunitaria Integrativa (TCI)
+  - Saude mental na infancia e adolescencia
+  - Transtorno do Espectro Autista (TEA)
+  - TDAH
+  - Transtornos de ansiedade e humor
+  - Disturbios do sono
+  - Somatizacao e Sintomas sem Explicacao Medica (SEM)
+  - Terapia medicamentosa (ISRS, tricíclicos, benzodiazepinicos)
+  - Desprescricao de benzodiazepinicos
+  - Esquizofrenia
+  - Transtorno Afetivo Bipolar (TAB)
+  - Demencias
+  - Transtornos de personalidade
+  - Ideacao suicida e urgencias em saude mental
+  - Agitacao psicomotora e crise psicotica
+  - Abuso de drogas licitas e ilicitas
+  - Instrumentos de rastreamento (CAGE, AUDIT, ASSIST, Fagerstrom)
+  - Entrevista motivacional
+  - Reducao de danos
+  - Classificacao de risco (Azul, Verde, Amarelo, Vermelho)
+  key_concepts:
+  - Transtorno Mental Comum (TMC): condicao com emocoes mais intensas que o usual
+      (tristeza, ansiedade, medo) associada a sintomas somaticos e prejuizo funcional;
+      prevalencia 20-50% na APS
+  - Matriciamento: processo de trabalho em que duas ou mais equipes realizam construcao
+      compartilhada de proposta de intervencao pedagogico-terapeutica
+  - Projeto Terapeutico Singular (PTS): estrategia organizada de discussao de caso
+      com 4 momentos - diagnostico situacional, definicao de metas, divisao de tarefas,
+      reavaliacao
+  - Prevencao Quaternaria: evitar cascata de investigacoes e tratamentos desnecessarios
+      em pessoas com sintomas inespecificos
+  - Resiliencia Familiar: ampliacao do potencial de crescimento e transformacao nas
+      relacoes familiares em situacoes de adversidade
+  - Reforma Psiquiatrica: transicao do modo hospitalocêntrico para o psicossocial,
+      fundamentada na Lei 10.216/2001
+  - RAPS: Rede de Atencao Psicossocial composta por APS, CAPS, SRT, ambulatorios,
+      leitos em hospital geral
+  - Reducao de Danos: politicas e praticas para reduzir danos do uso de substancias
+      sem exigir abstinencia como pre-requisito
+  - Entrevista Motivacional: tecnica com 5 principios (empatia, discrepancia, evitar
+      confronto, lidar com resistencia, autoeficacia) e fases (pre-contemplacao, contemplacao,
+      preparacao, acao, manutencao)
+  - M-CHAT: Modified Checklist for Autism in Toddlers, instrumento de rastreamento
+      para TEA em criancas de 16-30 meses
+  related_protocols:
+  - PCC-01 (Protocolo Intersetorial APS-NIRSM-AES)
+  - CLI-02 (Transtorno do Espectro Autista)
+  - POP-05 (Elaboracao de PTS)
+  - GN-01 (Guia Narrativo APS DI/TEA)
+  clinical_relevance: alta
+  target_audience:
+  - Medicos de Familia e Comunidade (MFC)
+  - Equipes de Saude da Familia (eSF)
+  - Equipes multiprofissionais da APS
+  - Profissionais da RAPS
+  - Residentes em Medicina de Familia e Comunidade
+  references_count: 63
+  needs_review: true
+- doc_id: REF-CLI-008
+  title: Integralidade e Clínica Ampliada na Promoção do Direito à Saúde das Pessoas
+    em Situação de Rua
+  transcript_file: clinicos\abordagens\Integralidade e clinica ampliada.md
+  source_file: ''
+  taxonomy: clinicos/abordagens
+  doc_type: ''
+  pages_total: 25
+  authors:
+  - name: Daniel Rangel Curvo
+    affiliation: PPGPS/UEPB
+    role: first_author
+  - name: Anna Carolina Vidal Matos
+    affiliation: PPGPSI/UFRN
+  - name: Welison de Lima Sousa
+    affiliation: UFAL
+  - name: Ana Carolina Amorim da Paz
+    affiliation: PPGA/UFBA
+  year: 2018
+  topics:
+  - integralidade
+  - clinica_ampliada
+  - pnh
+  - sus
+  - consultorio_na_rua
+  - pessoas_em_situacao_de_rua
+  - reforma_sanitaria
+  - reforma_psiquiatrica
+  - direito_a_saude
+  - cogestao_do_cuidado
+  - reducao_de_danos
+  key_concepts:
+  - concept: Clinica Ampliada e Compartilhada
+    definition: 'Conceito desenvolvido por Gastao Wagner Campos nos anos 1990, incorporado
+      pelo Ministerio da Saude a partir dos anos 2000. Opera tripla ampliacao: do
+      objeto (sujeito integral, nao apenas doenca), do objetivo (fortalecimento de
+      sujeitos e redes, nao apenas cura) e dos meios de trabalho (escuta, acolhimento,
+      dialogo como instrumentos clinicos). Integra a metodologia Paideia junto com
+      Apoio Matricial e Apoio Institucional.'
+  - concept: Integralidade
+    definition: Principio do SUS que recusa o reducionismo e a objetivacao dos sujeitos.
+      Implica apreensao ampliada das necessidades de saude, dialogo como fundamento
+      do cuidado, articulacao transdisciplinar e intersetorial, e formulacao de politicas
+      contextualizadas para grupos populacionais especificos.
+  - concept: Consultorio na Rua (CnaR)
+    definition: Equipes multiprofissionais e interdisciplinares da Atencao Basica,
+      de trabalho itinerante, que desenvolvem acoes de saude diretamente no espaco
+      da rua. Instituido pela Portaria 2.488/2011 e regulamentado pela Portaria 122/2012.
+  - concept: Cogestao do Cuidado
+    definition: Gestao compartilhada entre profissional e usuario que visa amenizar
+      a desigualdade de saber-poder, pautando-se no dialogo e negociacao em vez de
+      prescricoes unilaterais. O usuario assume papel ativo nos direcionamentos de
+      seu cuidado.
+  - concept: Metodologia Paideia
+    definition: 'Proposta de Gastao Wagner Campos com tres eixos: Clinica Ampliada,
+      Apoio Matricial e Apoio Institucional. Visa formar sujeitos criticos e implicados
+      no desenvolvimento institucional por meio de espacos de cogestao.'
+  related_protocols:
+  - PCC-01
+  - PCC-06
+  - POP-05
+  - CLI-02
+  clinical_relevance: Alta. Fundamenta a operacionalizacao do principio de integralidade
+    do SUS na pratica clinica cotidiana, com implicacoes diretas para o trabalho das
+    equipes de Atencao Basica, CAPS, e servicos da RAPS. A Clinica Ampliada fornece
+    parametros concretos para o cuidado de populacoes vulnerabilizadas, articulando
+    dimensoes tecno-assistencial, gestao e organizacao de redes. Os conceitos de cogestao,
+    vinculo, escuta qualificada e territorializacao do cuidado sao transferiveis ao
+    contexto da saude mental comunitaria em Extrema-MG.
+  target_audience:
+  - equipes_esf
+  - equipes_multi
+  - caps
+  - gestores_saude
+  - consultorio_na_rua
+  references_count: 22
+  needs_review: true
+- doc_id: REF-CLI-009
+  title: 'Linhas do Cuidado Integral: Uma Proposta de Organização da Rede de Saúde'
+  transcript_file: clinicos\abordagens\Linha-cuidado-integral (1).md
+  source_file: clinicos/abordagens/Linha-cuidado-integral (1).pdf
+  taxonomy: clinicos/abordagens
+  doc_type: ''
+  pages_total: 13
+  authors:
+  - name: Camilla Maia Franco
+    affiliation: Mestranda em Saúde Coletiva - UFF; Superintendente da Policlínica
+      Municipal Agnaldo de Morais - Silva Jardim
+  - name: Túlio Batista Franco
+    affiliation: Professor Dr. da Universidade Federal Fluminense
+  year: ~2003
+  topics:
+  - linha_cuidado
+  - integralidade
+  - atencao_integral
+  - sus
+  - redes_atencao
+  - processo_trabalho
+  - projeto_terapeutico
+  - acolhimento
+  - vinculo
+  - responsabilizacao
+  - tecnologias_saude
+  - gestao_cuidado
+  - atencao_basica
+  key_concepts:
+  - term: Linha do Cuidado Integral
+    definition: Imagem pensada para expressar os fluxos assistenciais seguros e garantidos
+      ao usuário, incorporando integralidade (ações preventivas, curativas e de reabilitação)
+      e acesso a todos os recursos tecnológicos necessários.
+  - term: Projeto Terapêutico
+    definition: Conjunto de atos assistenciais pensados para resolver determinado
+      problema de saúde do usuário, com base em avaliação de risco multidimensional
+      (clínico, social, econômico, ambiental, afetivo). Funciona como fio condutor
+      que aciona/dispara a Linha do Cuidado.
+  - term: Unidades de Produção
+    definition: Micro-unidades dentro de uma UBS onde se produzem atos de intervenção
+      sobre problemas de saúde, gerando produtos definidos (recepção, enfermagem,
+      consulta médica, prontuários, dispensação, exames).
+  - term: Tecnologias de Cuidado
+    definition: 'Classificação tripartite: tecnologias duras (máquinas/instrumentos),
+      leve-duras (conhecimento técnico estruturado) e leves (tecnologias das relações).
+      A inversão para centralidade em tecnologias leves é condição para cuidado integral.'
+  - term: Pacto de Gestão
+    definition: Acordo entre gestores de unidades e gestores municipais sobre fluxos
+      assistenciais, centrado nas necessidades dos usuários, que viabiliza o funcionamento
+      das Linhas de Cuidado.
+  - term: Acolhimento, Vínculo e Responsabilização
+    definition: 'Tríade de diretrizes operacionais da Linha do Cuidado: atender bem
+      com escuta qualificada, acompanhar processos na rede, e responsabilizar-se pelo
+      caminhar do usuário.'
+  related_protocols:
+  - PCC-01_PROTOCOLO_INTERSETORIAL_APS_NIRSM_AES
+  - POP-05_ELABORACAO_PTS
+  - F-02_Modelo_PTS_Compartilhado
+  - CLI-02_TRANSTORNO_ESPECTRO_AUTISTA
+  clinical_relevance: Alta. Fundamenta teoricamente a organização de redes de cuidado
+    no SUS com aplicação direta à estruturação de linhas de cuidado em saúde mental
+    (RAPS). Os conceitos de projeto terapêutico, integralidade e gestão compartilhada
+    são estruturantes para protocolos de compartilhamento do cuidado, incluindo o
+    PTS (Projeto Terapêutico Singular) e a articulação entre APS e serviços especializados
+    como CAPS e NIRSM.
+  target_audience:
+  - gestores_sus
+  - equipes_atencao_basica
+  - coordenadores_redes
+  - profissionais_saude_mental
+  - equipes_esf
+  references_count: 8
+  needs_review: true
+- doc_id: REF-CLI-010
+  title: 'Clínica ampliada na atenção básica e processos de subjetivação: relato de
+    uma experiência'
+  transcript_file: clinicos\abordagens\Clinica amplianda na atenção basica.md
+  source_file: clinicos/abordagens/Clinica amplianda na atenção basica.pdf
+  taxonomy: clinicos/abordagens
+  doc_type: artigo
+  pages_total: 19
+  authors:
+  - Ana Cristina Sundfeld
+  year: 2010
+  topics:
+  - clinica_ampliada
+  - atencao_basica
+  - nasf
+  - esf
+  - processos_subjetivacao
+  - psicologia_saude_publica
+  - promocao_saude
+  - apoio_matricial
+  - territorio
+  - medicalizacao
+  key_concepts:
+  - Clínica ampliada
+  - NASF (Núcleo de Apoio à Saúde da Família)
+  - ESF (Estratégia de Saúde da Família)
+  - Processos de subjetivação
+  - Apoio matricial
+  - Projeto Terapêutico Singular
+  - Promoção da saúde
+  - Território
+  - Medicalização
+  - Autonomia
+  related_protocols:
+  - PCC-01
+  - PCC-03
+  - CLI-01
+  - POP-05
+  clinical_relevance: high
+  target_audience:
+  - psicologos_nasf
+  - equipes_esf
+  - profissionais_aps
+  - gestores_sm
+  references_count: 18
+  needs_review: false
+- doc_id: REF-CLI-011
+  title: 'Saude Mental na APS: Guia de Orientacao para a Tutoria da Etapa 3 - Acesso
+    a Rede de Atencao Psicossocial pela APS'
+  transcript_file: clinicos\abordagens\ACESSO À RAPS PELA APS.md
+  source_file: clinicos/abordagens/ACESSO A RAPS PELA APS.pdf
+  taxonomy: clinicos/abordagens
+  doc_type: ''
+  pages_total: 27
+  authors:
+  - Ana Alice Freire de Sousa
+  - Ana Karina de Sousa Gadelha
+  - Elaine Cristina de Melo Faria
+  year: 2023
+  topics:
+  - acesso
+  - raps
+  - aps
+  - atencao_primaria
+  - saude_mental
+  - matriciamento
+  - porta_entrada
+  - tutoria
+  - planificacao_atencao_saude
+  - intervencoes_psicossociais
+  - cuidado_colaborativo
+  - macroprocessos
+  - seguranca_paciente
+  - mhgap
+  key_concepts:
+  - Planificacao da Atencao a Saude (PAS) aplicada a linha de cuidado em Saude Mental
+  - Modelo de Atencao as Condicoes Cronicas (MACC) como diretriz clinica de base
+  - 'Processo de tutoria: workshop, oficinas tutoriais, dispersao, monitoramento'
+  - 'Macroprocessos da APS: agenda, recepcao, atencao a condicoes cronicas, hiperutilizadores'
+  - Intervencoes psicossociais individuais e em grupo na APS
+  - Matriciamento em saude mental como estrategia de cuidado colaborativo
+  - Ciclo PDSA (Estudar-Agir-Planejar-Fazer) aplicado as oficinas tutoriais
+  - Seguranca do paciente integrada a organizacao do acesso
+  - 'MI-mhGAP: Manual de Intervencoes para transtornos mentais na atencao basica'
+  - Diagrama de Teia para avaliacao do trabalho interdisciplinar colaborativo
+  related_protocols:
+  - PCC-01
+  - PCC-02
+  - CLI-01
+  clinical_relevance: very_high
+  target_audience:
+  - tutores_saude_mental_aps
+  - equipes_esf
+  - equipes_nasf_ab
+  - gestores_municipais_saude
+  - coordenadores_aps
+  - secretarias_estaduais_saude
+  references_count: 3
+  needs_review: true
+- doc_id: REF-CLI-011
+  title: Modelos clínicos e psicossocial de atenção ao indivíduo e à família na assistência
+    domiciliar - bases conceituais
+  transcript_file: clinicos\abordagens\Modelos Clinicos e psicossocial de atenção
+    ao individuo.md
+  source_file: ''
+  taxonomy: clinicos/abordagens
+  doc_type: artigo
+  pages_total: 0
+  authors:
+  - name: Vilanice Alves de Araújo Püschel
+    affiliation: Departamento de Enfermagem Médico-Cirúrgica, Escola de Enfermagem
+      da Universidade de São Paulo (EEUSP)
+    role: Professora Doutora
+    email: vilanice@usp.br
+  - name: Cilene Aparecida Costardi Ide
+    affiliation: Escola de Enfermagem da Universidade de São Paulo (EEUSP)
+    role: Professora Titular
+    email: cilenecostardi@ig.com.br
+  - name: Eliane Corrêa Chaves
+    affiliation: Escola de Enfermagem da Universidade de São Paulo (EEUSP)
+    role: Professora Doutora
+    email: eccsp@yahoo.com
+  year: 2006
+  topics:
+  - modelo biomédico
+  - modelo psicossocial
+  - assistência domiciliar
+  - abordagem biopsicossocial
+  - cuidado centrado na família
+  - dinâmica familiar
+  - vínculo terapêutico
+  - empatia profissional
+  - integralidade do cuidado
+  - subjetividade do adoecimento
+  - formação profissional em saúde
+  key_concepts:
+  - term: Modelo Clínico (Biomédico)
+    definition: Modelo baseado no paradigma cartesiano que reduz o corpo a uma máquina
+      analisável em peças, com a doença entendida como mau funcionamento de mecanismos
+      biológicos e a intervenção dirigida ao conserto do defeito.
+  - term: Modelo Psicossocial
+    definition: Modelo que considera a pessoa na sua multidimensionalidade, ampliando
+      o sentido de saúde como experiência subjetiva de bem-estar resultante de equilíbrio
+      dinâmico entre aspectos físicos, psicológicos e interações com o meio ambiente
+      natural e social.
+  - term: Contrato Terapêutico
+    definition: Acordo formal entre profissional, pessoa doente e família que explicita
+      direitos, deveres e responsabilidades frente ao programa assistencial domiciliar.
+  - term: Empatia
+    definition: Habilidade cognitivo-afetiva de integração que agrega a capacidade
+      de discriminar chaves afetivas no outro, assumir sua perspectiva e responder
+      afetivamente ao sofrimento, transmitindo entendimento genuíno.
+  - term: Corpo Multidimensional
+    definition: 'Conceito do modelo psicossocial: corpo simultaneamente material e
+      energético, racional e emocional, sensível e mensurável, pessoal e relacional,
+      real e virtual.'
+  - term: Dinâmica Familiar
+    definition: Funcionamento relacional da família em dimensões instrumental (rotina,
+      tarefas, cuidados) e expressiva (comunicação emocional, verbal, alianças, resolução
+      de problemas).
+  related_protocols:
+  - PCC-01 (Protocolo Intersetorial APS-NIRSM-AES)
+  - POP-05 (Elaboração de PTS)
+  - CLI-02 (TEA - abordagem biopsicossocial)
+  - GN-01 (Guia Narrativo APS DI/TEA)
+  clinical_relevance: Alta. Fornece arcabouço teórico para superar a transposição
+    inadequada do modelo hospitalar para contextos comunitários e domiciliares. Fundamenta
+    a necessidade de integrar dimensões psicossociais na assistência, com aplicabilidade
+    direta à prática de equipes de Atenção Primária e CAPS que realizam visitas domiciliares
+    e acompanhamento territorial.
+  target_audience:
+  - profissionais de enfermagem
+  - equipes de saúde da família (eSF/eMulti)
+  - profissionais de saúde mental na RAPS
+  - gestores de assistência domiciliar
+  - docentes e estudantes de ciências da saúde
+  references_count: 27
+  needs_review: false
+- doc_id: REF-FOR-001
+  title: 'Saude Mental na APS: Guia para Desenvolvimento do Tutor - Etapa 1 - A Organizacao
+    da Linha de Cuidado em Saude Mental na APS'
+  transcript_file: formacao\guias_desenvolvimento\Guia para Desenvolvimento do Tutor
+    Etapa 1.md
+  source_file: formacao/guias_desenvolvimento/Guia para Desenvolvimento do Tutor Etapa
+    1.pdf
+  taxonomy: formacao/guias_desenvolvimento
+  doc_type: guia_desenvolvimento
+  pages_total: 24
+  authors:
+  - Ana Alice Freire de Sousa
+  - Ana Karina de Sousa Gadelha
+  - Evelyn Lima de Souza
+  - Isadora Siqueira de Souza
+  - Joana Moscoso Teixeira de Mendonca
+  - Valmir Vanderlei Gomes Filho
+  year: 2022
+  topics:
+  - Planificacao da Atencao a Saude (PAS)
+  - Tutoria em saude mental na APS
+  - Linha de cuidado em saude mental
+  - Modelo de Atencao as Condicoes Cronicas (MACC)
+  - Rede de Atencao Psicossocial (RAPS)
+  - Diagnostico situacional
+  - Monitoramento do processo de tutoria
+  - Oficina tutorial
+  - Workshop em saude mental
+  - Alinhamento pre e pos-tutoria
+  key_concepts:
+  - Condicao cronica vs. doenca cronica
+  - MACC aplicado a saude mental
+  - 'Processo de tutoria: workshop, oficina tutorial, dispersao, monitoramento'
+  - Diagnostico situacional em saude mental na APS
+  - Ciclo PDSA aplicado ao monitoramento da tutoria
+  - Circulo de Cultura de Paulo Freire como metodo de aprendizagem
+  - Caracteristicas do tutor em planificacao
+  - Alinhamento pre-tutoria e pos-tutoria como inovacao do projeto
+  - Estratificacao de risco familiar (Escala de Coelho e Savassi)
+  - Macroprocessos da APS
+  related_protocols: []
+  clinical_relevance: Alta. Guia operacional para formacao de tutores que conduzem
+    a implementacao da linha de cuidado em saude mental na Atencao Primaria a Saude,
+    utilizando a metodologia PAS. Estrutura o processo de capacitacao em tres estacoes
+    de alinhamento pre-tutoria, define atividades praticas para desenvolvimento de
+    competencias e estabelece protocolos de monitoramento baseados no ciclo PDSA.
+    Diretamente aplicavel a organizacao da RAPS no ambito municipal.
+  target_audience:
+  - Analistas de tutoria
+  - Profissionais de referencia para tutoria (ambito estadual, regional ou municipal)
+  - Tutores de APS em planificacao
+  - Gestores de saude mental municipal
+  references_count: 7
+  needs_review: true
+- doc_id: REF-FOR-003
+  title: 'Saude Mental na APS: Guia para Desenvolvimento do Tutor - Etapa 3 - Acesso
+    a Rede de Atencao Psicossocial pela APS'
+  transcript_file: formacao\guias_desenvolvimento\Guia para Desenvolvimento do Tutor
+    Etapa 3.md
+  source_file: formacao/guias_desenvolvimento/Guia para Desenvolvimento do Tutor Etapa
+    3.pdf
+  taxonomy: formacao/guias_desenvolvimento
+  doc_type: guia_desenvolvimento
+  pages_total: 25
+  authors:
+  - Ana Karina de Sousa Gadelha
+  - Gabriela Alves de Oliveira Hidalgo
+  - Joana Moscoso Teixeira de Mendonca
+  - Samara Ercolin de Souza
+  - Valmir Vanderlei Gomes Filho
+  year: 2022
+  topics:
+  - Desenvolvimento de tutores em Planificacao da Atencao a Saude (PAS)
+  - Acesso a Rede de Atencao Psicossocial (RAPS) pela APS
+  - Monitoramento do processo de tutoria
+  - Barreiras de acesso ao cuidado em saude mental
+  - Estigma em saude mental
+  - Competencias profissionais para saude mental na APS
+  - Gestao do acesso baseada na oferta vs. necessidades
+  - Papel do Agente Comunitario de Saude (ACS)
+  - Cuidado colaborativo e matriciamento
+  - Intersetorialidade no cuidado em saude mental
+  - Ciclo PDSA aplicado ao monitoramento de tutoria
+  - 'Metodologias ativas: Circulo de Cultura de Paulo Freire'
+  - Jogo do Acesso como ferramenta pedagogica
+  key_concepts:
+  - nome: Planificacao da Atencao a Saude (PAS)
+    descricao: Estrategia de gestao, planejamento e organizacao da RAS por meio de
+      oficinas, tutorias e capacitacoes para profissionais da APS e gestores
+  - nome: Modelo de Atencao as Condicoes Cronicas (MACC)
+    descricao: Modelo que fundamenta as diretrizes clinicas da organizacao da atencao
+      a saude na APS
+  - nome: Processo de Tutoria
+    descricao: Composto por workshop, oficina tutorial, atividade de dispersao e monitoramento
+  - nome: Jogo do Acesso
+    descricao: Ferramenta ludico-pedagogica com personagens-caso (Joao, Maria, Tereza)
+      para discutir barreiras e potencialidades de acesso ao cuidado em saude mental
+  - nome: Estigma como barreira de acesso
+    descricao: Atributo negativo que reduz acesso, incluindo auto-estigma, estigma
+      publico, do provedor de saude e estrutural
+  - nome: Cuidado Colaborativo (Matriciamento)
+    descricao: Processo de trabalho entre profissionais com diferentes saberes para
+      ampliar cuidado em saude mental na APS e entre pontos da RAPS
+  - nome: Ciclo PDSA
+    descricao: Ferramenta de melhoria continua aplicada ao monitoramento do processo
+      de tutoria, com enfase nas etapas Study e Act
+  - nome: Circulo de Cultura de Paulo Freire
+    descricao: Metodo pedagogico em tres etapas (identificacao do universo vocabular,
+      tematizacao, problematizacao) para aprendizagem significativa
+  related_protocols: []
+  clinical_relevance: Alta. O guia instrumentaliza tutores para organizar o acesso
+    ao cuidado em saude mental na APS, articulando conceitos fundamentais como estigma,
+    competencias profissionais, gestao do acesso baseada em necessidades, matriciamento
+    e intersetorialidade. Os casos clinicos simulados (Joao - uso abusivo de alcool
+    em idoso; Maria - gestante adolescente com sintomas ansiosos; Tereza - multimorbidade
+    cronica com sofrimento emocional e familiar com pessoa com esquizofrenia) representam
+    cenarios frequentes na APS e permitem reflexao aplicada sobre barreiras reais
+    de acesso.
+  target_audience:
+  - Analistas de tutoria do projeto Saude Mental na APS
+  - Profissionais de referencia para tutoria (ambito estadual, regional ou municipal)
+  - Tutores de APS em processo de capacitacao pela PAS
+  - Gestores da RAPS envolvidos em processos de planificacao
+  references_count: 8
+  needs_review: true
+- doc_id: REF-FOR-005
+  title: 'Saude Mental na APS: Guia para Gerenciamento da Etapa 1 - A organizacao
+    da linha de cuidado em Saude Mental na APS'
+  transcript_file: formacao\guias_gerenciamento\Guia para Gerenciamento da Etapa 1.md
+  source_file: formacao/guias_gerenciamento/Guia para Gerenciamento da Etapa 1.pdf
+  taxonomy: formacao/guias_gerenciamento
+  doc_type: guia_gerenciamento
+  pages_total: 24
+  authors:
+  - Ana Alice Freire de Sousa
+  - Ana Karina de Sousa Gadelha
+  - Elaine Cristina de Melo Faria
+  - Evelyn Lima de Souza
+  - Isadora Siqueira de Souza
+  - Joana Moscoso Teixeira de Mendonca
+  - Valmir Vanderlei Gomes Filho
+  year: 2022
+  topics:
+  - Planificacao da Atencao a Saude (PAS)
+  - Linha de cuidado em Saude Mental na APS
+  - Rede de Atencao Psicossocial (RAPS)
+  - Modelo de Atencao as Condicoes Cronicas (MACC)
+  - Oficinas de planejamento (SES e SMS)
+  - Oficinas de monitoramento (SMS e SES)
+  - Nucleo de Seguranca do Paciente (NSP)
+  - Metas Internacionais de Seguranca do Paciente
+  - Ciclo PDSA aplicado a gestao em saude mental
+  - Processo de tutoria e workshop
+  - Plano de acao via e-Planifica
+  - Indicadores Previne Brasil
+  - Diagnostico situacional da APS
+  key_concepts:
+  - 'PAS (Planificacao da Atencao a Saude): estrategia de gestao, planejamento e organizacao
+    da RAS por meio de oficinas, tutorias e capacitacoes'
+  - 'MACC (Modelo de Atencao as Condicoes Cronicas): modelo que orienta a organizacao
+    do cuidado na APS'
+  - 'RAPS (Rede de Atencao Psicossocial): rede temática do SUS para saude mental'
+  - 'Ciclo PDSA (Plan-Do-Study-Act): metodologia de melhoria continua aplicada ao
+    gerenciamento das etapas'
+  - 'NSP (Nucleo de Seguranca do Paciente): estrutura obrigatoria por RDC 36/2013
+    para cultura de seguranca'
+  - 'Grupo Condutor: instancia de governanca (estadual, regional, municipal) que lidera
+    a operacionalizacao'
+  - 'Dispersao: momento de execucao pratica das acoes planejadas no plano de acao'
+  - 'e-Planifica: plataforma virtual para registro e acompanhamento dos planos de
+    acao'
+  - 'MI-mhGAP: Manual de Intervencoes para transtornos mentais, neurologicos e por
+    uso de alcool e drogas na APS'
+  - 'Previne Brasil: programa de financiamento da APS com indicadores de desempenho'
+  related_protocols: []
+  clinical_relevance: Alta. Documento estruturante para a organizacao da linha de
+    cuidado em saude mental na APS, aplicando a metodologia PAS. Define o ciclo completo
+    de gerenciamento (planejamento-execucao-monitoramento-padronizacao) com matrizes
+    operacionais detalhadas para oficinas com SES e SMS. Estabelece a transversalidade
+    da seguranca do paciente e a estruturacao do NSP como componentes obrigatorios.
+    Diretamente aplicavel ao contexto de Extrema-MG para organizacao da RAPS local.
+  target_audience:
+  - Gestores de secretarias estaduais de saude (SES)
+  - Gestores de secretarias municipais de saude (SMS)
+  - Referencias tecnicas estaduais e municipais em saude mental
+  - Grupos condutores estaduais e regionais
+  - Coordenadores de APS
+  - Tutores do programa Saude Mental na APS
+  references_count: 6
+  needs_review: true
+- doc_id: REF-FOR-006
+  title: 'Guia para Desenvolvimento do Tutor - Etapa 2: Território e Gestão de Base
+    Populacional em Saúde Mental'
+  transcript_file: formacao\guias_desenvolvimento\Guia para Desenvolvimento do Tutor
+    Etapa 2.md
+  source_file: formacao/guias_desenvolvimento/Guia para Desenvolvimento do Tutor Etapa
+    2.pdf
+  taxonomy: formacao/guias_desenvolvimento
+  doc_type: guia_desenvolvimento
+  pages_total: 24
+  authors:
+  - Ana Alice Freire de Sousa
+  - Larissa Karollyne de Oliveira Santos
+  - Ana Karina de Sousa Gadelha
+  - Elaine Cristina de Melo Faria
+  - Evelyn Lima de Souza
+  - Isadora Siqueira de Souza
+  - Joana Moscoso Teixeira de Mendonca
+  - Valmir Vanderlei Gomes Filho
+  year: 2022
+  topics:
+  - tutoria
+  - planificacao_atencao_saude
+  - territorio
+  - gestao_base_populacional
+  - saude_mental_aps
+  - acs
+  - seguranca_paciente
+  - educacao_permanente
+  - circulo_cultura_freire
+  - territorizalizacao
+  - monitoramento_tutoria
+  - pdsa
+  key_concepts:
+  - Planificação da Atenção à Saúde (PAS)
+  - Processo de territorialização
+  - Gestão de base populacional em saúde mental
+  - Ciclo PDSA no monitoramento da tutoria
+  - Círculo de Cultura de Paulo Freire
+  - Estratificação de risco familiar por vulnerabilidade
+  - Segurança do paciente na territorialização
+  - Alinhamento pré e pós-tutoria
+  - Modelo de Atenção às Condições Crônicas (MACC)
+  - MI-mhGAP na rede de atenção básica
+  related_protocols:
+  - PCC-01
+  - PCC-02
+  - CLI-01
+  - REG-01
+  clinical_relevance: medium
+  target_audience:
+  - analistas_tutoria
+  - tutores_aps
+  - profissionais_referencia_tutoria
+  - gestores_municipais_saude
+  references_count: 2
+  needs_review: false
+- doc_id: REF-FOR-006
+  title: 'Saude Mental na APS: Guia para Gerenciamento da Etapa 2 - Territorio e Gestao
+    de Base Populacional em Saude Mental'
+  transcript_file: formacao\guias_gerenciamento\Guia para Gerenciamento da Etapa 2.md
+  source_file: formacao/guias_gerenciamento/Guia para Gerenciamento da Etapa 2.pdf
+  taxonomy: formacao/guias_gerenciamento
+  doc_type: guia_gerenciamento
+  pages_total: 0
+  authors:
+  - Ana Alice Freire de Sousa
+  - Ana Karina de Sousa Gadelha
+  - Elaine Cristina de Melo Faria
+  - Evelyn Lima de Souza
+  - Isadora Siqueira de Souza
+  - Joana Moscoso Teixeira de Mendonca
+  - Valmir Vanderlei Gomes Filho
+  year: 2022
+  topics:
+  - Saude Mental na Atencao Primaria a Saude
+  - Planificacao da Atencao a Saude (PAS)
+  - Territorializacao em saude
+  - Gestao de base populacional
+  - Cadastramento e vinculacao territorial
+  - Estratificacao de risco familiar
+  - Identificacao de populacao com necessidades de cuidado em saude mental
+  - Ciclo PDSA aplicado a gestao em saude
+  - Oficinas de planejamento e monitoramento
+  - Tutoria em saude mental na APS
+  - Previne Brasil
+  - Seguranca do paciente na APS
+  key_concepts:
+  - PAS (Planificacao da Atencao a Saude): estrategia de gestao, planejamento e organizacao
+      da RAS com oficinas, tutorias e capacitacoes
+  - MACC (Modelo de Atencao as Condicoes Cronicas): modelo de referencia para organizacao
+      da atencao com estratificacao em 5 niveis
+  - RAPS (Rede de Atencao Psicossocial): rede de cuidado em saude mental no SUS
+  - Territorializacao: categoria de analise social para mapeamento de recursos e necessidades
+      do territorio
+  - Gestao de base populacional: conhecimento sistematizado da populacao adscrita
+      com identificacao de subpopulacoes-alvo
+  - Estratificacao de risco familiar: associacao entre vulnerabilidade social e sofrimento
+      psiquico
+  - Ciclo PDSA: Plan-Do-Study-Act aplicado ao gerenciamento das etapas da PAS
+  - Grupo Condutor Estadual e Regional: instancias de governanca para coordenacao
+      da PAS
+  - Capitacao ponderada (Previne Brasil): mecanismo de financiamento por cadastro
+      vinculado
+  - Oficinas tutoriais: encontros formativos com equipes de APS para reorganizacao
+      de processos de trabalho
+  - Plano de acao (e-Planifica): instrumento de registro e acompanhamento de acoes
+      pactuadas
+  - Dispersao: momento do "fazer" no ciclo PDSA, execucao das acoes planejadas no
+      territorio
+  related_protocols: []
+  clinical_relevance: Guia operacional para gestores estaduais e municipais implementarem
+    a linha de cuidado em saude mental na APS. Orienta o mapeamento territorial, cadastramento,
+    estratificacao de risco familiar e identificacao da populacao com necessidades
+    de cuidado em saude mental. Estrutura oficinas de planejamento (SES e SMS) e monitoramento
+    com matrizes operacionais detalhadas seguindo o ciclo PDSA. Relevante para Extrema-MG
+    como referencia metodologica para organizacao da RAPS no territorio, articulacao
+    entre gestao estadual/municipal e fortalecimento da APS como coordenadora do cuidado
+    em saude mental.
+  target_audience:
+  - Gestores de saude (secretarias estaduais e municipais)
+  - Referencias tecnicas estaduais e municipais de saude mental
+  - Grupos condutores estaduais e regionais da PAS
+  - Tutores do programa Saude Mental na APS
+  - Equipes de Atencao Primaria a Saude (eSF, eMulti)
+  references_count: 3
+  needs_review: true
+- doc_id: REF-FOR-007
+  title: 'Saude Mental na APS: Guia para Desenvolvimento do Tutor - Etapa 4 - Gestao
+    do Cuidado em Saude Mental'
+  transcript_file: formacao\guias_desenvolvimento\Guia para Desenvolvimento do Tutor
+    Etapa 4_Final.md
+  source_file: formacao/guias_desenvolvimento/Guia para Desenvolvimento do Tutor Etapa
+    4_Final.pdf
+  taxonomy: formacao/guias_desenvolvimento
+  doc_type: guia_desenvolvimento
+  pages_total: 56
+  authors:
+  - Ana Karina de Sousa Gadelha
+  - Claudielle De Santana Teodoro
+  - Elaine Cristina de Melo Faria
+  - Isadora Siqueira de Souza
+  - Joana Moscoso Teixeira de Mendonca
+  - Valmir Vanderlei Gomes Filho
+  year: 2023
+  topics:
+  - Gestao do cuidado em saude mental na APS
+  - Modelo de Atencao as Condicoes Cronicas (MACC) - niveis 1 a 5
+  - Escalonamento do cuidado em saude mental
+  - Seguranca do paciente na APS
+  - Nucleo de Seguranca do Paciente (Time de Seguranca)
+  - Planificacao da Atencao a Saude (PAS) - Etapa 4
+  - Tutoria em saude mental na APS
+  - Acolhimento e eventos agudos em saude mental
+  - Matriciamento e cuidado colaborativo
+  - Programacao do cuidado em saude mental
+  - Classificacao de risco em sofrimento mental agudo
+  - Projeto Terapeutico Singular (PTS) e Plano de Cuidados Integrados
+  - Territorializacao e cadastro familiar
+  - Estratificacao de risco familiar
+  - Cuidado compartilhado APS-Atencao Especializada
+  - MI-mhGAP como ferramenta de manejo
+  - Jogo Mental MACC como ferramenta pedagogica
+  - Monitoramento via e-Planifica
+  key_concepts:
+  - nome: Gestao do Cuidado em Saude Mental
+    descricao: Conjunto de praticas e tecnologias para organizar a assistencia em
+      saude mental na APS, incluindo programacao assistencial, escalonamento e plano
+      de cuidados integrados
+  - nome: Modelo de Atencao as Condicoes Cronicas (MACC)
+    descricao: 'Modelo de 5 niveis: N1-intervencoes promocionais (determinantes sociais
+      intermediarios), N2-intervencoes preventivas (determinantes proximais), N3-gestao
+      de condicoes simples (autocuidado apoiado + APS), N4-gestao de condicoes complexas
+      (cuidado compartilhado APS + equipe especializada), N5-gestao de caso (CAPS,
+      reabilitacao psicossocial intensiva)'
+  - nome: Escalonamento do Cuidado
+    descricao: Tecnologia para classificar subpopulacoes com necessidades de cuidado
+      em saude mental semelhantes, direcionando a terapia certa, no momento certo,
+      para a pessoa certa, com uso eficiente dos recursos da RAPS
+  - nome: Jogo Mental MACC
+    descricao: Ferramenta ludico-pedagogica com 100 cartas-pergunta (25 por nivel
+      do MACC) e copos coloridos para debate em grupo sobre niveis de cuidado em saude
+      mental
+  - nome: Time de Seguranca do Paciente
+    descricao: Nucleo de Seguranca do Paciente no servico (RDC 36/2013), com composicao,
+      atribuicoes, regimento e cadastro no NOTIVISA, integrado ao Nucleo Municipal
+      de Seguranca
+  - nome: Programacao do Cuidado em Saude Mental
+    descricao: Processo que integra territorializacao, cadastro familiar, estratificacao
+      de risco familiar, identificacao de subpopulacoes, escalonamento e organizacao
+      da linha de cuidado para programar assistencia em saude mental
+  - nome: Cuidado Colaborativo (Matriciamento)
+    descricao: Estrategia de trabalho interdisciplinar entre pontos de atencao (eSF,
+      eMulti/NASF, equipe ambulatorial especializada, CAPS) para viabilizar permanencia
+      com qualidade na APS e compartilhamento do cuidado
+  - nome: Classificacao de Risco em Sofrimento Mental Agudo
+    descricao: 'Fluxograma de 4 niveis: atendimento medico imediato (agitacao psicomotora,
+      convulsao), atendimento prioritario (embriaguez, intoxicacao), atendimento no
+      dia (desesperanca, recidiva sem gravidade), intervencao programada (nao urgente)'
+  - nome: Projeto Terapeutico Singular (PTS)
+    descricao: Ferramenta estrategica para gestao dos casos mais complexos, definindo
+      intervencoes terapeuticas, escalonamento e profissionais responsaveis pelo monitoramento
+  - nome: MI-mhGAP
+    descricao: Manual de Intervencoes para transtornos mentais, neurologicos e por
+      uso de alcool e outras drogas na rede de atencao basica, ferramenta pratica
+      com protocolos para tomada de decisao na APS
+  - nome: Matriz de Esforco x Impacto
+    descricao: Ferramenta de priorizacao em 4 quadrantes (baixo esforco/alto impacto
+      = prioritario; alto esforco/alto impacto = complexo; baixo esforco/baixo impacto
+      = ver e agir; alto esforco/baixo impacto = descartar)
+  - nome: e-Planifica
+    descricao: Ferramenta digital de registro e acompanhamento das acoes do processo
+      de tutoria, com monitoramento local e nacional
+  related_protocols:
+  - PCC-01 a PCC-06 (Protocolos de Compartilhamento do Cuidado)
+  - POP-05 (Elaboracao de PTS)
+  - CLI-02 (TEA - escalonamento e MACC)
+  - REF-FOR-003 (Guia Tutor Etapa 3 - Acesso a RAPS)
+  - REF-FOR-001 (Guia Tutor Etapa 1)
+  - Nota Tecnica SBIBAE/MS 2021 (Organizacao da RAS com foco APS e AE - Saude Mental)
+  clinical_relevance: 'Alta. O guia operacionaliza a gestao do cuidado em saude mental
+    na APS segundo o MACC, detalhando o manejo por nivel de complexidade: intervencoes
+    psicossociais de baixa intensidade para condicoes simples (N3), cuidado compartilhado
+    APS-equipe especializada para condicoes complexas (N4, 12-17% da populacao adulta
+    do territorio), e reabilitacao psicossocial intensiva via CAPS para condicoes
+    muito complexas (N5, ~3% da populacao). Inclui fluxograma de classificacao de
+    risco para eventos agudos em saude mental, criterios de estabilidade clinica para
+    transicao do cuidado, e 100 perguntas-resposta que constituem um banco de conhecimento
+    aplicavel sobre escalonamento, matriciamento, PTS, RAPS e seguranca do paciente.
+    A articulacao entre programacao do cuidado e metas de seguranca do paciente e
+    particularmente relevante para o contexto de implantacao em Extrema-MG.'
+  target_audience:
+  - Analistas de tutoria do projeto Saude Mental na APS
+  - Profissionais de referencia para tutoria (ambito estadual, regional ou municipal)
+  - Tutores de APS em processo de capacitacao pela PAS
+  - Gestores da RAPS envolvidos em processos de planificacao
+  - Coordenadores de saude mental municipais
+  references_count: 5
+  needs_review: true
+- doc_id: REF-FOR-007
+  title: 'Saude Mental na APS: Guia para Gerenciamento da Etapa 3 - Acesso a Rede
+    de Atencao Psicossocial pela APS'
+  transcript_file: formacao\guias_gerenciamento\Guia para Gerenciamento da Etapa 3_e-planifica.md
+  source_file: formacao/guias_gerenciamento/Guia para Gerenciamento da Etapa 3_e-planifica.pdf
+  taxonomy: formacao/guias_gerenciamento
+  doc_type: guia_gerenciamento
+  pages_total: 29
+  authors:
+  - Ana Alice Freire de Sousa
+  - Ana Karina de Sousa Gadelha
+  - Elaine Cristina de Melo Faria
+  - Evelyn Lima de Souza
+  year: 2023
+  topics:
+  - Acesso a Rede de Atencao Psicossocial (RAPS)
+  - Planificacao da Atencao a Saude (PAS)
+  - Gerenciamento de etapas operacionais
+  - Oficinas de planejamento SES e SMS
+  - Processo de tutoria em saude mental
+  - Oficinas de monitoramento
+  - Intervencoes psicossociais na APS
+  - Matriciamento e trabalho interdisciplinar colaborativo
+  - Nucleo de Seguranca do Paciente (NSP)
+  - Manual de Intervencoes mhGAP (MI-mhGAP)
+  - Ciclo PDSA aplicado a gestao em saude
+  - Previne Brasil - indicadores de desempenho
+  key_concepts:
+  - term: Planificacao da Atencao a Saude (PAS)
+    definition: Estrategia de gestao, planejamento e organizacao da RAS por meio de
+      oficinas, tutorias e capacitacoes para profissionais da APS e gestores, baseada
+      no MACC.
+  - term: Ciclo PDSA
+    definition: 'Ciclo Plan-Do-Study-Act adaptado ao gerenciamento: Planejar-Fazer-Estudar-Agir,
+      utilizado como estrutura das matrizes de oficinas.'
+  - term: Matriciamento
+    definition: Pratica interdisciplinar colaborativa entre equipes de APS e pontos
+      especializados da RAPS, potencializadora do acesso ao cuidado em saude mental.
+  - term: Intervencoes Psicossociais
+    definition: Conjunto de intervencoes ofertadas individual ou em grupo pela APS,
+      incluindo abordagens baseadas no MI-mhGAP, como recurso de acesso ao cuidado
+      em saude mental.
+  - term: Nucleo de Seguranca do Paciente (NSP)
+    definition: Estrutura municipal ou estadual responsavel pelo Plano de Seguranca
+      do Paciente, monitoramento de indicadores, investigacao de eventos adversos
+      e promocao da cultura de seguranca.
+  - term: Grupo Condutor
+    definition: Instancia de governanca (estadual ou regional) composta por referencias
+      tecnicas, gestores e atores estrategicos, responsavel pela conducao das etapas
+      da PAS.
+  - term: Dispersao
+    definition: Periodo entre oficinas dedicado a execucao do planejado, correspondente
+      ao D (Fazer) do ciclo PDSA.
+  - term: Previne Brasil
+    definition: Programa de financiamento da APS com indicadores de desempenho utilizados
+      para monitoramento da PAS.
+  - term: MI-mhGAP
+    definition: Manual de Intervencoes para transtornos mentais, neurologicos e por
+      uso de alcool e outras drogas na rede de atencao basica a saude, da OMS.
+  - term: Analise FOFA
+    definition: Analise de Forcas, Oportunidades, Fraquezas e Ameacas aplicada a avaliacao
+      de intervencoes psicossociais e trabalho interdisciplinar.
+  related_protocols: []
+  clinical_relevance: Alta. Define o framework operacional para organizacao do acesso
+    a RAPS pela APS, com matrizes detalhadas de planejamento e monitoramento. Estrutura
+    o processo de formacao de equipes em intervencoes psicossociais, matriciamento
+    e multiplicacao do MI-mhGAP. Fornece instrumentos para diagnostico do acesso,
+    padronizacao de processos e estruturacao do Nucleo de Seguranca do Paciente municipal.
+  target_audience:
+  - Gestores de Secretarias Estaduais de Saude (SES)
+  - Gestores de Secretarias Municipais de Saude (SMS)
+  - Referencias Tecnicas Estaduais e Municipais
+  - Coordenadores de APS
+  - Grupos Condutores Estaduais e Regionais
+  - Tutores e analistas de tutoria do Saude Mental na APS
+  references_count: 1
+  needs_review: true
+- doc_id: REF-FOR-008
+  title: 'Saúde Mental na APS: Guia para Gerenciamento da Etapa 4 - Gestão do Cuidado
+    em Saúde Mental'
+  transcript_file: formacao\guias_gerenciamento\Guia para Gerenciamento da Etapa 4.md
+  source_file: formacao\guias_gerenciamento\Guia para Gerenciamento da Etapa 4.pdf
+  taxonomy: formacao/guias_gerenciamento
+  doc_type: guia_gerenciamento
+  pages_total: 30
+  authors:
+  - Ana Alice Freire de Sousa
+  - Ana Karina de Sousa Gadelha
+  - Elaine Cristina de Melo Faria
+  - Evelyn Lima de Souza
+  year: 2023
+  topics:
+  - Gestão do cuidado em saúde mental
+  - Planificação da Atenção à Saúde (PAS)
+  - Escalonamento do cuidado em saúde mental
+  - Modelo de Atenção às Condições Crônicas (MACC)
+  - Macroprocessos da APS
+  - Segurança do paciente
+  - Eventos agudos em saúde mental
+  - Condições crônicas não agudizadas
+  - Matriciamento em saúde mental
+  - Tutoria e formação profissional
+  key_concepts:
+  - 'Escalonamento do cuidado: estratificação da necessidade de cuidado em saúde mental
+    com base na escala CuidaSM'
+  - 'Ciclo PDSA aplicado à gestão do cuidado: Planejar-Fazer-Estudar-Agir como estrutura
+    de melhoria contínua'
+  - 'Macroprocessos da APS: atenção aos eventos agudos, atenção às condições crônicas
+    não agudizadas, demandas administrativas'
+  - 'Oficinas de planejamento e monitoramento em cascata: SES → SMS → Unidades APS'
+  - 'Time de Segurança do Paciente: equipe local integrada aos Núcleos Estadual e
+    Municipal de Segurança'
+  - Programação e agenda para o cuidado em saúde mental na APS
+  - 'Processo de tutoria: alinhamento pré-tutoria → workshop → oficinas tutoriais
+    → dispersão → alinhamento pós-tutoria → monitoramento'
+  - 'Plano de ação estruturado: O quê, Como, Quem, Participantes, Prazo, Recursos'
+  - 'Escala CuidaSM: instrumento de avaliação da necessidade de cuidado em saúde mental'
+  - Padronização de processos implantados na RAPS/RUE
+  related_protocols: []
+  clinical_relevance: Alta. Documento operacional que orienta a implementação da gestão
+    do cuidado em saúde mental na APS brasileira, abrangendo escalonamento do cuidado
+    (estratificação de risco com CuidaSM), organização de macroprocessos (eventos
+    agudos, condições crônicas, demandas administrativas), matriciamento, segurança
+    do paciente e programação assistencial. Aplicável diretamente ao contexto de Extrema-MG
+    para organização da linha de cuidado em saúde mental na rede de APS municipal.
+  target_audience:
+  - Gestores de saúde (estaduais e municipais)
+  - Referências técnicas estaduais e municipais
+  - Coordenadores de APS
+  - Grupos condutores estaduais e regionais
+  - Tutores do Saúde Mental na APS
+  - Equipes de Estratégia Saúde da Família (eSF)
+  references_count: 1
+  needs_review: true
+- doc_id: REF-FOR-009
+  title: 'Saude Mental na APS: Guia de Orientacao para a Tutoria da Etapa 1 - A organizacao
+    da linha de cuidado em Saude Mental na APS'
+  transcript_file: formacao\guias_tutoria\Guia de Orientacao para a Tutoria da Etapa
+    1.md
+  source_file: formacao/guias_tutoria/Guia de Orientacao para a Tutoria da Etapa 1.pdf
+  taxonomy: formacao/guias_tutoria
+  doc_type: guia_tutoria
+  pages_total: 21
+  authors:
+  - Ana Alice Freire de Sousa
+  - Ana Karina de Sousa Gadelha
+  - Elaine Cristina de Melo Faria
+  - Evelyn Lima de Souza
+  - Isadora Siqueira de Souza
+  - Joana Moscoso Teixeira de Mendonca
+  - Valmir Vanderlei Gomes Filho
+  year: 2022
+  topics:
+  - Tutoria em saude mental na APS
+  - Planificacao da Atencao a Saude (PAS)
+  - Linha de cuidado em saude mental
+  - Modelo de Atencao as Condicoes Cronicas (MACC)
+  - Rede de Atencao Psicossocial (RAPS)
+  - Oficinas tutoriais
+  - Workshop em saude mental
+  - Diagnostico situacional de unidades APS
+  - Seguranca do paciente na APS
+  - Macroprocessos e microprocessos da APS
+  - Plano de acao em saude
+  - Melhoria continua da qualidade
+  key_concepts:
+  - 'Processo de tutoria: modelo operacional com 6 momentos (alinhamento pre-tutoria,
+    workshop, oficinas tutoriais, atividades de dispersao, monitoramento, alinhamento
+    pos-tutoria)'
+  - 'Planificacao da Atencao a Saude (PAS): estrategia de gestao, planejamento e organizacao
+    da RAS'
+  - 'Fazer junto: estrategia central do tutor com a equipe de saude'
+  - 'Giro na unidade: etapa inicial da oficina tutorial para observacao do funcionamento
+    e identificacao de melhorias'
+  - 'Plano de acao: ferramenta com campos O que, Como, Quem, Participantes, Data limite,
+    Recursos'
+  - 'Ciclo PDCA aplicado: Planejar (oficina tutorial) - Fazer (dispersao) - Checar
+    (monitoramento) - Agir (padronizacao)'
+  - 'Seguranca do paciente: transversalidade em todos os processos assistenciais'
+  - 'Diagnostico situacional: avaliacao inicial da unidade com olhar para saude mental'
+  - 'Construcao social da APS: referencial teorico base (Mendes)'
+  - 'MI-mhGAP: Manual de Intervencoes para transtornos mentais, neurologicos e por
+    uso de alcool e outras drogas'
+  related_protocols: []
+  clinical_relevance: Alta. Este guia operacionaliza a primeira etapa da implementacao
+    da linha de cuidado em saude mental na APS, estabelecendo o modelo de tutoria
+    que estrutura todas as etapas subsequentes do projeto Saude Mental na APS. Define
+    o processo formativo dos tutores e equipes de saude, a metodologia de diagnostico
+    situacional das unidades e a integracao da saude mental aos macroprocessos da
+    APS. Diretamente aplicavel a organizacao da RAPS em municipios que adotam a PAS
+    como estrategia de gestao.
+  target_audience:
+  - Tutores do projeto Saude Mental na APS
+  - Analistas de tutoria
+  - Tutores regionais e estaduais
+  - Coordenadores de unidades de APS
+  - Equipes de Saude da Familia (eSF)
+  - Equipes multiprofissionais da APS (eMulti)
+  - Gestores municipais de saude mental
+  - Referencia Tecnica (RT) municipal de saude mental
+  references_count: 8
+  needs_review: true
+- doc_id: REF-FOR-010
+  title: 'Saude Mental na APS: Guia de Orientacao para a Tutoria da Etapa 3 - Acesso
+    a Rede de Atencao Psicossocial pela APS'
+  transcript_file: formacao\guias_tutoria\Guia de Orientacao para a Tutoria da Etapa
+    3_e-planifica.md
+  source_file: formacao/guias_tutoria/Guia de Orientacao para a Tutoria da Etapa 3_e-planifica.pdf
+  taxonomy: formacao/guias_tutoria
+  doc_type: guia_tutoria
+  pages_total: 27
+  authors:
+  - Ana Alice Freire de Sousa
+  - Ana Karina de Sousa Gadelha
+  - Elaine Cristina de Melo Faria
+  year: 2023
+  topics:
+  - Acesso a RAPS pela APS
+  - Processo de tutoria em saude mental
+  - Planificacao da Atencao a Saude (PAS)
+  - Macroprocessos da APS
+  - Intervencoes psicossociais na APS
+  - Matriciamento em saude mental
+  - Cuidado multiprofissional e interdisciplinar
+  - Seguranca do paciente na APS
+  - Agendamento por bloco de horas
+  - Organizacao de grupos terapeuticos na APS
+  - Monitoramento e melhoria continua
+  - Ciclo PDSA (Estudar-Agir-Planejar-Fazer)
+  key_concepts:
+  - Tutoria como estrategia de "fazer junto"
+  - Ciclo de melhoria continua (oficina-dispersao-monitoramento)
+  - Macroprocessos 1 e 3 da APS (basicos e condicoes cronicas)
+  - Giro na unidade como instrumento diagnostico
+  - Plano de acao com responsaveis e prazos
+  - Intervenções psicossociais individuais e em grupo
+  - Trabalho interdisciplinar colaborativo (10 indicadores)
+  - Matriciamento como estrategia de cuidado compartilhado
+  - Gerenciamento de riscos nos processos de recepcao
+  - Padronizacao via POP (Procedimento Operacional Padrao)
+  - Diagrama de Teia para avaliacao colaborativa
+  - Analise FOFA para intervencoes psicossociais
+  - MACC (Modelo de Atencao as Condicoes Cronicas)
+  - MI-mhGAP (Manual de Intervencoes OMS)
+  related_protocols: []
+  clinical_relevance: 'Alta relevancia para organizacao do acesso ao cuidado em saude
+    mental na APS. Operacionaliza a integracao entre macroprocessos da Planificacao
+    (PAS) e a linha de cuidado em saude mental, com instrumentos praticos para diagnostico
+    situacional (balanco de atendimento semanal, mapeamento de recepcao, fluxo e ciclo
+    de atendimento, bloco de horas), organizacao de intervencoes psicossociais (individuais
+    e grupais) e estruturacao do matriciamento. Aplicavel diretamente ao contexto
+    de Extrema-MG para qualificacao do acesso a RAPS via APS.
+
+    '
+  target_audience:
+  - Tutores do projeto Saude Mental na APS
+  - Analistas de tutoria e tutores regionais/estaduais
+  - Equipes de Saude da Familia (eSF)
+  - Equipes Multiprofissionais (NASF-AB / e-Multi)
+  - Gestores de unidades de APS
+  - Secretarias Estaduais e Municipais de Saude
+  references_count: 3
+  needs_review: true
+- doc_id: REF-FOR-011
+  title: 'PlanificaSUS: Guia de Orientacao para a Tutoria da Etapa 4 -- Gestao do
+    Cuidado'
+  transcript_file: formacao\guias_tutoria\Guia de Orientação para a Tutoria da Etapa
+    4.md
+  source_file: formacao/guias_tutoria/Guia de Orientação para a Tutoria da Etapa 4.pdf
+  taxonomy: formacao/guias_tutoria
+  doc_type: guia_tutoria
+  pages_total: 0
+  authors:
+  - Ana Karina de Sousa Gadelha
+  - Elaine Cristina de Melo Faria
+  - Evelyn Lima de Souza
+  - Francisco Timbo de Paiva Neto
+  year: 2022
+  topics:
+  - gestao do cuidado
+  - tutoria em saude
+  - PlanificaSUS
+  - Modelo de Atencao as Condicoes Cronicas (MACC)
+  - macroprocessos APS
+  - macroprocessos AAE
+  - estratificacao de risco
+  - acolhimento com classificacao de risco
+  - ciclo de atencao continua
+  - seguranca do paciente
+  - ciclo PDSA
+  - plano de acao
+  - eventos agudos
+  - condicoes cronicas
+  - programacao assistencial
+  key_concepts:
+  - gestao_do_cuidado: Conjunto de estrategias e ferramentas para operacionalizar
+      o cuidado em saude baseado nas necessidades dos usuarios, integrando APS e AAE
+      por meio de macroprocessos organizados
+  - tutoria: Estrategia de aproximacao e presenca sustentada do tutor junto aos profissionais
+      da unidade de saude, utilizando o 'fazer junto' para desenvolvimento de competencias
+      e melhoria continua
+  - MACC: Modelo de Atencao as Condicoes Cronicas -- referencial teorico para organizacao
+      da atencao a saude com foco em estratificacao de risco e gestao da condicao
+      de saude
+  - macroprocesso_eventos_agudos: Organizacao do fluxo de atendimento para situacoes
+      de urgencia e emergencia na APS, incluindo acolhimento com classificacao de
+      risco
+  - macroprocesso_condicoes_cronicas: Organizacao da atencao as condicoes cronicas
+      nao agudizadas, enfermidades e pessoas hiperutilizadoras na APS
+  - ciclo_atencao_continua: Modelo operacional da AAE que organiza recepcao, acolhimento
+      coletivo, atendimento tecnico de enfermagem, avaliacao inicial e ciclo de atendimentos
+  - ponto_de_apoio: Profissional da AAE responsavel pelo monitoramento e articulacao
+      entre ambulatorio e APS, exercendo funcao supervisional
+  - ciclo_PDSA: Plan-Do-Study-Act -- metodologia de melhoria continua aplicada ao
+      processo de tutoria com oficinas (Plan), dispersao (Do), monitoramento (Study)
+      e ajustes (Act)
+  - estratificacao_de_risco: Processo de classificacao dos usuarios por estratos de
+      risco de acordo com diretrizes clinicas da linha de cuidado priorizada
+  - plano_de_acao: Instrumento de gestao com acoes, responsaveis, participantes, prazos
+      e recursos, registrado no e-Planifica
+  related_protocols: []
+  clinical_relevance: Alta. Documento estruturante para operacionalizacao da gestao
+    do cuidado na APS e AAE, com detalhamento completo de 6 oficinas tutoriais (3
+    APS + 3 AAE), matrizes PDSA, instrumentos de apoio e fluxos de macroprocessos.
+    Diretamente aplicavel a organizacao do processo de trabalho das eSF e ambulatorios
+    especializados no contexto do MACC. Relevante para Extrema-MG na estruturacao
+    de protocolos de compartilhamento do cuidado entre APS e NIRSM, especialmente
+    na organizacao da estratificacao de risco, acolhimento com classificacao de risco
+    e programacao assistencial.
+  target_audience:
+  - tutores PlanificaSUS
+  - equipes de saude da APS (eSF, eMulti)
+  - equipes de Atencao Ambulatorial Especializada (AAE)
+  - gestores municipais de saude
+  - coordenadores de APS e AAE
+  - consultores regionais e analistas de tutoria
+  references_count: 8
+  needs_review: true
+- doc_id: REF-FOR-012
+  title: 'Saude Mental na APS: Guia de Orientacao para a Tutoria da Etapa 4 - Gestao
+    do Cuidado em Saude Mental'
+  transcript_file: formacao\guias_tutoria\Guia de Orientacao para a Tutoria da Etapa
+    4_e-Planifica.md
+  source_file: formacao/guias_tutoria/Guia de Orientacao para a Tutoria da Etapa 4_e-Planifica.pdf
+  taxonomy: formacao/guias_tutoria
+  doc_type: guia_tutoria
+  pages_total: 27
+  authors:
+  - Ana Alice Freire de Sousa
+  - Ana Karina de Sousa Gadelha
+  - Elaine Cristina de Melo Faria
+  - Valmir Vanderlei Gomes Filho
+  year: 2023
+  topics:
+  - Gestao do cuidado em saude mental
+  - Tutoria na Atencao Primaria a Saude
+  - Planificacao da Atencao a Saude (PAS)
+  - Modelo de Atencao as Condicoes Cronicas (MACC)
+  - Escalonamento do cuidado em saude mental
+  - Macroprocessos da APS (eventos agudos, condicoes cronicas, demandas administrativas)
+  - Seguranca do paciente na APS
+  - Classificacao de risco em saude mental
+  - Programacao do cuidado
+  - Plano de cuidados integrado
+  - Time de resposta rapida
+  - Nucleo de Seguranca do Paciente
+  - Escala CuidaSM
+  - Ferramentas de gestao clinica (Genograma, Ecomapa, PTS)
+  key_concepts:
+  - 'Processo de tutoria: workshop, oficinas tutoriais, dispersao, monitoramento,
+    alinhamentos pre e pos-tutoria'
+  - Ciclo SAPD (Estudar-Agir-Planejar-Fazer) como metodologia das oficinas tutoriais
+  - 'Giro na unidade: observacao in loco dos processos de trabalho pelo tutor'
+  - Plano de acao com campos estruturados (O que, Como, Quem, Participantes, Data,
+    Recursos)
+  - Escalonamento do cuidado em saude mental sob perspectiva do MACC
+  - 'Tres oficinas tutoriais: 4.1 (eventos agudos), 4.2 (condicoes cronicas e escalonamento),
+    4.3 (programacao do cuidado)'
+  - 'Fazer junto: estrategia de apoio do tutor na unidade durante dispersao'
+  - Implantacao do Time de Seguranca do Paciente no contexto local da APS
+  - Integracao entre instrumentos de etapas anteriores (mapeamento da Etapa 2, balancos
+    da Etapa 3)
+  related_protocols: []
+  clinical_relevance: Alta - Documento operacional que estrutura a capacitacao de
+    equipes da APS para gestao do cuidado em saude mental, incluindo classificacao
+    de risco, escalonamento do cuidado com escala CuidaSM, manejo de eventos agudos
+    psiquiatricos na APS, seguranca do paciente no processo medicamentoso psicotropico
+    e programacao assistencial para condicoes cronicas de saude mental. Diretamente
+    aplicavel a organizacao da RAPS no nivel da Atencao Primaria.
+  target_audience:
+  - Tutores do projeto Saude Mental na APS
+  - Analistas de tutoria e tutores regionais/estaduais
+  - Equipes de Saude da Familia (eSF) e equipes Multiprofissionais (eMulti)
+  - Gestores de APS nas secretarias estaduais e municipais
+  - Coordenadores de unidades basicas de saude
+  references_count: 5
+  needs_review: true
+- doc_id: REF-FOR-013
+  title: Guia de Orientação para a Tutoria da Etapa 4 - Gestão do Cuidado em Saúde
+    Mental na APS
+  transcript_file: formacao\guias_tutoria\GUIA DE ORIENTAÇÃO PARA A TUTORIA DA ETAPA
+    4  GESTÃO DO CUIDADO EM SAUDE MENTAL NA APS.md
+  source_file: formacao/guias_tutoria/GUIA DE ORIENTAÇÃO PARA A TUTORIA DA ETAPA 4  GESTÃO
+    DO CUIDADO EM SAUDE MENTAL NA APS.pdf
+  taxonomy: formacao/guias_tutoria
+  doc_type: guia_tutoria
+  pages_total: 27
+  authors:
+  - Ana Alice Freire de Sousa
+  - Ana Karina de Sousa Gadelha
+  - Elaine Cristina de Melo Faria
+  - Valmir Vanderlei Gomes Filho
+  year: 2023
+  topics:
+  - gestão do cuidado em saúde mental
+  - tutoria na Atenção Primária à Saúde
+  - Planificação da Atenção à Saúde (PAS)
+  - Modelo de Atenção às Condições Crônicas (MACC)
+  - escalonamento do cuidado em saúde mental
+  - macroprocessos da APS (eventos agudos, condições crônicas, demandas administrativas)
+  - segurança do paciente na APS
+  - Núcleo de Segurança do Paciente
+  - acolhimento com classificação de risco em saúde mental
+  - time de resposta rápida
+  - Plano de Cuidados Integrado
+  - Projeto Terapêutico Singular (PTS)
+  - genograma e ecomapa
+  - programação do cuidado
+  - Escala CuidaSM
+  - prevenção de autoagressão e suicídio
+  key_concepts:
+  - 'Gestão do cuidado: instrumentalização dos profissionais da APS para operacionalizar
+    o cuidado em saúde mental'
+  - 'Processo de tutoria: ciclo de alinhamento pré-tutoria, workshop, oficinas tutoriais,
+    dispersão, monitoramento e alinhamento pós-tutoria'
+  - 'Oficinas Tutoriais 4.1/4.2/4.3: eventos agudos, condições crônicas com escalonamento
+    do cuidado, e programação do cuidado'
+  - 'Escalonamento do cuidado: estratificação de risco da população com necessidades
+    de saúde mental sob perspectiva MACC'
+  - 'CuidaSM: escala de avaliação da necessidade de cuidado em saúde mental para apoiar
+    o escalonamento'
+  - 'Plano de Cuidados Integrado: ferramenta de gestão da clínica que integra PTS,
+    matriciamento, rede intersetorial'
+  - 'Ciclo SAPD: Estudar (S), Agir (A), Planejar (P), Fazer (D) — estrutura das oficinas
+    tutoriais'
+  - 'Segurança do paciente: 9 certos, dupla checagem, comunicação eficaz, Time de
+    Segurança local'
+  related_protocols: []
+  clinical_relevance: Alta. Define a operacionalização prática da gestão do cuidado
+    em saúde mental na APS, incluindo fluxogramas de classificação de risco, escalonamento
+    do cuidado com escala CuidaSM, organização de macroprocessos para eventos agudos
+    e condições crônicas, e implantação de ferramentas como Plano de Cuidados Integrado,
+    genograma e ecomapa. Diretamente aplicável à organização da Linha de Cuidado em
+    Saúde Mental na RAPS.
+  target_audience:
+  - tutores do projeto Saúde Mental na APS
+  - equipes de saúde da Atenção Primária (eSF, eMulti)
+  - coordenadores de unidades de saúde da APS
+  - gestores de Secretarias Estaduais e Municipais de Saúde
+  - analistas de tutoria e tutores regionais
+  references_count: 5
+  needs_review: true
+- doc_id: REF-FOR-014
+  title: 'Saúde Mental na APS: Guia de Orientação para a Etapa Preparatória'
+  transcript_file: formacao\oficinas\Guia de orientação para a etapa preparatoria.md
+  source_file: formacao/oficinas/Guia de orientação para a etapa preparatoria.pdf
+  taxonomy: formacao/oficinas
+  doc_type: material_formacao
+  pages_total: 28
+  authors:
+  - name: Ana Alice Freire de Sousa
+    role: coordenacao
+    affiliation: Ministério da Saúde / SBIBAE
+  - name: Marcio Anderson Cardozo Paresque
+    role: coordenacao
+    affiliation: Ministério da Saúde / SBIBAE
+  - name: Ana Karina de Sousa Gadelha
+    role: elaboracao_texto
+    affiliation: SBIBAE
+  - name: Elaine Cristina de Melo Faria
+    role: elaboracao_texto
+    affiliation: SBIBAE
+  - name: Gabriela Alves de Oliveira Hidalgo
+    role: elaboracao_texto
+    affiliation: SBIBAE
+  - name: Isadora Siqueira de Souza
+    role: elaboracao_texto
+    affiliation: SBIBAE
+  - name: Joana Moscoso Teixeira de Mendonça
+    role: elaboracao_texto
+    affiliation: SBIBAE
+  - name: Lívia Schunk Pereira
+    role: elaboracao_texto
+    affiliation: SBIBAE
+  - name: Valmir Vanderlei Gomes Filho
+    role: elaboracao_texto
+    affiliation: SBIBAE
+  year: 2022
+  topics:
+  - saude_mental_aps
+  - planificacao_atencao_saude
+  - mhGAP
+  - etapa_preparatoria
+  - oficinas_formacao
+  - gerenciamento_PAS
+  - ciclo_PDSA
+  - seguranca_paciente
+  - tutoria
+  - educacao_permanente
+  - rede_atencao_psicossocial
+  - modelo_atencao_condicoes_cronicas
+  key_concepts:
+  - term: Planificação da Atenção à Saúde (PAS)
+    definition: Estratégia de gestão, planejamento e organização da RAS baseada no
+      MACC, que desenvolve competências em profissionais para organização dos processos
+      de trabalho
+  - term: MI-mhGAP
+    definition: Manual de Intervenções do Programa de Ação para Lacunas em Saúde Mental
+      da OMS - ferramenta de baixo custo e alto impacto para manejo integrado de condições
+      mentais, neurológicas e por uso de substâncias
+  - term: Ciclo PDSA
+    definition: Plan-Do-Study-Act - método para testar e implementar mudanças no ambiente
+      de trabalho que produzam melhoria contínua
+  - term: MACC
+    definition: Modelo de Atenção às Condições Crônicas - referencial teórico que
+      fundamenta a organização dos processos de trabalho na APS
+  - term: Processo de Tutoria
+    definition: Estratégia de educação permanente com aproximação sustentada do tutor
+      aos profissionais, utilizando a lógica do 'fazer junto' para mudança de práticas
+  - term: TOTS
+    definition: Training of Trainers and Supervisors - treino de multiplicadores para
+      o MI-mhGAP
+  - term: TOHP
+    definition: Training of Health Professionals - treino de profissionais de saúde
+      para uso do MI-mhGAP
+  - term: Atividades de Dispersão
+    definition: Momento de execução prática no dia a dia das equipes, correspondente
+      ao 'D' (Do) do ciclo PDSA
+  - term: Segurança do Paciente
+    definition: Redução, a mínima aceitável, do risco de dano desnecessário associado
+      à assistência à saúde - tema transversal na PAS
+  related_protocols: []
+  clinical_relevance: 'Alta. O documento estrutura a etapa preparatória do projeto
+    Saúde Mental na APS, que organiza a linha de cuidado em saúde mental na APS utilizando
+    a metodologia PAS e o MI-mhGAP. Aborda condições prioritárias: depressão, psicose,
+    autoagressão e suicídio, transtorno por uso de substâncias, transtornos mentais
+    e comportamentais em crianças e adolescentes, e outras queixas significativas.
+    Diretamente aplicável à organização dos serviços de saúde mental na APS de Extrema-MG.'
+  target_audience:
+  - Gestores estaduais de saúde (SES)
+  - Gestores municipais de saúde (SMS)
+  - Referências técnicas estaduais e regionais
+  - Grupos condutores estaduais e municipais
+  - Profissionais da APS envolvidos em saúde mental
+  - Tutores da PAS
+  references_count: 16
+  needs_review: true
+- doc_id: REF-FOR-015
+  title: 'Saude Mental na APS: Guia para a Etapa Controle'
+  transcript_file: formacao\oficinas\Guia para a Etapa Controle.md
+  source_file: formacao/oficinas/Guia para a Etapa Controle.pdf
+  taxonomy: formacao/oficinas
+  doc_type: material_formacao
+  pages_total: 21
+  authors:
+  - name: Ana Karina de Sousa Gadelha
+    role: Elaboracao de texto
+  - name: Francisco Timbo de Paiva Neto
+    role: Elaboracao de texto
+  - name: Ana Alice Freire de Sousa
+    role: Coordenacao
+  - name: Claudielle De Santana Teodoro
+    role: Colaboracao
+  - name: Evelyn Lima de Souza
+    role: Colaboracao
+  - name: Joana Moscoso Teixeira de Mendonca
+    role: Colaboracao
+  - name: Larissa Karollyne de Oliveira Santos
+    role: Colaboracao
+  - name: Marcio Anderson Cardozo Paresque
+    role: Colaboracao
+  - name: Valmir Vanderlei Gomes Filho
+    role: Colaboracao
+  year: 2023
+  topics:
+  - Etapa Controle da Planificacao da Atencao a Saude (PAS)
+  - Sustentabilidade de processos em saude mental na APS
+  - Diagnostico situacional e analise de desempenho
+  - Autoavaliacao de processos estrategicos da linha de cuidado em saude mental
+  - Plano Controle como ferramenta de gestao
+  - Indicadores estrategicos para linha de cuidado em saude mental
+  - Matriz FOFA aplicada a gestao em saude
+  - Gerenciamento da PAS em nivel estadual e municipal
+  - Grupo Condutor Estadual e Regional
+  - Monitoramento e continuidade de acoes em saude mental
+  key_concepts:
+  - termo: Etapa Controle
+    definicao: Etapa de diagnostico e analise situacional do desempenho das acoes
+      disparadas no decorrer do projeto Saude Mental na APS, com foco em sustentabilidade
+      e continuidade dos processos
+  - termo: PAS (Planificacao da Atencao a Saude)
+    definicao: Estrategia de gestao, planejamento e organizacao da RAS com foco em
+      oficinas, tutorias e capacitacoes para profissionais da APS e gestores
+  - termo: MACC (Modelo de Atencao as Condicoes Cronicas)
+    definicao: Modelo que fundamenta as diretrizes clinicas para organizacao da atencao
+      a saude na PAS
+  - termo: Plano Controle
+    definicao: Documento estrategico elaborado pelo Grupo Condutor Estadual para garantir
+      a sustentabilidade dos processos desenvolvidos no Saude Mental na APS
+  - termo: FOFA (Forcas, Oportunidades, Fraquezas, Ameacas)
+    definicao: Metodologia utilizada para identificacao de barreiras e facilitadores
+      na Etapa Controle
+  - termo: iPAS
+    definicao: Instrumento utilizado na apresentacao e discussao da Etapa Controle
+  - termo: e-Planifica
+    definicao: Plataforma digital que disponibiliza ferramentas como Plano de Acao
+      e instrumentos de autoavaliacao
+  - termo: MI-mhGAP
+    definicao: Manual de Intervencoes para transtornos mentais, neurologicos e por
+      uso de alcool e outras drogas na rede de atencao basica (OMS)
+  - termo: Autoavaliacao dos processos estrategicos
+    definicao: Instrumento aplicado nas unidades de saude para avaliar o grau de implantacao
+      dos processos da linha de cuidado em saude mental
+  - termo: Grupo Condutor Estadual
+    definicao: Grupo estrategico da SES responsavel pelo gerenciamento da PAS no ambito
+      estadual
+  related_protocols: []
+  clinical_relevance: Alta - documento estruturante para a sustentabilidade da linha
+    de cuidado em saude mental na APS. Fornece metodologia sistematizada para diagnostico
+    situacional, analise de indicadores e elaboracao de plano de continuidade, essenciais
+    para a consolidacao da RAPS no territorio. Aplicavel diretamente ao contexto de
+    Extrema-MG como referencia para implantacao de processos de monitoramento e avaliacao
+    continuada da rede de saude mental.
+  target_audience:
+  - Gestores de saude estaduais e municipais
+  - Referencias tecnicas estaduais (RT) do Saude Mental na APS
+  - Membros do Grupo Condutor Estadual e Regional da PAS
+  - Coordenadores de servicos de saude mental
+  - Profissionais envolvidos no gerenciamento da PlanificaSUS
+  references_count: 0
+  needs_review: true
+- doc_id: REF-FOR-016
+  title: 'Saude Mental na APS: Manual para Organizacao da Oficina sobre Escalonamento
+    do Cuidado em Saude Mental'
+  transcript_file: formacao\oficinas\Manual para a organizacao da oficina sobre escalonamento
+    do cuidado em saude mental.md
+  source_file: formacao/oficinas/Manual para a organizacao da oficina sobre escalonamento
+    do cuidado em saude mental.pdf
+  taxonomy: formacao/oficinas
+  doc_type: material_formacao
+  pages_total: 43
+  authors:
+  - Claudielle De Santana Teodoro
+  - Joana Moscoso Teixeira de Mendonca
+  - Ana Alice Freire de Sousa
+  - Ana Karina de Sousa Gadelha
+  - Evelyn Lima de Souza
+  - Isadora Siqueira de Souza
+  - Larissa Karollyne de Oliveira Santos
+  - Valmir Vanderlei Gomes Filho
+  year: 2023
+  topics:
+  - escalonamento do cuidado em saude mental
+  - Escala CuidaSM
+  - Modelo de Atencao as Condicoes Cronicas (MACC)
+  - estratificacao de risco em saude mental
+  - gestao do cuidado em saude mental na APS
+  - Planificacao da Atencao a Saude (PAS)
+  - metodologias ativas de ensino-aprendizagem
+  - casos clinicos em saude mental
+  - Rede de Atencao Psicossocial (RAPS)
+  - MI-mhGAP
+  - matriciamento em saude mental
+  - Escala de Risco Familiar de Coelho-Savassi
+  - genograma e ecomapa
+  key_concepts:
+  - escalonamento_cuidado: Processo sistematico de avaliacao e organizacao do cuidado
+      em saude mental segundo niveis de necessidade, articulando intervencoes da APS
+      com a RAPS conforme o MACC
+  - escala_cuidasm: Instrumento de 31 itens (17 autorreferidos + 14 profissionais)
+      para avaliacao da necessidade de cuidado em saude mental, com pontuacao de 0
+      a 31 pontos classificada em baixa, moderada, alta e altissima necessidade
+  - macc_niveis: 'Piramide de 5 niveis do Modelo de Atencao as Condicoes Cronicas:
+      N1 determinantes sociais, N2 fatores de risco, N3 condicao simples, N4 condicao
+      complexa, N5 condicao muito complexa'
+  - rodadas_conhecimento: Adaptacao do metodo World Cafe para discussao de casos clinicos
+      em pequenos grupos rotativos com relator fixo por estacao
+  - plano_de_acao_dispersao: Instrumento de planejamento pos-oficina para incorporacao
+      do escalonamento do cuidado na rotina das equipes da APS
+  - coelho_savassi: Escala de Risco Familiar com sentinelas de risco e escores R1
+      (menor), R2 (medio) e R3 (maximo)
+  related_protocols: []
+  clinical_relevance: Alta. Documento operacional que instrumentaliza equipes da APS
+    para implementar o escalonamento do cuidado em saude mental utilizando a Escala
+    CuidaSM, com quatro casos clinicos que cobrem os niveis 2 a 5 do MACC (sofrimento
+    psiquico sem transtorno, transtorno mental comum, transtorno mental grave e transtorno
+    mental grave e persistente). Fornece roteiro completo de oficina com metodologias
+    ativas, incluindo genogramas, ecomapas e Escala de Coelho-Savassi para cada caso.
+  target_audience:
+  - referencias tecnicas de saude mental
+  - tutores de Planificacao da Atencao a Saude (PAS)
+  - profissionais de nivel superior da APS (medicos, enfermeiros, psicologos, assistentes
+    sociais, farmaceuticos, dentistas, educadores fisicos, nutricionistas, fisioterapeutas)
+  - equipes da Rede de Atencao Psicossocial (RAPS)
+  - gestores municipais de saude mental
+  references_count: 4
+  needs_review: true
+- doc_id: REF-FOR-017
+  title: Manual para Utilização do Instrumento de Autoavaliação dos Processos Estratégicos
+    da Linha de Cuidado em Saúde Mental
+  transcript_file: formacao\oficinas\Manual para utilização do instrumento de autoavaliação
+    dos processos estratégicos da linha de cuidado em saúde mental.md
+  source_file: formacao/oficinas/Manual para utilização do instrumento de autoavaliação
+    dos processos estratégicos da linha de cuidado em saúde mental.pdf
+  taxonomy: formacao/oficinas
+  doc_type: material_formacao
+  pages_total: 16
+  authors:
+  - Ana Karina de Sousa Gadelha
+  - Elaine Cristina de Melo Faria
+  - Joana Moscoso Teixeira de Mendonça
+  - Ana Alice Freire de Sousa (coordenação)
+  year: 2023
+  topics:
+  - autoavaliação de processos em saúde mental
+  - linha de cuidado em saúde mental na APS
+  - macroprocessos da Atenção Primária à Saúde
+  - organização do trabalho em equipe multiprofissional
+  - Planificação da Atenção à Saúde (PAS)
+  - Rede de Atenção Psicossocial (RAPS)
+  - melhoria contínua da qualidade
+  - plano controle e gestão de não conformidades
+  key_concepts:
+  - Planificação da Atenção à Saúde (PAS): estratégia de gestão, planejamento e organização
+      da RAS via oficinas, tutorias e capacitações
+  - Construção Social da APS: reorganização do trabalho das equipes via implantação
+      de estruturas e processos (metáfora da casa - 8 macroprocessos)
+  - Instrumento de Autoavaliação: ferramenta com 29 itens de verificação distribuídos
+      em 3 componentes estratégicos
+  - Escala de Avaliação de 5 categorias: Não Iniciado (0%) / Insatisfatório (1-49%)
+      / Regular (50-69%) / Satisfatório (70-99%) / Muito Satisfatório (100%)
+  - Plano Controle: ferramenta de qualidade (PDSA + Matriz 5W2H) para correção de
+      não conformidades
+  - Escalonamento do Cuidado: parâmetros compartilhados entre eSF e eMulti com ferramentas
+      como CuidaSM e Genograma/Ecomapa
+  - MI-mhGAP: Manual de Intervenções para transtornos mentais, neurológicos e por
+      uso de substâncias na rede de atenção básica
+  - Time de Resposta Rápida (TRR): equipe para eventos agudos em saúde mental com
+      treinamento em MI-mhGAP e suporte de vida
+  related_protocols: []
+  clinical_relevance: Alta. Fornece instrumento operacional padronizado para que equipes
+    de APS avaliem, monitorem e qualifiquem seus processos de cuidado em saúde mental.
+    Articula diretamente com a organização da RAPS e o modelo MACC. Os 29 itens de
+    verificação cobrem desde territorialização e vigilância populacional até gestão
+    de eventos agudos e elaboração de plano de cuidados integrado. Alinha-se com metodologia
+    PlanificaSUS e referencia ferramentas-chave como Escala CuidaSM, MI-mhGAP, Genograma
+    e Ecomapa.
+  target_audience:
+  - equipes de Estratégia Saúde da Família (eSF)
+  - equipes multiprofissionais da APS (eMulti)
+  - gestores municipais de saúde
+  - gestores estaduais de saúde
+  - coordenadores/gerentes de UBS
+  - tutores PlanificaSUS
+  - agentes comunitários de saúde (ACS)
+  references_count: 2
+  needs_review: true
+- doc_id: REF-FOR-018
+  title: Orientações para Realização de Análise FOFA (Matriz SWOT) em Serviços de
+    Saúde
+  transcript_file: formacao\oficinas\Orientação metodológica para utilização da matriz
+    FOFA.md
+  source_file: formacao/oficinas/Orientação metodológica para utilização da matriz
+    FOFA.pdf
+  taxonomy: formacao/oficinas
+  doc_type: material_formacao
+  pages_total: 0
+  authors:
+  - Não identificado (material institucional de formação)
+  year: null
+  topics:
+  - Planejamento estratégico em saúde
+  - Análise situacional de serviços de saúde
+  - Matriz SWOT/FOFA
+  - Gestão de serviços de saúde
+  - Avaliação de cenários internos e externos
+  - Controle e monitoramento de projetos
+  key_concepts:
+  - 'Matriz FOFA/SWOT: ferramenta de análise situacional com quatro dimensões (Forças,
+    Oportunidades, Fraquezas, Ameaças)'
+  - 'Fatores internos: pontos fortes (recursos, equipe, infraestrutura) e pontos fracos
+    (lacunas, deficiências operacionais)'
+  - 'Fatores externos: oportunidades (políticas, parcerias, inovações) e ameaças (cortes
+    orçamentários, mudanças legislativas, crises)'
+  - 'Etapa controle: momento do ciclo de projeto em que a Matriz FOFA subsidia análise
+    de resultados'
+  - 'Analogia saúde do serviço: comparação entre avaliação clínica do usuário e avaliação
+    gerencial do serviço'
+  related_protocols: []
+  clinical_relevance: 'Relevância indireta. A Matriz FOFA não constitui instrumento
+    clínico, mas ferramenta de gestão estratégica aplicável a serviços de saúde mental
+    (UBS, CAPS, ambulatórios especializados) e a regiões de saúde. Sua aplicação permite
+    identificar vulnerabilidades operacionais que impactam diretamente a qualidade
+    da assistência, como lacunas na comunicação entre equipes, déficits de infraestrutura
+    e oportunidades de ampliação da resolutividade. No contexto da RAPS de Extrema-MG,
+    a ferramenta pode subsidiar o diagnóstico situacional dos dispositivos de saúde
+    mental na etapa de planejamento e na avaliação periódica prevista pelo Planifica
+    SUS.
+
+    '
+  target_audience:
+  - Gestores de serviços de saúde
+  - Coordenadores de programas e projetos
+  - Profissionais de equipes de Saúde da Família (eSF) e equipes Multiprofissionais
+    (eMulti)
+  - Apoiadores institucionais e facilitadores de oficinas de planejamento
+  references_count: 0
+  needs_review: true
+- doc_id: REF-FOR-019
+  title: Orientações para organização do trabalho interdisciplinar em saúde mental
+    na APS
+  transcript_file: formacao\oficinas\Orientações para organização do trabalho interdisciplinar
+    em saúde mental na APS.md
+  source_file: formacao/oficinas/Orientações para organização do trabalho interdisciplinar
+    em saúde mental na APS.PDF
+  taxonomy: formacao/oficinas
+  doc_type: material_formacao
+  pages_total: 0
+  authors:
+  - Não identificado explicitamente (material de formação institucional)
+  year: null
+  topics:
+  - trabalho interdisciplinar
+  - saúde mental na APS
+  - cuidado colaborativo
+  - organização de agenda
+  - matriciamento
+  - comunicação interprofissional
+  - educação permanente
+  - gestão de processos de trabalho
+  key_concepts:
+  - trabalho_interdisciplinar: Articulação entre profissionais de diferentes categorias
+      para cuidado compartilhado em saúde mental
+  - cuidado_colaborativo: Modelo de atenção que integra ESF e NASF-AB com compartilhamento
+      de responsabilidades clínicas
+  - matriciamento: Suporte técnico-pedagógico entre equipes APS e pontos especializados
+      da RAPS
+  - consulta_conjunta: Atendimento compartilhado entre dois ou mais profissionais
+      de diferentes categorias
+  - visita_domiciliar_conjunta: VD realizada por profissionais de diferentes categorias
+      em conjunto
+  - discussao_de_caso: Reunião clínica para análise compartilhada de situações de
+      saúde
+  - educacao_permanente: Formação continuada da equipe integrada ao processo de trabalho
+  - pactuacoes_de_fluxo: Acordos coletivos sobre critérios, fluxos e processos de
+      agendamento
+  related_protocols: []
+  clinical_relevance: Alta. Fornece roteiro operacional em 6 fases para estruturar
+    o trabalho interdisciplinar em saúde mental na APS, abrangendo desde análise situacional
+    até monitoramento contínuo. Diretamente aplicável à organização do processo de
+    trabalho das eSF e eMulti no cuidado em saúde mental.
+  target_audience:
+  - equipes de Estratégia Saúde da Família (eSF)
+  - equipes multiprofissionais (eMulti/NASF-AB)
+  - coordenadores de APS
+  - gestores de saúde mental
+  - profissionais envolvidos em matriciamento
+  references_count: 3
+  needs_review: true
+- doc_id: REF-FOR-020
+  title: 'Proposta de Programação MI-mhGAP: Treino dos Profissionais de Saude (ToHP)
+    - Saude Mental na APS'
+  transcript_file: formacao\oficinas\Proposta de Programação MI-mhGAP.md
+  source_file: formacao/oficinas/Proposta de Programação MI-mhGAP.pdf
+  taxonomy: formacao/oficinas
+  doc_type: material_formacao
+  pages_total: 0
+  authors:
+  - Organizacao Mundial da Saude (OMS/WHO) - Programa mhGAP
+  - Adaptacao brasileira nao creditada individualmente
+  year: null
+  topics:
+  - mhGAP (Mental Health Gap Action Programme)
+  - Capacitacao de profissionais de saude nao especialistas
+  - Saude mental na Atencao Primaria a Saude (APS)
+  - Depressao - avaliacao e manejo
+  - Autoagressao e suicidio - avaliacao e manejo
+  - Psicoses - avaliacao e manejo
+  - Uso problematico de alcool - avaliacao e manejo
+  - Outras queixas importantes de saude mental
+  - Habilidades de comunicacao clinica
+  - Intervencoes psicossociais
+  - Intervencoes farmacologicas em saude mental
+  - Acompanhamento e seguimento em saude mental
+  key_concepts:
+  - Lacuna de tratamento em saude mental (treatment gap)
+  - MI-mhGAP Versao 2.0 - Guia de Intervencao
+  - Condicoes MNS (Mental, Neurologicas e por uso de Substancias)
+  - Grafico Mestre mhGAP
+  - ToHP - Training of Health Professionals
+  - Principios gerais de cuidado em saude mental
+  - Escuta ativa e comunicacao eficaz
+  - Tecnica de Resolucao de Problemas (6 etapas)
+  - Fortalecimento do suporte social
+  - AUDIT - Alcohol Use Disorders Identification Test
+  - Role Play / Jogo de papeis como estrategia pedagogica
+  - Encenacoes demonstrativas (boa e ma consulta)
+  - Chuva de ideias como tecnica participativa
+  - Sistema de priorizacao P1/P2/P3 em saude mental
+  - RAPS - Rede de Atencao Psicossocial
+  related_protocols: []
+  clinical_relevance: 'Alta. Documento operacional de capacitacao que detalha a programacao
+    completa de treinamento de 3 dias no modelo mhGAP/OMS para profissionais de APS.
+    Cobre os modulos essenciais: habilidades de comunicacao, outras queixas importantes,
+    depressao, autoagressao/suicidio, psicoses e uso problematico de alcool. Define
+    objetivos de aprendizagem, atividades praticas (role play, videos, discussoes),
+    materiais de apoio (anexos, apresentacoes PPT) e tempos para cada bloco. Referencia
+    direta para planejamento de capacitacoes em saude mental na APS de Extrema-MG.'
+  target_audience:
+  - Facilitadores/instrutores de capacitacoes mhGAP
+  - Coordenadores de educacao permanente em saude
+  - Gestores de saude mental municipal
+  - Equipes de Saude da Familia (eSF)
+  - Equipes Multiprofissionais (eMulti)
+  - Profissionais de APS nao especialistas em saude mental
+  references_count: 0
+  needs_review: true
+- doc_id: REF-FOR-021
+  title: 'Roteiro para Rodada de Fechamento: Escalonamento do Cuidado em Saúde Mental'
+  transcript_file: formacao\oficinas\Roteiro Rodada de Fechamento  Escalonamento do
+    Cuidado em Saúde Mental.md
+  source_file: formacao/oficinas/Roteiro Rodada de Fechamento  Escalonamento do Cuidado
+    em Saúde Mental.pdf
+  taxonomy: formacao/oficinas
+  doc_type: material_formacao
+  pages_total: 0
+  authors:
+  - Ministério da Saúde / Secretaria de Atenção Primária à Saúde
+  year: 2023
+  topics:
+  - escalonamento do cuidado em saúde mental
+  - estratificação de risco MACC
+  - Escala CuidaSM
+  - matriciamento em saúde mental
+  - casos clínicos APS
+  - intervenções psicossociais escalonadas
+  - rede de apoio e vulnerabilidade familiar
+  - gestão de caso em saúde mental
+  key_concepts:
+  - MACC (Modelo de Atenção às Condições Crônicas) - Níveis 2 a 5
+  - Escala CuidaSM - estratificação de necessidade de cuidado
+  - Escala de Coelho-Savassi - vulnerabilidade familiar
+  - MI-mhGAP - guia de intervenção para transtornos mentais na APS
+  - Matriciamento como ferramenta de integração APS-especializada
+  - 'Quatro elementos do escalonamento: avaliação do problema, grau de necessidade,
+    rede de apoio, vulnerabilidade familiar'
+  - PTS - Projeto Terapêutico Singular para casos complexos
+  - Gestor de caso - coordenação do cuidado em casos graves
+  related_protocols: []
+  clinical_relevance: Alta. Material de formação que operacionaliza a estratificação
+    de risco em saúde mental na APS por meio de quatro casos clínicos ilustrativos
+    (Marina, Rodrigo, Patrícia, Luís), cada um correspondendo a um nível do MACC (2
+    a 5). Fornece roteiro estruturado para discussão clínica com perguntas disparadoras
+    e gabaritos detalhados, articulando Escala CuidaSM, vulnerabilidade familiar (Coelho-Savassi),
+    rede de apoio e foco de intervenções escalonadas.
+  target_audience:
+  - Equipes de Saúde da Família (eSF)
+  - Equipes Multiprofissionais da APS (eMulti/NASF)
+  - Facilitadores de oficinas de formação em saúde mental
+  - Coordenadores de saúde mental municipal
+  references_count: 0
+  needs_review: true
+- doc_id: REF-FOR-022
+  title: 'Saude Mental na APS - Workshop 1: A organizacao da linha de cuidado em Saude
+    Mental na APS'
+  transcript_file: formacao\workshops\Guia Workshop 1.md
+  source_file: formacao/workshops/Guia Workshop 1.pdf
+  taxonomy: formacao/workshops
+  doc_type: material_formacao
+  pages_total: 44
+  authors:
+  - name: Ana Karina de Sousa Gadelha
+    role: elaboracao
+  - name: Elaine Cristina de Melo Faria
+    role: elaboracao
+  - name: Isadora Siqueira de Souza
+    role: elaboracao
+  - name: Joana Moscoso Teixeira de Mendonca
+    role: elaboracao
+  - name: Valmir Vanderlei Gomes Filho
+    role: elaboracao
+  - name: Ana Alice Freire de Sousa
+    role: coordenacao
+  - name: Marcio Anderson Cardozo Paresque
+    role: coordenacao
+  year: 2022
+  topics:
+  - Linha de cuidado em Saude Mental na APS
+  - Atributos e funcoes da Atencao Primaria a Saude
+  - Modelo de Atencao as Condicoes Cronicas (MACC)
+  - Rede de Atencao Psicossocial (RAPS)
+  - Paradigma biopsicossocial
+  - Reforma psiquiatrica brasileira
+  - Determinantes sociais de saude
+  - Estigma em saude mental
+  - Planificacao da Atencao a Saude (PAS)
+  - Metodologias ativas de aprendizagem
+  - Andragogia
+  - Estruturas Libertadoras
+  key_concepts:
+  - termo: Planificacao da Atencao a Saude (PAS)
+    definicao: Estrategia de gestao, planejamento e organizacao da RAS que utiliza
+      oficinas, tutorias e capacitacoes para organizar processos micro e macroprocessuais
+  - termo: Atributos essenciais da APS (Starfield)
+    definicao: Primeiro contato, integralidade, longitudinalidade, coordenacao do
+      cuidado, orientacao comunitaria, focalizacao na familia, competencia cultural
+  - termo: Funcoes da APS (Starfield)
+    definicao: Resolubilidade, comunicacao e responsabilidade sanitaria e economica
+      pela populacao adscrita
+  - termo: Paradigma biopsicossocial
+    definicao: Modelo que supera o paradigma biomedico mecanicista, considerando o
+      cuidado como conjunto de acoes que visam a integralidade da pessoa em seus aspectos
+      biologicos, psicologicos e sociais
+  - termo: Abordagem dimensional da saude mental
+    definicao: Concepcao que amplia o foco das categorias diagnosticas biomedicas
+      para um espectro que engloba sofrimento, transtorno e incapacidade
+  - termo: Andragogia
+    definicao: Arte de ensinar adultos (Malcolm Knowles), baseada na experiencia previa
+      e na aplicabilidade pratica do conhecimento
+  - termo: Estruturas Libertadoras (EL)
+    definicao: 'Formatos que possibilitam a um grupo melhorar radicalmente a forma
+      como interage e trabalha junto (ex: 1-2-4-Todos, narracao de historia)'
+  - termo: MACC
+    definicao: Modelo de Atencao as Condicoes Cronicas - referencial para organizacao
+      do cuidado longitudinal incluindo condicoes de saude mental
+  related_protocols: []
+  clinical_relevance: Alta. Fundamenta a integracao dos cuidados em saude mental na
+    APS como eixo estruturante da RAPS, articulando atributos da APS (Starfield) com
+    o cuidado em saude mental. Apresenta o paradigma biopsicossocial como referencial
+    para superacao do modelo biomedico. Diretamente aplicavel a organizacao de processos
+    de trabalho das equipes de Saude da Familia e equipes multiprofissionais no cuidado
+    em saude mental.
+  target_audience:
+  - Profissionais da Atencao Primaria a Saude (100% das equipes)
+  - Equipes de Saude da Familia (eSF)
+  - Equipes multiprofissionais (eMulti/NASF)
+  - Gestores municipais e coordenadores de saude
+  - Tutores e facilitadores da PAS
+  - Agentes Comunitarios de Saude (ACS)
+  references_count: 34
+  needs_review: true
+- doc_id: REF-FOR-023
+  title: 'Saude Mental na APS - Workshop 2: Territorio e Gestao de Base Populacional
+    em Saude Mental'
+  transcript_file: formacao\workshops\Guia Workshop 2.md
+  source_file: formacao\workshops\Guia Workshop 2.pdf
+  taxonomy: formacao/workshops
+  doc_type: material_formacao
+  pages_total: 44
+  authors:
+  - name: Ana Karina de Sousa Gadelha
+    role: elaboracao
+  - name: Elaine Cristina de Melo Faria
+    role: elaboracao
+  - name: Isadora Siqueira de Souza
+    role: elaboracao
+  - name: Joana Moscoso Teixeira de Mendonca
+    role: elaboracao
+  - name: Valmir Vanderlei Gomes Filho
+    role: elaboracao
+  - name: Ana Alice Freire de Sousa
+    role: coordenacao
+  year: 2022
+  topics:
+  - territorio_em_saude
+  - gestao_de_base_populacional
+  - saude_mental_na_aps
+  - macroprocessos_basicos_aps
+  - territorializacao
+  - cadastro_familiar
+  - estratificacao_risco_familiar
+  - subpopulacoes_alvo
+  - determinantes_sociais_saude
+  - modelo_atencao_condicoes_cronicas
+  - rede_atencao_psicossocial
+  - planificacao_atencao_saude
+  - metodologias_ativas
+  - andragogia
+  key_concepts:
+  - concept: Territorio Vivo
+    definition: Concepcao de Milton Santos que transcende a dimensao geografica, incorporando
+      identidade, pertencimento e determinantes sociais que condicionam a saude mental
+      da populacao
+  - concept: Gestao de Base Populacional
+    definition: Modelo de gestao que estrutura servicos de saude a partir das necessidades
+      reais da populacao, estratificada por subpopulacoes de risco, em contraposicao
+      ao modelo de gestao da oferta
+  - concept: Macroprocessos Basicos da APS
+    definition: 'Quatro processos fundamentais: territorializacao, cadastro familiar,
+      estratificacao de risco familiar e conhecimento das subpopulacoes-alvo prioritarias'
+  - concept: Fatores Proximais e Distais
+    definition: 'Classificacao dos determinantes sociais que mediam a relacao entre
+      adversidade e saude mental: proximais (genero, saude fisica, genetica) e distais
+      (acesso a saude, violencia, desigualdade de renda, urbanizacao)'
+  - concept: Planificacao da Atencao a Saude (PAS)
+    definition: Estrategia de gestao, planejamento e organizacao da RAS baseada no
+      MACC, executada por meio de oficinas, tutorias e capacitacoes
+  - concept: Jogo da Explicacao
+    definition: Metodologia ativa de aprendizagem baseada em observacao e questionamento
+      ('Eu reparei nisso... Por que e assim?') para construcao coletiva de explicacoes
+  related_protocols: []
+  clinical_relevance: Alta. O material fundamenta a organizacao dos processos de trabalho
+    da APS para saude mental com base territorial, articulando determinantes sociais,
+    macroprocessos basicos e gestao de base populacional. Diretamente aplicavel a
+    organizacao da linha de cuidado em saude mental na RAPS de Extrema-MG.
+  target_audience:
+  - Profissionais da Estrategia Saude da Familia (eSF)
+  - Equipes Multiprofissionais (eMulti)
+  - Agentes Comunitarios de Saude (ACS)
+  - Gestores e coordenadores da APS
+  - Tutores e facilitadores do Saude Mental na APS
+  references_count: 24
+  needs_review: true
+- doc_id: REF-FOR-024
+  title: 'Saúde Mental na APS - Workshop 3: Acesso à Rede de Atenção Psicossocial
+    pela APS'
+  transcript_file: formacao\workshops\Guia Workshop 3 Acesso a RAPS na APS.md
+  source_file: formacao/workshops/Guia Workshop 3 Acesso a RAPS na APS.pdf
+  taxonomy: formacao/workshops
+  doc_type: guia_workshop
+  pages_total: 52
+  authors:
+  - Gabriela Alves de Oliveira Hidalgo
+  - Joana Moscoso Teixeira de Mendonça
+  - Manoela Alves Salgado
+  - Valmir Vanderlei Gomes Filho
+  year: 2022
+  topics:
+  - Acesso à RAPS pela APS
+  - Barreiras de acesso ao cuidado em saúde mental
+  - Modelo de filtros de Goldberg-Huxley
+  - Estigma em saúde mental
+  - Cuidado colaborativo e matriciamento
+  - Intersetorialidade em saúde mental
+  - Agente Comunitário de Saúde e saúde mental
+  - Gestão do acesso baseada na oferta vs. necessidade
+  - Competências profissionais para saúde mental na APS
+  - Metodologias ativas de aprendizagem (andragogia)
+  key_concepts:
+  - 'Quatro filtros de acesso à RAPS (Goldberg-Huxley): busca de ajuda, detecção APS,
+    cuidado especializado, cuidado intensivo'
+  - 'Estigma como barreira: autoestigma, estigma público, estigma do provedor, estigma
+    estrutural'
+  - 'Cuidado colaborativo/matriciamento: compartilhamento de responsabilidade entre
+    APS e especialistas'
+  - ACS como mediador e facilitador do acesso ao cuidado em saúde mental
+  - 'Intersetorialidade: articulação entre saúde, educação, assistência social e comunidade'
+  - Gestão do acesso baseada na necessidade vs. baseada na oferta
+  - 'Déficit nas competências profissionais: cisão corpo-mente, insegurança, habilidades
+    de comunicação'
+  - 'Jogo do Acesso: metodologia lúdica para reflexão sobre barreiras e potencialidades'
+  - Planificação da Atenção à Saúde (PAS) como estratégia de organização da RAS
+  - MACC - Modelo de Atenção às Condições Crônicas como base organizativa
+  related_protocols:
+  - PCC-01 (Protocolo Intersetorial APS-NIRSM-AES)
+  - PCC-06 (Macrofluxo DI/TEA - sistema de filtros e acesso)
+  - CLI-02 (TEA - fluxo de detecção e referência)
+  - GN-01 (Guia Narrativo APS - competências da equipe)
+  - POP-05 (Elaboração de PTS - projeto terapêutico)
+  clinical_relevance: Alta. Fundamenta a compreensão das barreiras de acesso ao cuidado
+    em saúde mental pela APS, conceito estruturante para todos os protocolos de compartilhamento
+    do cuidado. O modelo de quatro filtros de Goldberg-Huxley orienta a identificação
+    de pontos de estrangulamento na RAPS. As estratégias de superação (ACS, matriciamento,
+    intersetorialidade) são operacionalizadas nos protocolos PCC e CLI de Extrema.
+  target_audience:
+  - Equipes de Saúde da Família (eSF)
+  - Equipes Multiprofissionais (eMulti/NASF)
+  - Agentes Comunitários de Saúde (ACS)
+  - Gestores e coordenadores de APS
+  - Tutores do programa Saúde Mental na APS
+  references_count: 27
+  needs_review: false
+- doc_id: REF-FOR-025
+  title: 'Saúde Mental na APS - Workshop 3: Acesso à Rede de Atenção Psicossocial
+    pela APS'
+  transcript_file: formacao\workshops\Guia Workshop 3.md
+  source_file: formacao\workshops\Guia Workshop 3.pdf
+  taxonomy: formacao/workshops
+  doc_type: guia_workshop
+  pages_total: 52
+  authors:
+  - Gabriela Alves de Oliveira Hidalgo
+  - Joana Moscoso Teixeira de Mendonça
+  - Manoela Alves Salgado
+  - Valmir Vanderlei Gomes Filho
+  - Ana Alice Freire de Sousa
+  - Ana Karina de Sousa Gadelha
+  - Jéssica Rodrigues Machado
+  - Larissa Karollyne de Oliveira Santos
+  - Marcio Anderson Cardozo Paresque
+  - Emelise Rodrigues Gobbi
+  - Michele Leite da Silva
+  - Rodrigo Silva Amaral
+  year: 2022
+  topics:
+  - Acesso à Rede de Atenção Psicossocial (RAPS)
+  - Barreiras de acesso ao cuidado em saúde mental
+  - Filtros de acesso (Modelo Goldberg-Huxley)
+  - Estigma em saúde mental
+  - Cuidado interprofissional e colaborativo
+  - Matriciamento em saúde mental
+  - Intersetorialidade
+  - Competências profissionais em saúde mental na APS
+  - Gestão do acesso baseada em necessidades vs. oferta
+  - Papel do Agente Comunitário de Saúde (ACS)
+  key_concepts:
+  - modelo_quatro_filtros: 'Modelo Goldberg-Huxley de 4 filtros de acesso: (1) busca
+      de ajuda pela população, (2) detecção pela equipe APS, (3) acesso ao cuidado
+      especializado, (4) acesso a cuidados intensivos na RAPS'
+  - estigma_tipos: Estigma próprio do usuário, estigma público, estigma do provedor
+      de saúde e estigma estrutural como barreiras ao acesso
+  - cuidado_colaborativo: Processo de trabalho com profissionais de diferentes conhecimentos
+      trocando experiências e informações para ampliar o cuidado na APS
+  - matriciamento: Apoio matricial como estratégia de compartilhamento de responsabilidades
+      entre equipe APS e especialistas em saúde mental
+  - gestao_acesso_oferta: Modelo inadequado centrado no que a equipe entende que a
+      população precisa, sem correspondência com necessidades reais
+  - gestao_acesso_necessidade: Modelo adequado que organiza o acesso considerando
+      a população e o território
+  - andragogia: Metodologia de ensino para adultos baseada em problematização e experiência
+      prévia (Knowles/Deaquino)
+  - jogo_do_acesso: Ferramenta pedagógica de tabuleiro para reflexão sobre barreiras
+      e potencialidades de acesso ao cuidado em saúde mental
+  related_protocols:
+  - PCC-01 (Protocolo Intersetorial APS-NIRSM-AES)
+  - PCC-06 (Macrofluxo DI/TEA - fases de acesso e navegação)
+  - CLI-02 (Protocolo TEA - filtros de acesso)
+  - POP-05 (Elaboração de PTS)
+  - GN-01 (Guia Narrativo APS DI/TEA)
+  clinical_relevance: Alta - fundamenta a compreensão das barreiras de acesso ao cuidado
+    em saúde mental na APS, modelo teórico dos 4 filtros (Goldberg-Huxley) diretamente
+    aplicável à organização dos fluxos de acesso em Extrema-MG. Conceitos de matriciamento
+    e cuidado colaborativo são centrais para operacionalização da RAPS local.
+  target_audience:
+  - Profissionais de equipes de Saúde da Família (eSF)
+  - Equipes multiprofissionais (eMulti/NASF-AB)
+  - Agentes Comunitários de Saúde (ACS)
+  - Gestores e coordenadores de APS
+  - Tutores do Saúde Mental na APS
+  references_count: 27
+  needs_review: true
+- doc_id: REF-FOR-026
+  title: 'Saude Mental na APS - Workshop 4: Gestao do Cuidado em Saude Mental'
+  transcript_file: formacao\workshops\Guia Workshop 4_e-Planifica.md
+  source_file: formacao/workshops/Guia Workshop 4_e-Planifica.pdf
+  taxonomy: formacao/workshops
+  doc_type: guia_workshop
+  pages_total: 66
+  authors:
+  - Ana Karina de Sousa Gadelha
+  - Claudielle De Santana Teodoro
+  - Evelyn Lima de Souza
+  - Joana Moscoso Teixeira de Mendonca
+  - Isadora Siqueira de Souza
+  - Valmir Vanderlei Gomes Filho
+  - Ana Alice Freire de Sousa
+  year: 2023
+  topics:
+  - gestao_cuidado_saude_mental
+  - MACC
+  - condicoes_cronicas
+  - escalonamento_cuidado
+  - estratificacao_risco
+  - gestao_clinica
+  - APS
+  - RAPS
+  - matriciamento
+  - CAPS
+  - PTS
+  - autocuidado_apoiado
+  - MI_mhGAP
+  - planificacao_atencao_saude
+  - condicoes_agudas_saude_mental
+  - reabilitacao_psicossocial
+  - cuidado_compartilhado
+  - metodologias_ativas
+  - andragogia
+  key_concepts:
+  - 'Modelo de Atencao as Condicoes Cronicas (MACC) aplicado a saude mental: 5 niveis
+    de intervencao (promocao, prevencao, gestao simples, complexa, muito complexa)'
+  - 'Escalonamento do cuidado: encaminhamento ao nivel de cuidado menos intensivo
+    adequado a necessidade atual, escalando conforme necessario'
+  - 'Condicao de saude vs. doenca cronica em saude mental: circunstancias persistentes
+    (ex: sofrimento psiquico) vs. transtornos de curso longo (ex: esquizofrenia, depressao
+    recorrente)'
+  - 'Tres objetivos do macroprocesso de condicoes cronicas: conhecimento da subpopulacao,
+    acompanhamento longitudinal por estrato, fortalecimento do autocuidado apoiado'
+  - 'Relacao autocuidado/cuidado profissional: niveis 1-3 concentram autocuidado apoiado;
+    niveis 4-5 concentram cuidado profissional'
+  - 'Cuidado compartilhado: APS + equipes multiprofissionais especializadas para niveis
+    4-5 do MACC'
+  - 'CAPS como referencia para condicoes muito complexas (nivel 5): TMG e persistentes,
+    reabilitacao psicossocial intensiva'
+  - 'Prevalencia estimada: 12-17% com condicao complexa (nivel 4); ~3% com condicao
+    muito complexa (nivel 5) no territorio da eSF'
+  - PTS como ferramenta estrategica para gestao dos casos complexos e muito complexos
+  - 'Criterios de estabilidade clinica: medicacao sem necessidade de modificacao,
+    sem necessidade de atendimento especializado, sem comprometimento significativo
+    de autonomia'
+  - MI-mhGAP como ferramenta pratica para manejo integrado de condicoes prioritarias
+    em saude mental na APS
+  - 'Jogo Mental MACC: ferramenta ludica com 100 cartas-perguntas distribuidas pelos
+    niveis do MACC'
+  related_protocols:
+  - PCC-01 a PCC-06 (Protocolos de Compartilhamento do Cuidado)
+  - CLI-02 (Protocolo Clinico TEA)
+  - POP-05 (Elaboracao de PTS)
+  - Nota Tecnica de Saude Mental (MS)
+  - Caderno de Atencao Basica n. 28 vol. I (Acolhimento a demanda espontanea)
+  - MI-mhGAP (Manual de Intervencoes OMS)
+  clinical_relevance: Alta. Documento formativo central para equipes de APS na organizacao
+    da gestao do cuidado em saude mental segundo o MACC. Operacionaliza os cinco niveis
+    de intervencao (promocao, prevencao, gestao simples, complexa, muito complexa),
+    definindo responsabilidades por ponto de atencao, criterios de estratificacao,
+    parametros de estabilidade clinica e fluxos de escalonamento/transicao do cuidado.
+    O jogo Mental MACC (100 perguntas) constitui banco de conhecimento aplicado sobre
+    toda a cascata de cuidado. Conecta diretamente com a organizacao dos macroprocessos
+    da Construcao Social da APS e com o modelo de cuidado compartilhado entre APS,
+    equipes ambulatoriais especializadas e CAPS.
+  target_audience:
+  - profissionais_APS
+  - equipes_saude_familia
+  - equipes_NASF_eMulti
+  - gestores_municipais
+  - coordenadores_saude_mental
+  - tutores_planificacao
+  - profissionais_CAPS
+  - equipes_ambulatoriais_especializadas
+  references_count: 8
+  needs_review: true
+- doc_id: REF-INS-002
+  title: Orientação para Implantação do Time de Resposta Rápida (TRR)
+  transcript_file: referencias\instrumentos\11. Orientação para implantação do time
+    de resposta rápida.md
+  source_file: instrumentos/11. Orientação para implantação do time de resposta rápida.pdf
+  taxonomy: instrumentos
+  doc_type: instrumento_operacional
+  pages_total: 11
+  authors: []
+  year: ''
+  topics:
+  - resposta_rapida
+  - crise
+  - emergencia_psiquiatrica
+  - aps
+  - agitacao_psicomotora
+  - manejo_farmacologico
+  - seguranca_paciente
+  - codigo_azul
+  - suporte_basico_vida
+  - contenção_mecanica
+  key_concepts: []
+  related_protocols: []
+  clinical_relevance: alta
+  target_audience: []
+  references_count: 0
+  needs_review: true
+- doc_id: REF-INS-003
+  title: A Utilização da Escala CuidaSM para Apoiar o Processo de Escalonamento do
+    Cuidado em Saúde Mental
+  transcript_file: referencias\instrumentos\4. A utilização da Escala CuidaSM para
+    apoiar o processo de escalonamento.md
+  source_file: instrumentos\4. A utilização da Escala CuidaSM para apoiar o processo
+    de escalonamento.pdf
+  taxonomy: instrumentos
+  doc_type: instrumento_clinico
+  pages_total: 6
+  authors: []
+  year: ''
+  topics:
+  - cuidasm
+  - escalonamento
+  - estratificacao_risco
+  - saude_mental
+  - aps
+  - gestao_cuidado
+  - condicoes_cronicas
+  - necessidade_cuidado_saude_mental
+  - escala_avaliacao
+  - cuidado_colaborativo
+  - stepped_care
+  - estratificacao_populacional
+  - planifica_sus
+  - e_planifica
+  - e_sus
+  - prontuario
+  - matriciamento
+  - projeto_terapeutico_singular
+  key_concepts: []
+  related_protocols: []
+  clinical_relevance: very_high
+  target_audience: []
+  references_count: 0
+  needs_review: false
+- doc_id: REF-INS-004
+  title: Fluxogramas para Atendimento com Classificação de Risco em Saúde Mental
+  transcript_file: referencias\instrumentos\5. Fluxogramas para atendimento com classificação
+    de risco em saúde mental.md
+  source_file: instrumentos/5. Fluxogramas para atendimento com classificação de risco
+    em saúde mental.pdf
+  taxonomy: instrumentos
+  doc_type: instrumento_operacional
+  pages_total: 3
+  authors:
+  - Ministério da Saúde — Secretaria de Atenção à Saúde — Departamento de Atenção
+    Básica
+  year: 2013
+  topics:
+  - classificacao_risco
+  - fluxograma
+  - acolhimento
+  - saude_mental
+  - aps
+  - urgencia
+  - demanda_espontanea
+  - sofrimento_mental_agudo
+  - uso_alcool
+  - vulnerabilidade
+  - organizacao_processo_trabalho
+  - estratificacao_risco
+  key_concepts:
+  - name: Classificação de Risco em Saúde Mental
+    description: Processo de estratificação da gravidade e vulnerabilidade de pessoas
+      em sofrimento psíquico que chegam à APS por demanda espontânea, orientando a
+      prioridade e o tipo de atendimento conforme critérios clínicos e psicossociais.
+  - name: Acolhimento à Demanda Espontânea
+    description: Diretriz operacional do Ministério da Saúde (CAB 28, 2013) que organiza
+      o processo de trabalho das equipes de APS para receber pessoas sem agendamento
+      prévio, classificando necessidades por risco/vulnerabilidade e garantindo resolutividade
+      no ponto de atenção.
+  - name: Sofrimento Mental Agudo
+    description: Condição de crise psíquica que demanda acolhimento imediato e classificação
+      de risco na APS, incluindo agitação psicomotora, ideação suicida, crise de pânico,
+      quadros psicóticos agudos e descompensação de transtornos prévios.
+  - name: Transtornos Agudos Relacionados ao Uso de Álcool
+    description: Quadros clínicos de emergência associados ao consumo de álcool —
+      intoxicação aguda, síndrome de abstinência alcoólica, delirium tremens — que
+      requerem manejo específico e classificação de risco diferenciada na APS.
+  - name: Fluxograma de Processo de Trabalho
+    description: Representação gráfica padronizada pelo MS que sistematiza as etapas
+      de acolhimento, escuta qualificada, classificação de risco e encaminhamento
+      na organização da demanda espontânea em saúde mental.
+  related_protocols:
+  - PCC-01
+  - PCC-03
+  - PCC-05
+  - POP-05
+  - CLI-01
+  - REF-INS-008
+  clinical_relevance: very_high
+  target_audience:
+  - medicos_aps
+  - enfermeiros_aps
+  - equipes_esf
+  - acs
+  - coordenadores_ubs
+  - profissionais_acolhimento
+  references_count: 2
+  needs_review: true
+- doc_id: REF-INS-005
+  title: Ficha de Atendimento de Classificacao de Risco em Saude Mental
+  transcript_file: referencias\instrumentos\10. Ficha de atendimento de classificação
+    de risco.md
+  source_file: instrumentos\10. Ficha de atendimento de classificacao de risco.pdf
+  taxonomy: instrumentos
+  doc_type: instrumento_clinico
+  pages_total: 2
+  authors: []
+  year: ''
+  topics:
+  - classificacao_risco
+  - urgencia_psiquiatrica
+  - sofrimento_mental_agudo
+  - uso_alcool
+  - intoxicacao_substancias
+  - acolhimento_com_classificacao_risco
+  - protocolo_manchester
+  - triagem_saude_mental
+  - agitacao_psicomotora
+  - convulsao
+  - rebaixamento_consciencia
+  - escala_glasgow
+  - sinais_vitais
+  - escala_dor
+  - vulnerabilidade_psicossocial
+  key_concepts: []
+  related_protocols: []
+  clinical_relevance: ''
+  target_audience: []
+  references_count: 0
+  needs_review: false
+- doc_id: REF-INS-006
+  title: Modelo para Folha de Registro — Escalonamento do Cuidado em Saúde Mental
+  transcript_file: referencias\instrumentos\4. Modelo para Folha de Registro eSCALONAMENTO
+    sAUDE mENTAL.md
+  source_file: ''
+  taxonomy: instrumentos
+  doc_type: instrumento_registro
+  pages_total: 1
+  authors:
+  - Ministério da Saúde — Secretaria de Atenção Primária à Saúde (SAPS)
+  year: 2023
+  topics:
+  - escalonamento_cuidado
+  - saude_mental
+  - aps
+  - folha_registro
+  - instrumento_avaliacao
+  - escala_cuidasm
+  - escala_coelho_savassi
+  - ecomapa
+  - genograma
+  - mi_mhgap
+  - macc
+  - piramide_riscos
+  - raps
+  - estratificacao_risco
+  - modelo_atencao_condicoes_cronicas
+  key_concepts:
+  - escala_cuidasm: Instrumento de avaliação da necessidade de cuidado em saúde mental
+      com 31 itens e pontuação de 0 a 11 pontos, que estratifica a intensidade do
+      cuidado requerido. Constitui o primeiro quadrante da folha de registro.
+  - escala_coelho_savassi: Escala de Risco Familiar de Coelho-Savassi para avaliação
+      da vulnerabilidade familiar. Utiliza sentinelas de risco (socioeconômicas, sanitárias,
+      clínicas) para classificação em R1, R2 ou R3. Segundo quadrante da folha.
+  - ecomapa_genograma: Instrumentos de abordagem familiar para mapeamento de relações
+      interpessoais, vínculos, conflitos e rede de suporte social. Ecomapa representa
+      relações com instituições e serviços; genograma mapeia estrutura e dinâmica
+      familiar. Terceiro quadrante da folha.
+  - mi_mhgap: Mental Health Gap Action Programme — Guia de Intervenção da OMS adaptado
+      para APS. Utilizado como referência para avaliação do diagnóstico clínico em
+      saúde mental. Quarto quadrante da folha.
+  - macc: Modelo de Atenção às Condições Crônicas — adaptação brasileira do Chronic
+      Care Model. Organizado em pirâmide de 5 níveis, integra determinantes sociais,
+      fatores de risco, condições crônicas simples/complexas e gestão de casos. Eixo
+      central da folha para decisão sobre nível de intervenção.
+  - piramide_riscos: 'Representação gráfica piramidal com 5 níveis de estratificação
+      populacional: (1) determinantes sociais da saúde, (2) fatores de risco biopsicológicos,
+      (3) condição crônica simples com autocuidado/atenção profissional, (4) condição
+      crônica complexa com gestão de condição, (5) condição crônica muito complexa
+      com gestão de caso.'
+  - raps: Rede de Atenção Psicossocial — rede temática do SUS para atenção a pessoas
+      com sofrimento ou transtorno mental e necessidades decorrentes do uso de álcool
+      e outras drogas. A folha orienta a identificação de pontos da RAPS para compartilhamento
+      do cuidado.
+  - determinacao_social_saude: Modelo que reconhece os determinantes sociais intermediários
+      como condicionantes estruturais do processo saúde-doença. Integrado à base da
+      pirâmide MACC (Nível 1).
+  related_protocols:
+  - PCC-03
+  - POP-05
+  - CLI-01
+  clinical_relevance: high
+  target_audience:
+  - equipes_esf
+  - emulti
+  - acs
+  - enfermagem_aps
+  - psicologia_aps
+  - medicos_aps
+  - facilitadores_oficina
+  references_count: 0
+  needs_review: true
+- doc_id: REF-INS-007
+  title: Direcionadores para Organização de Grupos na Atenção Primária à Saúde
+  transcript_file: referencias\instrumentos\5. Direcionadores para organização de
+    grupos na APS.md
+  source_file: instrumentos\5. Direcionadores para organização de grupos na APS.pdf
+  taxonomy: instrumentos
+  doc_type: instrumento_operacional
+  pages_total: 2
+  authors: []
+  year: ''
+  topics:
+  - grupos_terapeuticos
+  - aps
+  - saude_mental
+  - intervencao_psicossocial_breve
+  - promocao_saude
+  - autocuidado
+  - adesao_tratamento
+  - educacao_em_saude
+  - coordenacao_grupal
+  - divulgacao_servicos
+  - raps
+  - vinculo_equipe_usuario
+  - intersetorialidade
+  - sociabilidade
+  - empoderamento_comunitario
+  key_concepts: []
+  related_protocols: []
+  clinical_relevance: alta
+  target_audience: []
+  references_count: 0
+  needs_review: false
+- doc_id: REF-INS-008
+  title: Materiais e Procedimentos para Assistência às Emergências em Saúde Mental
+    na Atenção Primária à Saúde
+  transcript_file: referencias\instrumentos\6. Materiais e procedimentos para assistência
+    às emergências em saúde mental na APS.md
+  source_file: instrumentos/6. Materiais e procedimentos para assistência às emergências
+    em saúde mental na APS.pdf
+  taxonomy: instrumentos
+  doc_type: instrumento_operacional
+  pages_total: 6
+  authors: []
+  year: ''
+  topics:
+  - emergencia
+  - saude_mental
+  - aps
+  - materiais
+  - procedimentos
+  - agitacao_psicomotora
+  - caixa_emergencia
+  - seguranca
+  - medicacao_alto_alerta
+  - urgencia_psiquiatrica
+  key_concepts: []
+  related_protocols: []
+  clinical_relevance: very_high
+  target_audience:
+  - medicos_aps
+  - enfermeiros_aps
+  - equipes_esf
+  - coordenadores_ubs
+  - farmaceuticos_referencia
+  references_count: 0
+  needs_review: false
+- doc_id: REF-INS-009
+  title: Os Macroprocessos da Atenção aos Eventos Agudos em Saúde Mental
+  transcript_file: referencias\instrumentos\4. Texto de apoio - Os macroprocessos
+    de atenção aos eventos agudos em SM.md
+  source_file: instrumentos\4. Texto de apoio - Os macroprocessos de atenção aos eventos
+    agudos em SM.pdf
+  taxonomy: instrumentos
+  doc_type: ''
+  pages_total: 10
+  authors:
+  - name: Mendes, E.V.
+    role: Autor principal do modelo de atenção aos eventos agudos
+  - name: Matos, M.A.B.
+    role: Coautora
+  - name: Evangelista, M.J.O.
+    role: Coautora
+  - name: Barra, R.P.
+    role: Coautora
+  - name: Chiaverini, D.H.
+    role: Organizadora — Guia Prático de Matriciamento
+  year: ''
+  topics: []
+  key_concepts:
+  - concept: Eventos agudos em saúde mental
+    definition: Somatório de condições agudas, agudizações de condições crônicas e
+      condições gerais/inespecíficas de manifestação aguda no campo da saúde mental
+  - concept: Modelo de Atenção aos Eventos Agudos
+    definition: Modelo de 4 níveis (promoção, prevenção, classificação de risco, gestão
+      da condição) baseado na determinação social da saúde (Dahlgren e Whitehead,
+      1991), desenvolvido por Mendes (2012)
+  - concept: Acolhimento — AC = (ACSS + AT) H
+    definition: Fórmula conceitual onde Acolhimento resulta da soma de Acessibilidade
+      e Atendimento, potencializada pela Humanização
+  - concept: Classificação de risco e vulnerabilidade
+    definition: Tecnologia de triagem que determina tipo de intervenção e tempo-resposta
+      para situações de urgência e emergência em saúde mental
+  - concept: Três grupos de demanda aguda em SM
+    definition: 'G1: estresse agudo/luto com queixas somáticas; G2: descompensação
+      de transtornos em tratamento; G3: demanda oculta (surto psicótico, uso de substâncias,
+      violências, cárcere privado)'
+  - concept: Apoio matricial
+    definition: Suporte técnico-pedagógico da equipe multiprofissional às eSF para
+      educação permanente, manejo de casos e articulação com a RAPS
+  - concept: Urgência vs. emergência em SM
+    definition: 'Emergência: risco imediato de morte/danos graves (tentativa de suicídio,
+      violência); Urgência: atenção prioritária sem risco imediato (crise de ansiedade,
+      surto leve, intoxicação)'
+  related_protocols: []
+  clinical_relevance: ''
+  target_audience:
+  - Equipes de Estratégia Saúde da Família (eSF)
+  - Equipes Multiprofissionais (eMulti/NASF-AB)
+  - Agentes Comunitários de Saúde (ACS)
+  - Gestores de APS e coordenadores de Saúde Mental
+  - Profissionais de Saúde Bucal integrados à APS
+  references_count: 0
+  needs_review: false
+- doc_id: REF-INS-010
+  title: Plano de Cuidado Familiar
+  transcript_file: referencias\instrumentos\10. Plano de cuidado familiar.md
+  source_file: instrumentos\10. Plano de cuidado familiar.pdf
+  taxonomy: instrumentos
+  doc_type: instrumento_clinico
+  pages_total: 2
+  authors: []
+  year: ''
+  topics:
+  - plano_cuidado
+  - familia
+  - aps
+  - saude_mental
+  - pts
+  - classificacao_risco_familiar
+  - fatores_protecao
+  - autocuidado_familiar
+  - gestao_de_caso
+  - vulnerabilidade_social
+  - familia_cidada
+  - vinculo_equipe_familia
+  key_concepts: []
+  related_protocols: []
+  clinical_relevance: ''
+  target_audience: []
+  references_count: 0
+  needs_review: false
+- doc_id: REF-INS-010
+  title: 'Texto de Apoio: O Processo de Estratificacao de Risco Familiar'
+  transcript_file: referencias\instrumentos\7. Texto de apoio - O processo de estratificação
+    de risco familiar.md
+  source_file: instrumentos/7. Texto de apoio - O processo de estratificacao de risco
+    familiar.pdf
+  taxonomy: instrumentos
+  doc_type: ''
+  pages_total: 3
+  authors:
+  - name: Projeto PlanificaSUS
+    affiliation: Hospital Israelita Albert Einstein / PROADI-SUS
+    role: adaptacao
+  - name: Coelho, Flavio Lucio
+    role: autor_original_escala
+  - name: Savassi, Leonardo Cançado Monteiro
+    role: autor_original_escala
+  year: 2019
+  topics: []
+  key_concepts: []
+  related_protocols: []
+  clinical_relevance: ''
+  target_audience: []
+  references_count: 0
+  needs_review: true
+- doc_id: REF-INS-011
+  title: Escala de Risco Familiar de Coelho-Savassi
+  transcript_file: referencias\instrumentos\8. Escala de Risco Familiar de Coelho-Savassi.md
+  source_file: instrumentos/8. Escala de Risco Familiar de Coelho-Savassi.pdf
+  taxonomy: instrumentos
+  doc_type: instrumento_estratificacao
+  pages_total: 1
+  authors:
+  - family: Savassi
+    given: Leonardo Cançado Monteiro
+    role: autor_principal
+  - family: Lage
+    given: Josélia Luzete
+    role: coautora
+  - family: Coelho
+    given: Flávio Lúcio Gonçalves
+    role: coautor
+  year: ''
+  topics:
+  - escala_risco_familiar
+  - coelho_savassi
+  - estratificacao
+  - aps
+  - vulnerabilidade
+  - sentinelas_risco
+  - vigilancia_territorial
+  - siab
+  - classificacao_risco
+  - saude_familia
+  key_concepts: []
+  related_protocols:
+  - PCC-01
+  - PCC-06
+  - POP-05
+  clinical_relevance: ''
+  target_audience: []
+  references_count: 0
+  needs_review: false
+- doc_id: REF-INS-012
+  title: Roteiro para Utilização da Escala de Avaliação da Necessidade de Cuidado
+    em Saúde Mental (CuidaSM)
+  transcript_file: referencias\instrumentos\Roteiro para Utilização da Escala de Avaliação
+    da Necessidade de Cuidado em Saúde Mental (CuidaSM)_e-planifica.md
+  source_file: instrumentos\Roteiro para Utilização da Escala de Avaliação da Necessidade
+    de Cuidado em Saúde Mental (CuidaSM)_e-planifica.pdf
+  taxonomy: instrumentos
+  doc_type: roteiro_tecnico_instrumento
+  pages_total: 18
+  authors:
+  - name: Ana Alice Freire de Sousa
+    role: coordenacao_elaboracao
+  - name: Camila Monteiro
+    role: elaboracao
+  - name: Claudielle de Santana Teodoro
+    role: elaboracao
+  - name: Daiana Bonfim
+    role: coordenacao_elaboracao
+  - name: Daniella Sampaio Zorzi
+    role: elaboracao
+  - name: Evelyn Lima de Souza
+    role: elaboracao
+  - name: Flávio Rebustini
+    role: elaboracao
+  - name: Ilana Eshriqui
+    role: elaboracao
+  - name: Joana Moscoso Teixeira de Mendonça
+    role: elaboracao
+  - name: Leticia Yamawaka de Almeida
+    role: elaboracao
+  - name: Talita Rewa
+    role: elaboracao
+  - name: Ana Carolina de Santana Dias
+    role: colaboracao
+  - name: Eliana Tiemi Masuda
+    role: colaboracao
+  - name: Larissa Karollyne de Oliveira Santos
+    role: colaboracao
+  - name: Marcio Anderson Cardozo Paresque
+    role: colaboracao
+  - name: Rebeca Correia Cardoso
+    role: colaboracao
+  - name: Ricardo Macedo Lima
+    role: colaboracao
+  - name: Talita Pegorin
+    role: colaboracao
+  year: 2023
+  topics:
+  - cuidasm
+  - escala_avaliacao
+  - necessidade_cuidado
+  - saude_mental
+  - estratificacao
+  - eplanifica
+  - planificasus
+  - aps
+  - raps
+  - macc
+  - escalonamento_cuidado
+  - gestao_cuidado
+  - condicoes_cronicas
+  - proadi_sus
+  key_concepts: []
+  related_protocols:
+  - doc_id: PCC-01
+    relationship: implementa_estratificacao
+    description: Protocolo Intersetorial APS-NIRSM utiliza CuidaSM como instrumento
+      de estratificação
+  - doc_id: POP-05
+    relationship: informa_pts
+    description: Resultado da CuidaSM informa elaboração do Projeto Terapêutico Singular
+  clinical_relevance: very_high
+  target_audience: []
+  references_count: 0
+  needs_review: false
+- doc_id: REF-INS-013
+  title: Guia de Bolso do ACS - PlanificaSUS
+  transcript_file: referencias\instrumentos\5. Guia de Bolso do ACS.md
+  source_file: instrumentos/5. Guia de Bolso do ACS.pdf
+  taxonomy: instrumentos
+  doc_type: guia_pratico
+  pages_total: 14
+  authors: []
+  year: ''
+  topics:
+  - acs
+  - agente_comunitario
+  - guia_bolso
+  - saude_mental
+  - visita_domiciliar
+  - aps
+  - planificasus
+  - atencao_primaria
+  - vigilancia_territorial
+  - ciclos_de_vida
+  - doencas_cronicas
+  - tuberculose
+  - hanseniase
+  - saude_bucal
+  - saude_mulher
+  - saude_homem
+  - saude_idoso
+  - saude_adolescente
+  - saude_crianca
+  - gestante
+  - diabetes
+  - hipertensao
+  key_concepts: []
+  related_protocols: []
+  clinical_relevance:
+    primary_use: Roteiro de campo para visitas domiciliares do ACS
+    target_population: Populacao adscrita em territorio da APS/eSF
+    target_professional: Agente Comunitario de Saude (ACS)
+    care_setting: Domicilio / Territorio
+    applicable_protocols:
+    - PCC-01 (Protocolo Intersetorial APS-NIRSM-AES)
+    - PCC-04 (Acompanhamento Longitudinal APS)
+    - POP-05 (Elaboracao de PTS)
+    integration_points:
+    - Vigilancia territorial em saude mental (mapeamento de casos)
+    - Identificacao de sinais de alerta para referenciamento a eSF/eMulti
+    - Monitoramento de adesao terapeutica em domicilio
+    - Articulacao com ficha complementar de sinais de alerta em saude mental
+  target_audience: []
+  references_count: 0
+  needs_review: false
+- doc_id: REF-INS-014
+  title: Ficha Complementar -- Sinais de Alerta para o Cuidado em Saude Mental
+  transcript_file: referencias\instrumentos\6. Ficha complementar - Sinais de alerta
+    para o cuidado em Saúde Mental.md
+  source_file: instrumentos\6. Ficha complementar - Sinais de alerta para o cuidado
+    em Saude Mental.pdf
+  taxonomy: instrumentos
+  doc_type: instrumento_clinico
+  pages_total: 1
+  authors: []
+  year: ''
+  topics:
+  - sinais_alerta
+  - triagem
+  - saude_mental
+  - identificacao_precoce
+  - aps
+  - comprometimento_funcional
+  - risco_suicida
+  - uso_substancias
+  - alteracao_comportamento
+  - agressividade
+  - dificuldade_escolar
+  - rastreamento_comunitario
+  - visita_domiciliar
+  - vigilancia_territorial
+  key_concepts: []
+  related_protocols: []
+  clinical_relevance: ''
+  target_audience: []
+  references_count: 0
+  needs_review: false
+- doc_id: REF-INS-015
+  title: Instrumento para Avaliar Mapa de Fluxo e Ciclo de Atendimento
+  transcript_file: referencias\instrumentos\6. Instrumento para avaliar mapa de fluxo
+    e ciclo de atendimento.md
+  source_file: instrumentos/6. Instrumento para avaliar mapa de fluxo e ciclo de atendimento.pdf
+  taxonomy: instrumentos
+  doc_type: instrumento_avaliacao
+  pages_total: 5
+  authors:
+  - name: Rubia Pereira Barra
+    role: Adaptadora
+  - name: Marco Antônio Bragança de Matos
+    role: Adaptador
+  - name: Eugênio Vilaça Mendes
+    role: Autor do documento técnico original
+  year: 2017
+  topics:
+  - mapa de fluxo de atendimento
+  - ciclo de tempo do atendimento
+  - alisamento de fluxos na APS
+  - identificação e remoção de gargalos
+  - redesenho de processos assistenciais
+  - eficiência operacional em UBS
+  - gestão de filas e tempos de espera
+  - otimização da força de trabalho
+  key_concepts:
+  - mapa_de_fluxo: Acompanhamento detalhado do circuito de uma pessoa na unidade de
+      saúde, desde a chegada até a saída, com registro de observações e impressões
+      para identificação de gargalos.
+  - ciclo_de_tempo: Medição em minutos do tempo total que uma pessoa despende na unidade,
+      distinguindo tempo que gera valor (atendimento direto) de tempo que não gera
+      valor (espera).
+  - gargalo: Restrição no fluxo causada por demanda superior à oferta de um recurso
+      específico (consultório, profissional, exame).
+  - tempo_que_gera_valor: Tempo gasto diretamente com profissionais da equipe durante
+      o atendimento.
+  - tempo_que_nao_gera_valor: Tempo gasto em espera, deslocamentos desnecessários
+      ou etapas redundantes.
+  - redesenho_de_fluxos: Reconfiguração dos processos assistenciais a partir da perspectiva
+      da pessoa usuária, eliminando etapas sem valor agregado.
+  related_protocols: []
+  clinical_relevance: high
+  target_audience:
+  - equipes de Saúde da Família (eSF)
+  - equipes multiprofissionais (eMulti)
+  - gestores de UBS
+  - coordenadores de APS
+  - profissionais de saúde mental na APS
+  - tutores e facilitadores do Planifica SUS
+  references_count: 2
+  needs_review: false
+- doc_id: REF-NOR-001
+  title: 'Redes de Atenção à Saúde: Rede de Atenção Psicossocial - RAPS'
+  transcript_file: referencias\normativos\Rede de Atenção Psicossocial - RAPS (2).md
+  source_file: normativos/Rede de Atenção Psicossocial - RAPS (2).pdf
+  taxonomy: normativos
+  doc_type: material_didatico
+  pages_total: 67
+  authors:
+  - Paola Trindade Garcia (Organizadora)
+  - Regimarina Soares Reis (Organizadora)
+  - Jordana Santos Cardoso (Autora)
+  year: 2018
+  topics:
+  - rede_atencao_psicossocial
+  - reforma_psiquiatrica
+  - saude_mental_atencao_basica
+  - caps_modalidades
+  - politica_nacional_saude_mental
+  - desinstitucionalizacao
+  - reabilitacao_psicossocial
+  - transtornos_mentais_prevalentes
+  - reducao_de_danos
+  - apoio_matricial
+  key_concepts:
+  - name: RAPS - Rede de Atenção Psicossocial
+    description: Rede instituída pela Portaria nº 3.088/2011 (consolidada na Portaria
+      nº 3/2017) destinada a pessoas em sofrimento psíquico ou transtorno mental e
+      com necessidades decorrentes do uso de crack, álcool e outras drogas no âmbito
+      do SUS.
+  - name: Reforma Psiquiátrica
+    description: Movimento mundial de transformação das práticas de atenção ao sofrimento
+      psíquico, com marco legal no Brasil pela Lei 10.216/2001, orientado à desinstitucionalização
+      e cuidado de base comunitária.
+  - name: CAPS - Centro de Atenção Psicossocial
+    description: Serviço de referência para casos graves que necessitem de cuidados
+      mais intensivos e/ou reinserção psicossocial, organizado em modalidades (I,
+      II, III, AD, AD III, CAPSi) por porte populacional.
+  - name: Apoio Matricial
+    description: Arranjo técnico-assistencial que visa à ampliação da clínica das
+      equipes de Saúde da Família por meio da corresponsabilização com equipes de
+      Saúde Mental.
+  - name: Projeto Terapêutico Singular (PTS)
+    description: Ferramenta tecnológica utilizada pelas equipes do NASF/CAPS para
+      construção individualizada de planos de cuidado envolvendo equipe, usuário e
+      família.
+  - name: Desinstitucionalização
+    description: Estratégias substitutivas ao modelo asilar incluindo Serviços Residenciais
+      Terapêuticos e Programa de Volta para Casa (Lei 10.708/2003).
+  - name: Redução de Danos
+    description: Abordagem que reconhece singularidades do usuário e traça estratégias
+      voltadas para defesa da vida, sem impor abstinência como único objetivo.
+  related_protocols:
+  - PCC-01
+  - PCC-02
+  - PCC-05
+  - PCC-06
+  - POP-05
+  - CLI-02
+  clinical_relevance: very_high
+  target_audience:
+  - profissionais_atencao_basica
+  - equipes_saude_familia
+  - profissionais_nasf
+  - profissionais_caps
+  - estudantes_saude_publica
+  - gestores_saude_mental
+  references_count: 24
+  needs_review: true
+- doc_id: REF-NOR-002
+  title: Nota Técnica de Saúde Mental para Organização da Rede de Atenção à Saúde
+    com Foco nos Processos da Atenção Primária à Saúde e da Atenção Especializada
+  transcript_file: referencias\normativos\Nota Técnica Saúde Mental.md
+  source_file: normativos\Nota Técnica Saúde Mental.pdf
+  taxonomy: normativos
+  doc_type: nota_tecnica
+  pages_total: 44
+  authors:
+  - Aline Teles de Andrade
+  - Aluísio Ferreira Lima
+  - Sandra Lucia Correia Lima Fortes
+  year: 2021
+  topics:
+  - saúde mental
+  - atenção primária à saúde
+  - cuidado escalonado
+  - rede de atenção psicossocial
+  - matriciamento
+  - transtornos mentais comuns
+  - transtornos mentais graves
+  - uso de substâncias psicoativas
+  - modelo de atenção às condições crônicas
+  - projeto terapêutico singular
+  - reabilitação psicossocial
+  - intervenções psicossociais
+  key_concepts:
+  - MACC (Modelo de Atenção às Condições Crônicas) - 5 níveis
+  - Cuidado escalonado em saúde mental
+  - Matriciamento / apoio matricial
+  - MI-GAP (Manual de Intervenções OMS)
+  - PTS (Projeto Terapêutico Singular)
+  - TMG (Transtorno Mental Grave)
+  - TMC (Transtorno Mental Comum)
+  - Equipes Multiprofissionais Especializadas em Saúde Mental
+  - CAPS I, II, III, AD, AD III, AD IV, CAPSi
+  - Intervenções psicossociais de baixa intensidade
+  - Gestão de listas de pacientes
+  - AUDIT (Alcohol Use Disorders Identification Test)
+  - Estabilidade e instabilidade clínica
+  related_protocols:
+  - PCC-01 (Protocolo Intersetorial APS-NIRSM-AES)
+  - PCC-06 (Macrofluxo DI/TEA)
+  - POP-05 (Elaboração PTS)
+  - CLI-01 a CLI-05 (Protocolos Clínicos)
+  clinical_relevance: alta
+  target_audience:
+  - gestores municipais e estaduais de saúde
+  - equipes de Estratégia Saúde da Família (eSF)
+  - NASF / eMulti
+  - profissionais de CAPS
+  - equipes multiprofissionais especializadas em saúde mental
+  - reguladores de acesso
+  references_count: 51
+  needs_review: false
+- doc_id: REF-NOR-003
+  title: Linha de Cuidado e Diretrizes Assistenciais - Saúde Mental (Caderno nº 1)
+  transcript_file: referencias\normativos\Linha de Cuidado e Diretrizes Assistenciais
+    - Saúde Mental  (caderno nº1).md
+  source_file: normativos/Linha de Cuidado e Diretrizes Assistenciais - Saúde Mental  (caderno
+    nº1).pdf
+  taxonomy: normativos
+  doc_type: linha_de_cuidado
+  pages_total: 107
+  authors:
+  - Desirée Mainart Braga (RT do NUTIS/GDA/DIRASS - Coordenação)
+  - Ana Carolina Amaral de Castro Hadad (Gerente de Diretrizes Assistenciais/DIRASS/FHEMIG)
+  - Aline Candido de Almeida Pinto Mendes (Enfermeira da DCGI/FHEMIG)
+  - Alisson Rubson Alves (Enfermeiro do NUTIS/GDA/DIRASS)
+  - Arthur Felipe Ribeiro Mendes (Coordenador da COEMULT/GDA/DIRASS)
+  - Camila de Andrade Oliveira (Acadêmica de Enfermagem do NUTIS/GDA/DIRASS)
+  - Cristiane Nascimento Lima (Psicóloga da COEMULT/GDA/DIRASS)
+  - Deise Cardoso Campos (Epidemiologista do NUTIS/GDA/DIRASS)
+  - Érika Cristina Fernandes Chamon (Coordenadora da CSA/GDA/DIRASS)
+  - Fernanda Bitarães de Aguiar (Enfermeira da CSA/GDA/DIRASS)
+  - Flávio Souza Lima (Médico Infectologista da CSA/GDA/DIRASS)
+  - Guilherme Donini Armiato (Médico do NUTIS/GDA/DIRASS)
+  - Isabella Manetta de Morais (Enfermeira da CSA/GDA/DIRASS)
+  - Júlia Abreu Vilela (Médica da COMED/DIRASS)
+  - Kátia Cristina Martins Fonseca (Terapeuta Ocupacional da COEMULT/GDA/DIRASS)
+  - Maria Lúcia dos Santos Cabral (Assistente Social da COEMULT/GDA/DIRASS)
+  - Priscila Penido Antunes (Fonoaudióloga da COEMULT/GDA/DIRASS)
+  - Quesia Vitória Bezerra (Acadêmica de Enfermagem da COEMULT/GDA/DIRASS)
+  - Roberta Aparecida Gonçalves (Médica Infectologista da CSA/GDA/DIRASS)
+  - Tiago Sávio Moreira Possas (Fisioterapeuta da COEMULT/GDA/DIRASS)
+  year: 2023
+  topics:
+  - raps_rede_atencao_psicossocial
+  - linha_de_cuidado_saude_mental
+  - internacao_psiquiatrica
+  - classificacao_de_risco_saude_mental
+  - projeto_terapeutico_singular
+  - desinstitucionalizacao
+  - seguranca_do_paciente_psiquiatrico
+  - equipe_multiprofissional_saude_mental
+  - alta_responsavel
+  - diretrizes_clinicas_psiquiatria
+  - regulacao_leitos_saude_mental
+  - acolhimento_abordagem_psicossocial
+  key_concepts:
+  - RAPS: Rede de Atenção Psicossocial - rede temática do SUS que organiza serviços
+      de saúde mental em níveis e pontos de atenção articulados
+  - PTS: Projeto Terapêutico Singular - conjunto de indicações curativas articuladas
+      por equipe interdisciplinar, dividido em 4 momentos (diagnóstico, metas, responsabilidades,
+      reavaliação)
+  - Classificação de Risco SM: Sistema de estratificação em 5 cores (vermelho, laranja,
+      amarelo, verde, azul) baseado em critérios clínicos psiquiátricos
+  - Apoio Matricial: Método de produção de saúde onde duas ou mais equipes constroem
+      proposta de intervenção pedagógico-terapêutica compartilhada
+  - Técnico de Referência: Profissional responsável pela condução clínica em saúde
+      mental junto à equipe multidisciplinar
+  - Alta Responsável: Método de planejamento para transferência de cuidado do paciente
+      para a família e para a Rede, obrigatório desde a admissão
+  - SRT: Serviços Residenciais Terapêuticos - moradias comunitárias para pessoas egressas
+      de internação de longa permanência
+  related_protocols:
+  - PCC-01 (Protocolo Intersetorial APS-NIRSM-AES)
+  - PCC-06 (Macrofluxo DI/TEA)
+  - POP-05 (Elaboração PTS)
+  - CLI-02 (TEA - referências à classificação de risco e RAPS)
+  clinical_relevance: very_high
+  target_audience:
+  - equipes_multiprofissionais_saude_mental
+  - gestores_raps
+  - profissionais_atencao_hospitalar
+  - enfermagem_psiquiatrica
+  - medicos_psiquiatras
+  - equipes_caps
+  - reguladores_leitos
+  references_count: 87
+  needs_review: true
+- doc_id: REF-NOR-004
+  title: 'Reforma Psiquiátrica e Política de Saúde Mental no Brasil - Conferência
+    Regional de Reforma dos Serviços de Saúde Mental: 15 anos depois de Caracas'
+  transcript_file: referencias\normativos\Reforma psiquiátrica e política de saúde
+    mental no Brasil relatório 15 anos depois de Caracas.md
+  source_file: normativos/Reforma psiquiátrica e política de saúde mental no Brasil
+    relatório 15 anos depois de Caracas.pdf
+  taxonomy: normativos
+  doc_type: relatorio_institucional
+  pages_total: 56
+  authors:
+  - Coordenação Geral de Saúde Mental, Álcool e Outras Drogas
+  - Renata Weber (colaboração)
+  year: 2005
+  topics:
+  - reforma_psiquiatrica
+  - politica_saude_mental
+  - desinstitucionalizacao
+  - caps
+  - residencias_terapeuticas
+  - programa_volta_para_casa
+  - reducao_leitos_psiquiatricos
+  - atencao_comunitaria
+  - inclusao_social_trabalho
+  - alcool_drogas_reducao_danos
+  key_concepts:
+  - name: Reforma Psiquiátrica
+    description: Processo politico e social de transformacao do modelo assistencial
+      em saude mental, da logica hospitalocentrica para a atencao comunitaria e territorial
+  - name: Desinstitucionalizacao
+    description: Reducao programada de leitos psiquiatricos com reintegracao social
+      de pessoas longamente internadas, mediada por SRT, CAPS e Programa De Volta
+      para Casa
+  - name: CAPS como dispositivo estrategico
+    description: Centros de Atencao Psicossocial como articuladores da rede territorial
+      de saude mental, substitutivos ao hospital psiquiatrico
+  - name: Apoio Matricial
+    description: Arranjo organizacional de suporte tecnico especializado em saude
+      mental para equipes de Atencao Basica, com co-responsabilizacao pelos casos
+  - name: Reducao de Danos
+    description: Estrategia de saude publica para abordagem do uso prejudicial de
+      alcool e drogas sem exigencia imediata de abstinencia
+  - name: Rede e Territorio
+    description: Organizacao dos servicos de saude mental a partir do territorio como
+      espaco vivo de relacoes, recursos e potencialidades comunitarias
+  - name: Lei 10.216/2001
+    description: Marco legal da Reforma Psiquiatrica que redireciona a assistencia
+      para servicos comunitarios e protege direitos das pessoas com transtornos mentais
+  related_protocols:
+  - PCC-01
+  - PCC-02
+  - PCC-06
+  - POP-05
+  - CLI-02
+  clinical_relevance: very_high
+  target_audience:
+  - gestores_saude_mental
+  - coordenadores_raps
+  - equipes_caps
+  - equipes_atencao_basica
+  - formuladores_politica_publica
+  - pesquisadores_saude_coletiva
+  references_count: 9
+  needs_review: true

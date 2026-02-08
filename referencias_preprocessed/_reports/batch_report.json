@@ -1,0 +1,1794 @@
+{
+  "timestamp": "2026-02-08T10:33:24.516745",
+  "total_pdfs": 75,
+  "successful": 72,
+  "failed": 3,
+  "processing_time_seconds": 1005,
+  "files": [
+    {
+      "pdf": "A práxis do enfermeiro no programa saúde da família na atenção à saúde mental.pdf",
+      "output": "A práxis do enfermeiro no programa saúde da família na atenção à saúde mental.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "artigos\\A práxis do enfermeiro no programa saúde da família na atenção à saúde mental.pdf",
+        "taxonomy": "artigos",
+        "doc_type": "documento_geral",
+        "pages_total": 9,
+        "ocr_applied": false,
+        "text_extraction_quality": 1.0,
+        "tables_detected": 0,
+        "file_hash": "9bd3b52bc0dc7fcb88f6075ac61ca617",
+        "processed_at": "2026-02-08T10:16:42.203137"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "Construção de um Projeto de Cuidado em Saúde Mental na Atenção Básica.pdf",
+      "output": "Construção de um Projeto de Cuidado em Saúde Mental na Atenção Básica.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "artigos\\Construção de um Projeto de Cuidado em Saúde Mental na Atenção Básica.pdf",
+        "taxonomy": "artigos",
+        "doc_type": "documento_geral",
+        "pages_total": 12,
+        "ocr_applied": false,
+        "text_extraction_quality": 1.0,
+        "tables_detected": 14,
+        "file_hash": "0a4f78eabc5ae06a25a15747d5b281b7",
+        "processed_at": "2026-02-08T10:16:51.528757"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "Demanda em Saúde Mental e Atenção Psicossocial FIOCRUZ.pdf",
+      "output": "Demanda em Saúde Mental e Atenção Psicossocial FIOCRUZ.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "artigos\\Demanda em Saúde Mental e Atenção Psicossocial FIOCRUZ.pdf",
+        "taxonomy": "artigos",
+        "doc_type": "documento_geral",
+        "pages_total": 31,
+        "ocr_applied": false,
+        "text_extraction_quality": 0.6417999999999999,
+        "tables_detected": 10,
+        "file_hash": "a0503e11bf4e7ea77d247e18195d07bb",
+        "processed_at": "2026-02-08T10:17:03.562527"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "Dialogos entre SM E APS.pdf",
+      "output": "Dialogos entre SM E APS.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "artigos\\Dialogos entre SM E APS.pdf",
+        "taxonomy": "artigos",
+        "doc_type": "documento_geral",
+        "pages_total": 14,
+        "ocr_applied": false,
+        "text_extraction_quality": 1.0,
+        "tables_detected": 5,
+        "file_hash": "56b331bd1189bf64a54bbea23cd25212",
+        "processed_at": "2026-02-08T10:17:13.005742"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "Formação para o trabalho em saúde mental.pdf",
+      "output": "Formação para o trabalho em saúde mental.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "artigos\\Formação para o trabalho em saúde mental.pdf",
+        "taxonomy": "artigos",
+        "doc_type": "documento_geral",
+        "pages_total": 15,
+        "ocr_applied": false,
+        "text_extraction_quality": 1.0,
+        "tables_detected": 1,
+        "file_hash": "6f20faf4ffc87a8d8941af13bcf5e79d",
+        "processed_at": "2026-02-08T10:17:32.059891"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "Gestão do Trabalho em Saúde Mental.pdf",
+      "output": "Gestão do Trabalho em Saúde Mental.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "artigos\\Gestão do Trabalho em Saúde Mental.pdf",
+        "taxonomy": "artigos",
+        "doc_type": "documento_geral",
+        "pages_total": 7,
+        "ocr_applied": false,
+        "text_extraction_quality": 1.0,
+        "tables_detected": 0,
+        "file_hash": "24a504fab1e898d752afde68d0a3dd18",
+        "processed_at": "2026-02-08T10:16:41.627132"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "Gestão em Saúde.pdf",
+      "output": "Gestão em Saúde.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "artigos\\Gestão em Saúde.pdf",
+        "taxonomy": "artigos",
+        "doc_type": "documento_geral",
+        "pages_total": 6,
+        "ocr_applied": false,
+        "text_extraction_quality": 1.0,
+        "tables_detected": 2,
+        "file_hash": "083f95d9539c1f672169d6e3daaf0a9d",
+        "processed_at": "2026-02-08T10:16:43.511802"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "O trabalho na gestão dos serviços substitutivos de saúde mental aproximações entre Saúde Coletiva, Saúde Mental e Psicanális.pdf",
+      "output": "O trabalho na gestão dos serviços substitutivos de saúde mental aproximações entre Saúde Coletiva, Saúde Mental e Psicanális.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "artigos\\O trabalho na gestão dos serviços substitutivos de saúde mental aproximações entre Saúde Coletiva, Saúde Mental e Psicanális.pdf",
+        "taxonomy": "artigos",
+        "doc_type": "documento_geral",
+        "pages_total": 20,
+        "ocr_applied": false,
+        "text_extraction_quality": 1.0,
+        "tables_detected": 2,
+        "file_hash": "40dda4fd8c500bf1aaaa06f8bdb92af5",
+        "processed_at": "2026-02-08T10:16:56.506882"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "Principios para a gestão da clínica, conectando gestão, atenção à saúde e educação na saúde.pdf",
+      "output": null,
+      "status": "failed",
+      "metadata": {
+        "error": "'charmap' codec can't encode character '\\u0303' in position 39: character maps to <undefined>"
+      },
+      "validation": {
+        "success": false,
+        "issues": [
+          {
+            "type": "processing_error",
+            "message": "'charmap' codec can't encode character '\\u0303' in position 39: character maps to <undefined>"
+          }
+        ],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "Reabilitação Intelectual.pdf",
+      "output": null,
+      "status": "failed",
+      "metadata": {
+        "error": "'charmap' codec can't encode character '\\u0327' in position 26: character maps to <undefined>"
+      },
+      "validation": {
+        "success": false,
+        "issues": [
+          {
+            "type": "processing_error",
+            "message": "'charmap' codec can't encode character '\\u0327' in position 26: character maps to <undefined>"
+          }
+        ],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "Saúde mental e a qualidade organizacional dos serviços de atenção primária no Brasil.pdf",
+      "output": null,
+      "status": "failed",
+      "metadata": {
+        "error": "'charmap' codec can't encode character '\\u0301' in position 19: character maps to <undefined>"
+      },
+      "validation": {
+        "success": false,
+        "issues": [
+          {
+            "type": "processing_error",
+            "message": "'charmap' codec can't encode character '\\u0301' in position 19: character maps to <undefined>"
+          }
+        ],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "Saúde mental como as equipes de ESF podem integrar esse cuidado na Atenção básica.pdf",
+      "output": "Saúde mental como as equipes de ESF podem integrar esse cuidado na Atenção básica.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "artigos\\Saúde mental como as equipes de ESF podem integrar esse cuidado na Atenção básica.pdf",
+        "taxonomy": "artigos",
+        "doc_type": "documento_geral",
+        "pages_total": 8,
+        "ocr_applied": false,
+        "text_extraction_quality": 1.0,
+        "tables_detected": 2,
+        "file_hash": "067df9a2db8b636ca73a5ea2c272eb52",
+        "processed_at": "2026-02-08T10:16:42.315505"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "Saúde mental e a qualidade organizacional dos serviços de atenção primária no Brasil.pdf",
+      "output": "Saúde mental e a qualidade organizacional dos serviços de atenção primária no Brasil.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "artigos\\Saúde mental e a qualidade organizacional dos serviços de atenção primária no Brasil.pdf",
+        "taxonomy": "artigos",
+        "doc_type": "documento_geral",
+        "pages_total": 13,
+        "ocr_applied": false,
+        "text_extraction_quality": 1.0,
+        "tables_detected": 3,
+        "file_hash": "4abfcb1777385b0aebd166057a76b6b8",
+        "processed_at": "2026-02-08T10:16:55.365825"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "saúde publica e saúde coletiva.pdf",
+      "output": "saúde publica e saúde coletiva.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "artigos\\saúde publica e saúde coletiva.pdf",
+        "taxonomy": "artigos",
+        "doc_type": "documento_geral",
+        "pages_total": 12,
+        "ocr_applied": false,
+        "text_extraction_quality": 1.0,
+        "tables_detected": 0,
+        "file_hash": "7b9df0c433cba3fb96a6bdfff018ac1d",
+        "processed_at": "2026-02-08T10:17:05.034915"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "Caso Luís Psicose Esquizofrenia Escalonamento do Cuidado em Saúde Mental.pdf",
+      "output": "Caso Luís Psicose Esquizofrenia Escalonamento do Cuidado em Saúde Mental.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "casos_clinicos\\Caso Luís Psicose Esquizofrenia Escalonamento do Cuidado em Saúde Mental.pdf",
+        "taxonomy": "casos_clinicos",
+        "doc_type": "caso_clinico",
+        "pages_total": 5,
+        "ocr_applied": false,
+        "text_extraction_quality": 1.0,
+        "tables_detected": 9,
+        "file_hash": "0e39e200f481319597eed069fc0322a9",
+        "processed_at": "2026-02-08T10:17:13.139988"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "Caso Marina Etilismo Escalonamento do Cuidado em Saúde Mental.pdf",
+      "output": "Caso Marina Etilismo Escalonamento do Cuidado em Saúde Mental.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "casos_clinicos\\Caso Marina Etilismo Escalonamento do Cuidado em Saúde Mental.pdf",
+        "taxonomy": "casos_clinicos",
+        "doc_type": "caso_clinico",
+        "pages_total": 5,
+        "ocr_applied": false,
+        "text_extraction_quality": 1.0,
+        "tables_detected": 9,
+        "file_hash": "b7e6dc31e9a30323cd0d3421ba47f257",
+        "processed_at": "2026-02-08T10:16:44.384646"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "Caso Patrícia Depressão Escalonamento do Cuidado em Saúde Mental.pdf",
+      "output": "Caso Patrícia Depressão Escalonamento do Cuidado em Saúde Mental.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "casos_clinicos\\Caso Patrícia Depressão Escalonamento do Cuidado em Saúde Mental.pdf",
+        "taxonomy": "casos_clinicos",
+        "doc_type": "caso_clinico",
+        "pages_total": 5,
+        "ocr_applied": false,
+        "text_extraction_quality": 0.9827,
+        "tables_detected": 9,
+        "file_hash": "630e2458a4f03a4e356162786e0dd911",
+        "processed_at": "2026-02-08T10:16:57.075531"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "Caso Rodrigo Ansiedade Escalonamento do Cuidado em Saúde Mental.pdf",
+      "output": "Caso Rodrigo Ansiedade Escalonamento do Cuidado em Saúde Mental.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "casos_clinicos\\Caso Rodrigo Ansiedade Escalonamento do Cuidado em Saúde Mental.pdf",
+        "taxonomy": "casos_clinicos",
+        "doc_type": "caso_clinico",
+        "pages_total": 5,
+        "ocr_applied": false,
+        "text_extraction_quality": 1.0,
+        "tables_detected": 10,
+        "file_hash": "229a73e77692189545a61d9d2bdea74e",
+        "processed_at": "2026-02-08T10:17:06.701625"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "Manual_Caso Rodrigo.pdf",
+      "output": "Manual_Caso Rodrigo.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "casos_clinicos\\Manual_Caso Rodrigo.pdf",
+        "taxonomy": "casos_clinicos",
+        "doc_type": "manual",
+        "pages_total": 5,
+        "ocr_applied": false,
+        "text_extraction_quality": 1.0,
+        "tables_detected": 10,
+        "file_hash": "229a73e77692189545a61d9d2bdea74e",
+        "processed_at": "2026-02-08T10:17:15.659727"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "10. Ficha de atendimento de classificação de risco.pdf",
+      "output": "10. Ficha de atendimento de classificação de risco.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "instrumentos\\10. Ficha de atendimento de classificação de risco.pdf",
+        "taxonomy": "instrumentos",
+        "doc_type": "instrumento",
+        "pages_total": 2,
+        "ocr_applied": false,
+        "text_extraction_quality": 0.33375,
+        "tables_detected": 3,
+        "file_hash": "14459bd59613fdddb35968341b522150",
+        "processed_at": "2026-02-08T10:17:24.603908"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": [
+          {
+            "type": "low_extraction_ratio",
+            "severity": "medium",
+            "message": "Razão extração/tamanho: 3.84% (esperado >5%)"
+          }
+        ]
+      }
+    },
+    {
+      "pdf": "10. Plano de cuidado familiar.pdf",
+      "output": "10. Plano de cuidado familiar.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "instrumentos\\10. Plano de cuidado familiar.pdf",
+        "taxonomy": "instrumentos",
+        "doc_type": "documento_geral",
+        "pages_total": 2,
+        "ocr_applied": false,
+        "text_extraction_quality": 1.0,
+        "tables_detected": 2,
+        "file_hash": "c02723476d38555629fa91260b0a7c41",
+        "processed_at": "2026-02-08T10:17:00.945333"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "11. Orientação para implantação do time de resposta rápida.pdf",
+      "output": "11. Orientação para implantação do time de resposta rápida.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "instrumentos\\11. Orientação para implantação do time de resposta rápida.pdf",
+        "taxonomy": "instrumentos",
+        "doc_type": "documento_geral",
+        "pages_total": 11,
+        "ocr_applied": false,
+        "text_extraction_quality": 1.0,
+        "tables_detected": 9,
+        "file_hash": "37032a43d7d1584340057bea94f7ad0e",
+        "processed_at": "2026-02-08T10:17:10.279132"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "4. A utilização da Escala CuidaSM para apoiar o processo de escalonamento.pdf",
+      "output": "4. A utilização da Escala CuidaSM para apoiar o processo de escalonamento.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "instrumentos\\4. A utilização da Escala CuidaSM para apoiar o processo de escalonamento.pdf",
+        "taxonomy": "instrumentos",
+        "doc_type": "instrumento",
+        "pages_total": 6,
+        "ocr_applied": false,
+        "text_extraction_quality": 1.0,
+        "tables_detected": 45,
+        "file_hash": "73a8604092bfb977d4cca236a2f79aff",
+        "processed_at": "2026-02-08T10:17:24.236107"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "4. Modelo para Folha de Registro eSCALONAMENTO sAUDE mENTAL.pdf",
+      "output": "4. Modelo para Folha de Registro eSCALONAMENTO sAUDE mENTAL.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "instrumentos\\4. Modelo para Folha de Registro eSCALONAMENTO sAUDE mENTAL.pdf",
+        "taxonomy": "instrumentos",
+        "doc_type": "documento_geral",
+        "pages_total": 1,
+        "ocr_applied": false,
+        "text_extraction_quality": 0.772,
+        "tables_detected": 2,
+        "file_hash": "c1c36ca6c5ef43385e25f1a997942a67",
+        "processed_at": "2026-02-08T10:17:29.933211"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": [
+          {
+            "type": "low_extraction_ratio",
+            "severity": "medium",
+            "message": "Razão extração/tamanho: 4.95% (esperado >5%)"
+          }
+        ]
+      }
+    },
+    {
+      "pdf": "4. Texto de apoio - Os macroprocessos de atenção aos eventos agudos em SM.pdf",
+      "output": "4. Texto de apoio - Os macroprocessos de atenção aos eventos agudos em SM.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "instrumentos\\4. Texto de apoio - Os macroprocessos de atenção aos eventos agudos em SM.pdf",
+        "taxonomy": "instrumentos",
+        "doc_type": "documento_geral",
+        "pages_total": 10,
+        "ocr_applied": false,
+        "text_extraction_quality": 1.0,
+        "tables_detected": 1,
+        "file_hash": "d609a2e7b5d97f43e9034f5c3f7c2ec8",
+        "processed_at": "2026-02-08T10:17:39.043346"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": [
+          {
+            "type": "low_extraction_ratio",
+            "severity": "medium",
+            "message": "Razão extração/tamanho: 2.61% (esperado >5%)"
+          }
+        ]
+      }
+    },
+    {
+      "pdf": "5. Direcionadores para organização de grupos na APS.pdf",
+      "output": "5. Direcionadores para organização de grupos na APS.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "instrumentos\\5. Direcionadores para organização de grupos na APS.pdf",
+        "taxonomy": "instrumentos",
+        "doc_type": "documento_geral",
+        "pages_total": 2,
+        "ocr_applied": false,
+        "text_extraction_quality": 1.0,
+        "tables_detected": 0,
+        "file_hash": "9c3e3015ac7892c210819853175b3ddd",
+        "processed_at": "2026-02-08T10:17:14.693473"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": [
+          {
+            "type": "low_extraction_ratio",
+            "severity": "medium",
+            "message": "Razão extração/tamanho: 2.52% (esperado >5%)"
+          }
+        ]
+      }
+    },
+    {
+      "pdf": "5. Fluxogramas para atendimento com classificação de risco em saúde mental.pdf",
+      "output": "5. Fluxogramas para atendimento com classificação de risco em saúde mental.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "instrumentos\\5. Fluxogramas para atendimento com classificação de risco em saúde mental.pdf",
+        "taxonomy": "instrumentos",
+        "doc_type": "documento_geral",
+        "pages_total": 3,
+        "ocr_applied": true,
+        "text_extraction_quality": 0.2485,
+        "tables_detected": 0,
+        "file_hash": "f6584eec5c305468a98a43e3a99d8446",
+        "processed_at": "2026-02-08T10:17:16.628505"
+      },
+      "validation": {
+        "success": false,
+        "issues": [
+          {
+            "type": "low_ocr_quality",
+            "severity": "high",
+            "message": "OCR quality 0.25 abaixo do limite 0.5"
+          }
+        ],
+        "warnings": [
+          {
+            "type": "low_extraction_ratio",
+            "severity": "medium",
+            "message": "Razão extração/tamanho: 0.40% (esperado >5%)"
+          }
+        ]
+      }
+    },
+    {
+      "pdf": "5. Guia de Bolso do ACS.pdf",
+      "output": "5. Guia de Bolso do ACS.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "instrumentos\\5. Guia de Bolso do ACS.pdf",
+        "taxonomy": "instrumentos",
+        "doc_type": "manual",
+        "pages_total": 14,
+        "ocr_applied": false,
+        "text_extraction_quality": 0.6754,
+        "tables_detected": 7,
+        "file_hash": "bafb2efd6bee64ff9d426cb9012f9e17",
+        "processed_at": "2026-02-08T10:18:12.188710"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": [
+          {
+            "type": "low_extraction_ratio",
+            "severity": "medium",
+            "message": "Razão extração/tamanho: 2.34% (esperado >5%)"
+          }
+        ]
+      }
+    },
+    {
+      "pdf": "6. Ficha complementar - Sinais de alerta para o cuidado em Saúde Mental.pdf",
+      "output": "6. Ficha complementar - Sinais de alerta para o cuidado em Saúde Mental.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "instrumentos\\6. Ficha complementar - Sinais de alerta para o cuidado em Saúde Mental.pdf",
+        "taxonomy": "instrumentos",
+        "doc_type": "instrumento",
+        "pages_total": 1,
+        "ocr_applied": false,
+        "text_extraction_quality": 0.5115,
+        "tables_detected": 1,
+        "file_hash": "42bccb1acddc9998bfc2e5d88ef0e710",
+        "processed_at": "2026-02-08T10:18:14.765999"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": [
+          {
+            "type": "low_extraction_ratio",
+            "severity": "medium",
+            "message": "Razão extração/tamanho: 3.24% (esperado >5%)"
+          }
+        ]
+      }
+    },
+    {
+      "pdf": "6. Instrumento para avaliar mapa de fluxo e ciclo de atendimento.pdf",
+      "output": "6. Instrumento para avaliar mapa de fluxo e ciclo de atendimento.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "instrumentos\\6. Instrumento para avaliar mapa de fluxo e ciclo de atendimento.pdf",
+        "taxonomy": "instrumentos",
+        "doc_type": "instrumento",
+        "pages_total": 5,
+        "ocr_applied": false,
+        "text_extraction_quality": 0.8593999999999999,
+        "tables_detected": 1,
+        "file_hash": "5a2aceacdbbf31fef4bcdec393e5ce7c",
+        "processed_at": "2026-02-08T10:18:19.558055"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": [
+          {
+            "type": "low_extraction_ratio",
+            "severity": "medium",
+            "message": "Razão extração/tamanho: 3.46% (esperado >5%)"
+          }
+        ]
+      }
+    },
+    {
+      "pdf": "6. Materiais e procedimentos para assistência às emergências em saúde mental na APS.pdf",
+      "output": "6. Materiais e procedimentos para assistência às emergências em saúde mental na APS.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "instrumentos\\6. Materiais e procedimentos para assistência às emergências em saúde mental na APS.pdf",
+        "taxonomy": "instrumentos",
+        "doc_type": "documento_geral",
+        "pages_total": 6,
+        "ocr_applied": false,
+        "text_extraction_quality": 1.0,
+        "tables_detected": 8,
+        "file_hash": "40e6be4de73c73f7b8d54409c1e8a773",
+        "processed_at": "2026-02-08T10:17:35.975804"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "7. Texto de apoio - O processo de estratificação de risco familiar.pdf",
+      "output": "7. Texto de apoio - O processo de estratificação de risco familiar.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "instrumentos\\7. Texto de apoio - O processo de estratificação de risco familiar.pdf",
+        "taxonomy": "instrumentos",
+        "doc_type": "documento_geral",
+        "pages_total": 3,
+        "ocr_applied": false,
+        "text_extraction_quality": 1.0,
+        "tables_detected": 6,
+        "file_hash": "692bfa2f95a46dede4322e636ff57711",
+        "processed_at": "2026-02-08T10:17:40.759120"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "8. Escala de Risco Familiar de Coelho-Savassi.pdf",
+      "output": "8. Escala de Risco Familiar de Coelho-Savassi.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "instrumentos\\8. Escala de Risco Familiar de Coelho-Savassi.pdf",
+        "taxonomy": "instrumentos",
+        "doc_type": "instrumento",
+        "pages_total": 1,
+        "ocr_applied": false,
+        "text_extraction_quality": 1.0,
+        "tables_detected": 5,
+        "file_hash": "1ccc42db0c733bd57e225ec1c982f4f7",
+        "processed_at": "2026-02-08T10:17:42.581699"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "Roteiro para Utilização da Escala de Avaliação da Necessidade de Cuidado em Saúde Mental (CuidaSM)_e-planifica.pdf",
+      "output": "Roteiro para Utilização da Escala de Avaliação da Necessidade de Cuidado em Saúde Mental (CuidaSM)_e-planifica.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "instrumentos\\Roteiro para Utilização da Escala de Avaliação da Necessidade de Cuidado em Saúde Mental (CuidaSM)_e-planifica.pdf",
+        "taxonomy": "instrumentos",
+        "doc_type": "instrumento",
+        "pages_total": 18,
+        "ocr_applied": false,
+        "text_extraction_quality": 0.6685,
+        "tables_detected": 20,
+        "file_hash": "ea98c9b947de3b3a24dc5fc527e76108",
+        "processed_at": "2026-02-08T10:18:07.546946"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "Linha de Cuidado e Diretrizes Assistenciais - Saúde Mental  (caderno nº1).pdf",
+      "output": "Linha de Cuidado e Diretrizes Assistenciais - Saúde Mental  (caderno nº1).md",
+      "status": "success",
+      "metadata": {
+        "source_file": "normativos\\Linha de Cuidado e Diretrizes Assistenciais - Saúde Mental  (caderno nº1).pdf",
+        "taxonomy": "normativos",
+        "doc_type": "documento_geral",
+        "pages_total": 107,
+        "ocr_applied": false,
+        "text_extraction_quality": 0.3664,
+        "tables_detected": 58,
+        "file_hash": "37ababddc2ee2b938ddc60f6101ea1c8",
+        "processed_at": "2026-02-08T10:18:53.068995"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "Nota Técnica Saúde Mental.pdf",
+      "output": "Nota Técnica Saúde Mental.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "normativos\\Nota Técnica Saúde Mental.pdf",
+        "taxonomy": "normativos",
+        "doc_type": "documento_geral",
+        "pages_total": 44,
+        "ocr_applied": false,
+        "text_extraction_quality": 0.6187999999999999,
+        "tables_detected": 63,
+        "file_hash": "a959bfb9a72994b787b555796cf6850c",
+        "processed_at": "2026-02-08T10:18:08.043501"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "Rede de Atenção Psicossocial - RAPS (2).pdf",
+      "output": "Rede de Atenção Psicossocial - RAPS (2).md",
+      "status": "success",
+      "metadata": {
+        "source_file": "normativos\\Rede de Atenção Psicossocial - RAPS (2).pdf",
+        "taxonomy": "normativos",
+        "doc_type": "documento_geral",
+        "pages_total": 67,
+        "ocr_applied": true,
+        "text_extraction_quality": 0.0339,
+        "tables_detected": 21,
+        "file_hash": "77100b6d736e7bdeed0ce989cb77f23d",
+        "processed_at": "2026-02-08T10:19:01.458543"
+      },
+      "validation": {
+        "success": false,
+        "issues": [
+          {
+            "type": "low_ocr_quality",
+            "severity": "high",
+            "message": "OCR quality 0.03 abaixo do limite 0.5"
+          }
+        ],
+        "warnings": [
+          {
+            "type": "low_extraction_ratio",
+            "severity": "medium",
+            "message": "Razão extração/tamanho: 2.48% (esperado >5%)"
+          }
+        ]
+      }
+    },
+    {
+      "pdf": "Reforma psiquiátrica e política de saúde mental no Brasil relatório 15 anos depois de Caracas.pdf",
+      "output": "Reforma psiquiátrica e política de saúde mental no Brasil relatório 15 anos depois de Caracas.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "normativos\\Reforma psiquiátrica e política de saúde mental no Brasil relatório 15 anos depois de Caracas.pdf",
+        "taxonomy": "normativos",
+        "doc_type": "documento_geral",
+        "pages_total": 56,
+        "ocr_applied": false,
+        "text_extraction_quality": 0.5326000000000001,
+        "tables_detected": 10,
+        "file_hash": "b14ab9259edb59bf9ed3d1c44e13a706",
+        "processed_at": "2026-02-08T10:19:37.551429"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "Guia para Desenvolvimento do Tutor Etapa 1.pdf",
+      "output": "Guia para Desenvolvimento do Tutor Etapa 1.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "formacao\\guias_desenvolvimento\\Guia para Desenvolvimento do Tutor Etapa 1.pdf",
+        "taxonomy": "formacao/guias_desenvolvimento",
+        "doc_type": "manual",
+        "pages_total": 24,
+        "ocr_applied": false,
+        "text_extraction_quality": 0.6354,
+        "tables_detected": 31,
+        "file_hash": "ed356a2b51e582df8fe2f3d73b29745e",
+        "processed_at": "2026-02-08T10:19:59.621303"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": [
+          {
+            "type": "low_extraction_ratio",
+            "severity": "medium",
+            "message": "Razão extração/tamanho: 1.76% (esperado >5%)"
+          }
+        ]
+      }
+    },
+    {
+      "pdf": "Guia para Desenvolvimento do Tutor Etapa 2.pdf",
+      "output": "Guia para Desenvolvimento do Tutor Etapa 2.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "formacao\\guias_desenvolvimento\\Guia para Desenvolvimento do Tutor Etapa 2.pdf",
+        "taxonomy": "formacao/guias_desenvolvimento",
+        "doc_type": "manual",
+        "pages_total": 24,
+        "ocr_applied": false,
+        "text_extraction_quality": 0.6317999999999999,
+        "tables_detected": 34,
+        "file_hash": "c70e2dec3a49a8d7f8b39cf3cbcd981d",
+        "processed_at": "2026-02-08T10:20:15.316061"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "Guia para Desenvolvimento do Tutor Etapa 3.pdf",
+      "output": "Guia para Desenvolvimento do Tutor Etapa 3.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "formacao\\guias_desenvolvimento\\Guia para Desenvolvimento do Tutor Etapa 3.pdf",
+        "taxonomy": "formacao/guias_desenvolvimento",
+        "doc_type": "manual",
+        "pages_total": 25,
+        "ocr_applied": false,
+        "text_extraction_quality": 0.6261,
+        "tables_detected": 44,
+        "file_hash": "5f7f60cd414809d2bd6901cca16ce4ed",
+        "processed_at": "2026-02-08T10:18:14.735027"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": [
+          {
+            "type": "low_extraction_ratio",
+            "severity": "medium",
+            "message": "Razão extração/tamanho: 1.33% (esperado >5%)"
+          }
+        ]
+      }
+    },
+    {
+      "pdf": "Guia para Desenvolvimento do Tutor Etapa 4_Final.pdf",
+      "output": "Guia para Desenvolvimento do Tutor Etapa 4_Final.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "formacao\\guias_desenvolvimento\\Guia para Desenvolvimento do Tutor Etapa 4_Final.pdf",
+        "taxonomy": "formacao/guias_desenvolvimento",
+        "doc_type": "manual",
+        "pages_total": 56,
+        "ocr_applied": false,
+        "text_extraction_quality": 0.6256,
+        "tables_detected": 58,
+        "file_hash": "aec94b2deca8788709fc4b4c6d0a85c0",
+        "processed_at": "2026-02-08T10:19:20.333832"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "Guia para Gerenciamento da Etapa 1.pdf",
+      "output": "Guia para Gerenciamento da Etapa 1.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "formacao\\guias_gerenciamento\\Guia para Gerenciamento da Etapa 1.pdf",
+        "taxonomy": "formacao/guias_gerenciamento",
+        "doc_type": "manual",
+        "pages_total": 24,
+        "ocr_applied": false,
+        "text_extraction_quality": 0.6477999999999999,
+        "tables_detected": 30,
+        "file_hash": "8644887b76e38cee77ec123690767b15",
+        "processed_at": "2026-02-08T10:19:43.020153"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": [
+          {
+            "type": "low_extraction_ratio",
+            "severity": "medium",
+            "message": "Razão extração/tamanho: 3.03% (esperado >5%)"
+          }
+        ]
+      }
+    },
+    {
+      "pdf": "Guia para Gerenciamento da Etapa 2.pdf",
+      "output": "Guia para Gerenciamento da Etapa 2.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "formacao\\guias_gerenciamento\\Guia para Gerenciamento da Etapa 2.pdf",
+        "taxonomy": "formacao/guias_gerenciamento",
+        "doc_type": "manual",
+        "pages_total": 24,
+        "ocr_applied": false,
+        "text_extraction_quality": 0.6465,
+        "tables_detected": 30,
+        "file_hash": "35fb8f32509d228edb651fac49e98a06",
+        "processed_at": "2026-02-08T10:20:05.620330"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": [
+          {
+            "type": "low_extraction_ratio",
+            "severity": "medium",
+            "message": "Razão extração/tamanho: 1.78% (esperado >5%)"
+          }
+        ]
+      }
+    },
+    {
+      "pdf": "Guia para Gerenciamento da Etapa 3_e-planifica.pdf",
+      "output": "Guia para Gerenciamento da Etapa 3_e-planifica.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "formacao\\guias_gerenciamento\\Guia para Gerenciamento da Etapa 3_e-planifica.pdf",
+        "taxonomy": "formacao/guias_gerenciamento",
+        "doc_type": "manual",
+        "pages_total": 29,
+        "ocr_applied": false,
+        "text_extraction_quality": 0.6347,
+        "tables_detected": 38,
+        "file_hash": "b9ed6335f44994c9d5e45e7bf5a562ed",
+        "processed_at": "2026-02-08T10:20:33.527872"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "Guia para Gerenciamento da Etapa 4.pdf",
+      "output": "Guia para Gerenciamento da Etapa 4.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "formacao\\guias_gerenciamento\\Guia para Gerenciamento da Etapa 4.pdf",
+        "taxonomy": "formacao/guias_gerenciamento",
+        "doc_type": "manual",
+        "pages_total": 30,
+        "ocr_applied": false,
+        "text_extraction_quality": 0.6306,
+        "tables_detected": 40,
+        "file_hash": "aee5f33bcf48ffeec784439dd9cacb21",
+        "processed_at": "2026-02-08T10:18:51.802417"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "Guia de Orientacao para a Tutoria da Etapa 1.pdf",
+      "output": "Guia de Orientacao para a Tutoria da Etapa 1.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "formacao\\guias_tutoria\\Guia de Orientacao para a Tutoria da Etapa 1.pdf",
+        "taxonomy": "formacao/guias_tutoria",
+        "doc_type": "manual",
+        "pages_total": 21,
+        "ocr_applied": false,
+        "text_extraction_quality": 0.6361,
+        "tables_detected": 23,
+        "file_hash": "54e0c25533acc5648a96316cb95d4a70",
+        "processed_at": "2026-02-08T10:19:17.378628"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": [
+          {
+            "type": "low_extraction_ratio",
+            "severity": "medium",
+            "message": "Razão extração/tamanho: 2.25% (esperado >5%)"
+          }
+        ]
+      }
+    },
+    {
+      "pdf": "Guia de Orientacao para a Tutoria da Etapa 3_e-planifica.pdf",
+      "output": "Guia de Orientacao para a Tutoria da Etapa 3_e-planifica.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "formacao\\guias_tutoria\\Guia de Orientacao para a Tutoria da Etapa 3_e-planifica.pdf",
+        "taxonomy": "formacao/guias_tutoria",
+        "doc_type": "manual",
+        "pages_total": 27,
+        "ocr_applied": false,
+        "text_extraction_quality": 0.6262000000000001,
+        "tables_detected": 42,
+        "file_hash": "8c6d6a37f56d9a950c8b1600ceb0c59d",
+        "processed_at": "2026-02-08T10:19:43.601426"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "Guia de Orientacao para a Tutoria da Etapa 4_e-Planifica.pdf",
+      "output": "Guia de Orientacao para a Tutoria da Etapa 4_e-Planifica.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "formacao\\guias_tutoria\\Guia de Orientacao para a Tutoria da Etapa 4_e-Planifica.pdf",
+        "taxonomy": "formacao/guias_tutoria",
+        "doc_type": "manual",
+        "pages_total": 27,
+        "ocr_applied": false,
+        "text_extraction_quality": 0.6135,
+        "tables_detected": 36,
+        "file_hash": "6b2f9622ada67797104b71f1f8b5be4d",
+        "processed_at": "2026-02-08T10:20:08.016982"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "GUIA DE ORIENTAÇÃO PARA A TUTORIA DA ETAPA 4  GESTÃO DO CUIDADO EM SAUDE MENTAL NA APS.pdf",
+      "output": "GUIA DE ORIENTAÇÃO PARA A TUTORIA DA ETAPA 4  GESTÃO DO CUIDADO EM SAUDE MENTAL NA APS.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "formacao\\guias_tutoria\\GUIA DE ORIENTAÇÃO PARA A TUTORIA DA ETAPA 4  GESTÃO DO CUIDADO EM SAUDE MENTAL NA APS.pdf",
+        "taxonomy": "formacao/guias_tutoria",
+        "doc_type": "manual",
+        "pages_total": 27,
+        "ocr_applied": false,
+        "text_extraction_quality": 0.6135,
+        "tables_detected": 36,
+        "file_hash": "6b2f9622ada67797104b71f1f8b5be4d",
+        "processed_at": "2026-02-08T10:20:34.046041"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "Guia de Orientação para a Tutoria da Etapa 4.pdf",
+      "output": "Guia de Orientação para a Tutoria da Etapa 4.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "formacao\\guias_tutoria\\Guia de Orientação para a Tutoria da Etapa 4.pdf",
+        "taxonomy": "formacao/guias_tutoria",
+        "doc_type": "manual",
+        "pages_total": 28,
+        "ocr_applied": false,
+        "text_extraction_quality": 0.5852999999999999,
+        "tables_detected": 43,
+        "file_hash": "e5680b2514b4d8e529f2f100ab079427",
+        "processed_at": "2026-02-08T10:19:36.347212"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": [
+          {
+            "type": "low_extraction_ratio",
+            "severity": "medium",
+            "message": "Razão extração/tamanho: 1.70% (esperado >5%)"
+          }
+        ]
+      }
+    },
+    {
+      "pdf": "Guia de orientação para a etapa preparatoria.pdf",
+      "output": "Guia de orientação para a etapa preparatoria.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "formacao\\oficinas\\Guia de orientação para a etapa preparatoria.pdf",
+        "taxonomy": "formacao/oficinas",
+        "doc_type": "manual",
+        "pages_total": 28,
+        "ocr_applied": false,
+        "text_extraction_quality": 0.6244,
+        "tables_detected": 36,
+        "file_hash": "7e3b3702d1821a3923d6932af30a4d40",
+        "processed_at": "2026-02-08T10:20:15.705946"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "Guia para a Etapa Controle.pdf",
+      "output": "Guia para a Etapa Controle.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "formacao\\oficinas\\Guia para a Etapa Controle.pdf",
+        "taxonomy": "formacao/oficinas",
+        "doc_type": "manual",
+        "pages_total": 21,
+        "ocr_applied": false,
+        "text_extraction_quality": 0.6062000000000001,
+        "tables_detected": 23,
+        "file_hash": "2b47eb9e7e2893c0c2b3eb1c3cadcb8c",
+        "processed_at": "2026-02-08T10:20:38.281627"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "Manual para a organizacao da oficina sobre escalonamento do cuidado em saude mental.pdf",
+      "output": "Manual para a organizacao da oficina sobre escalonamento do cuidado em saude mental.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "formacao\\oficinas\\Manual para a organizacao da oficina sobre escalonamento do cuidado em saude mental.pdf",
+        "taxonomy": "formacao/oficinas",
+        "doc_type": "manual",
+        "pages_total": 43,
+        "ocr_applied": false,
+        "text_extraction_quality": 0.6917000000000001,
+        "tables_detected": 65,
+        "file_hash": "f4a1a53c801ae05a9b0f2b6ff1541c08",
+        "processed_at": "2026-02-08T10:21:24.829982"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "Manual para utilização do instrumento de autoavaliação dos processos estratégicos da linha de cuidado em saúde mental.pdf",
+      "output": "Manual para utilização do instrumento de autoavaliação dos processos estratégicos da linha de cuidado em saúde mental.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "formacao\\oficinas\\Manual para utilização do instrumento de autoavaliação dos processos estratégicos da linha de cuidado em saúde mental.pdf",
+        "taxonomy": "formacao/oficinas",
+        "doc_type": "manual",
+        "pages_total": 16,
+        "ocr_applied": false,
+        "text_extraction_quality": 0.6267,
+        "tables_detected": 24,
+        "file_hash": "4ba62600fc8175d2f694f52ac5138ab7",
+        "processed_at": "2026-02-08T10:21:44.529357"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "Orientação metodológica para utilização da matriz FOFA.pdf",
+      "output": "Orientação metodológica para utilização da matriz FOFA.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "formacao\\oficinas\\Orientação metodológica para utilização da matriz FOFA.pdf",
+        "taxonomy": "formacao/oficinas",
+        "doc_type": "documento_geral",
+        "pages_total": 4,
+        "ocr_applied": false,
+        "text_extraction_quality": 0.586375,
+        "tables_detected": 2,
+        "file_hash": "c6740287656c983052387e475915d10e",
+        "processed_at": "2026-02-08T10:20:16.526640"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": [
+          {
+            "type": "low_extraction_ratio",
+            "severity": "medium",
+            "message": "Razão extração/tamanho: 2.03% (esperado >5%)"
+          }
+        ]
+      }
+    },
+    {
+      "pdf": "Orientações para organização do trabalho interdisciplinar em saúde mental na APS.PDF",
+      "output": "Orientações para organização do trabalho interdisciplinar em saúde mental na APS.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "formacao\\oficinas\\Orientações para organização do trabalho interdisciplinar em saúde mental na APS.PDF",
+        "taxonomy": "formacao/oficinas",
+        "doc_type": "documento_geral",
+        "pages_total": 2,
+        "ocr_applied": false,
+        "text_extraction_quality": 1.0,
+        "tables_detected": 7,
+        "file_hash": "a8bbacabababce6ba20546bcb5f33e22",
+        "processed_at": "2026-02-08T10:20:17.925087"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "Proposta de Programação MI-mhGAP.pdf",
+      "output": "Proposta de Programação MI-mhGAP.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "formacao\\oficinas\\Proposta de Programação MI-mhGAP.pdf",
+        "taxonomy": "formacao/oficinas",
+        "doc_type": "documento_geral",
+        "pages_total": 6,
+        "ocr_applied": false,
+        "text_extraction_quality": 1.0,
+        "tables_detected": 13,
+        "file_hash": "57ac4243693b0c409df83a249ad7f19a",
+        "processed_at": "2026-02-08T10:20:32.528774"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "Roteiro Rodada de Fechamento  Escalonamento do Cuidado em Saúde Mental.pdf",
+      "output": "Roteiro Rodada de Fechamento  Escalonamento do Cuidado em Saúde Mental.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "formacao\\oficinas\\Roteiro Rodada de Fechamento  Escalonamento do Cuidado em Saúde Mental.pdf",
+        "taxonomy": "formacao/oficinas",
+        "doc_type": "documento_geral",
+        "pages_total": 2,
+        "ocr_applied": false,
+        "text_extraction_quality": 1.0,
+        "tables_detected": 2,
+        "file_hash": "cd24b36498e06905beba3ffcd29fcc4d",
+        "processed_at": "2026-02-08T10:20:36.431231"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "Guia Workshop 1.pdf",
+      "output": "Guia Workshop 1.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "formacao\\workshops\\Guia Workshop 1.pdf",
+        "taxonomy": "formacao/workshops",
+        "doc_type": "manual",
+        "pages_total": 44,
+        "ocr_applied": false,
+        "text_extraction_quality": 0.5202,
+        "tables_detected": 7,
+        "file_hash": "02bfaf716941463eb6d04c5981ff37e7",
+        "processed_at": "2026-02-08T10:21:05.999179"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": [
+          {
+            "type": "low_extraction_ratio",
+            "severity": "medium",
+            "message": "Razão extração/tamanho: 0.69% (esperado >5%)"
+          }
+        ]
+      }
+    },
+    {
+      "pdf": "Guia Workshop 2.pdf",
+      "output": "Guia Workshop 2.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "formacao\\workshops\\Guia Workshop 2.pdf",
+        "taxonomy": "formacao/workshops",
+        "doc_type": "manual",
+        "pages_total": 44,
+        "ocr_applied": false,
+        "text_extraction_quality": 0.5213,
+        "tables_detected": 12,
+        "file_hash": "bbc9eb82e05478e1f3b3ce9c53dc20ef",
+        "processed_at": "2026-02-08T10:21:02.981096"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": [
+          {
+            "type": "low_extraction_ratio",
+            "severity": "medium",
+            "message": "Razão extração/tamanho: 0.47% (esperado >5%)"
+          }
+        ]
+      }
+    },
+    {
+      "pdf": "Guia Workshop 3 Acesso a RAPS na APS.pdf",
+      "output": "Guia Workshop 3 Acesso a RAPS na APS.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "formacao\\workshops\\Guia Workshop 3 Acesso a RAPS na APS.pdf",
+        "taxonomy": "formacao/workshops",
+        "doc_type": "manual",
+        "pages_total": 52,
+        "ocr_applied": false,
+        "text_extraction_quality": 0.5162,
+        "tables_detected": 20,
+        "file_hash": "dec8eb7600cb11113c0154435b63e9c8",
+        "processed_at": "2026-02-08T10:21:44.573301"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": [
+          {
+            "type": "low_extraction_ratio",
+            "severity": "medium",
+            "message": "Razão extração/tamanho: 0.64% (esperado >5%)"
+          }
+        ]
+      }
+    },
+    {
+      "pdf": "Guia Workshop 3.pdf",
+      "output": "Guia Workshop 3.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "formacao\\workshops\\Guia Workshop 3.pdf",
+        "taxonomy": "formacao/workshops",
+        "doc_type": "manual",
+        "pages_total": 52,
+        "ocr_applied": false,
+        "text_extraction_quality": 0.5162,
+        "tables_detected": 20,
+        "file_hash": "dec8eb7600cb11113c0154435b63e9c8",
+        "processed_at": "2026-02-08T10:22:16.869616"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": [
+          {
+            "type": "low_extraction_ratio",
+            "severity": "medium",
+            "message": "Razão extração/tamanho: 0.64% (esperado >5%)"
+          }
+        ]
+      }
+    },
+    {
+      "pdf": "Guia Workshop 4_e-Planifica.pdf",
+      "output": "Guia Workshop 4_e-Planifica.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "formacao\\workshops\\Guia Workshop 4_e-Planifica.pdf",
+        "taxonomy": "formacao/workshops",
+        "doc_type": "manual",
+        "pages_total": 66,
+        "ocr_applied": false,
+        "text_extraction_quality": 0.5106,
+        "tables_detected": 21,
+        "file_hash": "17cfd2d0a6bb0b011c75ea0c98460784",
+        "processed_at": "2026-02-08T10:23:01.830260"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": [
+          {
+            "type": "low_extraction_ratio",
+            "severity": "medium",
+            "message": "Razão extração/tamanho: 3.79% (esperado >5%)"
+          }
+        ]
+      }
+    },
+    {
+      "pdf": "ACESSO À RAPS PELA APS.pdf",
+      "output": "ACESSO À RAPS PELA APS.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "clinicos\\abordagens\\ACESSO À RAPS PELA APS.pdf",
+        "taxonomy": "clinicos/abordagens",
+        "doc_type": "documento_geral",
+        "pages_total": 27,
+        "ocr_applied": false,
+        "text_extraction_quality": 0.6262000000000001,
+        "tables_detected": 42,
+        "file_hash": "8c6d6a37f56d9a950c8b1600ceb0c59d",
+        "processed_at": "2026-02-08T10:23:23.242797"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "Clinica amplianda na atenção basica.pdf",
+      "output": "Clinica amplianda na atenção basica.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "clinicos\\abordagens\\Clinica amplianda na atenção basica.pdf",
+        "taxonomy": "clinicos/abordagens",
+        "doc_type": "documento_geral",
+        "pages_total": 19,
+        "ocr_applied": false,
+        "text_extraction_quality": 1.0,
+        "tables_detected": 0,
+        "file_hash": "824c2c0a7ebe2ab9a29e3f9eacdaf09e",
+        "processed_at": "2026-02-08T10:20:41.732921"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "Eixo 04 - Mód. 14 - Abordagem a Problemas de Saúde Mental.pdf",
+      "output": "Eixo 04 - Mód. 14 - Abordagem a Problemas de Saúde Mental.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "clinicos\\abordagens\\Eixo 04 - Mód. 14 - Abordagem a Problemas de Saúde Mental.pdf",
+        "taxonomy": "clinicos/abordagens",
+        "doc_type": "documento_geral",
+        "pages_total": 150,
+        "ocr_applied": false,
+        "text_extraction_quality": 0.3477,
+        "tables_detected": 25,
+        "file_hash": "d0a5371c7c4a8c217dea3f3eab3a860a",
+        "processed_at": "2026-02-08T10:21:33.828359"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": [
+          {
+            "type": "low_extraction_ratio",
+            "severity": "medium",
+            "message": "Razão extração/tamanho: 4.20% (esperado >5%)"
+          }
+        ]
+      }
+    },
+    {
+      "pdf": "Integralidade e clinica ampliada.pdf",
+      "output": "Integralidade e clinica ampliada.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "clinicos\\abordagens\\Integralidade e clinica ampliada.pdf",
+        "taxonomy": "clinicos/abordagens",
+        "doc_type": "documento_geral",
+        "pages_total": 25,
+        "ocr_applied": false,
+        "text_extraction_quality": 1.0,
+        "tables_detected": 35,
+        "file_hash": "0b11b883637d3d9e0f3396cab640ff25",
+        "processed_at": "2026-02-08T10:21:48.777830"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "Linha-cuidado-integral (1).pdf",
+      "output": "Linha-cuidado-integral (1).md",
+      "status": "success",
+      "metadata": {
+        "source_file": "clinicos\\abordagens\\Linha-cuidado-integral (1).pdf",
+        "taxonomy": "clinicos/abordagens",
+        "doc_type": "documento_geral",
+        "pages_total": 13,
+        "ocr_applied": false,
+        "text_extraction_quality": 0.9233,
+        "tables_detected": 0,
+        "file_hash": "bb4a123a7c4729b3fa6416d128974ab2",
+        "processed_at": "2026-02-08T10:21:52.815016"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "Modelos Clinicos e psicossocial de atenção ao individuo.pdf",
+      "output": "Modelos Clinicos e psicossocial de atenção ao individuo.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "clinicos\\abordagens\\Modelos Clinicos e psicossocial de atenção ao individuo.pdf",
+        "taxonomy": "clinicos/abordagens",
+        "doc_type": "documento_geral",
+        "pages_total": 8,
+        "ocr_applied": false,
+        "text_extraction_quality": 1.0,
+        "tables_detected": 0,
+        "file_hash": "b818d7f780a0b1a67fd674dff22852de",
+        "processed_at": "2026-02-08T10:22:00.381058"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "ORGANIZAÇÃO_DA_REDE_DE_ATENÇÃO_À_SAÚDE_COM_FOCO_NA_SAÚDE_MENTAL_APS_AES.pdf",
+      "output": "ORGANIZAÇÃO_DA_REDE_DE_ATENÇÃO_À_SAÚDE_COM_FOCO_NA_SAÚDE_MENTAL_APS_AES.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "clinicos\\abordagens\\ORGANIZAÇÃO_DA_REDE_DE_ATENÇÃO_À_SAÚDE_COM_FOCO_NA_SAÚDE_MENTAL_APS_AES.pdf",
+        "taxonomy": "clinicos/abordagens",
+        "doc_type": "documento_geral",
+        "pages_total": 44,
+        "ocr_applied": false,
+        "text_extraction_quality": 0.6187999999999999,
+        "tables_detected": 63,
+        "file_hash": "a959bfb9a72994b787b555796cf6850c",
+        "processed_at": "2026-02-08T10:21:32.632506"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "20190215-MH-GAP-OMS_portuguese.pdf",
+      "output": "20190215-MH-GAP-OMS_portuguese.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "clinicos\\manuais\\20190215-MH-GAP-OMS_portuguese.pdf",
+        "taxonomy": "clinicos/manuais",
+        "doc_type": "documento_geral",
+        "pages_total": 120,
+        "ocr_applied": false,
+        "text_extraction_quality": 0.4571,
+        "tables_detected": 101,
+        "file_hash": "af93cab08c90a9380c14616d7ea157e4",
+        "processed_at": "2026-02-08T10:22:15.638261"
+      },
+      "validation": {
+        "success": true,
+        "issues": [],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "A_Criança_no_Centro_da_Rede.pdf",
+      "output": "A_Criança_no_Centro_da_Rede.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "clinicos\\manuais\\A_Criança_no_Centro_da_Rede.pdf",
+        "taxonomy": "clinicos/manuais",
+        "doc_type": "documento_geral",
+        "pages_total": 15,
+        "ocr_applied": true,
+        "text_extraction_quality": 0.0,
+        "tables_detected": 0,
+        "file_hash": "0109e4303e3d1a8095f1d9c9a4068b1d",
+        "processed_at": "2026-02-08T10:22:15.846849"
+      },
+      "validation": {
+        "success": false,
+        "issues": [
+          {
+            "type": "low_ocr_quality",
+            "severity": "high",
+            "message": "OCR quality 0.00 abaixo do limite 0.5"
+          }
+        ],
+        "warnings": [
+          {
+            "type": "low_extraction_ratio",
+            "severity": "medium",
+            "message": "Razão extração/tamanho: 0.01% (esperado >5%)"
+          }
+        ]
+      }
+    },
+    {
+      "pdf": "Emergencias-psiquiatricas-Leonardo-Baldacara.pdf.pdf",
+      "output": "Emergencias-psiquiatricas-Leonardo-Baldacara.pdf.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "clinicos\\manuais\\Emergencias-psiquiatricas-Leonardo-Baldacara.pdf.pdf",
+        "taxonomy": "clinicos/manuais",
+        "doc_type": "documento_geral",
+        "pages_total": 967,
+        "ocr_applied": true,
+        "text_extraction_quality": 0.15530000000000002,
+        "tables_detected": 131,
+        "file_hash": "49b81ba3bcd86f599c5998d1772665ff",
+        "processed_at": "2026-02-08T10:29:17.311550"
+      },
+      "validation": {
+        "success": false,
+        "issues": [
+          {
+            "type": "low_ocr_quality",
+            "severity": "high",
+            "message": "OCR quality 0.16 abaixo do limite 0.5"
+          }
+        ],
+        "warnings": []
+      }
+    },
+    {
+      "pdf": "Manual do residente de psiquiatria 2023 - Paulo Clemente Sallet.pdf",
+      "output": "Manual do residente de psiquiatria 2023 - Paulo Clemente Sallet.md",
+      "status": "success",
+      "metadata": {
+        "source_file": "clinicos\\manuais\\Manual do residente de psiquiatria 2023 - Paulo Clemente Sallet.pdf",
+        "taxonomy": "clinicos/manuais",
+        "doc_type": "manual",
+        "pages_total": 990,
+        "ocr_applied": true,
+        "text_extraction_quality": 0.18669999999999998,
+        "tables_detected": 169,
+        "file_hash": "56620bd732c603b5b2b0ba32721a36c2",
+        "processed_at": "2026-02-08T10:33:23.813599"
+      },
+      "validation": {
+        "success": false,
+        "issues": [
+          {
+            "type": "low_ocr_quality",
+            "severity": "high",
+            "message": "OCR quality 0.19 abaixo do limite 0.5"
+          }
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "summary": {
+    "by_taxonomy": {
+      "artigos": {
+        "total": 14,
+        "success": 11
+      },
+      "casos_clinicos": {
+        "total": 5,
+        "success": 5
+      },
+      "instrumentos": {
+        "total": 15,
+        "success": 15
+      },
+      "normativos": {
+        "total": 4,
+        "success": 4
+      },
+      "formacao/guias_desenvolvimento": {
+        "total": 4,
+        "success": 4
+      },
+      "formacao/guias_gerenciamento": {
+        "total": 4,
+        "success": 4
+      },
+      "formacao/guias_tutoria": {
+        "total": 5,
+        "success": 5
+      },
+      "formacao/oficinas": {
+        "total": 8,
+        "success": 8
+      },
+      "formacao/workshops": {
+        "total": 5,
+        "success": 5
+      },
+      "clinicos/abordagens": {
+        "total": 7,
+        "success": 7
+      },
+      "clinicos/manuais": {
+        "total": 4,
+        "success": 4
+      }
+    },
+    "ocr_applied_count": 5,
+    "avg_text_quality": 0.73,
+    "total_tables_extracted": 1651
+  }
+}
