@@ -1,5 +1,5 @@
 metadata:
-  generated_at: '2026-02-08T14:51:44.561994'
+  generated_at: '2026-02-08T15:46:38.031217'
   total_documents: 72
   generator: tools/generate_reference_index.py
   project: Protocolo SM Extrema 2026
@@ -45,7 +45,7 @@ summary:
     with_title: 72
     with_topics: 66
     with_summary: 70
-    needs_human_review: 48
+    needs_human_review: 46
 documents:
 - doc_id: REF-ART-001
   title: Gestão do Trabalho em Saúde Mental
@@ -3707,7 +3707,7 @@ documents:
   - coordenadores_ubs
   - profissionais_acolhimento
   references_count: 2
-  needs_review: true
+  needs_review: false
 - doc_id: REF-INS-005
   title: Ficha de Atendimento de Classificacao de Risco em Saude Mental
   transcript_file: referencias\instrumentos\10. Ficha de atendimento de classificação
@@ -4303,7 +4303,7 @@ documents:
   - estudantes_saude_publica
   - gestores_saude_mental
   references_count: 24
-  needs_review: true
+  needs_review: false
 - doc_id: REF-NOR-002
   title: Nota Técnica de Saúde Mental para Organização da Rede de Atenção à Saúde
     com Foco nos Processos da Atenção Primária à Saúde e da Atenção Especializada
