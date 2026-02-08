@@ -41,8 +41,8 @@ O processamento de 72 PDFs de referência clínica foi concluído com sucesso em
 
 | Métrica | Valor | Target | Status |
 |---------|-------|--------|--------|
-| `needs_human_review: true` | 6/72 (8.3%) | ≤10% | ATINGIDO |
-| `needs_human_review: false` | 66/72 (91.7%) | ≥90% | ATINGIDO |
+| `needs_human_review: true` | 2/72 (2.8%) | ≤10% | ATINGIDO |
+| `needs_human_review: false` | 70/72 (97.2%) | ≥90% | ATINGIDO |
 
 ---
 
@@ -127,16 +127,21 @@ Os 2 documentos escritos diretamente foram: **Clínica Ampliada na Atenção Bá
 
 ## 7. Documentos Flagged para Revisão
 
-6 documentos (8.3%) estão marcados com `needs_human_review: true`. Dois flags de falso-positivo foram resolvidos: **RAPS (2).md** (OCR 0.03 era falso negativo — texto completo) e **Fluxogramas Classificação Risco SM.md** (limitações auto-documentadas). Recomenda-se priorização dos 6 restantes por relevância clínica:
+2 documentos (2.8%) permanecem com `needs_human_review: true`. Histórico de resolução:
 
-### Alta Prioridade (clinicos, normativos)
-Verificar se algum documento clínico ou normativo está na lista de revisão.
+- **8→6 (sessão anterior):** RAPS (2).md (OCR 0.03 era falso negativo — texto completo) e Fluxogramas Classificação Risco SM.md (limitações auto-documentadas) — flags resolvidos como falso-positivos
+- **6→2 (sessão atual):** 4 flags resolvidos após verificação de conteúdo:
+  - **Linha de Cuidado (caderno nº1):** Diacríticos (è→é) e page numbers soltos verificados como NÃO presentes no conteúdo enriquecido; 4.724 linhas, 27 H2 → `false`
+  - **Reforma Psiquiátrica (Caracas):** Texto invertido verificado como NÃO presente; gráficos representados como tabelas estruturadas; 816 linhas, 10 H2 → `false`
+  - **Emergências Psiquiátricas:** 32.559 linhas com 32 H2 verificadas como substancialmente completas (27 capítulos confirmados); OCR 0.16 não reflete cobertura real → `false`
+  - **Manual do Residente:** 37.660 linhas com 4 seções temáticas verificadas como completas (Psiquiatria Geral, Infância, Psicogeriatria, Emergências + 18 apêndices); OCR 0.19 não reflete cobertura real → `false`
 
-### Média Prioridade (artigos, instrumentos)
-Documentos com `topics` ou `summary` ausentes devem ser complementados.
+### 2 Documentos Remanescentes (flag mantido)
 
-### Baixa Prioridade (formacao)
-Documentos de formação com flags de revisão podem ser diferidos para v1.1.
+| Documento | Justificativa |
+|-----------|---------------|
+| **MH-GAP (OMS)** | Módulo Autoagressão/Suicídio (p.107-110): 4 páginas colapsadas com potencial perda de conteúdo clínico de segurança. Requer validação contra PDF original. |
+| **A Criança no Centro da Rede** | OCR 0.00 — zero texto extraído em 29 páginas. Re-extração via pdfplumber confirmou 0 chars. Requer OCR externo (tesseract, ABBYY, Google Document AI). |
 
 ---
 
@@ -161,14 +166,14 @@ O processamento de 72 PDFs de referência clínica foi concluído com qualidade 
 
 | Critério de Aceitação | Meta | Resultado | Status |
 |----------------------|------|-----------|--------|
-| Transcrições com qualidade validada | ≥80% (≥58/72) | 91.7% (66/72) | ATINGIDO |
+| Transcrições com qualidade validada | ≥80% (≥58/72) | 97.2% (70/72) | ATINGIDO |
 | doc_id e title completos | 100% | 100% | ATINGIDO |
 | Estrutura semântica H1-H6 | ≥90% | 94% | ATINGIDO |
 | Síntese executiva | ≥90% | 97% | ATINGIDO |
 | Page anchors preservados | ≥2.500 | 3.450 | ATINGIDO |
-| needs_human_review | ≤10% | 8.3% (6/72) | ATINGIDO |
+| needs_human_review | ≤10% | 2.8% (2/72) | ATINGIDO |
 
-**Status geral:** Todos os critérios de aceitação **ATINGIDOS**. 6 documentos remanescentes com flag de revisão possuem limitações legítimas de OCR (PDFs predominantemente visuais/escaneados).
+**Status geral:** Todos os critérios de aceitação **ATINGIDOS**. 2 documentos remanescentes com flag de revisão possuem limitações legítimas: MH-GAP (conteúdo clínico de segurança parcialmente comprometido por OCR) e A Criança no Centro da Rede (100% imagem, zero texto extraível).
 
 ---
 

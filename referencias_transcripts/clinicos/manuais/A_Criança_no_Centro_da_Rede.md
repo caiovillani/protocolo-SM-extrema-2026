@@ -59,6 +59,7 @@ quality_flags:
     - "Todas as 29 paginas retornaram vazias na extracao automatica"
     - "Arquivo de 14,7 MB sugere conteudo visual denso (imagens, diagramas, infograficos)"
     - "OCR aplicado mas sem resultados — provavel scan em baixa resolucao ou formato incompativel"
+    - "Re-extraction tentada 2026-02-08 com pdfplumber: confirmado zero chars em todas as 29 paginas — requer OCR externo (tesseract, ABBYY, Google Document AI)"
   table_structure_issues:
     - "Impossivel avaliar — nenhum conteudo textual extraido"
   reference_format_issues:

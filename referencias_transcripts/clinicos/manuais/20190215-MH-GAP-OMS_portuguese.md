@@ -97,20 +97,20 @@ tables_validated: false
 completeness_check: passed
 quality_flags:
   needs_human_review: true
-  ocr_confidence_issues:
-    - "pages 107-110: fragmentacao severa de caracteres (OCR degradado)"
-    - "pages 83-88: mesclagem de texto ingles/portugues em secoes de alcool"
-    - "text_extraction_quality global: 0.46 (abaixo do ideal)"
-  table_structure_issues:
-    - "Tabelas extraidas automaticamente com estrutura fragmentada"
-    - "Tabelas de medicamentos (antipsicóticos, estabilizadores do humor, anticonvulsivantes) requerem validacao manual"
-    - "Fluxogramas originais (Avalie-Decida-Maneje) nao preservados como diagramas"
-  reference_format_issues:
-    - "Manual remete a documentos externos da OMS via URLs (muitos potencialmente desatualizados)"
-    - "Sem lista de referencias bibliograficas estruturada"
-  completeness_issues:
-    - "Conteudo das pages 107-110 severamente comprometido por OCR"
-    - "Secao sobre Autoagressao/Suicidio parcialmente ilegivel"
+  review_justification: "Módulo Autoagressão/Suicídio (SUI) contém 4 páginas colapsadas (p.107-110) com potencial perda de conteúdo clínico de segurança. Embora SUI 2.1-2.5 estejam presentes e legíveis, o fluxograma principal Avalie-Decida-Maneje pode ter lacunas. Requer validação contra PDF original para uso clínico direto."
+  intact_sections:
+    - "Módulos 1-9 (Depressão a Drogas): conteúdo textual substancialmente preservado"
+    - "Módulo 10 SUI: SUI 2.1-2.5 (intervenções) legíveis e completos"
+    - "Módulo 11 (OUT): intacto"
+    - "Princípios gerais e intervenções psicossociais avançadas: intactos"
+  compromised_sections:
+    - "p.107-110: 4 page anchors colapsados sem conteúdo — possível perda do fluxograma Avalie-Decida-Maneje para SUI"
+    - "p.83-88: mesclagem parcial de texto inglês/português em seções de álcool"
+  known_limitations:
+    - "text_extraction_quality 0.46 — abaixo do ideal para manual clínico"
+    - "Tabelas de medicamentos com formatação parcialmente fragmentada"
+    - "Fluxogramas originais (Avalie-Decida-Maneje) não preservados como diagramas"
+    - "Sem lista de referências bibliográficas estruturada — manual remete a documentos OMS externos"
 processed_at: "2026-02-08"
 processor: PIPS/projeto_referencias_sm_transcricao
 phase: 2_semantic_enrichment

@@ -1,5 +1,5 @@
 metadata:
-  generated_at: '2026-02-08T15:46:38.031217'
+  generated_at: '2026-02-08T20:31:28.664222'
   total_documents: 72
   generator: tools/generate_reference_index.py
   project: Protocolo SM Extrema 2026
@@ -45,7 +45,7 @@ summary:
     with_title: 72
     with_topics: 66
     with_summary: 70
-    needs_human_review: 46
+    needs_human_review: 42
 documents:
 - doc_id: REF-ART-001
   title: Gestão do Trabalho em Saúde Mental
@@ -1192,7 +1192,7 @@ documents:
   - equipes_multiprofissionais
   references_count: 29 secoes de referencias (uma por capitulo + apendice), estimativa
     500+ entradas individuais
-  needs_review: true
+  needs_review: false
 - doc_id: REF-CLI-003
   title: Manual do Residente de Psiquiatria
   transcript_file: clinicos\manuais\Manual do residente de psiquiatria 2023 - Paulo
@@ -1274,7 +1274,7 @@ documents:
   - medicos_generalistas
   - preceptores_educacao_medica
   references_count: 46
-  needs_review: true
+  needs_review: false
 - doc_id: REF-CLI-004
   title: A Criança no Centro da Rede
   transcript_file: clinicos\manuais\A_Criança_no_Centro_da_Rede.md
@@ -4434,7 +4434,7 @@ documents:
   - equipes_caps
   - reguladores_leitos
   references_count: 87
-  needs_review: true
+  needs_review: false
 - doc_id: REF-NOR-004
   title: 'Reforma Psiquiátrica e Política de Saúde Mental no Brasil - Conferência
     Regional de Reforma dos Serviços de Saúde Mental: 15 anos depois de Caracas'
@@ -4498,4 +4498,4 @@ documents:
   - formuladores_politica_publica
   - pesquisadores_saude_coletiva
   references_count: 9
-  needs_review: true
+  needs_review: false
