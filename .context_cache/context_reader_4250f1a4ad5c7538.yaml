@@ -1,0 +1,73 @@
+cache_metadata:
+  cached_at: '2026-01-23T07:53:27.163953'
+  content_hash: 3753cae6cf12389dac5c0eb2c605d0a6
+  file_modified: '2026-01-23T03:45:05.062176'
+  file_path: src\context_engine\context_reader.py
+document:
+  concepts:
+  - confidence: 0.8
+    id: f4e58296cb8b
+    keywords:
+    - global
+    - factory
+    - instância
+    line_number: 358
+    section: class ReaderFactory
+    text: Instância global do factory
+    type: conceito_chave
+  - confidence: 0.7
+    id: b062e7cc559c
+    keywords: []
+    line_number: 1
+    section: ''
+    text: src/context_engine/context_reader.py
+    type: conceito_chave
+  metadata:
+    file_path: src\context_engine\context_reader.py
+    file_type: py
+    hash_md5: 3753cae6cf12389dac5c0eb2c605d0a6
+    lines_count: 395
+    processed_at: '2026-01-23T07:53:27.150243'
+    processing_time_ms: 52.15129999851342
+    size_bytes: 13555
+    tokens_estimate: 3275
+  relationships: []
+  sections:
+  - end_line: 375
+    level: 1
+    start_line: 9
+    title: imports
+  - end_line: 64
+    level: 1
+    start_line: 21
+    title: class FileReader
+  - end_line: 113
+    level: 1
+    start_line: 65
+    title: class MarkdownReader
+  - end_line: 151
+    level: 1
+    start_line: 114
+    title: class TextReader
+  - end_line: 192
+    level: 1
+    start_line: 152
+    title: class YAMLReader
+  - end_line: 278
+    level: 1
+    start_line: 193
+    title: class PythonReader
+  - end_line: 329
+    level: 1
+    start_line: 279
+    title: class PDFReader
+  - end_line: 361
+    level: 1
+    start_line: 330
+    title: class ReaderFactory
+  - end_line: 395
+    level: 2
+    start_line: 362
+    title: def read_file
+  summary: 'Estrutura: imports, class FileReader, class MarkdownReader, class TextReader,
+    class YAMLReader. Conceito_chave: Instância global do factory, src/context_engine/context_reader.py'

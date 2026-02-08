@@ -1,0 +1,18 @@
+{
+  "$schema": "https://raw.githubusercontent.com/anthropics/claude-code/main/schemas/mcp.json",
+  "mcpServers": {
+    "context7": {
+      "command": "cmd",
+      "args": ["/c", "npx", "-y", "@anthropic-ai/context7-mcp"],
+      "description": "Live documentation lookup for Python libraries (markdown, jinja2, pyyaml, python-docx)"
+    },
+    "github": {
+      "command": "cmd",
+      "args": ["/c", "npx", "-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_PERSONAL_ACCESS_TOKEN}"
+      },
+      "description": "GitHub integration for issue tracking, PR management, and repository operations."
+    }
+  }
+}

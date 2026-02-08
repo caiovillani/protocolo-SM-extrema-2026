@@ -1,0 +1,17 @@
+# Protocolo SM Extrema 2026 - Dependencies
+# Python 3.13+ required
+
+# Core dependencies
+markdown>=3.4
+jinja2>=3.0
+pyyaml>=6.0
+
+# Optional: DOCX export
+python-docx>=0.8
+
+# Optional: HTML rendering enhancements
+beautifulsoup4>=4.12
+
+# PDF processing (used by context_reader.py and PDF skills)
+pypdf>=3.0
+pdfplumber>=0.10

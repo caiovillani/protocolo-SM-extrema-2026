@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AULA-01: Projeto Terapêutico Singular na APS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --azul-sus: #005CA9;
+      --azul-escuro: #003366;
+      --verde-saude: #00A859;
+      --verde-escuro: #007A42;
+      --laranja-alerta: #F57C00;
+      --vermelho-risco: #D32F2F;
+      --cinza-escuro: #2D3436;
+      --cinza-medio: #636E72;
+      --cinza-claro: #F5F6F7;
+      --branco: #FFFFFF;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--cinza-claro);
+      color: var(--cinza-escuro);
+      overflow: hidden;
+    }
+
+    /* ===== SLIDE CONTAINER ===== */
+    .slide {
+      width: 100vw;
+      height: 100vh;
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 5% 8%;
+      background: var(--branco);
+      position: relative;
+    }
+
+    .slide.active {
+      display: flex;
+    }
+
+    /* ===== TIPOGRAFIA ===== */
+    .slide h1 {
+      font-family: 'Merriweather', serif;
+      font-size: 3.2rem;
+      font-weight: 700;
+      color: var(--azul-sus);
+      margin-bottom: 1.5rem;
+      text-align: center;
+      line-height: 1.2;
+    }
+
+    .slide h2 {
+      font-size: 2rem;
+      font-weight: 600;
+      color: var(--verde-saude);
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .slide h3 {
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: var(--azul-escuro);
+      margin-bottom: 1rem;
+    }
+
+    .slide p {
+      font-size: 1.4rem;
+      line-height: 1.8;
+      max-width: 90%;
+      text-align: center;
+    }
+
+    .slide ul {
+      font-size: 1.5rem;
+      line-height: 2.2;
+      max-width: 85%;
+      text-align: left;
+      list-style: none;
+    }
+
+    .slide ul li {
+      margin-bottom: 0.8rem;
+      padding-left: 2rem;
+      position: relative;
+    }
+
+    .slide ul li::before {
+      content: "●";
+      color: var(--verde-saude);
+      font-size: 0.8rem;
+      position: absolute;
+      left: 0;
+      top: 0.5rem;
+    }
+
+    .slide strong {
+      color: var(--azul-sus);
+    }
+
+    .slide em {
+      color: var(--cinza-medio);
+      font-style: italic;
+    }
+
+    /* ===== CAPA ===== */
+    .slide.capa {
+      background: linear-gradient(135deg, var(--azul-sus) 0%, var(--azul-escuro) 100%);
+      color: var(--branco);
+    }
+
+    .slide.capa h1 {
+      color: var(--branco);
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+
+    .slide.capa h2 {
+      color: rgba(255,255,255,0.9);
+      font-weight: 300;
+      font-size: 1.8rem;
+    }
+
+    .slide.capa .footer-capa {
+      position: absolute;
+      bottom: 8%;
+      font-size: 1.1rem;
+      opacity: 0.8;
+    }
+
+    /* ===== CASO CLÍNICO ===== */
+    .caso-box {
+      background: var(--cinza-claro);
+      border-left: 6px solid var(--laranja-alerta);
+      padding: 2.5rem 3rem;
+      border-radius: 8px;
+      max-width: 80%;
+      margin: 1.5rem 0;
+    }
+
+    .caso-box p {
+      text-align: left;
+      font-size: 1.5rem;
+      line-height: 1.9;
+    }
+
+    .caso-box .nome {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--azul-escuro);
+      margin-bottom: 1rem;
+    }
+
+    /* ===== PERGUNTA MOBILIZADORA ===== */
+    .pergunta {
+      font-size: 2.2rem;
+      color: var(--verde-escuro);
+      font-weight: 600;
+      text-align: center;
+      padding: 2rem;
+      border: 3px solid var(--verde-saude);
+      border-radius: 12px;
+      max-width: 80%;
+    }
+
+    /* ===== TABELAS ===== */
+    .tabela {
+      width: 90%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      font-size: 1.2rem;
+    }
+
+    .tabela th {
+      background: var(--azul-sus);
+      color: var(--branco);
+      padding: 1rem 1.5rem;
+      text-align: left;
+      font-weight: 600;
+    }
+
+    .tabela td {
+      padding: 1rem 1.5rem;
+      border-bottom: 1px solid #ddd;
+      vertical-align: top;
+    }
+
+    .tabela tr:nth-child(even) {
+      background: var(--cinza-claro);
+    }
+
+    .tabela tr:hover {
+      background: rgba(0, 168, 89, 0.1);
+    }
+
+    /* ===== DIAGRAMA 4 MOMENTOS ===== */
+    .diagrama-momentos {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      max-width: 90%;
+      margin: 2rem 0;
+    }
+
+    .momento-card {
+      background: var(--branco);
+      border: 2px solid var(--azul-sus);
+      border-radius: 12px;
+      padding: 1.5rem 2rem;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .momento-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,92,169,0.2);
+    }
+
+    .momento-card .numero {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      border-radius: 50%;
+      background: var(--verde-saude);
+      color: var(--branco);
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .momento-card h3 {
+      color: var(--azul-sus);
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .momento-card p {
+      font-size: 1rem;
+      color: var(--cinza-medio);
+    }
+
+    /* ===== DESTAQUE ===== */
+    .destaque {
+      background: linear-gradient(135deg, var(--verde-saude) 0%, var(--verde-escuro) 100%);
+      color: var(--branco);
+      padding: 2rem 3rem;
+      border-radius: 12px;
+      max-width: 85%;
+      margin: 1.5rem 0;
+      text-align: center;
+    }
+
+    .destaque p {
+      color: var(--branco);
+      font-size: 1.6rem;
+    }
+
+    /* ===== CHECKLIST ===== */
+    .checklist {
+      background: var(--cinza-claro);
+      border-radius: 12px;
+      padding: 2rem 3rem;
+      max-width: 80%;
+    }
+
+    .checklist ul {
+      font-size: 1.4rem;
+    }
+
+    .checklist ul li::before {
+      content: "☐";
+      color: var(--azul-sus);
+      font-size: 1.2rem;
+    }
+
+    /* ===== FLUXOGRAMA ===== */
+    .fluxo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      max-width: 70%;
+    }
+
+    .fluxo-box {
+      background: var(--azul-sus);
+      color: var(--branco);
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      font-size: 1.2rem;
+      text-align: center;
+      width: 100%;
+    }
+
+    .fluxo-seta {
+      font-size: 2rem;
+      color: var(--verde-saude);
+    }
+
+    /* ===== INDICADORES ===== */
+    .indicador {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      margin: 1rem 0;
+    }
+
+    .indicador-valor {
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--verde-saude);
+    }
+
+    .indicador-label {
+      font-size: 1.3rem;
+      color: var(--cinza-escuro);
+    }
+
+    /* ===== NAVEGAÇÃO ===== */
+    .slide-number {
+      position: fixed;
+      bottom: 25px;
+      right: 40px;
+      font-size: 1rem;
+      color: var(--cinza-medio);
+      font-weight: 600;
+    }
+
+    .progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 5px;
+      background: linear-gradient(90deg, var(--azul-sus), var(--verde-saude));
+      transition: width 0.4s ease;
+      z-index: 100;
+    }
+
+    .fase-indicator {
+      position: fixed;
+      top: 20px;
+      left: 40px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--branco);
+      background: var(--azul-sus);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+    }
+
+    /* ===== NOTAS DO APRESENTADOR ===== */
+    .speaker-notes {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.95);
+      color: var(--branco);
+      padding: 20px 40px;
+      font-size: 1rem;
+      line-height: 1.6;
+      max-height: 30vh;
+      overflow-y: auto;
+      z-index: 200;
+    }
+
+    body.show-notes .speaker-notes {
+      display: block;
+    }
+
+    .speaker-notes strong {
+      color: var(--verde-saude);
+    }
+
+    /* ===== SLIDE FINAL ===== */
+    .slide.final {
+      background: linear-gradient(135deg, var(--verde-saude) 0%, var(--verde-escuro) 100%);
+      color: var(--branco);
+    }
+
+    .slide.final h1 {
+      color: var(--branco);
+    }
+
+    .slide.final p {
+      color: rgba(255,255,255,0.9);
+    }
+
+    /* ===== ANIMAÇÕES ===== */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .slide.active > * {
+      animation: fadeIn 0.5s ease forwards;
+    }
+
+    /* ===== RESPONSIVO ===== */
+    @media (max-width: 1024px) {
+      .slide h1 { font-size: 2.4rem; }
+      .slide h2 { font-size: 1.6rem; }
+      .slide ul { font-size: 1.2rem; }
+      .caso-box p { font-size: 1.2rem; }
+      .tabela { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="progress-bar" id="progress"></div>
+
+  <!-- ===== SLIDE 1: CAPA ===== -->
+  <div class="slide capa active" id="slide-1" data-fase="CAPA">
+    <h1>Projeto Terapêutico Singular</h1>
+    <h2>Uma ferramenta para organizar o cuidado na APS</h2>
+    <div class="footer-capa">
+      Coordenação Municipal de Saúde Mental<br>
+      Extrema/MG — Janeiro 2026
+    </div>
+    <div class="speaker-notes">
+      <strong>Nota:</strong> Aguardar todos se acomodarem. Apresentar-se brevemente. Antecipar duração (1h) e dinâmica (participativa). "Hoje vamos falar de uma ferramenta que pode mudar a forma como vocês lidam com os casos mais complexos da agenda."
+    </div>
+  </div>
+
+  <!-- ===== SLIDE 2: CASO DONA MARIA ===== -->
+  <div class="slide" id="slide-2" data-fase="ENGAGE">
+    <h2 style="color: var(--azul-sus);">Caso Clínico</h2>
+    <div class="caso-box">
+      <p class="nome">Dona Maria, 58 anos</p>
+      <p>
+        DM2 + HAS há 15 anos<br>
+        "Depressão" há 3 anos<br>
+        <strong>8 consultas no último ano</strong><br>
+        <em>Queixa: "dor no corpo", "não consigo dormir", "estou cansada"</em><br>
+        Exames: normais<br>
+        <strong style="color: var(--vermelho-risco);">Sem resolução</strong>
+      </p>
+    </div>
+    <div class="speaker-notes">
+      <strong>Nota:</strong> Ler o caso pausadamente. Enfatizar "8 consultas" e "sem resolução". Deixar 10 segundos de silêncio após apresentar. Olhar para a plateia.
+    </div>
+  </div>
+
+  <!-- ===== SLIDE 3: PERGUNTA MOBILIZADORA ===== -->
+  <div class="slide" id="slide-3" data-fase="ENGAGE">
+    <div class="pergunta">
+      Quantas "Donas Marias"<br>vocês têm na agenda?
+    </div>
+    <div class="speaker-notes">
+      <strong>Nota:</strong> Deixar 30 segundos de silêncio. Aguardar respostas. Validar: "Todo mundo tem uma Dona Maria". Conectar com frustração profissional. Transição: "E se existisse uma ferramenta para organizar esses casos que parecem não ter fim?"
+    </div>
+  </div>
+
+  <!-- ===== SLIDE 4: TRANSIÇÃO ENGAGE → FRAME ===== -->
+  <div class="slide" id="slide-4" data-fase="ENGAGE">
+    <div class="destaque">
+      <p>
+        Casos assim geram frustração<br>
+        — pra gente e pro paciente.
+      </p>
+    </div>
+    <p style="margin-top: 2rem; font-size: 1.5rem;">
+      O que vamos ver hoje é uma ferramenta que ajuda a organizar esses casos.<br>
+      <em>Não resolve tudo, mas estrutura o cuidado.</em>
+    </p>
+    <div class="speaker-notes">
+      <strong>Nota:</strong> Tom empático. Reconhecer a realidade da APS. Não prometer milagres. Transição: "Vamos entender o que é essa ferramenta."
+    </div>
+  </div>
+
+  <!-- ===== SLIDE 5: O QUE É PTS ===== -->
+  <div class="slide" id="slide-5" data-fase="FRAME">
+    <h1>O que é PTS?</h1>
+    <ul>
+      <li>Ferramenta de <strong>organização do cuidado</strong></li>
+      <li>Considera a <strong>singularidade</strong> de cada caso</li>
+      <li>Construído <strong>com</strong> o usuário, não <strong>para</strong> o usuário</li>
+      <li>Atribui <strong>responsabilidades claras</strong></li>
+    </ul>
+    <div class="speaker-notes">
+      <strong>Nota:</strong> Enfatizar: não é mais um papel para preencher. É uma lógica de organização. Perguntar: "Quem aqui já ouviu falar de PTS?" — validar conhecimentos prévios.
+    </div>
+  </div>
+
+  <!-- ===== SLIDE 6: PTS vs PLANO GENÉRICO ===== -->
+  <div class="slide" id="slide-6" data-fase="FRAME">
+    <h2>PTS ≠ Plano de Cuidados Genérico</h2>
+    <table class="tabela">
+      <tr>
+        <th>Plano Genérico</th>
+        <th>PTS</th>
+      </tr>
+      <tr>
+        <td>Padronizado por condição</td>
+        <td><strong>Singularizado</strong> por pessoa</td>
+      </tr>
+      <tr>
+        <td>Feito pela equipe</td>
+        <td><strong>Co-construído</strong> com usuário</td>
+      </tr>
+      <tr>
+        <td>Foco na doença</td>
+        <td>Foco na <strong>pessoa</strong></td>
+      </tr>
+      <tr>
+        <td>Responsabilidades difusas</td>
+        <td><strong>Matriz clara</strong> de quem faz o quê</td>
+      </tr>
+      <tr>
+        <td>Revisão eventual</td>
+        <td>Reavaliação <strong>programada</strong></td>
+      </tr>
+    </table>
+    <div class="speaker-notes">
+      <strong>Nota:</strong> "Vocês já fazem planos de cuidado. O PTS não substitui — ele complementa para casos complexos."
+    </div>
+  </div>
+
+  <!-- ===== SLIDE 7: MARCOS LEGAIS ===== -->
+  <div class="slide" id="slide-7" data-fase="FRAME">
+    <h2>De onde vem o PTS?</h2>
+    <ul>
+      <li><strong>Política Nacional de Humanização</strong> (PNH, 2004)</li>
+      <li>Conceito de <strong>Clínica Ampliada</strong> e Compartilhada</li>
+      <li><strong>Cadernos de Atenção Básica nº 34</strong> — Saúde Mental (MS, 2013)</li>
+      <li>Princípio: cuidado centrado na <strong>pessoa</strong>, não na doença</li>
+    </ul>
+    <p style="margin-top: 2rem; font-size: 1.2rem; color: var(--cinza-medio);">
+      <em>Não é invenção nossa. Está nas políticas nacionais.</em>
+    </p>
+    <div class="speaker-notes">
+      <strong>Nota:</strong> Breve contextualização. Mostrar que é diretriz oficial, não modismo. Não se estender demais na história.
+    </div>
+  </div>
+
+  <!-- ===== SLIDE 8: QUANDO ELABORAR ===== -->
+  <div class="slide" id="slide-8" data-fase="FRAME">
+    <h2>Quando elaborar PTS?</h2>
+    <table class="tabela">
+      <tr>
+        <th>Situação</th>
+        <th>Indicação</th>
+      </tr>
+      <tr>
+        <td>Transtorno mental grave e persistente</td>
+        <td><strong style="color: var(--vermelho-risco);">Obrigatório</strong></td>
+      </tr>
+      <tr>
+        <td>Classificação AMARELO ou superior</td>
+        <td><strong style="color: var(--vermelho-risco);">Obrigatório</strong></td>
+      </tr>
+      <tr>
+        <td>Compartilhamento APS-AES</td>
+        <td><strong style="color: var(--vermelho-risco);">Obrigatório</strong></td>
+      </tr>
+      <tr>
+        <td>Usuários do CAPS</td>
+        <td><strong style="color: var(--vermelho-risco);">Obrigatório</strong></td>
+      </tr>
+      <tr>
+        <td>Depressão/ansiedade leve em tratamento</td>
+        <td><em>Simplificado (opcional)</em></td>
+      </tr>
+    </table>
+    <p style="margin-top: 1.5rem; font-size: 1.2rem;">
+      <strong>Dona Maria</strong> — DM2, HAS, depressão, 8 consultas sem resolução.<br>
+      Classificação: pelo menos <strong>AMARELO</strong>. É caso de PTS.
+    </p>
+    <div class="speaker-notes">
+      <strong>Nota:</strong> "Não é para todo mundo. É para os casos que já consomem tempo desproporcional." Conectar teoria com caso inicial.
+    </div>
+  </div>
+
+  <!-- ===== SLIDE 9: OS 4 MOMENTOS ===== -->
+  <div class="slide" id="slide-9" data-fase="BUILD">
+    <h1>Os 4 Momentos do PTS</h1>
+    <div class="diagrama-momentos">
+      <div class="momento-card">
+        <div class="numero">1</div>
+        <h3>Diagnóstico Integral</h3>
+        <p>Bio + Psico + Social</p>
+      </div>
+      <div class="momento-card">
+        <div class="numero">2</div>
+        <h3>Definição de Metas</h3>
+        <p>SMART — com o usuário</p>
+      </div>
+      <div class="momento-card">
+        <div class="numero">3</div>
+        <h3>Responsabilidades</h3>
+        <p>Quem faz o quê</p>
+      </div>
+      <div class="momento-card">
+        <div class="numero">4</div>
+        <h3>Reavaliação</h3>
+        <p>Documento vivo</p>
+      </div>
+    </div>
+    <p style="margin-top: 1.5rem; color: var(--cinza-medio);">
+      <em>Vamos detalhar cada momento usando a Dona Maria como exemplo.</em>
+    </p>
+    <div class="speaker-notes">
+      <strong>Nota:</strong> Visão geral antes de detalhar. "São 4 momentos que formam um ciclo. Vamos ver cada um."
+    </div>
+  </div>
+
+  <!-- ===== SLIDE 10: MOMENTO 1 - CONCEITO ===== -->
+  <div class="slide" id="slide-10" data-fase="BUILD">
+    <h2 style="color: var(--azul-sus);">
+      <span style="background: var(--verde-saude); color: white; padding: 0.3rem 0.8rem; border-radius: 50%; margin-right: 0.5rem;">1</span>
+      Diagnóstico Integral
+    </h2>
+    <ul>
+      <li>Vai <strong>além do CID-10</strong></li>
+      <li>Mapeia: <strong>vulnerabilidades + potencialidades</strong></li>
+      <li>Avaliação <strong>biopsicossocial</strong> completa</li>
+      <li>Inclui: barreiras de acesso, rede de apoio, determinantes sociais</li>
+    </ul>
+    <div class="destaque" style="margin-top: 2rem;">
+      <p style="font-size: 1.4rem;">
+        Não é diagnóstico médico — é <strong>diagnóstico situacional</strong>.<br>
+        O que está acontecendo NA VIDA dessa pessoa?
+      </p>
+    </div>
+    <div class="speaker-notes">
+      <strong>Nota:</strong> Enfatizar que MFC já faz isso intuitivamente na anamnese ampliada. PTS sistematiza.
+    </div>
+  </div>
+
+  <!-- ===== SLIDE 11: MOMENTO 1 - EXEMPLO ===== -->
+  <div class="slide" id="slide-11" data-fase="BUILD">
+    <h3>Diagnóstico Integral — Dona Maria</h3>
+    <table class="tabela">
+      <tr>
+        <th style="width: 25%;">Dimensão</th>
+        <th>Avaliação</th>
+      </tr>
+      <tr>
+        <td><strong>Biológica</strong></td>
+        <td>DM2 descompensada, HAS, insônia crônica</td>
+      </tr>
+      <tr>
+        <td><strong>Psicológica</strong></td>
+        <td>Humor deprimido, luto não elaborado (viuvez há 2 anos), baixa autoestima</td>
+      </tr>
+      <tr>
+        <td><strong>Social</strong></td>
+        <td>Mora sozinha, filhos distantes, renda insuficiente, dificuldade de transporte</td>
+      </tr>
+      <tr>
+        <td style="color: var(--verde-saude);"><strong>Potencialidades</strong></td>
+        <td>Vínculo com ACS, participava de grupo de artesanato, boa adesão quando compreende</td>
+      </tr>
+    </table>
+    <p style="margin-top: 1.5rem; font-size: 1.2rem; color: var(--cinza-medio);">
+      <em>Percebam como isso muda a perspectiva.<br>
+      Não é "paciente difícil" — é pessoa com múltiplas vulnerabilidades.</em>
+    </p>
+    <div class="speaker-notes">
+      <strong>Nota:</strong> Mostrar que o diagnóstico integral revela o que exames e CID não capturam. Perguntar: "Quais barreiras vocês mais encontram?"
+    </div>
+  </div>
+
+  <!-- ===== SLIDE 12: MOMENTO 2 - CONCEITO ===== -->
+  <div class="slide" id="slide-12" data-fase="BUILD">
+    <h2 style="color: var(--azul-sus);">
+      <span style="background: var(--verde-saude); color: white; padding: 0.3rem 0.8rem; border-radius: 50%; margin-right: 0.5rem;">2</span>
+      Definição de Metas
+    </h2>
+    <ul>
+      <li>Metas <strong>SMART</strong>: Específicas, Mensuráveis, Alcançáveis, Relevantes, Temporais</li>
+      <li>Negociadas <strong>COM</strong> o usuário — não impostas</li>
+      <li>Horizonte temporal: <strong>30d</strong> (curto) / <strong>90d</strong> (médio) / <strong>>90d</strong> (longo)</li>
+      <li>Foco em <strong>funcionalidade</strong> e qualidade de vida</li>
+    </ul>
+    <div style="margin-top: 2rem; background: var(--cinza-claro); padding: 1.5rem 2rem; border-radius: 8px; max-width: 80%;">
+      <p style="font-size: 1.2rem; text-align: left;">
+        <span style="color: var(--vermelho-risco);">❌</span> Meta ruim: "Melhorar a depressão"<br>
+        <span style="color: var(--verde-saude);">✓</span> Meta SMART: "Reduzir PHQ-9 de 15 para <10 em 90 dias"
+      </p>
+    </div>
+    <div class="speaker-notes">
+      <strong>Nota:</strong> Dar exemplos concretos. "A meta não é 'controlar diabetes'. É algo que faça sentido para a Maria."
+    </div>
+  </div>
+
+  <!-- ===== SLIDE 13: MOMENTO 2 - EXEMPLO ===== -->
+  <div class="slide" id="slide-13" data-fase="BUILD">
+    <h3>Metas — Dona Maria</h3>
+    <table class="tabela">
+      <tr>
+        <th>Prazo</th>
+        <th>Meta</th>
+        <th>Indicador</th>
+      </tr>
+      <tr>
+        <td><strong>30 dias</strong></td>
+        <td>Retomar sono de 6h/noite</td>
+        <td>Autorrelato em retorno</td>
+      </tr>
+      <tr>
+        <td><strong>30 dias</strong></td>
+        <td>Café da manhã com vizinha</td>
+        <td>Confirmação ACS</td>
+      </tr>
+      <tr>
+        <td><strong>90 dias</strong></td>
+        <td>Retornar ao grupo de artesanato</td>
+        <td>Frequência ≥2x/mês</td>
+      </tr>
+      <tr>
+        <td><strong>90 dias</strong></td>
+        <td>HbA1c < 8%</td>
+        <td>Exame laboratorial</td>
+      </tr>
+    </table>
+    <p style="margin-top: 1.5rem; font-size: 1.2rem; color: var(--verde-escuro);">
+      <strong>Percebam:</strong> metas sociais junto com metas clínicas.<br>
+      E negociadas com ela — não decididas por nós.
+    </p>
+    <div class="speaker-notes">
+      <strong>Nota:</strong> Mostrar progressão lógica. Perguntar: "Quem já tentou definir metas assim com paciente? O que aconteceu?"
+    </div>
+  </div>
+
+  <!-- ===== SLIDE 14: MOMENTO 3 - CONCEITO ===== -->
+  <div class="slide" id="slide-14" data-fase="BUILD">
+    <h2 style="color: var(--azul-sus);">
+      <span style="background: var(--verde-saude); color: white; padding: 0.3rem 0.8rem; border-radius: 50%; margin-right: 0.5rem;">3</span>
+      Divisão de Responsabilidades
+    </h2>
+    <ul>
+      <li><strong>Quem</strong> faz <strong>o quê</strong>, <strong>quando</strong></li>
+      <li>Inclui: equipe + usuário + família + rede</li>
+      <li>Define <strong>profissional de referência</strong> (gestor do caso)</li>
+    </ul>
+    <div class="destaque" style="margin-top: 2rem;">
+      <p style="font-size: 1.5rem;">
+        Evita: "todo mundo cuida = ninguém cuida"
+      </p>
+    </div>
+    <div class="speaker-notes">
+      <strong>Nota:</strong> "Este é o coração do PTS. Sem isso, vira apenas boa intenção."
+    </div>
+  </div>
+
+  <!-- ===== SLIDE 15: MOMENTO 3 - EXEMPLO ===== -->
+  <div class="slide" id="slide-15" data-fase="BUILD">
+    <h3>Responsabilidades — Dona Maria</h3>
+    <table class="tabela">
+      <tr>
+        <th>Ator</th>
+        <th>Ação</th>
+        <th>Frequência</th>
+      </tr>
+      <tr>
+        <td><strong>Médico(a)</strong></td>
+        <td>Revisão medicamentosa + avaliação humor</td>
+        <td>Mensal</td>
+      </tr>
+      <tr>
+        <td><strong>Enfermeiro(a)</strong></td>
+        <td>Monitoramento DM/HAS + escuta</td>
+        <td>Quinzenal</td>
+      </tr>
+      <tr>
+        <td><strong>ACS</strong></td>
+        <td>Visita domiciliar + monitorar sono</td>
+        <td>Semanal</td>
+      </tr>
+      <tr>
+        <td><strong>Psicólogo</strong></td>
+        <td>Acompanhamento do luto (6 sessões)</td>
+        <td>Quinzenal</td>
+      </tr>
+      <tr>
+        <td style="color: var(--verde-saude);"><strong>Dona Maria</strong></td>
+        <td>Caminhar 15min/dia + registrar alimentação</td>
+        <td>Diário</td>
+      </tr>
+      <tr>
+        <td style="color: var(--verde-saude);"><strong>Vizinha</strong></td>
+        <td>Café da manhã compartilhado</td>
+        <td>3x/semana</td>
+      </tr>
+    </table>
+    <p style="margin-top: 1rem; font-size: 1.1rem; color: var(--cinza-medio);">
+      <em>PTS é pacto, não prescrição. Ela também tem responsabilidades.</em>
+    </p>
+    <div class="speaker-notes">
+      <strong>Nota:</strong> Destacar que usuário e rede têm responsabilidades. "Notem: ela também tem compromissos."
+    </div>
+  </div>
+
+  <!-- ===== SLIDE 16: MOMENTO 4 - REAVALIAÇÃO ===== -->
+  <div class="slide" id="slide-16" data-fase="BUILD">
+    <h2 style="color: var(--azul-sus);">
+      <span style="background: var(--verde-saude); color: white; padding: 0.3rem 0.8rem; border-radius: 50%; margin-right: 0.5rem;">4</span>
+      Reavaliação
+    </h2>
+    <ul>
+      <li>PTS é <strong>documento vivo</strong>, não estático</li>
+      <li>Reavaliação <strong>programada</strong> (não "se der tempo")</li>
+      <li>Avalia: metas alcançadas? ajustes necessários? reclassificar risco?</li>
+    </ul>
+    <div style="background: var(--cinza-claro); padding: 1.5rem 2rem; border-radius: 8px; max-width: 80%; margin-top: 2rem;">
+      <h3 style="margin-bottom: 1rem;">Dona Maria em 90 dias:</h3>
+      <p style="text-align: left; font-size: 1.2rem; line-height: 1.8;">
+        ☐ Sono melhorou? (autorrelato + vizinha)<br>
+        ☐ Retornou ao artesanato? (confirmação)<br>
+        ☐ HbA1c melhorou? (exame)<br>
+        ☐ Reclassificar: continua AMARELO ou vai para VERDE?
+      </p>
+    </div>
+    <div class="speaker-notes">
+      <strong>Nota:</strong> "Voltando à Dona Maria: em 90 dias, como sabemos se funcionou?" Mostrar que reclassificação é indicador de efetividade.
+    </div>
+  </div>
+
+  <!-- ===== SLIDE 17: CASO EXERCÍCIO ===== -->
+  <div class="slide" id="slide-17" data-fase="APPLY">
+    <h1 style="font-size: 2.5rem;">Exercício em Duplas</h1>
+    <div class="caso-box" style="border-left-color: var(--azul-sus);">
+      <p class="nome">Sr. João, 45 anos</p>
+      <p>
+        HAS mal controlada<br>
+        Uso problemático de álcool (12 doses/semana)<br>
+        Desempregado há 8 meses<br>
+        Mora com esposa e 2 filhos adolescentes<br>
+        <em>Última consulta: "veio só buscar receita de losartana"</em><br>
+        <em>ACS relata: "vizinhos comentam que ele bebe todo dia"</em>
+      </p>
+    </div>
+    <div class="speaker-notes">
+      <strong>Nota:</strong> Ler pausadamente. Verificar se todos entenderam o caso antes de dar as instruções.
+    </div>
+  </div>
+
+  <!-- ===== SLIDE 18: INSTRUÇÃO EXERCÍCIO ===== -->
+  <div class="slide" id="slide-18" data-fase="APPLY">
+    <h2>Tarefa — 10 minutos</h2>
+    <div class="checklist">
+      <ul>
+        <li>Faça o <strong>diagnóstico integral</strong> (biopsicossocial)</li>
+        <li>Proponha <strong>2 metas SMART</strong> (1 curto, 1 médio prazo)</li>
+        <li>Defina <strong>3 responsabilidades</strong> (equipe + João + família)</li>
+      </ul>
+    </div>
+    <p style="margin-top: 2rem; font-size: 1.3rem;">
+      Use o <strong>template simplificado</strong> que vocês receberam.
+    </p>
+    <p style="margin-top: 1rem; font-size: 1.1rem; color: var(--cinza-medio);">
+      Depois: 3 duplas apresentam (2 min cada)
+    </p>
+    <div class="speaker-notes">
+      <strong>Nota:</strong> Distribuir templates. Circular entre duplas. Dar aviso de tempo aos 5 e 8 minutos. Anotar resistências para endereçar na plenária.
+    </div>
+  </div>
+
+  <!-- ===== SLIDE 19: PLENÁRIA ===== -->
+  <div class="slide" id="slide-19" data-fase="APPLY">
+    <h1 style="font-size: 2.5rem;">Plenária</h1>
+    <div style="font-size: 1.5rem; text-align: center;">
+      <p style="margin-bottom: 2rem;">3 duplas apresentam<br><em>(2 minutos cada)</em></p>
+      <div class="destaque" style="background: var(--azul-sus);">
+        <p style="font-size: 1.3rem;">
+          Questões comuns:<br><br>
+          "E se ele não quiser parar de beber?"<br>
+          → Meta pode ser <strong>redução de danos</strong>, não abstinência<br><br>
+          "E se a família não colaborar?"<br>
+          → PTS inclui trabalho com família, mas não depende só dela
+        </p>
+      </div>
+    </div>
+    <div class="speaker-notes">
+      <strong>Nota:</strong> Validar contribuições. Corrigir gentilmente equívocos. Conectar com conceitos apresentados. Endereçar resistências que surgiram.
+    </div>
+  </div>
+
+  <!-- ===== SLIDE 20: FLUXOGRAMA SÍNTESE ===== -->
+  <div class="slide" id="slide-20" data-fase="ANCHOR">
+    <h2>Síntese: Fluxo do PTS</h2>
+    <div class="fluxo">
+      <div class="fluxo-box" style="background: var(--laranja-alerta);">
+        CASO COMPLEXO<br><small>(múltiplas consultas sem resolução)</small>
+      </div>
+      <div class="fluxo-seta">↓</div>
+      <div class="fluxo-box">
+        1. DIAGNÓSTICO INTEGRAL<br><small>Bio + Psico + Social + Potencialidades</small>
+      </div>
+      <div class="fluxo-seta">↓</div>
+      <div class="fluxo-box">
+        2. DEFINIÇÃO DE METAS (SMART)<br><small>Com o usuário — 30d / 90d / >90d</small>
+      </div>
+      <div class="fluxo-seta">↓</div>
+      <div class="fluxo-box">
+        3. DIVISÃO DE RESPONSABILIDADES<br><small>Equipe + Usuário + Família + Rede</small>
+      </div>
+      <div class="fluxo-seta">↓</div>
+      <div class="fluxo-box" style="background: var(--verde-saude);">
+        4. REAVALIAÇÃO PROGRAMADA<br><small>Metas alcançadas? Ajustes? Reclassificação?</small>
+      </div>
+    </div>
+    <div class="speaker-notes">
+      <strong>Nota:</strong> "Se lembrar de uma coisa só, lembre desse fluxo. Guardem essa imagem."
+    </div>
+  </div>
+
+  <!-- ===== SLIDE 21: CHECKLIST DE BOLSO ===== -->
+  <div class="slide" id="slide-21" data-fase="ANCHOR">
+    <h2>Checklist de Bolso</h2>
+    <p style="margin-bottom: 1.5rem; font-size: 1.3rem;">Antes de elaborar PTS, pergunte-se:</p>
+    <div class="checklist">
+      <ul>
+        <li>Este caso já consumiu <strong>múltiplas consultas</strong> sem resolução?</li>
+        <li>Há <strong>complexidade biopsicossocial</strong> evidente?</li>
+        <li>O usuário/família <strong>pode participar</strong> da construção?</li>
+        <li>Tenho <strong>equipe mínima</strong> para dividir responsabilidades?</li>
+      </ul>
+    </div>
+    <p style="margin-top: 2rem; font-size: 1.4rem; color: var(--verde-escuro);">
+      <strong>Se SIM para 3 ou mais → considere PTS</strong>
+    </p>
+    <div class="speaker-notes">
+      <strong>Nota:</strong> "Não é para todo mundo. É para quem precisa." Entregar versão impressa se possível.
+    </div>
+  </div>
+
+  <!-- ===== SLIDE 22: INDICADORES ===== -->
+  <div class="slide" id="slide-22" data-fase="ANCHOR">
+    <h2>Indicadores de Qualidade</h2>
+    <div style="display: flex; flex-direction: column; gap: 2rem; max-width: 80%;">
+      <div class="indicador">
+        <div class="indicador-valor">100%</div>
+        <div class="indicador-label">Usuários CAPS com PTS elaborado</div>
+      </div>
+      <div class="indicador">
+        <div class="indicador-valor">≥80%</div>
+        <div class="indicador-label">PTS com participação do usuário</div>
+      </div>
+      <div class="indicador">
+        <div class="indicador-valor">≥90%</div>
+        <div class="indicador-label">PTS revisados no prazo estabelecido</div>
+      </div>
+    </div>
+    <p style="margin-top: 2rem; font-size: 1.2rem; color: var(--cinza-medio);">
+      <em>São as metas do município. Vocês fazem parte disso.</em>
+    </p>
+    <div class="speaker-notes">
+      <strong>Nota:</strong> Mostrar que há monitoramento institucional. Conectar trabalho individual com política municipal.
+    </div>
+  </div>
+
+  <!-- ===== SLIDE 23: PRÓXIMOS PASSOS ===== -->
+  <div class="slide" id="slide-23" data-fase="ANCHOR">
+    <h2>Próximos Passos</h2>
+    <div style="display: flex; gap: 3rem; max-width: 90%;">
+      <div style="flex: 1; text-align: left;">
+        <h3 style="color: var(--verde-saude); margin-bottom: 1rem;">Esta semana:</h3>
+        <ol style="font-size: 1.3rem; line-height: 2; padding-left: 1.5rem;">
+          <li>Identifique <strong>1 caso "Dona Maria"</strong> na sua agenda</li>
+          <li>Aplique os <strong>4 momentos</strong> mentalmente</li>
+          <li>Traga dúvidas para o próximo encontro</li>
+        </ol>
+      </div>
+      <div style="flex: 1; text-align: left;">
+        <h3 style="color: var(--azul-sus); margin-bottom: 1rem;">Recursos disponíveis:</h3>
+        <ul style="font-size: 1.3rem; line-height: 2;">
+          <li>Template PTS simplificado (F-02)</li>
+          <li>Contato da Coordenação SM</li>
+          <li>Matriciamento mensal com eMulti/NIRSM</li>
+        </ul>
+      </div>
+    </div>
+    <div class="speaker-notes">
+      <strong>Nota:</strong> Compromisso concreto. Não deixar abstrato. "Escolham um caso e testem."
+    </div>
+  </div>
+
+  <!-- ===== SLIDE 24: ENCERRAMENTO ===== -->
+  <div class="slide final" id="slide-24" data-fase="ANCHOR">
+    <h1>Obrigado!</h1>
+    <p style="font-size: 1.8rem; margin: 2rem 0;">
+      Vocês na APS são fundamentais.<br>
+      A gente está junto nessa.
+    </p>
+    <div style="margin-top: 3rem; font-size: 1.2rem; opacity: 0.9;">
+      Coordenação Municipal de Saúde Mental<br>
+      Extrema/MG — Janeiro 2026
+    </div>
+    <div class="speaker-notes">
+      <strong>Nota:</strong> Tom colaborativo. Disponibilizar canal de comunicação (e-mail, telefone). Agradecer participação. Encerrar no horário.
+    </div>
+  </div>
+
+  <!-- ===== NAVEGAÇÃO ===== -->
+  <div class="slide-number">
+    <span id="current">1</span> / <span id="total">24</span>
+  </div>
+
+  <div class="fase-indicator" id="fase-indicator">CAPA</div>
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    const total = slides.length;
+    let current = 0;
+
+    document.getElementById('total').textContent = total;
+
+    function showSlide(n) {
+      slides[current].classList.remove('active');
+      current = (n + total) % total;
+      slides[current].classList.add('active');
+
+      // Atualizar número
+      document.getElementById('current').textContent = current + 1;
+
+      // Atualizar barra de progresso
+      document.getElementById('progress').style.width = ((current + 1) / total * 100) + '%';
+
+      // Atualizar indicador de fase
+      const fase = slides[current].getAttribute('data-fase') || '';
+      const faseIndicator = document.getElementById('fase-indicator');
+      faseIndicator.textContent = fase;
+
+      // Cores por fase
+      const faseColors = {
+        'CAPA': 'var(--azul-escuro)',
+        'ENGAGE': 'var(--laranja-alerta)',
+        'FRAME': 'var(--azul-sus)',
+        'BUILD': 'var(--verde-saude)',
+        'APPLY': 'var(--verde-escuro)',
+        'ANCHOR': 'var(--azul-sus)'
+      };
+      faseIndicator.style.background = faseColors[fase] || 'var(--azul-sus)';
+    }
+
+    // Navegação por teclado
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') {
+        e.preventDefault();
+        showSlide(current + 1);
+      }
+      if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+        e.preventDefault();
+        showSlide(current - 1);
+      }
+      if (e.key === 'n' || e.key === 'N') {
+        document.body.classList.toggle('show-notes');
+      }
+      if (e.key === 'Home') {
+        showSlide(0);
+      }
+      if (e.key === 'End') {
+        showSlide(total - 1);
+      }
+    });
+
+    // Navegação por clique
+    document.addEventListener('click', (e) => {
+      // Ignorar cliques em elementos interativos
+      if (e.target.tagName === 'A' || e.target.tagName === 'BUTTON') return;
+
+      // Clique na metade direita avança, esquerda volta
+      if (e.clientX > window.innerWidth / 2) {
+        showSlide(current + 1);
+      } else {
+        showSlide(current - 1);
+      }
+    });
+
+    // Touch/swipe para mobile
+    let touchStartX = 0;
+    document.addEventListener('touchstart', (e) => {
+      touchStartX = e.touches[0].clientX;
+    });
+    document.addEventListener('touchend', (e) => {
+      const touchEndX = e.changedTouches[0].clientX;
+      const diff = touchStartX - touchEndX;
+      if (Math.abs(diff) > 50) {
+        if (diff > 0) showSlide(current + 1);
+        else showSlide(current - 1);
+      }
+    });
+  </script>
+</body>
+</html>

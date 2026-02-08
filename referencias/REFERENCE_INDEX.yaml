@@ -1,0 +1,710 @@
+# referencias/REFERENCE_INDEX.yaml
+#
+# Índice de Referências Prioritárias para Validação de Protocolos
+# Sistema de Saúde Mental - Extrema/MG
+#
+# Este arquivo contém metadados estruturados das 20+ referências de maior
+# impacto para validação cruzada de protocolos. Cada entrada inclui:
+#   - Identificador único
+#   - Grau de evidência (GRADE-based)
+#   - Dados de validação (quando aplicável)
+#   - Caminho do arquivo fonte
+#   - Status de extração
+#
+# Usado pelos comandos: /validar, /evidencia
+# Última atualização: 2026-01-24
+
+version: "1.2"
+last_updated: "2026-01-24"
+total_references: 26
+
+# =============================================================================
+# INSTRUMENTOS DE AVALIAÇÃO (10 referências)
+# =============================================================================
+
+instruments:
+
+  - id: "cuidasm"
+    name: "Escala de Avaliação da Necessidade de Cuidado em Saúde Mental (CuidaSM)"
+    type: "risk_stratification"
+    evidence_grade: "alta"
+    authority: "ENAP/MS"
+    year: 2020
+    validation:
+      population: "brazilian"
+      validated: true
+      items: 31
+      max_score: 11  # Após categorização
+    scoring:
+      low_risk:
+        range: [0, 3]
+        description: "Risco baixo - acompanhamento APS"
+      moderate_risk:
+        range: [4, 7]
+        description: "Risco moderado - matriciamento"
+      high_risk:
+        range: [8, 11]
+        description: "Risco alto - referência especializada"
+    clinical_use:
+      - "Estratificação de risco em saúde mental"
+      - "Definição de nível de cuidado"
+      - "Escalonamento do cuidado"
+    source_files:
+      - path: "instrumentos/Roteiro para Utilização da Escala de Avaliação da Necessidade de Cuidado em Saúde Mental (CuidaSM)_e-planifica.pdf"
+        extracted: true
+      - path: "instrumentos/4. A utilização da Escala CuidaSM para apoiar o processo de escalonamento.pdf"
+        extracted: true
+    keywords:
+      - "cuidasm"
+      - "estratificação"
+      - "risco"
+      - "escalonamento"
+      - "saúde mental"
+
+  - id: "mchat_rf"
+    name: "Modified Checklist for Autism in Toddlers, Revised with Follow-Up (M-CHAT-R/F)"
+    type: "autism_screening"
+    evidence_grade: "alta"
+    authority: "Robins et al. / Validação brasileira: Losapio et al."
+    year: 2023
+    validation:
+      population: "brazilian"
+      validated: true
+      sensitivity: 0.882
+      specificity: 0.75
+      cronbach_alpha: 0.88
+      application_time_minutes: 5
+      age_range_months: [16, 30]
+    scoring:
+      low_risk:
+        range: [0, 2]
+        description: "Risco baixo - monitorar desenvolvimento"
+      moderate_risk:
+        range: [3, 7]
+        description: "Risco moderado - aplicar Follow-Up"
+      high_risk:
+        range: [8, 20]
+        description: "Risco alto - encaminhar avaliação diagnóstica"
+    clinical_use:
+      - "Triagem universal para autismo 16-30 meses"
+      - "Identificação precoce de sinais de TEA"
+      - "Critério para encaminhamento ao NIRSM"
+    source_files:
+      - path: "clinicos/triagem_precoce_autismo_brasil_2025.md"
+        extracted: true
+    keywords:
+      - "m-chat"
+      - "mchat"
+      - "autismo"
+      - "tea"
+      - "triagem"
+      - "screening"
+
+  - id: "irdi"
+    name: "Indicadores de Risco para o Desenvolvimento Infantil (IRDI)"
+    type: "developmental_screening"
+    evidence_grade: "moderada"
+    authority: "Kupfer et al. / IPUSP"
+    year: 2009
+    validation:
+      population: "brazilian"
+      validated: true
+      age_range_months: [0, 18]
+      indicators: 31
+    scoring:
+      risk_indicators:
+        description: "Presença de 2+ indicadores ausentes sugere risco"
+    clinical_use:
+      - "Avaliação do desenvolvimento infantil 0-18 meses"
+      - "Identificação de riscos psíquicos precoces"
+      - "Complementar à puericultura"
+    source_files:
+      - path: "instrumentos/IRDI (referência externa)"
+        extracted: false
+    keywords:
+      - "irdi"
+      - "desenvolvimento"
+      - "infantil"
+      - "risco"
+
+  - id: "coelho_savassi"
+    name: "Escala de Risco Familiar de Coelho-Savassi"
+    type: "family_risk"
+    evidence_grade: "moderada"
+    authority: "Coelho & Savassi"
+    year: 2006
+    validation:
+      population: "brazilian"
+      validated: true
+    clinical_use:
+      - "Estratificação de risco familiar"
+      - "Priorização de visitas domiciliares"
+      - "Identificação de famílias vulneráveis"
+    source_files:
+      - path: "instrumentos/8. Escala de Risco Familiar de Coelho-Savassi.pdf"
+        extracted: true
+    keywords:
+      - "risco familiar"
+      - "vulnerabilidade"
+      - "visita domiciliar"
+
+  - id: "sinais_alerta"
+    name: "Ficha de Sinais de Alerta para Cuidado em Saúde Mental"
+    type: "alert_signs"
+    evidence_grade: "normativa"
+    authority: "ENAP/MS"
+    year: 2020
+    clinical_use:
+      - "Identificação de sinais de alerta em saúde mental"
+      - "Orientação para ACS e enfermagem"
+    source_files:
+      - path: "instrumentos/6. Ficha complementar - Sinais de alerta para o cuidado em Saúde Mental.pdf"
+        extracted: true
+    keywords:
+      - "sinais alerta"
+      - "urgência"
+      - "emergência"
+      - "saúde mental"
+
+  - id: "classificacao_risco_sm"
+    name: "Fluxograma de Classificação de Risco em Saúde Mental"
+    type: "risk_classification"
+    evidence_grade: "normativa"
+    authority: "ENAP/MS"
+    year: 2020
+    clinical_use:
+      - "Classificação de risco no acolhimento"
+      - "Direcionamento do fluxo de atendimento"
+    source_files:
+      - path: "instrumentos/5. Fluxogramas para atendimento com classificação de risco em saúde mental.pdf"
+        extracted: true
+    keywords:
+      - "classificação"
+      - "risco"
+      - "acolhimento"
+      - "fluxo"
+
+  - id: "plano_cuidado_familiar"
+    name: "Plano de Cuidado Familiar"
+    type: "care_planning"
+    evidence_grade: "normativa"
+    authority: "ENAP/MS"
+    year: 2020
+    clinical_use:
+      - "Elaboração de PTS familiar"
+      - "Planejamento de intervenções"
+    source_files:
+      - path: "instrumentos/10. Plano de cuidado familiar.pdf"
+        extracted: true
+    keywords:
+      - "pts"
+      - "plano"
+      - "cuidado"
+      - "família"
+
+  - id: "time_resposta_rapida"
+    name: "Orientação para Implantação do Time de Resposta Rápida"
+    type: "emergency_protocol"
+    evidence_grade: "normativa"
+    authority: "ENAP/MS"
+    year: 2020
+    clinical_use:
+      - "Organização de equipe para urgências"
+      - "Protocolo de resposta rápida em saúde mental"
+    source_files:
+      - path: "instrumentos/11. Orientação para implantação do time de resposta rápida.pdf"
+        extracted: true
+    keywords:
+      - "urgência"
+      - "emergência"
+      - "resposta rápida"
+
+  - id: "ata"
+    name: "Escala de Avaliação de Traços Autísticos (ATA)"
+    type: "autism_screening"
+    evidence_grade: "moderada"
+    authority: "Ministério do Esporte / UFAL"
+    year: 2025
+    validation:
+      population: "brazilian"
+      validated: true
+      age_range_months: [24, null]  # +24 meses
+      subscales: 23
+      max_score: 46
+    scoring:
+      interpretation:
+        description: "Escore total indica traços autísticos (quanto maior, mais traços)"
+    clinical_use:
+      - "Rastreio multiprofissional de traços autísticos"
+      - "Avaliação complementar ao M-CHAT para >24 meses"
+      - "Aplicável por profissional de educação física"
+    source_files:
+      - path: "Atividade-fisica/Guia-atividade-fisica-TEA.pdf"
+        extracted: true
+        pages: "81-88"
+    keywords:
+      - "ata"
+      - "traços autísticos"
+      - "autismo"
+      - "tea"
+      - "rastreio"
+      - "avaliação"
+
+  - id: "cars"
+    name: "Childhood Autism Rating Scale (CARS)"
+    type: "autism_assessment"
+    evidence_grade: "alta"
+    authority: "Schopler et al. / Adaptação Guia ME 2025"
+    year: 2025
+    validation:
+      population: "international"
+      validated: true
+      domains: 15
+      max_score: 60
+      item_scoring: "1-4 por domínio"
+    scoring:
+      no_autism:
+        range: [0, 30]
+        description: "Sem risco de TEA"
+      mild_moderate:
+        range: [30, 37]
+        description: "Autismo leve-moderado"
+      severe:
+        threshold: 37
+        alternative: "≥5 itens com escore ≥3"
+        description: "Autismo grave"
+    domains:
+      - "Relação com pessoas"
+      - "Imitação"
+      - "Resposta emocional"
+      - "Movimentos do corpo"
+      - "Utilização dos objetos"
+      - "Adaptação à mudança"
+      - "Resposta visual"
+      - "Resposta ao som"
+      - "Resposta ao paladar, olfato e tato"
+      - "Medo ou ansiedade"
+      - "Comunicação verbal"
+      - "Comunicação não verbal"
+      - "Nível de atividade"
+      - "Consistência da resposta intelectual"
+      - "Impressão global"
+    clinical_use:
+      - "Diferenciação TEA vs outros transtornos do neurodesenvolvimento"
+      - "Avaliação de gravidade do TEA"
+      - "Complementar a instrumentos de rastreio"
+    source_files:
+      - path: "Atividade-fisica/Guia-atividade-fisica-TEA.pdf"
+        extracted: true
+        pages: "89-93"
+    keywords:
+      - "cars"
+      - "autism rating scale"
+      - "autismo"
+      - "tea"
+      - "gravidade"
+      - "avaliação"
+
+# =============================================================================
+# DADOS EPIDEMIOLÓGICOS (2 referências) - NOVO Jan/2026
+# =============================================================================
+
+epidemiology:
+
+  - id: "cdc_mmwr_2025"
+    name: "CDC ADDM Network - Autism Prevalence 2025"
+    type: "prevalence_data"
+    evidence_grade: "alta"
+    authority: "CDC/MMWR"
+    year: 2025
+    publication_date: "2025-04-17"
+    data:
+      prevalence_overall: "1:31 (3.2%)"
+      prevalence_boys: "4.9% (49.2/1000)"
+      prevalence_girls: "1.4% (14.3/1000)"
+      sex_ratio: "3.4:1"
+      by_race_ethnicity:
+        asian: "3.82%"
+        black: "3.66%"
+        hispanic: "3.30%"
+        white: "2.77%"
+      geographic_range: "1.0% (Texas) to 5.3% (California)"
+    citation: |
+      Shaw KA, Williams S, Patrick ME, et al. Prevalence and Early Identification
+      of Autism Spectrum Disorder Among Children Aged 4 and 8 Years — ADDM Network,
+      16 Sites, United States, 2022. MMWR Surveill Summ. 2025;74(SS-2):1-22.
+    url: "https://www.cdc.gov/mmwr/volumes/74/ss/ss7402a1.htm"
+    keywords:
+      - "prevalência"
+      - "epidemiologia"
+      - "cdc"
+      - "autismo"
+      - "tea"
+
+  - id: "lei_15256_2025"
+    name: "Lei 15.256/2025 - Diagnóstico TEA em Adultos e Idosos"
+    type: "federal_legislation"
+    evidence_grade: "normativa"
+    authority: "Congresso Nacional / Presidência da República"
+    year: 2025
+    publication_date: "2025-11-13"
+    key_content:
+      - "Altera Lei Berenice Piana (12.764/2012)"
+      - "Incentiva diagnóstico de TEA em adultos e idosos"
+      - "Atualiza Política Nacional de Proteção dos Direitos da Pessoa com TEA"
+    impacted_population: "2.4 milhões de brasileiros sem diagnóstico formal"
+    citation: |
+      Brasil. Lei nº 15.256, de 12 de novembro de 2025. Altera a Lei nº 12.764,
+      de 27 de dezembro de 2012, para incentivar o diagnóstico de transtorno do
+      espectro autista em população adulta e idosa. Diário Oficial da União.
+      2025 nov 13; Seção 1.
+    url: "https://www12.senado.leg.br/noticias/materias/2025/11/13/sancionada-lei-que-incentiva-diagnostico-de-autismo-em-populacao-adulta-e-idosa"
+    keywords:
+      - "lei"
+      - "adultos"
+      - "idosos"
+      - "diagnóstico tardio"
+      - "tea"
+
+# =============================================================================
+# DIRETRIZES NORMATIVAS (5 referências)
+# =============================================================================
+
+guidelines:
+
+  - id: "informacoes_fundamentais_sm"
+    name: "Informações Fundamentais para Elaboração de Protocolos de Saúde Mental"
+    type: "protocol_development_guide"
+    evidence_grade: "normativa"
+    authority: "Compilação Técnica Local"
+    year: 2025
+    key_content:
+      - "Estrutura da RAPS"
+      - "Classificação de risco (CuidaSM)"
+      - "Fluxo APS-AES"
+      - "Escalonamento do cuidado"
+      - "Protocolo de emergências"
+      - "Contrarreferência"
+    source_files:
+      - path: "normativos/informacoes_fundamentais_protocolos_sm.md"
+        extracted: true
+    keywords:
+      - "raps"
+      - "aps"
+      - "protocolo"
+      - "fluxo"
+      - "escalonamento"
+
+  - id: "linha_cuidado_tea"
+    name: "Linha de Cuidado para Pessoas com TEA no SUS"
+    type: "care_line"
+    evidence_grade: "normativa"
+    authority: "Ministério da Saúde"
+    year: 2025
+    key_requirements:
+      - triagem_universal_mchat: "M-CHAT-R/F em consultas de puericultura 16-30m"
+      - intervencao_precoce: "Intervenção antes do diagnóstico formal"
+      - pts_obrigatorio: "PTS para todos os casos confirmados"
+      - transicao_adulto: "Protocolo de transição aos 18 anos"
+    timelines:
+      P1: 30  # dias
+      P2: 90
+      P3: 180
+    source_files:
+      - path: "normativos/Linha de Cuidado e Diretrizes Assistenciais - Saúde Mental (caderno nº1).pdf"
+        extracted: false
+    keywords:
+      - "tea"
+      - "autismo"
+      - "linha de cuidado"
+      - "sus"
+
+  - id: "raps_consolidacao"
+    name: "Rede de Atenção Psicossocial (RAPS)"
+    type: "network_structure"
+    evidence_grade: "normativa"
+    authority: "Ministério da Saúde"
+    year: 2017
+    key_content:
+      - "Componentes da RAPS"
+      - "Pontos de atenção"
+      - "Atribuições por nível"
+    source_files:
+      - path: "normativos/Rede de Atenção Psicossocial - RAPS (2).pdf"
+        extracted: false
+    keywords:
+      - "raps"
+      - "rede"
+      - "caps"
+      - "componentes"
+
+  - id: "nota_tecnica_sm"
+    name: "Nota Técnica - Saúde Mental na Atenção Primária"
+    type: "technical_note"
+    evidence_grade: "normativa"
+    authority: "Ministério da Saúde"
+    year: 2023
+    source_files:
+      - path: "normativos/Nota Técnica Saúde Mental.pdf"
+        extracted: false
+    keywords:
+      - "nota técnica"
+      - "aps"
+      - "saúde mental"
+
+  - id: "reforma_psiquiatrica"
+    name: "Reforma Psiquiátrica e Política de Saúde Mental no Brasil"
+    type: "historical_reference"
+    evidence_grade: "normativa"
+    authority: "Ministério da Saúde / OPAS"
+    year: 2005
+    key_content:
+      - "Lei 10.216/2001"
+      - "Caracas 1990"
+      - "Modelo de atenção psicossocial"
+    source_files:
+      - path: "normativos/Reforma psiquiátrica e política de saúde mental no Brasil relatório 15 anos depois de Caracas.pdf"
+        extracted: false
+    keywords:
+      - "reforma"
+      - "lei 10216"
+      - "caracas"
+      - "história"
+
+# =============================================================================
+# REFERÊNCIAS CLÍNICAS (5 referências)
+# =============================================================================
+
+clinical_references:
+
+  - id: "triagem_autismo_brasil"
+    name: "Triagem Precoce de Autismo no Brasil 2025"
+    type: "clinical_synthesis"
+    evidence_grade: "alta"
+    authority: "Compilação Técnica (múltiplas fontes)"
+    year: 2025
+    key_content:
+      - "Epidemiologia CDC/MMWR"
+      - "Validação M-CHAT brasileira"
+      - "Marcos do desenvolvimento"
+      - "Controvérsias USPSTF"
+      - "Diretrizes MS/AAP"
+    source_files:
+      - path: "clinicos/triagem_precoce_autismo_brasil_2025.md"
+        extracted: true
+    keywords:
+      - "autismo"
+      - "triagem"
+      - "m-chat"
+      - "epidemiologia"
+
+  - id: "mhgap_oms"
+    name: "mhGAP Intervention Guide - WHO"
+    type: "clinical_guideline"
+    evidence_grade: "alta"
+    authority: "World Health Organization"
+    year: 2019
+    key_content:
+      - "Algoritmos de manejo clínico"
+      - "Condições prioritárias"
+      - "Intervenções baseadas em evidência"
+    conditions_covered:
+      - "Depressão"
+      - "Psicose"
+      - "Epilepsia"
+      - "Transtornos do desenvolvimento infantil"
+      - "Demência"
+      - "Transtornos por uso de substâncias"
+      - "Autolesão/Suicídio"
+    source_files:
+      - path: "clinicos/manuais/20190215-MH-GAP-OMS_portuguese.pdf"
+        extracted: false
+    keywords:
+      - "mhgap"
+      - "oms"
+      - "who"
+      - "manejo"
+      - "algoritmo"
+
+  - id: "emergencias_psiquiatricas"
+    name: "Emergências Psiquiátricas"
+    type: "clinical_manual"
+    evidence_grade: "alta"
+    authority: "Baldaçara, L. et al."
+    year: 2019
+    key_content:
+      - "Avaliação de risco"
+      - "Contenção"
+      - "Medicação de emergência"
+      - "Critérios de internação"
+    source_files:
+      - path: "clinicos/manuais/Emergencias-psiquiatricas-Leonardo-Baldacara.pdf.pdf"
+        extracted: false
+    keywords:
+      - "emergência"
+      - "crise"
+      - "contenção"
+      - "internação"
+
+  - id: "organizacao_rede_saude"
+    name: "Organização da Rede de Atenção à Saúde com Foco na Saúde Mental"
+    type: "network_organization"
+    evidence_grade: "moderada"
+    authority: "ENAP/MS"
+    year: 2020
+    source_files:
+      - path: "clinicos/abordagens/ORGANIZAÇÃO_DA_REDE_DE_ATENÇÃO_À_SAÚDE_COM_FOCO_NA_SAÚDE_MENTAL_APS_AES.pdf"
+        extracted: false
+    keywords:
+      - "rede"
+      - "organização"
+      - "aps"
+      - "aes"
+
+  - id: "acesso_raps_aps"
+    name: "Acesso à RAPS pela APS"
+    type: "access_guide"
+    evidence_grade: "moderada"
+    authority: "ENAP/MS"
+    year: 2020
+    source_files:
+      - path: "clinicos/abordagens/ACESSO À RAPS PELA APS.pdf"
+        extracted: false
+    keywords:
+      - "acesso"
+      - "raps"
+      - "aps"
+      - "encaminhamento"
+
+  - id: "einstein_tea"
+    name: "Linha de Cuidado Diagnóstico para Suspeita de Atraso do Desenvolvimento ou TEA"
+    type: "care_pathway"
+    evidence_grade: "moderada"
+    authority: "Hospital Albert Einstein (HIAE)"
+    year: 2024
+    key_content:
+      - "Fluxogramas por faixa etária (0-3, 3-12, 12-18 anos)"
+      - "Sistema de estratificação M-CHAT (0-2/3-7/8-20)"
+      - "Equipe multiprofissional APS e AE"
+      - "Condições específicas como gatilhos"
+    gaps_identified:
+      - "Follow-Up Interview ausente"
+      - "Camuflagem feminina não abordada"
+      - "Transição adulto ausente"
+      - "Sistema de priorização ausente"
+    analysis_file: "exports/ANALISE_EINSTEIN_TEA_vs_CLI02.md"
+    source_files:
+      - path: "externos/linha_cuidado_tea_einstein_2024.pdf"
+        extracted: true
+    keywords:
+      - "einstein"
+      - "tea"
+      - "autismo"
+      - "fluxograma"
+      - "linha de cuidado"
+
+# =============================================================================
+# PROTOCOLOS DO PROJETO (3 referências)
+# =============================================================================
+
+project_protocols:
+
+  - id: "cli_02_tea"
+    name: "CLI-02: Protocolo Clínico - Transtorno do Espectro Autista"
+    type: "clinical_protocol"
+    evidence_grade: "normativa"
+    authority: "Coordenação SM Extrema/MG"
+    version: "2.7"
+    year: 2026
+    sections: 21
+    references: 35
+    annexes:
+      - "Anexo F: Fluxogramas Visuais Mermaid (0-3a, 3-12a, 12-18+a)"
+      - "Anexo G: Cartão de Bolso M-CHAT (itens críticos 2, 5, 12)"
+    key_content:
+      - "Fundamentação técnica DSM-5-TR"
+      - "Fluxo NIRSM-R"
+      - "Algoritmo de intervenção"
+      - "Transição para adulto"
+      - "Rede intersetorial"
+    source_files:
+      - path: "entregas/Protocolos_Compartilhamento_Cuidado/Protocolos_Clinicos/CLI_02_TRANSTORNO_ESPECTRO_AUTISTA.md"
+        extracted: true
+    keywords:
+      - "cli-02"
+      - "tea"
+      - "autismo"
+      - "protocolo"
+
+  - id: "macrofluxo_di_tea"
+    name: "PCC-06: Macrofluxo Narrativo DI/TEA"
+    type: "care_flow"
+    evidence_grade: "normativa"
+    authority: "Coordenação SM Extrema/MG"
+    version: "1.0"
+    year: 2026
+    phases: 10
+    key_content:
+      - "Cascata de navegação do paciente"
+      - "Sistema P1/P2/P3"
+      - "10 fases: Vigilância → Alta"
+    source_files:
+      - path: "entregas/Protocolos_Compartilhamento_Cuidado/Protocolos_Clinicos/MACROFLUXO_NARRATIVO_DI_TEA.md"
+        extracted: true
+    keywords:
+      - "macrofluxo"
+      - "di"
+      - "tea"
+      - "fases"
+
+  - id: "guia_narrativo_di_tea"
+    name: "GN-01: Guia Narrativo APS DI/TEA"
+    type: "implementation_guide"
+    evidence_grade: "normativa"
+    authority: "Coordenação SM Extrema/MG"
+    version: "1.0"
+    year: 2026
+    macro_stages: 4
+    micro_stages: 12
+    key_content:
+      - "Passo a passo para eSF/eMulti/ACS"
+      - "Metodologia Planifica SUS"
+      - "Matriz RACI"
+      - "Indicadores de qualidade"
+    source_files:
+      - path: "entregas/Protocolos_Compartilhamento_Cuidado/Protocolos_Clinicos/GUIA_NARRATIVO_APS_DI_TEA.md"
+        extracted: true
+    keywords:
+      - "guia"
+      - "narrativo"
+      - "aps"
+      - "planifica"
+
+# =============================================================================
+# METADADOS DO ÍNDICE
+# =============================================================================
+
+index_metadata:
+  created_at: "2026-01-24"
+  created_by: "Context Engine - Cross-Document Validation System"
+  purpose: "Índice estruturado para validação cruzada de protocolos clínicos"
+
+  extraction_status:
+    fully_extracted: 16
+    partially_extracted: 0
+    pending_extraction: 10
+
+  evidence_grade_distribution:
+    alta: 7
+    moderada: 5
+    baixa: 0
+    normativa: 13
+
+  usage:
+    primary_command: "/evidencia"
+    validation_command: "/validar"
+    supported_queries:
+      - "by_id"
+      - "by_keyword"
+      - "by_evidence_grade"
+      - "by_type"

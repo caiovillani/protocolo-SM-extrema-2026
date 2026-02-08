@@ -1,0 +1,55 @@
+cache_metadata:
+  cached_at: '2026-01-23T07:53:27.385653'
+  content_hash: 5c99ef9b3f7a36e4ae8001533186d237
+  file_modified: '2026-01-19T20:03:46.862230'
+  file_path: src\context_engine\integrations\esus.py
+document:
+  concepts:
+  - confidence: 0.8
+    id: f799f55bb861
+    keywords:
+    - integrations
+    - esus
+    line_number: 1
+    section: ''
+    text: src/context_engine/integrations/esus.py
+    type: conceito_chave
+  - confidence: 0.4
+    id: 87fcaa793d44
+    keywords:
+    - sus
+    line_number: 3
+    section: ''
+    text: SUS
+    type: norma
+  metadata:
+    file_path: src\context_engine\integrations\esus.py
+    file_type: py
+    hash_md5: 5c99ef9b3f7a36e4ae8001533186d237
+    lines_count: 28
+    processed_at: '2026-01-23T07:53:27.383907'
+    processing_time_ms: 11.751100013498217
+    size_bytes: 827
+    tokens_estimate: 197
+  relationships:
+  - evidence: 'Co-ocorrência na seção: '
+    line_number: 1
+    source_id: f799f55bb861
+    target_id: 87fcaa793d44
+    type: relacionado
+    weight: 0.55
+  sections:
+  - end_line: 9
+    level: 1
+    start_line: 9
+    title: imports
+  - end_line: 19
+    level: 2
+    start_line: 12
+    title: def map_to_esus
+  - end_line: 28
+    level: 2
+    start_line: 20
+    title: def export_to_esus
+  summary: 'Estrutura: imports, def map_to_esus, def export_to_esus. Conceito_chave:
+    src/context_engine/integrations/esus.py. Norma: SUS'

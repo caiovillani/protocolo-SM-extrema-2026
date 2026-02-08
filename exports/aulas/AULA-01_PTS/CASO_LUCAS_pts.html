@@ -1,0 +1,1555 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caso Clínico Lucas | PTS na Prática</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-primary: #1a365d;
+            --color-primary-light: #2c5282;
+            --color-accent: #38a169;
+            --color-accent-light: #48bb78;
+            --color-warm: #ed8936;
+            --color-danger: #c53030;
+            --color-danger-light: #fc8181;
+            --color-purple: #6b46c1;
+            --color-text: #2d3748;
+            --color-text-light: #4a5568;
+            --color-bg: #f7fafc;
+            --color-bg-dark: #edf2f7;
+            --color-white: #ffffff;
+            --font-display: 'Playfair Display', Georgia, serif;
+            --font-body: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+            --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.6;
+        }
+
+        .presentation {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slides-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .slide {
+            min-width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 3rem 6rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Slide Variants */
+        .slide--title {
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+            color: var(--color-white);
+            text-align: center;
+        }
+
+        .slide--section {
+            background: linear-gradient(135deg, var(--color-accent) 0%, #2f855a 100%);
+            color: var(--color-white);
+        }
+
+        .slide--content {
+            background: var(--color-white);
+        }
+
+        .slide--case {
+            background: linear-gradient(135deg, #faf5ff 0%, #e9d8fd 100%);
+            color: var(--color-primary);
+        }
+
+        .slide--crisis {
+            background: linear-gradient(135deg, #fff5f5 0%, #fed7d7 100%);
+            color: var(--color-primary);
+        }
+
+        .slide--discussion {
+            background: linear-gradient(135deg, #fffff0 0%, #fefcbf 100%);
+            color: var(--color-primary);
+        }
+
+        .slide--reveal {
+            background: linear-gradient(135deg, #f0fff4 0%, #c6f6d5 100%);
+            color: var(--color-primary);
+        }
+
+        .slide--final {
+            background: linear-gradient(135deg, var(--color-primary) 0%, #2b6cb0 100%);
+            color: var(--color-white);
+            text-align: center;
+        }
+
+        /* Decorative Elements */
+        .slide::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 40%;
+            height: 100%;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            pointer-events: none;
+            opacity: 0.5;
+        }
+
+        /* Typography */
+        h1 {
+            font-family: var(--font-display);
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        h2 {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            font-weight: 600;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            color: var(--color-primary);
+        }
+
+        .slide--title h2,
+        .slide--section h2,
+        .slide--final h2 {
+            color: inherit;
+        }
+
+        h3 {
+            font-family: var(--font-body);
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--color-primary-light);
+        }
+
+        p {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            max-width: 60ch;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            font-weight: 300;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+        }
+
+        .author {
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 2px solid rgba(255,255,255,0.3);
+            display: inline-block;
+        }
+
+        /* Lists */
+        ul, ol {
+            font-size: 1.2rem;
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.6rem;
+            padding-left: 0.5rem;
+        }
+
+        li::marker {
+            color: var(--color-accent);
+            font-weight: 700;
+        }
+
+        /* Info Cards */
+        .info-card {
+            background: var(--color-white);
+            padding: 1.5rem 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            margin-bottom: 1rem;
+        }
+
+        .info-card--danger {
+            border-left: 5px solid var(--color-danger);
+        }
+
+        .info-card--warning {
+            border-left: 5px solid var(--color-warm);
+        }
+
+        .info-card--accent {
+            border-left: 5px solid var(--color-accent);
+        }
+
+        .info-card--purple {
+            border-left: 5px solid var(--color-purple);
+        }
+
+        .info-card h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .info-card p {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            max-width: none;
+        }
+
+        /* Timeline */
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(to bottom, var(--color-danger), var(--color-warm), var(--color-accent));
+            border-radius: 2px;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-bottom: 1.5rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2rem;
+            top: 0.5rem;
+            width: 12px;
+            height: 12px;
+            background: var(--color-white);
+            border: 3px solid var(--color-danger);
+            border-radius: 50%;
+            transform: translateX(-4px);
+        }
+
+        .timeline-date {
+            font-family: var(--font-mono);
+            font-size: 0.95rem;
+            color: var(--color-danger);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Highlight Box */
+        .highlight-box {
+            background: linear-gradient(135deg, var(--color-bg) 0%, var(--color-bg-dark) 100%);
+            border-left: 5px solid var(--color-accent);
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 0 12px 12px 0;
+            font-size: 1.15rem;
+        }
+
+        .highlight-box--warning {
+            border-left-color: var(--color-warm);
+            background: linear-gradient(135deg, #fffaf0 0%, #feebc8 100%);
+        }
+
+        .highlight-box--danger {
+            border-left-color: var(--color-danger);
+            background: linear-gradient(135deg, #fff5f5 0%, #fed7d7 100%);
+        }
+
+        /* Discussion Box */
+        .discussion-box {
+            background: var(--color-white);
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+            border-top: 5px solid var(--color-warm);
+        }
+
+        .discussion-box h3 {
+            color: var(--color-warm);
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+
+        .discussion-question {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1rem;
+            background: var(--color-bg);
+            border-radius: 8px;
+            margin-bottom: 0.75rem;
+        }
+
+        .question-number {
+            background: var(--color-warm);
+            color: var(--color-white);
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1rem;
+            flex-shrink: 0;
+        }
+
+        .question-text {
+            font-size: 1.15rem;
+            line-height: 1.5;
+        }
+
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 1rem;
+        }
+
+        th, td {
+            padding: 0.85rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--color-bg-dark);
+        }
+
+        th {
+            background: var(--color-primary);
+            color: var(--color-white);
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        th:first-child {
+            border-radius: 8px 0 0 0;
+        }
+
+        th:last-child {
+            border-radius: 0 8px 0 0;
+        }
+
+        tr:nth-child(even) {
+            background: var(--color-bg);
+        }
+
+        /* Two Column Layout */
+        .two-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.5rem;
+            align-items: start;
+        }
+
+        .three-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1.5rem;
+            align-items: start;
+        }
+
+        /* Badge */
+        .badge {
+            display: inline-block;
+            padding: 0.35rem 0.85rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .badge--danger {
+            background: #fed7d7;
+            color: var(--color-danger);
+        }
+
+        .badge--warning {
+            background: #feebc8;
+            color: #c05621;
+        }
+
+        .badge--accent {
+            background: #c6f6d5;
+            color: #276749;
+        }
+
+        .badge--purple {
+            background: #e9d8fd;
+            color: var(--color-purple);
+        }
+
+        /* Mental Status Table */
+        .mental-status {
+            background: var(--color-white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .mental-status th {
+            width: 35%;
+        }
+
+        /* PTS Table */
+        .pts-table {
+            background: var(--color-white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .pts-table th {
+            background: var(--color-accent);
+        }
+
+        .pts-table td:first-child {
+            font-weight: 600;
+            color: var(--color-primary);
+            width: 25%;
+        }
+
+        /* Reveal Box */
+        .reveal-box {
+            background: var(--color-white);
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+            border-top: 5px solid var(--color-accent);
+        }
+
+        .reveal-box h3 {
+            color: var(--color-accent);
+            margin-bottom: 1rem;
+        }
+
+        /* Alert Box */
+        .alert-box {
+            background: linear-gradient(135deg, #fed7d7 0%, #feb2b2 100%);
+            color: var(--color-danger);
+            padding: 1.25rem 1.5rem;
+            border-radius: 12px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .alert-icon {
+            font-size: 1.5rem;
+        }
+
+        /* Takeaway */
+        .takeaway {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.25rem;
+            padding: 1.25rem;
+            background: rgba(255,255,255,0.2);
+            border-radius: 12px;
+            margin-bottom: 0.75rem;
+        }
+
+        .takeaway-number {
+            background: var(--color-white);
+            color: var(--color-primary);
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        .takeaway-text {
+            font-size: 1.15rem;
+            line-height: 1.5;
+        }
+
+        /* Navigation */
+        .nav {
+            position: fixed;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: var(--color-white);
+            padding: 0.75rem 1.5rem;
+            border-radius: 100px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            z-index: 100;
+        }
+
+        .nav-btn {
+            background: var(--color-primary);
+            color: var(--color-white);
+            border: none;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+            font-size: 1.25rem;
+        }
+
+        .nav-btn:hover {
+            background: var(--color-accent);
+            transform: scale(1.1);
+        }
+
+        .nav-btn:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .nav-counter {
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+            color: var(--color-text-light);
+            min-width: 60px;
+            text-align: center;
+        }
+
+        /* Progress Bar */
+        .progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--color-bg-dark);
+            z-index: 100;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, var(--color-accent), var(--color-accent-light));
+            transition: width 0.4s ease;
+        }
+
+        /* Slide Number */
+        .slide-number {
+            position: absolute;
+            bottom: 2rem;
+            right: 3rem;
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+            color: var(--color-text-light);
+            opacity: 0.5;
+        }
+
+        .slide--title .slide-number,
+        .slide--section .slide-number,
+        .slide--final .slide-number {
+            color: rgba(255,255,255,0.5);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .slide.active h1,
+        .slide.active h2 {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .slide.active p,
+        .slide.active ul,
+        .slide.active ol,
+        .slide.active .info-card,
+        .slide.active .highlight-box,
+        .slide.active .discussion-box,
+        .slide.active table,
+        .slide.active .reveal-box {
+            animation: fadeInUp 0.6s ease forwards;
+            animation-delay: 0.2s;
+            opacity: 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .slide {
+                padding: 2rem 3rem;
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            h2 {
+                font-size: 2rem;
+            }
+            
+            .two-columns,
+            .three-columns {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .slide {
+                padding: 1.5rem 2rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.6rem;
+            }
+            
+            p, li {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="progress">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <div class="presentation">
+        <div class="slides-container" id="slidesContainer">
+
+            <!-- SLIDE 1: Título -->
+            <section class="slide slide--title">
+                <h1>Caso Clínico: Lucas</h1>
+                <p class="subtitle">Construindo um PTS em Saúde Mental</p>
+                <div class="author">
+                    <strong>Discussão em Grupo</strong><br>
+                    Projeto Terapêutico Singular na APS
+                </div>
+                <span class="slide-number">1</span>
+            </section>
+
+            <!-- SLIDE 2: Apresentação do Caso -->
+            <section class="slide slide--case">
+                <h2>Conhecendo Lucas</h2>
+                <div class="two-columns">
+                    <div>
+                        <div class="info-card info-card--purple">
+                            <h4>📋 Identificação</h4>
+                            <p><strong>Lucas</strong>, 23 anos, sexo masculino</p>
+                            <p>Solteiro, ensino médio completo</p>
+                            <p>Desempregado há 8 meses</p>
+                        </div>
+                        <div class="info-card info-card--accent">
+                            <h4>🏠 Contexto Familiar</h4>
+                            <p>Reside com o pai (Sr. Jorge, 58 anos, pedreiro)</p>
+                            <p>Casa própria no território da ESF</p>
+                            <p>Mãe falecida há 4 anos</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="info-card info-card--warning">
+                            <h4>📁 Antecedentes Pessoais</h4>
+                            <p>• Uso de cannabis desde os 16 anos</p>
+                            <p>• Sem outras comorbidades clínicas conhecidas</p>
+                        </div>
+                        <div class="info-card info-card--danger">
+                            <h4>🧠 História Psiquiátrica</h4>
+                            <p><strong>Fevereiro/2024:</strong> Primeiro episódio psicótico</p>
+                            <p>Internação em clínica particular por <strong>45 dias</strong></p>
+                            <p>Pai: <em>"Nunca mais foi o mesmo"</em></p>
+                        </div>
+                    </div>
+                </div>
+                <span class="slide-number">2</span>
+            </section>
+
+            <!-- SLIDE 3: Padrão de Crises -->
+            <section class="slide slide--crisis">
+                <h2>Padrão de Crises</h2>
+                <div class="highlight-box highlight-box--danger">
+                    <strong>Desde o primeiro episódio (fev/2024):</strong> Múltiplos episódios de crise com padrão recorrente de <strong>heteroagressividade direcionada a objetos</strong> — "quebra tudo em casa quando entra em crise" (sic pai).
+                </div>
+                <div class="two-columns" style="margin-top: 2rem;">
+                    <div>
+                        <h3>O que sabemos até aqui:</h3>
+                        <ul>
+                            <li>Primeiro episódio há 11 meses</li>
+                            <li>Internação prolongada (45 dias)</li>
+                            <li>Crises recorrentes com destruição de objetos</li>
+                            <li>Acompanhamento irregular</li>
+                            <li>Uso prévio de cannabis</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>O que ainda não sabemos:</h3>
+                        <ul>
+                            <li>Diagnóstico específico</li>
+                            <li>Medicação em uso (se houver)</li>
+                            <li>Fatores precipitantes</li>
+                            <li>Por que o acompanhamento é irregular?</li>
+                            <li>Rede de apoio além do pai?</li>
+                        </ul>
+                    </div>
+                </div>
+                <span class="slide-number">3</span>
+            </section>
+
+            <!-- SLIDE 4: Crise Atual - Dia 1 -->
+            <section class="slide slide--crisis">
+                <h2>A Crise Atual — Dia 1</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">24/12/2025 — Véspera de Natal</div>
+                        <div class="info-card info-card--danger">
+                            <h4>🌅 Manhã</h4>
+                            <p>Acordou inquieto, com <strong>discurso acelerado</strong> e <strong>pressão de fala intensa</strong>.</p>
+                            <p>Conteúdo grandioso: <em>"Disse que ia mudar o mundo, que tinha uma missão"</em></p>
+                            <p>Pensamento claramente <strong>desagregado</strong>, temas religiosos e de "justiça social".</p>
+                            <p>Humor oscilando entre <strong>euforia e irritação intensa</strong>.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">~22h</div>
+                        <div class="info-card info-card--danger">
+                            <h4>🚨 Saída de Casa</h4>
+                            <p>Saiu de casa <strong>sozinho</strong>, levando apenas o celular.</p>
+                            <p><strong>Primeiro arrombamento:</strong> Estourou porta de vidro de estabelecimento comercial fechado, destruiu múltiplos objetos no interior.</p>
+                            <p><strong>Segundo arrombamento:</strong> Mesmo padrão em outro estabelecimento comercial.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Madrugada</div>
+                        <div class="info-card info-card--warning">
+                            <h4>👮 Desfecho</h4>
+                            <p>Detido pela <strong>Polícia Militar</strong>.</p>
+                            <p>Conduzido à residência do pai.</p>
+                            <p><strong>Não foi levado ao PS</strong> naquele momento.</p>
+                        </div>
+                    </div>
+                </div>
+                <span class="slide-number">4</span>
+            </section>
+
+            <!-- SLIDE 5: Crise Atual - Dia 2 -->
+            <section class="slide slide--crisis">
+                <h2>A Crise Atual — Dia 2</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">25/12/2025 — Natal</div>
+                        <div class="info-card info-card--warning">
+                            <h4>⚠️ Manhã</h4>
+                            <p>Manteve <strong>psicomotricidade aumentada</strong> segundo relato do pai.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Tarde</div>
+                        <div class="info-card info-card--accent">
+                            <h4>🏥 Ida ao PS</h4>
+                            <p>Pai conseguiu levar Lucas ao <strong>Pronto-Socorro</strong>.</p>
+                            <p>Recebeu medicação (pai não sabe informar qual).</p>
+                            <p>Apresentou <em>"alguma melhora"</em>, mas <strong>sem remissão completa</strong>.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Alta</div>
+                        <div class="info-card info-card--warning">
+                            <h4>📋 Orientação</h4>
+                            <p><strong>Liberado do PS</strong> com orientação de procurar o CAPS.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="highlight-box" style="margin-top: 1.5rem;">
+                    <strong>Reflexão:</strong> O PS medicou, estabilizou parcialmente e orientou busca ativa de serviço especializado. Qual seria o papel da APS neste momento?
+                </div>
+                <span class="slide-number">5</span>
+            </section>
+
+            <!-- SLIDE 6: Crise Atual - Dia 3 -->
+            <section class="slide slide--crisis">
+                <h2>A Crise Atual — Dia 3</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">26/12/2025 — Manhã</div>
+                        <div class="info-card info-card--accent">
+                            <h4>✓ Melhora Inicial</h4>
+                            <p>Acordou com <strong>maior estabilidade do humor</strong> segundo o pai.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">~10h</div>
+                        <div class="info-card info-card--danger">
+                            <h4>🔄 Gatilho</h4>
+                            <p>Percebeu ter <strong>perdido o celular</strong> na noite da crise.</p>
+                            <p>Informado pelo pai sobre a perda.</p>
+                            <p>Evoluiu rapidamente com <strong>intensa irritabilidade</strong>.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Nova Crise</div>
+                        <div class="info-card info-card--danger">
+                            <h4>💥 Descompensação</h4>
+                            <p><strong>Arrombou porta metálica</strong> do próprio domicílio.</p>
+                            <p>Quebrou múltiplos objetos de valor.</p>
+                            <p>Discurso novamente <strong>desconexo e acelerado</strong>.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Chegada à UBS</div>
+                        <div class="info-card info-card--purple">
+                            <h4>🏥 Demanda</h4>
+                            <p>Pai conseguiu contê-lo e trouxe à UBS.</p>
+                            <p>Solicita <strong>"internação"</strong> ou <em>"alguma solução"</em>.</p>
+                        </div>
+                    </div>
+                </div>
+                <span class="slide-number">6</span>
+            </section>
+
+            <!-- SLIDE 7: Exame do Estado Mental -->
+            <section class="slide slide--content">
+                <h2>Exame do Estado Mental</h2>
+                <p style="margin-bottom: 1.5rem; color: var(--color-text-light);">Avaliação realizada na UBS</p>
+                <table class="mental-status">
+                    <tr>
+                        <th>Função</th>
+                        <th>Achado</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Aparência</strong></td>
+                        <td><span class="badge badge--danger">Atenção</span> Hematomas e equimoses em face — refere ter sido agredido por segurança e por policiais</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Consciência</strong></td>
+                        <td>Vigil, orientado no tempo e espaço</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Atenção</strong></td>
+                        <td>Dispersa</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Humor</strong></td>
+                        <td><span class="badge badge--warning">Alterado</span> Hipertímico, com labilidade</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Afeto</strong></td>
+                        <td><span class="badge badge--warning">Alterado</span> Não modulado, não congruente</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Pensamento</strong></td>
+                        <td><span class="badge badge--danger">Alterado</span> Desagregado, tangencial</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Discurso</strong></td>
+                        <td><span class="badge badge--danger">Alterado</span> Acelerado, pressão de fala, descarrilhamento</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Psicomotricidade</strong></td>
+                        <td>Discretamente aumentada</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Crítica</strong></td>
+                        <td>Parcialmente preservada — sabe que "fez coisa errada", mas minimiza</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Risco</strong></td>
+                        <td><span class="badge badge--danger">Presente</span> Heteroagressividade direcionada a objetos; sem ideação suicida aparente</td>
+                    </tr>
+                </table>
+                <span class="slide-number">7</span>
+            </section>
+
+            <!-- SLIDE 8: Violência Institucional -->
+            <section class="slide slide--content">
+                <h2>Um Elemento Adicional</h2>
+                <div class="alert-box">
+                    <span class="alert-icon">⚠️</span>
+                    <div>
+                        <strong>Violência Institucional:</strong> Lucas apresenta hematomas e equimoses em face. Refere ter sido agredido por segurança de estabelecimento comercial e por policiais durante a abordagem.
+                    </div>
+                </div>
+                <div class="two-columns" style="margin-top: 2rem;">
+                    <div>
+                        <h3>O que isso significa?</h3>
+                        <ul>
+                            <li>Pessoa em crise psicótica foi vítima de violência</li>
+                            <li>Agravamento do sofrimento psíquico</li>
+                            <li>Possível trauma adicional</li>
+                            <li>Risco de desconfiança em serviços/autoridades</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>O que fazer?</h3>
+                        <ul>
+                            <li>Documentar as lesões no prontuário</li>
+                            <li>Notificação de violência (SINAN)</li>
+                            <li>Avaliar necessidade de boletim de ocorrência</li>
+                            <li>Articular com Defensoria Pública se necessário</li>
+                            <li>Não normalizar — isso não deveria acontecer</li>
+                        </ul>
+                    </div>
+                </div>
+                <span class="slide-number">8</span>
+            </section>
+
+            <!-- SLIDE 9: Contexto Social -->
+            <section class="slide slide--case">
+                <h2>Contexto Social e Familiar</h2>
+                <div class="three-columns">
+                    <div class="info-card info-card--warning">
+                        <h4>👨‍👦 Rede de Apoio</h4>
+                        <p><strong>Limitada ao pai</strong></p>
+                        <p>Sr. Jorge, 58 anos, pedreiro</p>
+                        <p>Trabalha durante o dia</p>
+                        <p>Dificuldade de acompanhar Lucas</p>
+                        <p>Mãe falecida — sem outros familiares próximos identificados</p>
+                    </div>
+                    <div class="info-card info-card--danger">
+                        <h4>💰 Situação Econômica</h4>
+                        <p>Pai é <strong>único provedor</strong></p>
+                        <p>Lucas desempregado há 8 meses</p>
+                        <p>Família em <strong>vulnerabilidade econômica</strong></p>
+                        <p>Danos materiais recorrentes pelas crises</p>
+                        <p>Sem recursos para advogado</p>
+                    </div>
+                    <div class="info-card info-card--purple">
+                        <h4>⚖️ Situação Legal</h4>
+                        <p><strong>Risco de processo criminal</strong></p>
+                        <p>Dois arrombamentos</p>
+                        <p>Danos a estabelecimentos comerciais</p>
+                        <p>Detido pela PM</p>
+                        <p>Família desconhece procedimentos</p>
+                    </div>
+                </div>
+                <div class="highlight-box" style="margin-top: 1.5rem;">
+                    <strong>Vínculo com serviços de saúde:</strong> Irregular. Já foi encaminhado ao CAPS após internação em fev/2024, mas <strong>não manteve acompanhamento</strong>. Pai relata dificuldade em manter Lucas em tratamento.
+                </div>
+                <span class="slide-number">9</span>
+            </section>
+
+            <!-- SLIDE 10: Pausa para Discussão - Seção -->
+            <section class="slide slide--section">
+                <h2>⏸️ Pausa para Discussão</h2>
+                <p class="subtitle">Bloco 1: Diagnóstico Situacional</p>
+                <span class="slide-number">10</span>
+            </section>
+
+            <!-- SLIDE 11: Perguntas Diagnóstico Situacional -->
+            <section class="slide slide--discussion">
+                <h2>Diagnóstico Situacional</h2>
+                <p style="margin-bottom: 1.5rem;">Aplicando a primeira etapa do PTS</p>
+                <div class="discussion-box">
+                    <h3>🤔 Para discutir em grupo:</h3>
+                    <div class="discussion-question">
+                        <div class="question-number">1</div>
+                        <div class="question-text">Quais são as <strong>NECESSIDADES</strong> de Lucas? (O que ele precisa, mesmo que não peça)</div>
+                    </div>
+                    <div class="discussion-question">
+                        <div class="question-number">2</div>
+                        <div class="question-text">Quais são as <strong>DEMANDAS</strong> que Lucas ou o pai trazem? (O que estão pedindo)</div>
+                    </div>
+                    <div class="discussion-question">
+                        <div class="question-number">3</div>
+                        <div class="question-text">Quais <strong>VULNERABILIDADES</strong> você identifica neste caso?</div>
+                    </div>
+                    <div class="discussion-question">
+                        <div class="question-number">4</div>
+                        <div class="question-text">Quais <strong>POTENCIALIDADES</strong> poderiam ser mobilizadas?</div>
+                    </div>
+                    <div class="discussion-question">
+                        <div class="question-number">5</div>
+                        <div class="question-text">O que já foi tentado? Por que não funcionou?</div>
+                    </div>
+                </div>
+                <span class="slide-number">11</span>
+            </section>
+
+            <!-- SLIDE 12: Construindo Diagnóstico - Necessidades vs Demandas -->
+            <section class="slide slide--reveal">
+                <h2>Construindo o Diagnóstico Situacional</h2>
+                <div class="two-columns">
+                    <div class="reveal-box">
+                        <h3>Necessidades (o que ele precisa)</h3>
+                        <ul>
+                            <li>Estabilização clínica do quadro psicótico/afetivo</li>
+                            <li>Vinculação a serviço de saúde mental</li>
+                            <li>Investigação diagnóstica completa</li>
+                            <li>Tratamento medicamentoso adequado e regular</li>
+                            <li>Suporte social e comunitário</li>
+                            <li>Orientação jurídica</li>
+                            <li>Cuidado do cuidador (pai)</li>
+                            <li>Plano de crise para próximos episódios</li>
+                        </ul>
+                    </div>
+                    <div class="reveal-box">
+                        <h3>Demandas (o que pedem)</h3>
+                        <ul>
+                            <li><strong>Pai:</strong> "Internação" ou "alguma solução"</li>
+                            <li><strong>Lucas:</strong> Não há demanda explícita (crítica parcial)</li>
+                        </ul>
+                        <div class="highlight-box" style="margin-top: 1.5rem;">
+                            <strong>Gap importante:</strong> A demanda do pai (internação) pode não ser a melhor resposta às necessidades reais. Nosso papel é ajudar a construir um plano que atenda às necessidades, negociando com a demanda apresentada.
+                        </div>
+                    </div>
+                </div>
+                <span class="slide-number">12</span>
+            </section>
+
+            <!-- SLIDE 13: Vulnerabilidades e Potencialidades -->
+            <section class="slide slide--reveal">
+                <h2>Vulnerabilidades × Potencialidades</h2>
+                <div class="two-columns">
+                    <div>
+                        <div class="info-card info-card--danger">
+                            <h4>🔻 Vulnerabilidades</h4>
+                            <ul style="margin-bottom: 0;">
+                                <li>Transtorno mental grave (provável bipolar ou esquizoafetivo)</li>
+                                <li>Múltiplos episódios com heteroagressividade</li>
+                                <li>Rede de apoio muito frágil (pai idoso, trabalha)</li>
+                                <li>Vulnerabilidade econômica</li>
+                                <li>Risco legal (arrombamentos)</li>
+                                <li>Uso prévio de cannabis</li>
+                                <li>Adesão irregular a tratamento</li>
+                                <li>Vítima de violência institucional</li>
+                                <li>Desempregado há 8 meses</li>
+                                <li>Luto não elaborado (mãe)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="info-card info-card--accent">
+                            <h4>🔺 Potencialidades</h4>
+                            <ul style="margin-bottom: 0;">
+                                <li>Pai presente e comprometido</li>
+                                <li>Buscou ajuda na UBS (porta de entrada)</li>
+                                <li>Escolaridade preservada (ensino médio)</li>
+                                <li>Jovem (23 anos) — potencial de recuperação</li>
+                                <li>Crítica parcialmente preservada</li>
+                                <li>Respondeu à medicação no PS (melhora parcial)</li>
+                                <li>Moradia própria (não está em situação de rua)</li>
+                                <li>Território da ESF (acesso a ACS)</li>
+                            </ul>
+                        </div>
+                        <div class="highlight-box" style="margin-top: 1rem;">
+                            <strong>Chave:</strong> As vulnerabilidades são muitas, mas as potencialidades existem. O PTS deve mobilizar o que funciona.
+                        </div>
+                    </div>
+                </div>
+                <span class="slide-number">13</span>
+            </section>
+
+            <!-- SLIDE 14: Pausa para Discussão - Metas -->
+            <section class="slide slide--section">
+                <h2>⏸️ Pausa para Discussão</h2>
+                <p class="subtitle">Bloco 2: Definição de Metas</p>
+                <span class="slide-number">14</span>
+            </section>
+
+            <!-- SLIDE 15: Perguntas Metas -->
+            <section class="slide slide--discussion">
+                <h2>Definição de Metas</h2>
+                <p style="margin-bottom: 1.5rem;">Aplicando a segunda etapa do PTS</p>
+                <div class="discussion-box">
+                    <h3>🤔 Para discutir em grupo:</h3>
+                    <div class="discussion-question">
+                        <div class="question-number">1</div>
+                        <div class="question-text">Que metas de <strong>CURTO PRAZO</strong> (próximas 2-4 semanas) seriam prioritárias?</div>
+                    </div>
+                    <div class="discussion-question">
+                        <div class="question-number">2</div>
+                        <div class="question-text">Que metas de <strong>MÉDIO PRAZO</strong> (1-3 meses) poderiam ser pactuadas?</div>
+                    </div>
+                    <div class="discussion-question">
+                        <div class="question-number">3</div>
+                        <div class="question-text">Que metas de <strong>LONGO PRAZO</strong> poderiam ser vislumbradas?</div>
+                    </div>
+                    <div class="discussion-question">
+                        <div class="question-number">4</div>
+                        <div class="question-text">Como <strong>ENVOLVER LUCAS</strong> na definição dessas metas, considerando sua crítica parcial?</div>
+                    </div>
+                </div>
+                <div class="highlight-box" style="margin-top: 1.5rem;">
+                    <strong>Lembre-se:</strong> Metas são <strong>negociadas COM o paciente</strong>, não impostas. Mas quando a crítica está comprometida, trabalhamos também com a família e construímos gradualmente.
+                </div>
+                <span class="slide-number">15</span>
+            </section>
+
+            <!-- SLIDE 16: Construindo Metas -->
+            <section class="slide slide--reveal">
+                <h2>Proposta de Metas</h2>
+                <div class="three-columns">
+                    <div class="info-card info-card--danger">
+                        <h4>⏱️ Curto Prazo (2-4 semanas)</h4>
+                        <ol>
+                            <li>Vinculação ao CAPS com acolhimento em até 48h</li>
+                            <li>Estabilização medicamentosa</li>
+                            <li>Orientação ao pai sobre manejo de crise</li>
+                            <li>Documentação da violência institucional</li>
+                        </ol>
+                    </div>
+                    <div class="info-card info-card--warning">
+                        <h4>📅 Médio Prazo (1-3 meses)</h4>
+                        <ol>
+                            <li>Adesão regular ao tratamento (CAPS + medicação)</li>
+                            <li>Articulação com CRAS para suporte social</li>
+                            <li>Avaliação jurídica via Defensoria Pública</li>
+                            <li>Retomada de atividades estruturadas</li>
+                        </ol>
+                    </div>
+                    <div class="info-card info-card--accent">
+                        <h4>🎯 Longo Prazo</h4>
+                        <ol>
+                            <li>Prevenção de recaídas com plano de crise pactuado</li>
+                            <li>Ampliação de rede de suporte (outros familiares, grupos)</li>
+                            <li>Inserção social/laboral (trabalho protegido, curso)</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="highlight-box" style="margin-top: 1.5rem;">
+                    <strong>Sobre envolver Lucas:</strong> Mesmo com crítica parcial, podemos negociar metas concretas: <em>"Lucas, você quer ter seu celular de volta? Para isso precisamos resolver algumas coisas primeiro..."</em> — usar motivadores tangíveis.
+                </div>
+                <span class="slide-number">16</span>
+            </section>
+
+            <!-- SLIDE 17: Pausa para Discussão - Responsabilidades -->
+            <section class="slide slide--section">
+                <h2>⏸️ Pausa para Discussão</h2>
+                <p class="subtitle">Bloco 3: Divisão de Responsabilidades</p>
+                <span class="slide-number">17</span>
+            </section>
+
+            <!-- SLIDE 18: Perguntas Responsabilidades -->
+            <section class="slide slide--discussion">
+                <h2>Divisão de Responsabilidades</h2>
+                <p style="margin-bottom: 1.5rem;">Aplicando a terceira etapa do PTS</p>
+                <div class="discussion-box">
+                    <h3>🤔 Para discutir em grupo:</h3>
+                    <div class="discussion-question">
+                        <div class="question-number">1</div>
+                        <div class="question-text">Quem deveria ser o <strong>PROFISSIONAL DE REFERÊNCIA</strong> neste caso? APS ou CAPS?</div>
+                    </div>
+                    <div class="discussion-question">
+                        <div class="question-number">2</div>
+                        <div class="question-text">Qual o papel da <strong>APS/ESF</strong> no acompanhamento de Lucas?</div>
+                    </div>
+                    <div class="discussion-question">
+                        <div class="question-number">3</div>
+                        <div class="question-text">Qual o papel do <strong>CAPS</strong>?</div>
+                    </div>
+                    <div class="discussion-question">
+                        <div class="question-number">4</div>
+                        <div class="question-text">Que <strong>OUTROS SETORES</strong> precisam ser articulados?</div>
+                    </div>
+                    <div class="discussion-question">
+                        <div class="question-number">5</div>
+                        <div class="question-text">Este caso indica <strong>COMPARTILHAMENTO COM CAPS</strong>? Por quê?</div>
+                    </div>
+                </div>
+                <span class="slide-number">18</span>
+            </section>
+
+            <!-- SLIDE 19: Quem é Referência -->
+            <section class="slide slide--reveal">
+                <h2>Quem é o Profissional de Referência?</h2>
+                <div class="two-columns">
+                    <div>
+                        <div class="info-card info-card--purple" style="border-left-color: var(--color-danger);">
+                            <h4>🏥 CAPS como Referência</h4>
+                            <p><strong>Justificativa:</strong></p>
+                            <ul style="margin-bottom: 0;">
+                                <li>Transtorno mental grave com múltiplas crises</li>
+                                <li>Necessidade de intensividade de cuidado</li>
+                                <li>Risco de auto/heteroagressividade</li>
+                                <li>Complexidade que excede capacidade da APS isolada</li>
+                            </ul>
+                        </div>
+                        <div class="highlight-box highlight-box--warning" style="margin-top: 1rem;">
+                            <strong>Mas atenção:</strong> Referência no CAPS <strong>não significa</strong> que a APS se desresponsabiliza!
+                        </div>
+                    </div>
+                    <div>
+                        <div class="info-card info-card--accent">
+                            <h4>Este é um caso de COMPARTILHAMENTO</h4>
+                            <p>Critérios presentes:</p>
+                            <ul style="margin-bottom: 0;">
+                                <li>✅ Transtorno mental grave</li>
+                                <li>✅ Crises recorrentes</li>
+                                <li>✅ Risco presente</li>
+                                <li>✅ Necessidade de acompanhamento intensivo</li>
+                                <li>✅ Complexidade social associada</li>
+                            </ul>
+                        </div>
+                        <p style="margin-top: 1rem; font-size: 1.1rem;"><strong>Profissional de referência:</strong> Técnico do CAPS que assumirá o caso (quem tiver melhor vínculo após acolhimento).</p>
+                    </div>
+                </div>
+                <span class="slide-number">19</span>
+            </section>
+
+            <!-- SLIDE 20: Matriz de Responsabilidades -->
+            <section class="slide slide--content">
+                <h2>Matriz de Responsabilidades</h2>
+                <table class="pts-table">
+                    <tr>
+                        <th>Ator</th>
+                        <th>Responsabilidades</th>
+                    </tr>
+                    <tr>
+                        <td><strong>CAPS</strong><br><span style="font-size: 0.9rem; color: var(--color-text-light);">(Referência)</span></td>
+                        <td>
+                            • Acolhimento em até 48h<br>
+                            • Avaliação psiquiátrica completa<br>
+                            • Manejo medicamentoso<br>
+                            • PTS específico de saúde mental<br>
+                            • Grupos terapêuticos<br>
+                            • Articulação com rede intersetorial
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>APS/ESF</strong></td>
+                        <td>
+                            • Acompanhamento clínico geral<br>
+                            • Visita domiciliar via ACS (semanal inicialmente)<br>
+                            • Monitoramento de sinais de crise<br>
+                            • Suporte ao pai (cuidar do cuidador)<br>
+                            • Comunicação com CAPS sobre evolução territorial
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>CRAS</strong></td>
+                        <td>
+                            • Avaliação socioeconômica<br>
+                            • Cadastro em programas sociais (se elegível)<br>
+                            • Articulação com Defensoria Pública<br>
+                            • Suporte à família
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Lucas</strong></td>
+                        <td>
+                            • Comparecer aos atendimentos agendados<br>
+                            • Tomar medicação conforme orientado<br>
+                            • Comunicar sinais de piora
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Pai (Sr. Jorge)</strong></td>
+                        <td>
+                            • Apoiar adesão ao tratamento<br>
+                            • Monitorar sinais de crise<br>
+                            • Acionar rede em caso de emergência<br>
+                            • Participar de orientações/grupos de família
+                        </td>
+                    </tr>
+                </table>
+                <span class="slide-number">20</span>
+            </section>
+
+            <!-- SLIDE 21: Reavaliação -->
+            <section class="slide slide--reveal">
+                <h2>Reavaliação — Quarta Etapa</h2>
+                <div class="two-columns">
+                    <div>
+                        <div class="info-card info-card--accent">
+                            <h4>📅 Frequência de Reavaliação</h4>
+                            <p><strong>CAPS:</strong></p>
+                            <ul>
+                                <li>Semanal nas primeiras 4 semanas</li>
+                                <li>Quinzenal até estabilização (2-3 meses)</li>
+                                <li>Mensal em fase de manutenção</li>
+                            </ul>
+                            <p><strong>APS:</strong></p>
+                            <ul style="margin-bottom: 0;">
+                                <li>Visita domiciliar ACS: semanal (1º mês)</li>
+                                <li>Consulta médica/enfermagem: mensal</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="info-card info-card--danger">
+                            <h4>🚨 Sinais de Alerta para Reavaliação Urgente</h4>
+                            <ul style="margin-bottom: 0;">
+                                <li>Insônia persistente (> 2 noites)</li>
+                                <li>Discurso acelerado ou grandioso</li>
+                                <li>Irritabilidade intensa</li>
+                                <li>Abandono de medicação</li>
+                                <li>Isolamento ou saídas noturnas</li>
+                                <li>Uso de substâncias</li>
+                                <li>Conflitos familiares intensificados</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="highlight-box" style="margin-top: 1.5rem;">
+                    <strong>Plano de Crise:</strong> Deve ser pactuado com Lucas e o pai — o que fazer se os sinais de alerta aparecerem? Quem ligar? Para onde ir? (CAPS, UPA, SAMU 192)
+                </div>
+                <span class="slide-number">21</span>
+            </section>
+
+            <!-- SLIDE 22: PTS Consolidado -->
+            <section class="slide slide--content">
+                <h2>PTS de Lucas — Síntese</h2>
+                <table class="pts-table">
+                    <tr>
+                        <th style="width: 22%;">Etapa</th>
+                        <th>Conteúdo</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Diagnóstico Situacional</strong></td>
+                        <td>Provável transtorno bipolar ou esquizoafetivo; múltiplos episódios com heteroagressividade; rede frágil (pai idoso trabalha); vulnerabilidade econômica; risco legal; uso prévio cannabis; adesão irregular; vítima de violência institucional.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Metas</strong></td>
+                        <td>
+                            <strong>Curto:</strong> Vincular ao CAPS (48h), estabilizar, orientar pai<br>
+                            <strong>Médio:</strong> Adesão regular, CRAS, Defensoria, atividades estruturadas<br>
+                            <strong>Longo:</strong> Plano de crise, rede ampliada, inserção laboral
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Responsabilidades</strong></td>
+                        <td>
+                            <strong>Referência:</strong> CAPS (caso grave)<br>
+                            <strong>APS:</strong> VD semanal ACS, suporte ao pai, clínica geral<br>
+                            <strong>CRAS:</strong> Avaliação social, Defensoria
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Reavaliação</strong></td>
+                        <td>CAPS semanal (1º mês) → quinzenal → mensal. APS: VD semanal, consulta mensal. Sinais de alerta pactuados.</td>
+                    </tr>
+                </table>
+                <span class="slide-number">22</span>
+            </section>
+
+            <!-- SLIDE 23: Takeaways -->
+            <section class="slide slide--final">
+                <h2>Aprendizados deste Caso</h2>
+                <div style="max-width: 850px; margin: 0 auto;">
+                    <div class="takeaway">
+                        <div class="takeaway-number">1</div>
+                        <div class="takeaway-text"><strong>PTS é essencial em casos graves</strong> — não basta "encaminhar para o CAPS"; é preciso construir plano coordenado.</div>
+                    </div>
+                    <div class="takeaway">
+                        <div class="takeaway-number">2</div>
+                        <div class="takeaway-text"><strong>A APS tem papel mesmo quando o caso é grave</strong> — VD, suporte à família, monitoramento territorial.</div>
+                    </div>
+                    <div class="takeaway">
+                        <div class="takeaway-number">3</div>
+                        <div class="takeaway-text"><strong>Vulnerabilidades se somam</strong> — saúde mental + pobreza + fragilidade familiar + risco legal = intersetorialidade obrigatória.</div>
+                    </div>
+                    <div class="takeaway">
+                        <div class="takeaway-number">4</div>
+                        <div class="takeaway-text"><strong>O pai também precisa de cuidado</strong> — cuidador sobrecarregado = risco de abandono e institucionalização.</div>
+                    </div>
+                    <div class="takeaway">
+                        <div class="takeaway-number">5</div>
+                        <div class="takeaway-text"><strong>Violência institucional não é normal</strong> — documentar, notificar, articular. Não naturalizar.</div>
+                    </div>
+                </div>
+                <span class="slide-number">23</span>
+            </section>
+
+            <!-- SLIDE 24: Final -->
+            <section class="slide slide--title">
+                <h1>Dúvidas?</h1>
+                <p class="subtitle">Vamos discutir outros casos da sua prática</p>
+                <div class="author">
+                    <strong>Coordenação Municipal de Saúde Mental</strong><br>
+                    Extrema/MG — 2025
+                </div>
+                <span class="slide-number">24</span>
+            </section>
+
+        </div>
+    </div>
+
+    <nav class="nav">
+        <button class="nav-btn" id="prevBtn" aria-label="Slide anterior">←</button>
+        <span class="nav-counter" id="navCounter">1 / 24</span>
+        <button class="nav-btn" id="nextBtn" aria-label="Próximo slide">→</button>
+    </nav>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+        const slidesContainer = document.getElementById('slidesContainer');
+        const progressBar = document.getElementById('progressBar');
+        const navCounter = document.getElementById('navCounter');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+
+        function updatePresentation() {
+            slidesContainer.style.transform = `translateX(-${currentSlide * 100}vw)`;
+            
+            slides.forEach((slide, index) => {
+                slide.classList.toggle('active', index === currentSlide);
+            });
+            
+            const progress = ((currentSlide + 1) / totalSlides) * 100;
+            progressBar.style.width = `${progress}%`;
+            
+            navCounter.textContent = `${currentSlide + 1} / ${totalSlides}`;
+            
+            prevBtn.disabled = currentSlide === 0;
+            nextBtn.disabled = currentSlide === totalSlides - 1;
+        }
+
+        function nextSlide() {
+            if (currentSlide < totalSlides - 1) {
+                currentSlide++;
+                updatePresentation();
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 0) {
+                currentSlide--;
+                updatePresentation();
+            }
+        }
+
+        function goToSlide(index) {
+            if (index >= 0 && index < totalSlides) {
+                currentSlide = index;
+                updatePresentation();
+            }
+        }
+
+        nextBtn.addEventListener('click', nextSlide);
+        prevBtn.addEventListener('click', prevSlide);
+
+        document.addEventListener('keydown', (e) => {
+            switch(e.key) {
+                case 'ArrowRight':
+                case 'ArrowDown':
+                case ' ':
+                case 'PageDown':
+                    e.preventDefault();
+                    nextSlide();
+                    break;
+                case 'ArrowLeft':
+                case 'ArrowUp':
+                case 'PageUp':
+                    e.preventDefault();
+                    prevSlide();
+                    break;
+                case 'Home':
+                    e.preventDefault();
+                    goToSlide(0);
+                    break;
+                case 'End':
+                    e.preventDefault();
+                    goToSlide(totalSlides - 1);
+                    break;
+            }
+        });
+
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        document.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        });
+
+        document.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            const diff = touchStartX - touchEndX;
+            
+            if (Math.abs(diff) > 50) {
+                if (diff > 0) {
+                    nextSlide();
+                } else {
+                    prevSlide();
+                }
+            }
+        });
+
+        document.addEventListener('click', (e) => {
+            const isInteractive = e.target.closest('button, a, input, .nav');
+            if (!isInteractive) {
+                const clickX = e.clientX;
+                const windowWidth = window.innerWidth;
+                
+                if (clickX > windowWidth * 0.7) {
+                    nextSlide();
+                } else if (clickX < windowWidth * 0.3) {
+                    prevSlide();
+                }
+            }
+        });
+
+        updatePresentation();
+
+        document.addEventListener('touchend', (e) => {
+            const now = Date.now();
+            if (now - (window.lastTouchEnd || 0) < 300) {
+                e.preventDefault();
+            }
+            window.lastTouchEnd = now;
+        }, { passive: false });
+    </script>
+</body>
+</html>

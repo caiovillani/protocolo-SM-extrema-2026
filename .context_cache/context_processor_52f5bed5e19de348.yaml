@@ -1,0 +1,720 @@
+cache_metadata:
+  cached_at: '2026-01-23T07:53:27.070792'
+  content_hash: fda7b7e08365f30ab02e98914eeb4125
+  file_modified: '2026-01-23T03:56:49.833360'
+  file_path: src\context_engine\context_processor.py
+document:
+  concepts:
+  - confidence: 0.7
+    id: b603d447cbf0
+    keywords: []
+    line_number: 1
+    section: ''
+    text: src/context_engine/context_processor.py
+    type: conceito_chave
+  - confidence: 0.67
+    id: e8085e15634a
+    keywords:
+    - índice
+    - cruzado
+    line_number: 9
+    section: ''
+    text: índice cruzado
+    type: metrica
+  - confidence: 0.6
+    id: 99e01b21e862
+    keywords:
+    - contexto
+    - extração
+    line_number: 3
+    section: ''
+    text: de contexto para extração
+    type: fluxo
+  - confidence: 0.6
+    id: 6bb5fd35fb15
+    keywords:
+    - tipo
+    - aplicar
+    - padrões
+    line_number: 128
+    section: class ConceptExtractor
+    text: Aplicar padrões por tipo
+    type: procedimento
+  - confidence: 0.5700000000000001
+    id: 1699d86ba9cc
+    keywords:
+    - contraindicação
+    line_number: 68
+    section: class ConceptExtractor
+    text: contraindicação
+    type: risco
+  - confidence: 0.5
+    id: 78306716936e
+    keywords: []
+    line_number: 40
+    section: class ConceptExtractor
+    text: r'^(.+?)\s*[:-]\s*(?:é
+    type: definicao
+  - confidence: 0.5
+    id: eb7b77f82a0d
+    keywords:
+    - esquizofrenia
+    line_number: 56
+    section: class ConceptExtractor
+    text: esquizofrenia
+    type: condicao_clinica
+  - confidence: 0.4700000000000001
+    id: 80a682129d8d
+    keywords:
+    - nirsm
+    line_number: 63
+    section: class ConceptExtractor
+    text: NIRSM
+    type: recurso
+  - confidence: 0.4700000000000001
+    id: bf28316c28c3
+    keywords:
+    - caps
+    line_number: 63
+    section: class ConceptExtractor
+    text: CAPS
+    type: recurso
+  - confidence: 0.4700000000000001
+    id: 2dd06180fa81
+    keywords:
+    - ubs
+    line_number: 78
+    section: class ConceptExtractor
+    text: UBS
+    type: recurso
+  - confidence: 0.4700000000000001
+    id: b1ba41eb4ef0
+    keywords:
+    - nasf
+    line_number: 78
+    section: class ConceptExtractor
+    text: NASF
+    type: recurso
+  - confidence: 0.4
+    id: 05af12f0daec
+    keywords:
+    - raps
+    line_number: 46
+    section: class ConceptExtractor
+    text: RAPS
+    type: norma
+  - confidence: 0.4
+    id: 7749e479a038
+    keywords:
+    - sus
+    line_number: 46
+    section: class ConceptExtractor
+    text: SUS
+    type: norma
+  - confidence: 0.4
+    id: d48d733b668b
+    keywords:
+    - cfm
+    line_number: 46
+    section: class ConceptExtractor
+    text: CFM
+    type: norma
+  - confidence: 0.4
+    id: 381e8a18cb71
+    keywords:
+    - crm
+    line_number: 46
+    section: class ConceptExtractor
+    text: CRM
+    type: norma
+  - confidence: 0.4
+    id: a8365cd7658a
+    keywords:
+    - cid
+    line_number: 46
+    section: class ConceptExtractor
+    text: CID-10
+    type: norma
+  - confidence: 0.4
+    id: 0bcae478e928
+    keywords:
+    - cid
+    line_number: 46
+    section: class ConceptExtractor
+    text: CID-11
+    type: norma
+  - confidence: 0.4
+    id: 7eed1d6b3b6c
+    keywords:
+    - dsm
+    line_number: 46
+    section: class ConceptExtractor
+    text: DSM-5
+    type: norma
+  - confidence: 0.4
+    id: 3400c2bfeb14
+    keywords:
+    - dsm
+    line_number: 46
+    section: class ConceptExtractor
+    text: DSM-V
+    type: norma
+  - confidence: 0.4
+    id: 8e3ec19cf925
+    keywords:
+    - depressão
+    line_number: 56
+    section: class ConceptExtractor
+    text: depressão
+    type: condicao_clinica
+  - confidence: 0.4
+    id: 9f4fa6d106f6
+    keywords:
+    - ansiedade
+    line_number: 56
+    section: class ConceptExtractor
+    text: ansiedade
+    type: condicao_clinica
+  - confidence: 0.4
+    id: 7079041e85bd
+    keywords:
+    - psicose
+    line_number: 56
+    section: class ConceptExtractor
+    text: psicose
+    type: condicao_clinica
+  - confidence: 0.4
+    id: 70d224507813
+    keywords:
+    - tea
+    line_number: 56
+    section: class ConceptExtractor
+    text: TEA
+    type: condicao_clinica
+  - confidence: 0.4
+    id: de2dbd9c5b52
+    keywords:
+    - tdah
+    line_number: 56
+    section: class ConceptExtractor
+    text: TDAH
+    type: condicao_clinica
+  - confidence: 0.4
+    id: 6652838f1e19
+    keywords:
+    - autismo
+    line_number: 56
+    section: class ConceptExtractor
+    text: autismo
+    type: condicao_clinica
+  - confidence: 0.4
+    id: c2e10dccb889
+    keywords:
+    - bipolar
+    line_number: 56
+    section: class ConceptExtractor
+    text: bipolar
+    type: condicao_clinica
+  - confidence: 0.4
+    id: bcff6cf99134
+    keywords:
+    - restrição
+    line_number: 68
+    section: class ConceptExtractor
+    text: restrição
+    type: risco
+  - confidence: 0.4
+    id: 943c341aae82
+    keywords:
+    - limitação
+    line_number: 68
+    section: class ConceptExtractor
+    text: limitação
+    type: risco
+  - confidence: 0.4
+    id: e55108681e1a
+    keywords:
+    - ceo
+    line_number: 78
+    section: class ConceptExtractor
+    text: CEO
+    type: recurso
+  - confidence: 0.4
+    id: '973720815139'
+    keywords:
+    - upa
+    line_number: 78
+    section: class ConceptExtractor
+    text: UPA
+    type: recurso
+  - confidence: 0.4
+    id: bf924475ce54
+    keywords:
+    - samu
+    line_number: 78
+    section: class ConceptExtractor
+    text: SAMU
+    type: recurso
+  metadata:
+    file_path: src\context_engine\context_processor.py
+    file_type: py
+    hash_md5: fda7b7e08365f30ab02e98914eeb4125
+    lines_count: 572
+    processed_at: '2026-01-23T07:53:27.038194'
+    processing_time_ms: 0.6187999970279634
+    size_bytes: 20789
+    tokens_estimate: 5019
+  relationships:
+  - evidence: 'Co-ocorrência na seção: '
+    line_number: 1
+    source_id: b603d447cbf0
+    target_id: 99e01b21e862
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 68
+    source_id: 1699d86ba9cc
+    target_id: bcff6cf99134
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 68
+    source_id: 1699d86ba9cc
+    target_id: 943c341aae82
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 56
+    source_id: eb7b77f82a0d
+    target_id: 8e3ec19cf925
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 56
+    source_id: eb7b77f82a0d
+    target_id: 9f4fa6d106f6
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 56
+    source_id: eb7b77f82a0d
+    target_id: 7079041e85bd
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 56
+    source_id: eb7b77f82a0d
+    target_id: 70d224507813
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 56
+    source_id: eb7b77f82a0d
+    target_id: de2dbd9c5b52
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 56
+    source_id: eb7b77f82a0d
+    target_id: 6652838f1e19
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 56
+    source_id: eb7b77f82a0d
+    target_id: c2e10dccb889
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 63
+    source_id: 80a682129d8d
+    target_id: bf28316c28c3
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 78
+    source_id: 2dd06180fa81
+    target_id: b1ba41eb4ef0
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 78
+    source_id: 2dd06180fa81
+    target_id: e55108681e1a
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 78
+    source_id: 2dd06180fa81
+    target_id: '973720815139'
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 78
+    source_id: 2dd06180fa81
+    target_id: bf924475ce54
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 78
+    source_id: b1ba41eb4ef0
+    target_id: e55108681e1a
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 78
+    source_id: b1ba41eb4ef0
+    target_id: '973720815139'
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 78
+    source_id: b1ba41eb4ef0
+    target_id: bf924475ce54
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 46
+    source_id: 05af12f0daec
+    target_id: 7749e479a038
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 46
+    source_id: 05af12f0daec
+    target_id: d48d733b668b
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 46
+    source_id: 05af12f0daec
+    target_id: 381e8a18cb71
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 46
+    source_id: 05af12f0daec
+    target_id: a8365cd7658a
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 46
+    source_id: 05af12f0daec
+    target_id: 0bcae478e928
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 46
+    source_id: 05af12f0daec
+    target_id: 7eed1d6b3b6c
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 46
+    source_id: 05af12f0daec
+    target_id: 3400c2bfeb14
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 46
+    source_id: 7749e479a038
+    target_id: d48d733b668b
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 46
+    source_id: 7749e479a038
+    target_id: 381e8a18cb71
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 46
+    source_id: 7749e479a038
+    target_id: a8365cd7658a
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 46
+    source_id: 7749e479a038
+    target_id: 0bcae478e928
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 46
+    source_id: 7749e479a038
+    target_id: 7eed1d6b3b6c
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 46
+    source_id: 7749e479a038
+    target_id: 3400c2bfeb14
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 46
+    source_id: d48d733b668b
+    target_id: 381e8a18cb71
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 46
+    source_id: d48d733b668b
+    target_id: a8365cd7658a
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 46
+    source_id: d48d733b668b
+    target_id: 0bcae478e928
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 46
+    source_id: d48d733b668b
+    target_id: 7eed1d6b3b6c
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 46
+    source_id: d48d733b668b
+    target_id: 3400c2bfeb14
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 46
+    source_id: 381e8a18cb71
+    target_id: a8365cd7658a
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 46
+    source_id: 381e8a18cb71
+    target_id: 0bcae478e928
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 46
+    source_id: 381e8a18cb71
+    target_id: 7eed1d6b3b6c
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 46
+    source_id: 381e8a18cb71
+    target_id: 3400c2bfeb14
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 46
+    source_id: a8365cd7658a
+    target_id: 0bcae478e928
+    type: relacionado
+    weight: 0.63
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 46
+    source_id: a8365cd7658a
+    target_id: 7eed1d6b3b6c
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 46
+    source_id: a8365cd7658a
+    target_id: 3400c2bfeb14
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 46
+    source_id: 0bcae478e928
+    target_id: 7eed1d6b3b6c
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 46
+    source_id: 0bcae478e928
+    target_id: 3400c2bfeb14
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 46
+    source_id: 7eed1d6b3b6c
+    target_id: 3400c2bfeb14
+    type: relacionado
+    weight: 0.63
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 56
+    source_id: 8e3ec19cf925
+    target_id: 9f4fa6d106f6
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 56
+    source_id: 8e3ec19cf925
+    target_id: 7079041e85bd
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 56
+    source_id: 8e3ec19cf925
+    target_id: 70d224507813
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 56
+    source_id: 8e3ec19cf925
+    target_id: de2dbd9c5b52
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 56
+    source_id: 8e3ec19cf925
+    target_id: 6652838f1e19
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 56
+    source_id: 8e3ec19cf925
+    target_id: c2e10dccb889
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 56
+    source_id: 9f4fa6d106f6
+    target_id: 7079041e85bd
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 56
+    source_id: 9f4fa6d106f6
+    target_id: 70d224507813
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 56
+    source_id: 9f4fa6d106f6
+    target_id: de2dbd9c5b52
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 56
+    source_id: 9f4fa6d106f6
+    target_id: 6652838f1e19
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 56
+    source_id: 9f4fa6d106f6
+    target_id: c2e10dccb889
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 56
+    source_id: 7079041e85bd
+    target_id: 70d224507813
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 56
+    source_id: 7079041e85bd
+    target_id: de2dbd9c5b52
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 56
+    source_id: 7079041e85bd
+    target_id: 6652838f1e19
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 56
+    source_id: 7079041e85bd
+    target_id: c2e10dccb889
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 56
+    source_id: 70d224507813
+    target_id: de2dbd9c5b52
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 56
+    source_id: 70d224507813
+    target_id: 6652838f1e19
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 56
+    source_id: 70d224507813
+    target_id: c2e10dccb889
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 56
+    source_id: de2dbd9c5b52
+    target_id: 6652838f1e19
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 56
+    source_id: de2dbd9c5b52
+    target_id: c2e10dccb889
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 56
+    source_id: 6652838f1e19
+    target_id: c2e10dccb889
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 68
+    source_id: bcff6cf99134
+    target_id: 943c341aae82
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 78
+    source_id: e55108681e1a
+    target_id: '973720815139'
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 78
+    source_id: e55108681e1a
+    target_id: bf924475ce54
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class ConceptExtractor'
+    line_number: 78
+    source_id: '973720815139'
+    target_id: bf924475ce54
+    type: relacionado
+    weight: 0.55
+  sections:
+  - end_line: 30
+    level: 1
+    start_line: 12
+    title: imports
+  - end_line: 286
+    level: 1
+    start_line: 33
+    title: class ConceptExtractor
+  - end_line: 405
+    level: 1
+    start_line: 287
+    title: class RelationshipMapper
+  - end_line: 454
+    level: 1
+    start_line: 406
+    title: class SummaryGenerator
+  - end_line: 572
+    level: 1
+    start_line: 455
+    title: class ContextProcessor
+  summary: 'Estrutura: imports, class ConceptExtractor, class RelationshipMapper,
+    class SummaryGenerator, class ContextProcessor. Conceito_chave: src/context_engine/context_processor.py.
+    Metrica: índice cruzado. Fluxo: de contexto para extração. Procedimento: Aplicar
+    padrões por tipo. Risco: contraindicação, restrição, limitação. Definicao: r''^(.+?)\s*[:-]\s*(?:é.
+    Condicao_clinica: esquizofrenia, depressão, ansiedade. Recurso: NIRSM, CAPS, UBS.
+    Norma: RAPS, SUS, CFM'

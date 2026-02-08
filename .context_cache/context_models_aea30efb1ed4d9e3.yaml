@@ -1,0 +1,92 @@
+cache_metadata:
+  cached_at: '2026-01-23T07:53:27.033383'
+  content_hash: bf488851f076d927cd949c8c11dfef62
+  file_modified: '2026-01-23T03:57:31.926813'
+  file_path: src\context_engine\context_models.py
+document:
+  concepts:
+  - confidence: 0.7
+    id: e7dbc897c988
+    keywords: []
+    line_number: 1
+    section: ''
+    text: src/context_engine/context_models.py
+    type: conceito_chave
+  - confidence: 0.67
+    id: bd4e0b93093a
+    keywords:
+    - índice
+    - cruzado
+    - conceitos
+    line_number: 91
+    section: class ContextIndex
+    text: Índice cruzado de conceitos
+    type: metrica
+  - confidence: 0.5
+    id: 454e28dbfdf8
+    keywords:
+    - dados
+    line_number: 3
+    section: ''
+    text: de dados para o
+    type: fluxo
+  metadata:
+    file_path: src\context_engine\context_models.py
+    file_type: py
+    hash_md5: bf488851f076d927cd949c8c11dfef62
+    lines_count: 268
+    processed_at: '2026-01-23T07:53:27.018474'
+    processing_time_ms: 0.3490999952191487
+    size_bytes: 8919
+    tokens_estimate: 2158
+  relationships:
+  - evidence: 'Co-ocorrência na seção: '
+    line_number: 1
+    source_id: e7dbc897c988
+    target_id: 454e28dbfdf8
+    type: relacionado
+    weight: 0.55
+  sections:
+  - end_line: 13
+    level: 1
+    start_line: 9
+    title: imports
+  - end_line: 28
+    level: 1
+    start_line: 16
+    title: class ConceptType
+  - end_line: 39
+    level: 1
+    start_line: 29
+    title: class RelationType
+  - end_line: 52
+    level: 1
+    start_line: 40
+    title: class DocumentMetadata
+  - end_line: 63
+    level: 1
+    start_line: 53
+    title: class StructuredSection
+  - end_line: 78
+    level: 1
+    start_line: 64
+    title: class Concept
+  - end_line: 89
+    level: 1
+    start_line: 79
+    title: class Relationship
+  - end_line: 120
+    level: 1
+    start_line: 90
+    title: class ContextIndex
+  - end_line: 132
+    level: 1
+    start_line: 121
+    title: class ProcessingStats
+  - end_line: 268
+    level: 1
+    start_line: 133
+    title: class StructuredDocument
+  summary: 'Estrutura: imports, class ConceptType, class RelationType, class DocumentMetadata,
+    class StructuredSection. Conceito_chave: src/context_engine/context_models.py.
+    Metrica: Índice cruzado de conceitos. Fluxo: de dados para o'

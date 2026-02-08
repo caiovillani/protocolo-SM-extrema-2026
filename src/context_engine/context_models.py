@@ -60,9 +60,33 @@ class StructuredSection:
     subsections: List['StructuredSection'] = field(default_factory=list)
 
 
+class EvidenceGrade(Enum):
+    """Graus de evidência para conceitos clínicos (baseado em GRADE)."""
+    ALTA = "alta"           # Estudos randomizados, meta-análises
+    MODERADA = "moderada"   # Estudos observacionais de qualidade
+    BAIXA = "baixa"         # Estudos observacionais, séries de casos
+    MUITO_BAIXA = "muito_baixa"  # Opinião de especialista, relatos
+    NORMATIVA = "normativa"  # Legislação, portarias, normas técnicas
+    NAO_AVALIADA = "nao_avaliada"  # Não classificado
+
+
 @dataclass
 class Concept:
-    """Conceito extraído do documento."""
+    """Conceito extraído do documento.
+
+    Attributes:
+        id: Identificador único do conceito
+        text: Texto original do conceito
+        type: Tipo de conceito (ver ConceptType)
+        source_file: Caminho do arquivo fonte (preservado para rastreabilidade)
+        section: Seção do documento onde foi encontrado
+        line_number: Linha no arquivo fonte
+        context: Contexto ao redor do conceito (±2 linhas)
+        confidence: Confiança da extração (0.0-1.0)
+        evidence_grade: Grau de evidência clínica (para validação cruzada)
+        keywords: Palavras-chave associadas
+        metadata: Metadados adicionais
+    """
     id: str
     text: str
     type: ConceptType
@@ -71,6 +95,7 @@ class Concept:
     line_number: int
     context: str
     confidence: float
+    evidence_grade: EvidenceGrade = EvidenceGrade.NAO_AVALIADA
     keywords: Set[str] = field(default_factory=set)
     metadata: Dict[str, Any] = field(default_factory=dict)
 
@@ -175,9 +200,12 @@ class StructuredDocument:
                     'id': c.id,
                     'text': c.text,
                     'type': c.type.value,
+                    'source_file': str(c.source_file),  # Preserva rastreabilidade
                     'section': c.section,
                     'line_number': c.line_number,
+                    'context': c.context,  # Preserva contexto para validação
                     'confidence': c.confidence,
+                    'evidence_grade': c.evidence_grade.value,  # Grau de evidência
                     'keywords': list(c.keywords),
                 }
                 for c in self.concepts
@@ -232,11 +260,15 @@ class StructuredDocument:
                     id=c['id'],
                     text=c['text'],
                     type=ConceptType(c['type']),
-                    source_file=Path(meta['file_path']),
+                    # Preserva source_file original do conceito, fallback para metadata
+                    source_file=Path(c.get('source_file', meta['file_path'])),
                     section=c['section'],
                     line_number=c['line_number'],
-                    context="",
+                    # Preserva contexto para validação cruzada
+                    context=c.get('context', ''),
                     confidence=c['confidence'],
+                    # Restaura grau de evidência
+                    evidence_grade=EvidenceGrade(c.get('evidence_grade', 'nao_avaliada')),
                     keywords=set(c.get('keywords', [])),
                 )
                 for c in data.get('concepts', [])

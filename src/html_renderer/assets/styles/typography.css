@@ -1,0 +1,397 @@
+/**
+ * TIPOGRAFIA - Sistema de Protocolos RAPS Extrema/MG
+ *
+ * Define estilos tipográficos para documentos clínicos.
+ * Prioriza legibilidade e hierarquia visual clara.
+ */
+
+/* ============================================
+   BASE
+   ============================================ */
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: var(--font-normal);
+  line-height: var(--leading-relaxed);
+  color: var(--text-primary);
+  background-color: var(--surface);
+}
+
+/* ============================================
+   HEADINGS
+   ============================================ */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: var(--font-bold);
+  line-height: var(--leading-tight);
+  color: var(--text-primary);
+  margin-top: 0;
+  margin-bottom: var(--space-4);
+}
+
+/* Título do Documento */
+h1 {
+  font-size: var(--text-3xl);
+  font-weight: var(--font-bold);
+  letter-spacing: var(--tracking-tight);
+  color: var(--raps-primary);
+  border-bottom: 3px solid var(--raps-accent);
+  padding-bottom: var(--space-4);
+  margin-bottom: var(--space-8);
+}
+
+/* Seções Principais (1. OBJETIVO, 2. ÂMBITO, etc.) */
+h2 {
+  font-size: var(--text-2xl);
+  font-weight: var(--font-bold);
+  color: var(--raps-primary);
+  margin-top: var(--space-12);
+  margin-bottom: var(--space-6);
+  padding-bottom: var(--space-2);
+  border-bottom: 2px solid var(--border);
+}
+
+/* Subseções (2.1 Definição, 2.2 Princípios, etc.) */
+h3 {
+  font-size: var(--text-xl);
+  font-weight: var(--font-semibold);
+  color: var(--raps-primary-light);
+  margin-top: var(--space-8);
+  margin-bottom: var(--space-4);
+}
+
+/* Sub-subseções */
+h4 {
+  font-size: var(--text-lg);
+  font-weight: var(--font-semibold);
+  color: var(--text-primary);
+  margin-top: var(--space-6);
+  margin-bottom: var(--space-3);
+}
+
+h5 {
+  font-size: var(--text-base);
+  font-weight: var(--font-semibold);
+  color: var(--text-primary);
+  margin-top: var(--space-4);
+  margin-bottom: var(--space-2);
+}
+
+h6 {
+  font-size: var(--text-sm);
+  font-weight: var(--font-semibold);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+  color: var(--text-secondary);
+  margin-top: var(--space-4);
+  margin-bottom: var(--space-2);
+}
+
+/* ============================================
+   PARÁGRAFOS E TEXTO
+   ============================================ */
+
+p {
+  margin-top: 0;
+  margin-bottom: var(--space-4);
+  max-width: 75ch; /* Largura ideal para leitura */
+}
+
+/* Texto de destaque (lead paragraph) */
+.lead {
+  font-size: var(--text-lg);
+  font-weight: var(--font-normal);
+  line-height: var(--leading-relaxed);
+  color: var(--text-secondary);
+}
+
+/* Texto pequeno (notas, rodapés) */
+small,
+.text-sm {
+  font-size: var(--text-sm);
+  line-height: var(--leading-normal);
+}
+
+.text-xs {
+  font-size: var(--text-xs);
+  line-height: var(--leading-normal);
+}
+
+/* ============================================
+   ÊNFASE
+   ============================================ */
+
+strong,
+b {
+  font-weight: var(--font-bold);
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+/* Destaque de termos técnicos */
+.term {
+  font-weight: var(--font-semibold);
+  color: var(--raps-accent-dark);
+}
+
+/* ============================================
+   LISTAS
+   ============================================ */
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: var(--space-4);
+  padding-left: var(--space-6);
+}
+
+li {
+  margin-bottom: var(--space-2);
+  line-height: var(--leading-relaxed);
+}
+
+/* Listas aninhadas */
+li > ul,
+li > ol {
+  margin-top: var(--space-2);
+  margin-bottom: 0;
+}
+
+/* Lista de definições */
+dl {
+  margin-top: 0;
+  margin-bottom: var(--space-4);
+}
+
+dt {
+  font-weight: var(--font-semibold);
+  color: var(--text-primary);
+  margin-bottom: var(--space-1);
+}
+
+dd {
+  margin-left: var(--space-6);
+  margin-bottom: var(--space-3);
+  color: var(--text-secondary);
+}
+
+/* ============================================
+   CITAÇÕES (BLOCKQUOTES)
+   ============================================ */
+
+blockquote {
+  margin: var(--space-6) 0;
+  padding: var(--space-4) var(--space-6);
+  border-left: 4px solid var(--raps-accent);
+  background-color: var(--surface-elevated);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+blockquote p {
+  margin-bottom: 0;
+  font-style: italic;
+  color: var(--text-secondary);
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+/* Citação de destaque (importante) */
+blockquote.important {
+  border-left-color: var(--risco-laranja);
+  background-color: var(--risco-laranja-bg);
+}
+
+/* Citação de alerta */
+blockquote.warning {
+  border-left-color: var(--risco-vermelho);
+  background-color: var(--risco-vermelho-bg);
+}
+
+/* ============================================
+   CÓDIGO E TEXTO MONOESPACADO
+   ============================================ */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+}
+
+/* Código inline */
+code {
+  padding: var(--space-1) var(--space-2);
+  background-color: var(--surface-elevated);
+  border-radius: var(--radius-sm);
+  color: var(--raps-accent-dark);
+}
+
+/* Bloco de código */
+pre {
+  margin: var(--space-6) 0;
+  padding: var(--space-4);
+  background-color: var(--surface-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+  line-height: var(--leading-normal);
+}
+
+pre code {
+  padding: 0;
+  background: none;
+  border-radius: 0;
+  color: inherit;
+  font-size: var(--text-sm);
+}
+
+/* Texto de teclado */
+kbd {
+  padding: var(--space-1) var(--space-2);
+  background-color: var(--surface-sunken);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  box-shadow: inset 0 -1px 0 var(--border-strong);
+}
+
+/* ============================================
+   LINKS
+   ============================================ */
+
+a {
+  color: var(--raps-primary);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--raps-accent);
+}
+
+a:focus {
+  outline: var(--focus-ring-width) solid var(--focus-ring);
+  outline-offset: var(--focus-ring-offset);
+  border-radius: var(--radius-sm);
+}
+
+/* Links visitados (desabilitado para consistência em docs oficiais) */
+a:visited {
+  color: var(--raps-primary);
+}
+
+/* Link de navegação (sem sublinhado) */
+a.nav-link {
+  text-decoration: none;
+}
+
+a.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* ============================================
+   SEPARADORES
+   ============================================ */
+
+hr {
+  margin: var(--space-8) 0;
+  border: none;
+  border-top: 2px solid var(--border);
+}
+
+/* Separador decorativo */
+hr.decorative {
+  border-top: 1px dashed var(--border);
+}
+
+/* ============================================
+   TEXTO UTILITÁRIO
+   ============================================ */
+
+/* Alinhamento */
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-justify { text-align: justify; }
+
+/* Cores de texto */
+.text-primary { color: var(--text-primary); }
+.text-secondary { color: var(--text-secondary); }
+.text-muted { color: var(--text-muted); }
+.text-success { color: var(--risco-verde); }
+.text-warning { color: var(--risco-laranja); }
+.text-danger { color: var(--risco-vermelho); }
+.text-info { color: var(--risco-azul); }
+
+/* Transformações */
+.uppercase { text-transform: uppercase; }
+.lowercase { text-transform: lowercase; }
+.capitalize { text-transform: capitalize; }
+
+/* Peso */
+.font-normal { font-weight: var(--font-normal); }
+.font-medium { font-weight: var(--font-medium); }
+.font-semibold { font-weight: var(--font-semibold); }
+.font-bold { font-weight: var(--font-bold); }
+
+/* Quebra de texto */
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.break-words {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* ============================================
+   ACESSIBILIDADE
+   ============================================ */
+
+/* Texto visualmente oculto mas acessível para leitores de tela */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  padding: var(--space-2) var(--space-4);
+  background: var(--raps-primary);
+  color: var(--text-inverse);
+  text-decoration: none;
+  z-index: var(--z-fixed);
+  transition: top var(--transition-fast);
+}
+
+.skip-link:focus {
+  top: 0;
+}

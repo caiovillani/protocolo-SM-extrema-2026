@@ -1,0 +1,67 @@
+cache_metadata:
+  cached_at: '2026-01-23T07:53:26.999593'
+  content_hash: 75f80e446ad085c253bb3fb28a6b6c45
+  file_modified: '2026-01-23T03:47:13.395817'
+  file_path: src\context_engine\commands.py
+document:
+  concepts:
+  - confidence: 0.8
+    id: 079a746db8c8
+    keywords:
+    - subcomandos
+    - pips
+    - válidos
+    line_number: 36
+    section: class PIPSCommand
+    text: Subcomandos PIPS válidos
+    type: conceito_chave
+  - confidence: 0.7
+    id: 178104f22262
+    keywords:
+    - commands
+    line_number: 1
+    section: ''
+    text: src/context_engine/commands.py
+    type: conceito_chave
+  - confidence: 0.5700000000000001
+    id: cb4ed15b9b02
+    keywords:
+    - protocolo
+    line_number: 11
+    section: ''
+    text: Protocolo de
+    type: procedimento
+  metadata:
+    file_path: src\context_engine\commands.py
+    file_type: py
+    hash_md5: 75f80e446ad085c253bb3fb28a6b6c45
+    lines_count: 149
+    processed_at: '2026-01-23T07:53:26.991543'
+    processing_time_ms: 34.42109999014065
+    size_bytes: 4658
+    tokens_estimate: 1124
+  relationships: []
+  sections:
+  - end_line: 16
+    level: 1
+    start_line: 15
+    title: imports
+  - end_line: 29
+    level: 1
+    start_line: 20
+    title: class Command
+  - end_line: 47
+    level: 1
+    start_line: 30
+    title: class PIPSCommand
+  - end_line: 79
+    level: 2
+    start_line: 48
+    title: def parse_command
+  - end_line: 149
+    level: 2
+    start_line: 80
+    title: def parse_pips_command
+  summary: 'Estrutura: imports, class Command, class PIPSCommand, def parse_command,
+    def parse_pips_command. Conceito_chave: Subcomandos PIPS válidos, src/context_engine/commands.py.
+    Procedimento: Protocolo de'

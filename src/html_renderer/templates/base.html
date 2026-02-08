@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ metadata.description | default('Protocolo de Saúde Mental - Secretaria Municipal de Saúde de Extrema/MG') }}">
+    <meta name="author" content="Secretaria Municipal de Saúde de Extrema/MG">
+    <meta name="keywords" content="saúde mental, protocolo, RAPS, Extrema, MG, APS, CAPS">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:description" content="{{ metadata.description | default('Protocolo de Saúde Mental - SMS Extrema/MG') }}">
+    <meta property="og:type" content="article">
+
+    <title>{{ title }} | SMS Extrema/MG</title>
+
+    <!-- Preload critical CSS -->
+    <link rel="preload" href="assets/styles/main.css" as="style">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/styles/main.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+    {% block head_extra %}{% endblock %}
+</head>
+<body>
+    <!-- Skip Links (Acessibilidade) -->
+    <a href="#main-content" class="skip-link">Ir para conteúdo principal</a>
+    <a href="#toc" class="skip-link">Ir para sumário</a>
+
+    {% block header %}
+    <!-- Header Institucional -->
+    <header class="doc-header" role="banner">
+        <div class="doc-header__brand">
+            {% if metadata.logo %}
+            <img src="{{ metadata.logo }}" alt="Brasão de Extrema/MG" class="doc-header__logo" width="60" height="60">
+            {% else %}
+            <div class="doc-header__logo" aria-hidden="true">
+                <!-- Placeholder para logo -->
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="60" height="60" rx="8" fill="#1E3A5F"/>
+                    <text x="30" y="38" text-anchor="middle" fill="white" font-size="24" font-weight="bold">SM</text>
+                </svg>
+            </div>
+            {% endif %}
+            <div class="doc-header__text">
+                <span class="doc-header__org">Secretaria Municipal de Saúde</span>
+                <span class="doc-header__city">Extrema/MG</span>
+            </div>
+        </div>
+        <div class="doc-header__meta">
+            {% if metadata.version %}
+            <span class="doc-header__version">Versão {{ metadata.version }}</span>
+            {% endif %}
+            {% if metadata.date %}
+            <span class="doc-header__date">{{ metadata.date }}</span>
+            {% endif %}
+            {% if metadata.status %}
+            <span class="doc-header__status doc-header__status--{{ metadata.status | lower | replace(' ', '-') }}">
+                {{ metadata.status }}
+            </span>
+            {% endif %}
+        </div>
+    </header>
+    {% endblock %}
+
+    {% block breadcrumb %}
+    {% if breadcrumbs %}
+    <nav class="breadcrumb" aria-label="Navegação estrutural">
+        <ol class="breadcrumb__list">
+            {% for crumb in breadcrumbs %}
+            <li class="breadcrumb__item" {% if loop.last %}aria-current="page"{% endif %}>
+                {% if loop.last %}
+                {{ crumb.label }}
+                {% else %}
+                <a href="{{ crumb.url }}" class="breadcrumb__link">{{ crumb.label }}</a>
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ol>
+    </nav>
+    {% endif %}
+    {% endblock %}
+
+    <!-- Layout Principal -->
+    <div class="layout {% if toc %}layout--with-sidebar{% endif %}">
+
+        {% block sidebar %}
+        {% if toc %}
+        <!-- Sumário (TOC) -->
+        <aside id="toc" class="toc toc--sticky" role="navigation" aria-label="Sumário do documento">
+            <h2 class="toc__title">Sumário</h2>
+            <nav>
+                {{ toc | safe }}
+            </nav>
+        </aside>
+        {% endif %}
+        {% endblock %}
+
+        <!-- Conteúdo Principal -->
+        <main id="main-content" class="content" role="main">
+            {% block content %}
+            <article class="protocol">
+                {{ content | safe }}
+            </article>
+            {% endblock %}
+        </main>
+
+    </div>
+
+    {% block footer %}
+    <!-- Footer -->
+    <footer class="doc-footer doc-footer--print" role="contentinfo">
+        <p class="doc-footer__text">
+            Documento elaborado pela Coordenação de Saúde Mental
+        </p>
+        <p class="doc-footer__text">
+            Secretaria Municipal de Saúde - Extrema/MG
+        </p>
+
+        {% if metadata.date %}
+        <p class="doc-footer__text">
+            <em>{{ metadata.date }}</em>
+        </p>
+        {% endif %}
+
+        {% if metadata.signatures %}
+        <div class="doc-footer__signature">
+            {% for signer in metadata.signatures %}
+            <div class="doc-footer__signer">
+                <div class="doc-footer__signer-line">
+                    <span class="doc-footer__signer-name">{{ signer.name }}</span>
+                    <span class="doc-footer__signer-role">{{ signer.role }}</span>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </footer>
+    {% endblock %}
+
+    <!-- Botão Toggle TOC (Mobile) -->
+    <button class="btn-toc-toggle no-print" aria-label="Abrir sumário" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M3 12H21M3 6H21M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+    </button>
+
+    {% block scripts %}
+    <!-- Mermaid.js para diagramas -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <script>
+        // Configuração do Mermaid
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'base',
+            themeVariables: {
+                primaryColor: '#E3F2FD',
+                primaryTextColor: '#1E3A5F',
+                primaryBorderColor: '#1976D2',
+                lineColor: '#616161',
+                secondaryColor: '#F5F5F5',
+                tertiaryColor: '#FFFFFF',
+                fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
+            },
+            flowchart: {
+                htmlLabels: true,
+                curve: 'basis',
+                nodeSpacing: 50,
+                rankSpacing: 50,
+                padding: 15
+            },
+            securityLevel: 'loose'
+        });
+    </script>
+
+    <!-- Script de navegação -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Toggle TOC em mobile
+            const tocToggle = document.querySelector('.btn-toc-toggle');
+            const toc = document.querySelector('.toc');
+
+            if (tocToggle && toc) {
+                tocToggle.addEventListener('click', function() {
+                    const isOpen = toc.classList.toggle('is-open');
+                    tocToggle.setAttribute('aria-expanded', isOpen);
+                });
+
+                // Fechar TOC ao clicar em um link
+                toc.querySelectorAll('a').forEach(function(link) {
+                    link.addEventListener('click', function() {
+                        toc.classList.remove('is-open');
+                        tocToggle.setAttribute('aria-expanded', 'false');
+                    });
+                });
+            }
+
+            // Highlight seção ativa no TOC
+            const sections = document.querySelectorAll('h2[id], h3[id]');
+            const tocLinks = document.querySelectorAll('.toc__link');
+
+            function highlightToc() {
+                let current = '';
+                sections.forEach(function(section) {
+                    const sectionTop = section.offsetTop;
+                    if (window.scrollY >= sectionTop - 100) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                tocLinks.forEach(function(link) {
+                    link.classList.remove('toc__link--active');
+                    if (link.getAttribute('href') === '#' + current) {
+                        link.classList.add('toc__link--active');
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', highlightToc);
+            highlightToc();
+        });
+    </script>
+    {% endblock %}
+
+    {% block scripts_extra %}{% endblock %}
+</body>
+</html>

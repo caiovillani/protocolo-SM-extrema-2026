@@ -1,0 +1,359 @@
+# src/context_engine/validation_rules.yaml
+#
+# Regras de validação cruzada para protocolos clínicos de saúde mental.
+# Estas regras são usadas pelo CrossDocumentValidator para detectar
+# inconsistências entre CLI-02, MACROFLUXO e GUIA NARRATIVO.
+#
+# Cada regra define:
+#   - patterns: Expressões regulares para identificar claims
+#   - comparison_function: Função Python para comparação
+#   - severity: Nível de severidade padrão
+#   - enabled: Se a regra está ativa
+#
+# Referência: CLAUDE.md > Clinical Protocol Development Patterns
+
+version: "1.0"
+last_updated: "2026-01-24"
+
+# =============================================================================
+# REGRAS DE TIMELINE (P1/P2/P3)
+# =============================================================================
+
+timeline_rules:
+  - id: "TL001"
+    name: "P1 Timeline Consistency"
+    description: "Verifica se o prazo P1 (Prioridade 1) é consistente entre protocolos"
+    conflict_type: "timeline_inconsistency"
+    severity: "critical"
+    patterns:
+      - "P1[:\\s]+(?:até\\s+)?(\\d+)\\s*dias?"
+      - "Prioridade\\s+1[:\\s]+(?:até\\s+)?(\\d+)\\s*dias?"
+      - "prioridade\\s+alta[:\\s]+(?:até\\s+)?(\\d+)\\s*dias?"
+    comparison_function: "compare_numeric_values"
+    expected_value: 30  # MS Linha de Cuidado TEA 2025 define P1 = 30 dias
+    tolerance: 5  # Aceita variação de ±5 dias
+    enabled: true
+    metadata:
+      normative_source: "Linha de Cuidado TEA MS 2025"
+      section: "Classificação de Prioridade"
+
+  - id: "TL002"
+    name: "P2 Timeline Consistency"
+    description: "Verifica se o prazo P2 (Prioridade 2) é consistente entre protocolos"
+    conflict_type: "timeline_inconsistency"
+    severity: "warning"
+    patterns:
+      - "P2[:\\s]+(?:até\\s+)?(\\d+)\\s*dias?"
+      - "Prioridade\\s+2[:\\s]+(?:até\\s+)?(\\d+)\\s*dias?"
+      - "prioridade\\s+moderada[:\\s]+(?:até\\s+)?(\\d+)\\s*dias?"
+    comparison_function: "compare_numeric_values"
+    expected_value: 90
+    tolerance: 15
+    enabled: true
+
+  - id: "TL003"
+    name: "P3 Timeline Consistency"
+    description: "Verifica se o prazo P3 (Prioridade 3) é consistente entre protocolos"
+    conflict_type: "timeline_inconsistency"
+    severity: "info"
+    patterns:
+      - "P3[:\\s]+(?:até\\s+)?(\\d+)\\s*dias?"
+      - "Prioridade\\s+3[:\\s]+(?:até\\s+)?(\\d+)\\s*dias?"
+      - "prioridade\\s+regular[:\\s]+(?:até\\s+)?(\\d+)\\s*dias?"
+    comparison_function: "compare_numeric_values"
+    expected_value: 180
+    tolerance: 30
+    enabled: true
+
+# =============================================================================
+# REGRAS DE INSTRUMENTOS E ESCALAS
+# =============================================================================
+
+instrument_rules:
+  - id: "IN001"
+    name: "M-CHAT-R/F Scoring Consistency"
+    description: "Verifica consistência dos pontos de corte do M-CHAT-R/F"
+    conflict_type: "instrument_scoring"
+    severity: "critical"
+    patterns:
+      - "M-CHAT[\\w-]*[:\\s]+(?:baixo\\s+risco)?[:\\s]*(\\d+)[\\s-]*(\\d+)"
+      - "baixo\\s+risco[:\\s]*(\\d+)[\\s-]*(\\d+)\\s*pontos?"
+      - "risco\\s+(?:moderado|médio)[:\\s]*(\\d+)[\\s-]*(\\d+)\\s*pontos?"
+      - "alto\\s+risco[:\\s]*(\\d+)[\\s-]*(\\d+)\\s*pontos?"
+    comparison_function: "compare_scoring_ranges"
+    expected_ranges:
+      low_risk: [0, 2]
+      moderate_risk: [3, 7]
+      high_risk: [8, 20]
+    enabled: true
+    metadata:
+      validation_source: "Losapio et al. 2023"
+      sensitivity: 0.882
+      specificity: 0.75
+
+  - id: "IN002"
+    name: "CuidaSM Scoring Consistency"
+    description: "Verifica consistência dos pontos de corte da Escala CuidaSM"
+    conflict_type: "instrument_scoring"
+    severity: "critical"
+    patterns:
+      - "CuidaSM[:\\s]+(?:baixo\\s+risco)?[:\\s]*(\\d+)[\\s-]*(\\d+)"
+      - "Cuida\\s*SM[:\\s]+(\\d+)[\\s-]*(\\d+)\\s*pontos?"
+      - "estratifica[çã]o[:\\s]+.*?(\\d+)[\\s-]*(\\d+)"
+    comparison_function: "compare_scoring_ranges"
+    expected_ranges:
+      low_risk: [0, 3]
+      moderate_risk: [4, 7]
+      high_risk: [8, 11]
+    enabled: true
+    metadata:
+      validation_source: "ENAP/MS 2020"
+      max_score: 31
+
+  - id: "IN003"
+    name: "IRDI Age Range"
+    description: "Verifica consistência da faixa etária de aplicação do IRDI"
+    conflict_type: "instrument_scoring"
+    severity: "warning"
+    patterns:
+      - "IRDI[:\\s]+.*?(\\d+)[\\s-]*(\\d+)\\s*meses"
+      - "Indicadores\\s+de\\s+Risco[:\\s]+.*?(\\d+)[\\s-]*(\\d+)\\s*meses"
+    comparison_function: "compare_age_ranges"
+    expected_range: [0, 18]  # 0-18 meses
+    enabled: true
+
+# =============================================================================
+# REGRAS DE RESPONSABILIDADES
+# =============================================================================
+
+responsibility_rules:
+  - id: "RE001"
+    name: "ACS Responsibility Consistency"
+    description: "Verifica consistência das atribuições do ACS"
+    conflict_type: "responsibility_conflict"
+    severity: "warning"
+    patterns:
+      - "ACS[:\\s]+(?:deve|responsável|atribui[çã]o)[:\\s]+(.+?)(?:\\.|$)"
+      - "Agente\\s+Comunit[áa]rio[:\\s]+(.+?)(?:\\.|$)"
+    comparison_function: "compare_responsibility_sets"
+    enabled: true
+
+  - id: "RE002"
+    name: "Enfermeiro Responsibility Consistency"
+    description: "Verifica consistência das atribuições do enfermeiro"
+    conflict_type: "responsibility_conflict"
+    severity: "warning"
+    patterns:
+      - "enfermeiro[:\\s]+(?:deve|responsável|atribui[çã]o)[:\\s]+(.+?)(?:\\.|$)"
+      - "enfermagem[:\\s]+(?:deve|responsável)[:\\s]+(.+?)(?:\\.|$)"
+    comparison_function: "compare_responsibility_sets"
+    enabled: true
+
+  - id: "RE003"
+    name: "NIRSM-R Responsibility Consistency"
+    description: "Verifica consistência das atribuições do NIRSM-R"
+    conflict_type: "responsibility_conflict"
+    severity: "critical"
+    patterns:
+      - "NIRSM-?R[:\\s]+(?:deve|responsável|atribui[çã]o)[:\\s]+(.+?)(?:\\.|$)"
+      - "N[úu]cleo\\s+(?:Interno\\s+de\\s+)?Regula[çã]o[:\\s]+(.+?)(?:\\.|$)"
+    comparison_function: "compare_responsibility_sets"
+    enabled: true
+
+# =============================================================================
+# REGRAS DE FLUXO
+# =============================================================================
+
+flow_rules:
+  - id: "FL001"
+    name: "APS to NIRSM Flow"
+    description: "Verifica consistência do fluxo APS → NIRSM"
+    conflict_type: "flow_inconsistency"
+    severity: "critical"
+    patterns:
+      - "APS[\\s→>]+NIRSM"
+      - "UBS[\\s→>]+NIRSM"
+      - "encaminhamento[:\\s]+.*?APS.*?NIRSM"
+    comparison_function: "compare_flow_sequences"
+    expected_sequence:
+      - "APS"
+      - "NIRSM"
+    enabled: true
+
+  - id: "FL002"
+    name: "Positive M-CHAT Flow"
+    description: "Verifica fluxo após M-CHAT positivo"
+    conflict_type: "flow_inconsistency"
+    severity: "critical"
+    patterns:
+      - "M-CHAT.*?positivo[:\\s]+(.+?)(?:\\.|$)"
+      - "resultado\\s+positivo[:\\s]+.*?encaminhar[:\\s]+(.+?)(?:\\.|$)"
+    comparison_function: "compare_referral_destinations"
+    expected_destinations:
+      - "NIRSM"
+      - "avaliação especializada"
+      - "serviço de referência"
+    enabled: true
+
+  - id: "FL003"
+    name: "Contrarreferência Flow"
+    description: "Verifica consistência do fluxo de contrarreferência"
+    conflict_type: "flow_inconsistency"
+    severity: "warning"
+    patterns:
+      - "contrarrefer[êe]ncia[:\\s]+(.+?)(?:\\.|$)"
+      - "retorno[:\\s]+(?:à|para)\\s+APS[:\\s]+(.+?)(?:\\.|$)"
+    comparison_function: "compare_flow_sequences"
+    enabled: true
+
+# =============================================================================
+# REGRAS DE TERMINOLOGIA
+# =============================================================================
+
+terminology_rules:
+  - id: "TE001"
+    name: "Triagem vs Avaliação"
+    description: "Detecta uso inconsistente de 'triagem' e 'avaliação'"
+    conflict_type: "terminology_drift"
+    severity: "info"
+    patterns:
+      - "triagem[:\\s]+(.+?)(?:\\.|$)"
+      - "avalia[çã]o[:\\s]+(.+?)(?:\\.|$)"
+    comparison_function: "compare_terminology_contexts"
+    terminology_pairs:
+      - ["triagem", "screening"]
+      - ["avaliação", "assessment"]
+      - ["diagnóstico", "diagnosis"]
+    enabled: true
+
+  - id: "TE002"
+    name: "TEA vs Autismo"
+    description: "Verifica uso consistente de 'TEA' vs 'autismo'"
+    conflict_type: "terminology_drift"
+    severity: "info"
+    patterns:
+      - "\\b(TEA|autismo|espectro\\s+autista)\\b"
+    comparison_function: "compare_terminology_usage"
+    preferred_term: "TEA"
+    enabled: true
+
+# =============================================================================
+# REGRAS DE REFERÊNCIAS NORMATIVAS
+# =============================================================================
+
+normative_rules:
+  - id: "NR001"
+    name: "DSM-5 vs CID-11 Alignment"
+    description: "Verifica alinhamento entre critérios DSM-5 e CID-11"
+    conflict_type: "categorical_conflict"
+    severity: "warning"
+    patterns:
+      - "DSM-5[:\\s]+(.+?)(?:\\.|$)"
+      - "CID-11[:\\s]+(.+?)(?:\\.|$)"
+      - "DSM-5-TR[:\\s]+(.+?)(?:\\.|$)"
+    comparison_function: "compare_diagnostic_criteria"
+    enabled: true
+
+  - id: "NR002"
+    name: "Outdated Guideline Reference"
+    description: "Detecta referências a diretrizes desatualizadas"
+    conflict_type: "outdated_reference"
+    severity: "warning"
+    patterns:
+      - "Portaria\\s+(?:GM/)?MS\\s+n[ºo]?\\s*(\\d+)"
+      - "Lei\\s+n[ºo]?\\s*(\\d+)"
+      - "RDC\\s+n[ºo]?\\s*(\\d+)"
+    comparison_function: "check_reference_currency"
+    outdated_references:
+      - "Portaria MS 3088/2011"  # Atualizada por Portaria de Consolidação
+    enabled: true
+
+# =============================================================================
+# CONFIGURAÇÃO GLOBAL
+# =============================================================================
+
+global_config:
+  default_severity: "warning"
+  max_conflicts_per_rule: 100
+  enable_fuzzy_matching: true
+  fuzzy_threshold: 0.85
+  case_sensitive: false
+
+  # Arquivos a serem incluídos na validação
+  include_patterns:
+    - "*.md"
+    - "*.txt"
+
+  # Arquivos a serem excluídos
+  exclude_patterns:
+    - "_template.*"
+    - "INDEX.md"
+    - "README.md"
+
+  # Diretórios prioritários para validação
+  priority_directories:
+    - "entregas/Protocolos_Compartilhamento_Cuidado/Protocolos_Clinicos/"
+    - "referencias/normativos/"
+    - "referencias/clinicos/"
+
+# =============================================================================
+# COMPARISON FUNCTIONS REGISTRY
+# =============================================================================
+
+comparison_functions:
+  compare_numeric_values:
+    description: "Compara valores numéricos com tolerância"
+    parameters:
+      - name: "tolerance"
+        type: "float"
+        default: 0
+
+  compare_scoring_ranges:
+    description: "Compara faixas de pontuação de instrumentos"
+    parameters:
+      - name: "expected_ranges"
+        type: "dict"
+
+  compare_age_ranges:
+    description: "Compara faixas etárias de aplicação"
+    parameters:
+      - name: "expected_range"
+        type: "list"
+
+  compare_responsibility_sets:
+    description: "Compara conjuntos de responsabilidades atribuídas"
+    parameters: []
+
+  compare_flow_sequences:
+    description: "Compara sequências de fluxo de atendimento"
+    parameters:
+      - name: "expected_sequence"
+        type: "list"
+
+  compare_referral_destinations:
+    description: "Compara destinos de encaminhamento"
+    parameters:
+      - name: "expected_destinations"
+        type: "list"
+
+  compare_terminology_contexts:
+    description: "Compara contextos de uso de termos"
+    parameters:
+      - name: "terminology_pairs"
+        type: "list"
+
+  compare_terminology_usage:
+    description: "Verifica uso preferencial de termos"
+    parameters:
+      - name: "preferred_term"
+        type: "string"
+
+  compare_diagnostic_criteria:
+    description: "Compara critérios diagnósticos entre sistemas"
+    parameters: []
+
+  check_reference_currency:
+    description: "Verifica se referências normativas estão atualizadas"
+    parameters:
+      - name: "outdated_references"
+        type: "list"

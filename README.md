@@ -3,7 +3,7 @@
 
 **Município:** Extrema/MG
 **Versão:** 2026
-**Status:** Em desenvolvimento (35% concluído)
+**Status:** Em desenvolvimento (44% concluído)
 
 ---
 
@@ -72,6 +72,7 @@ Protocolo SM Extrema 2026/
 | PCC-02 | Demanda Espontânea → APS → NIRSM-R → AES | Concluído |
 | PCC-03 | Contrarreferência AES → APS | Concluído |
 | PCC-04 | Urgência/Emergência em SM | Concluído |
+| PCC-06 | Macrofluxo Narrativo DI/TEA | Concluído |
 
 ### Protocolos de Regulação (REG)
 
@@ -94,13 +95,19 @@ Protocolo SM Extrema 2026/
 
 ### Protocolos Clínicos (CLI)
 
+| Código | Nome | Status | Versão |
+|--------|------|--------|--------|
+| CLI-01 | Transtornos Mentais Comuns | Pendente | - |
+| CLI-02 | Transtorno do Espectro Autista | **Concluído** | v2.6 (~1.925 linhas) |
+| CLI-03 | Suicidalidade | Pendente | - |
+| CLI-04 | Álcool e Outras Drogas | **Concluído** | v1.0 (900+ linhas) |
+| CLI-05 | Emergências Psiquiátricas | Pendente | - |
+
+### Guias Narrativos (GN)
+
 | Código | Nome | Status |
 |--------|------|--------|
-| CLI-01 | Transtornos Mentais Comuns | Pendente |
-| CLI-02 | Transtorno do Espectro Autista | Em desenvolvimento |
-| CLI-03 | Suicidalidade | Pendente |
-| CLI-04 | Álcool e Outras Drogas | Pendente |
-| CLI-05 | Emergências Psiquiátricas | Pendente |
+| GN-01 | Coordenação do Cuidado DI/TEA na APS | Concluído |
 
 ---
 
@@ -108,13 +115,14 @@ Protocolo SM Extrema 2026/
 
 | Categoria | Concluído | Total | % |
 |-----------|-----------|-------|---|
-| Protocolos de Fluxo (PCC) | 4 | 4 | 100% |
+| Protocolos de Fluxo (PCC) | 5 | 5 | 100% |
 | Protocolos de Regulação (REG) | 2 | 2 | 100% |
 | POPs | 4 | 7 | 57% |
-| Protocolos Clínicos (CLI) | 0 | 5 | 0% |
+| Protocolos Clínicos (CLI) | 2 | 5 | 40% |
+| Guias Narrativos (GN) | 1 | 1 | 100% |
 | Escalas/Instrumentos | 1 | 12 | 8% |
 | Relatórios Executivos | 1 | 4 | 25% |
-| **TOTAL** | **12** | **34** | **35%** |
+| **TOTAL** | **16** | **36** | **44%** |
 
 ---
 
@@ -134,4 +142,4 @@ Protocolo SM Extrema 2026/
 
 ---
 
-*Última atualização: Janeiro 2026*
+*Última atualização: 24 Janeiro 2026 | CLI-02 TEA v2.6 | CLI-04 AOD v1.0*

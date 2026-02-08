@@ -1,0 +1,17 @@
+# Protocolo SM Extrema 2026 - Development Dependencies
+# Install with: pip install -r requirements-dev.txt
+
+# Include production dependencies
+-r requirements.txt
+
+# Testing
+pytest>=7.0
+pytest-cov>=4.0
+
+# Linting and type checking (optional)
+ruff>=0.1.0
+mypy>=1.0
+
+# Documentation (optional)
+mkdocs>=1.5
+mkdocs-material>=9.0

@@ -6,8 +6,29 @@ Each function represents a stage of the pipeline. The implementations are
 simplified placeholders that can be expanded later.
 """
 
+from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, List
+
+from .formatter import (
+    format_pips_status,
+    format_pips_list,
+    format_pips_init_success,
+    format_pips_resume,
+    format_contexto_document,
+    format_contexto_directory,
+    format_contexto_stats,
+    format_template_output,
+    format_auditoria_output,
+    format_orientacao_output,
+    format_comparar_output,
+    format_conformidade_output,
+    format_export_success,
+    format_export_error,
+    format_export_help,
+    get_status_emoji,
+    inject_citations_into_output,
+)
 
 # ---------------------------------------------------------------------------
 # Stage 1 – Classification
@@ -39,20 +60,38 @@ def validate_input(command: Any) -> List[str]:
 # Stage 3 – Load Context / Resources
 # ---------------------------------------------------------------------------
 
-def load_context(request_type: str) -> Dict[str, Any]:
+def load_context(request_type: str, command_args: List[str] = None) -> Dict[str, Any]:
     """Load the resources required for the given request type.
 
-    The function delegates to the ``resources`` module. It returns a dictionary
-    with the loaded data, e.g. ``{"template": {...}}``.
+    The function delegates to the ``resources`` module and context processor.
+    It returns a dictionary with:
+    - 'concepts': List of relevant Concept objects for citation
+    - 'normativas': YAML normative resources
+    - Additional context specific to the request type
+
+    Args:
+        request_type: Type of request (template, auditoria, etc.)
+        command_args: Optional command arguments for targeted loading
+
+    Returns:
+        Context dictionary with concepts and resources
     """
     from . import resources
 
-    context: Dict[str, Any] = {}
+    context: Dict[str, Any] = {
+        'concepts': [],  # For citation injection
+        'documents': [],  # Loaded structured documents
+    }
+
+    # Load structured concepts for citation support
+    try:
+        context['concepts'] = _load_relevant_concepts(request_type, command_args)
+    except Exception:
+        # Graceful degradation if context loading fails
+        context['concepts'] = []
+
     if request_type == "template":
-        # Expect the first argument to be the template id.
-        # The caller will pass the full command object later, but we can load a
-        # generic template list here if needed.
-        # For now we load nothing and let the processing stage handle it.
+        # Template commands may reference specific protocols
         pass
     elif request_type == "auditoria":
         # Load normative resources that are used during audits.
@@ -63,8 +102,62 @@ def load_context(request_type: str) -> Dict[str, Any]:
     elif request_type == "pips":
         # PIPS loads its own context from project state files
         context["pips_enabled"] = True
-    # Additional request types can be added similarly.
+    elif request_type == "validar":
+        # Validation commands need full protocol context
+        context["validation_enabled"] = True
+    elif request_type == "evidencia":
+        # Evidence commands query the reference index
+        context["evidence_enabled"] = True
+
     return context
+
+
+def _load_relevant_concepts(
+    request_type: str,
+    command_args: List[str] = None
+) -> List[Any]:
+    """Load relevant concepts based on request type and arguments.
+
+    This is the bridge between the context processor and the command pipeline.
+
+    Args:
+        request_type: Type of request
+        command_args: Command arguments (e.g., protocol ID)
+
+    Returns:
+        List of Concept objects relevant to the request
+    """
+    from .context_cache import CachedContextProcessor
+
+    concepts = []
+
+    # Define protocol paths based on common patterns
+    protocol_paths = {
+        'CLI_01': 'entregas/Protocolos_Compartilhamento_Cuidado/Protocolos_Clinicos/',
+        'CLI_02': 'entregas/Protocolos_Compartilhamento_Cuidado/Protocolos_Clinicos/CLI_02_TRANSTORNO_ESPECTRO_AUTISTA.md',
+        'CLI_03': 'entregas/Protocolos_Compartilhamento_Cuidado/Protocolos_Clinicos/',
+        'MACROFLUXO': 'entregas/Protocolos_Compartilhamento_Cuidado/Protocolos_Clinicos/MACROFLUXO_NARRATIVO_DI_TEA.md',
+        'GUIA_NARRATIVO': 'entregas/Protocolos_Compartilhamento_Cuidado/Protocolos_Clinicos/GUIA_NARRATIVO_APS_DI_TEA.md',
+    }
+
+    if not command_args:
+        return concepts
+
+    # Check if any argument matches a known protocol
+    for arg in command_args:
+        arg_upper = arg.upper()
+        for protocol_key, protocol_path in protocol_paths.items():
+            if protocol_key in arg_upper:
+                try:
+                    full_path = Path.cwd() / protocol_path
+                    if full_path.exists() and full_path.is_file():
+                        processor = CachedContextProcessor()
+                        doc = processor.process_file(full_path)
+                        concepts.extend(doc.concepts)
+                except Exception:
+                    pass  # Graceful degradation
+
+    return concepts
 
 # ---------------------------------------------------------------------------
 # Stage 4 – Core Processing
@@ -73,21 +166,264 @@ def load_context(request_type: str) -> Dict[str, Any]:
 def process_request(command: Any, context: Dict[str, Any]) -> str:
     """Generate the final output based on the command and loaded context.
 
-    This is a very high‑level placeholder. Real logic would assemble a template,
-    fill fields, run audits, etc.
+    This function assembles command outputs with citation injection for
+    evidence traceability.
+
+    Args:
+        command: Parsed command object
+        context: Loaded context with concepts for citation
+
+    Returns:
+        Formatted output string with citations
     """
+    # Extract concepts for citation injection
+    concepts = context.get('concepts', [])
+
     if command.name == "template":
         template_id = command.args[0] if command.args else "unknown"
-        # In a full implementation we would fetch the template YAML and render it.
-        return f"[Template {template_id}] – conteúdo gerado aqui."
+        # Build template data from loaded concepts
+        template_data = _build_template_data(template_id, concepts)
+        output = format_template_output(template_id, template_data)
+        # Inject citations from relevant concepts
+        return inject_citations_into_output(output, concepts)
+
     elif command.name == "auditoria":
-        return "[Auditoria] – análise de conformidade gerada aqui."
+        registro = command.args[0] if command.args else "registro"
+        output = format_auditoria_output(registro, None)
+        return inject_citations_into_output(output, concepts)
+
+    elif command.name == "orientacao":
+        campo = command.args[0] if command.args else "campo"
+        output = format_orientacao_output(campo, None)
+        return inject_citations_into_output(output, concepts)
+
+    elif command.name == "conformidade":
+        questao = command.args[0] if command.args else "questao"
+        output = format_conformidade_output(questao, None)
+        return inject_citations_into_output(output, concepts)
+
+    elif command.name == "comparar":
+        tipo1 = command.args[0] if len(command.args) > 0 else "tipo1"
+        tipo2 = command.args[1] if len(command.args) > 1 else "tipo2"
+        output = format_comparar_output(tipo1, tipo2, None)
+        return inject_citations_into_output(output, concepts)
+
+    elif command.name == "export":
+        return process_export_request(command, context)
+
     elif command.name == "pips":
         return process_pips_request(command, context)
+
     elif command.name == "contexto":
         return process_contexto_request(command, context)
+
+    elif command.name == "validar":
+        return process_validar_request(command, context)
+
+    elif command.name == "evidencia":
+        return process_evidencia_request(command, context)
+
     else:
         return f"Comando '{command.name}' processado (placeholder)."
+
+
+def _build_template_data(template_id: str, concepts: List[Any]) -> Dict[str, Any]:
+    """Build template data from loaded concepts.
+
+    Args:
+        template_id: ID of the template
+        concepts: List of Concept objects
+
+    Returns:
+        Dictionary with template data
+    """
+    if not concepts:
+        return None
+
+    # Filter concepts relevant to the template
+    relevant_concepts = [c for c in concepts if template_id.upper() in str(c.source_file).upper()]
+
+    if not relevant_concepts:
+        return None
+
+    # Group concepts by type
+    concepts_by_type: Dict[str, List[Any]] = {}
+    for c in relevant_concepts:
+        type_key = c.type.value
+        if type_key not in concepts_by_type:
+            concepts_by_type[type_key] = []
+        concepts_by_type[type_key].append(c)
+
+    return {
+        'tipo': 'protocolo_clinico',
+        'arquivo': str(relevant_concepts[0].source_file) if relevant_concepts else 'N/A',
+        'secoes': list(set(c.section for c in relevant_concepts if c.section)),
+        'conceitos_por_tipo': {k: len(v) for k, v in concepts_by_type.items()},
+    }
+
+
+# ---------------------------------------------------------------------------
+# Validation Processing (Phase 5 placeholder)
+# ---------------------------------------------------------------------------
+
+def process_validar_request(command: Any, context: Dict[str, Any]) -> str:
+    """Process /validar command for cross-document validation.
+
+    Args:
+        command: Parsed command object
+        context: Loaded context dictionary
+
+    Returns:
+        Validation results string
+    """
+    from .commands import parse_validar_command
+    from .validator import CrossDocumentValidator, format_validation_report
+    from .formatter import format_header
+
+    validar_cmd = parse_validar_command(command)
+    if validar_cmd.error:
+        return validar_cmd.error_message or (
+            "Uso: /validar <protocolo1> [protocolo2]\n\n"
+            "Exemplos:\n"
+            "  /validar CLI_02                    # Validar protocolo único\n"
+            "  /validar CLI_02 MACROFLUXO        # Comparar dois protocolos\n"
+            "  /validar --all                    # Validar todos os protocolos"
+        )
+
+    # Initialize validator with rules and reference index
+    rules_path = Path.cwd() / "src/context_engine/validation_rules.yaml"
+    index_path = Path.cwd() / "referencias/REFERENCE_INDEX.yaml"
+
+    validator = CrossDocumentValidator(
+        rules_path=rules_path if rules_path.exists() else None,
+        reference_index_path=index_path if index_path.exists() else None,
+    )
+
+    try:
+        if validar_cmd.validate_all:
+            # Validate all known protocols
+            report = validator.detect_inconsistencies()
+        elif validar_cmd.protocol_b:
+            # Compare two protocols
+            report = validator.compare_protocols(
+                validar_cmd.protocol_a,
+                validar_cmd.protocol_b
+            )
+        else:
+            # Validate single protocol
+            report = validator.validate_protocol(validar_cmd.protocol_a)
+
+        # Save report to session state for export support
+        context['last_validation_report'] = report
+        formatted_output = format_validation_report(report)
+        context['last_command_output'] = formatted_output
+
+        return formatted_output
+
+    except Exception as e:
+        return f"Erro durante validação: {e}"
+
+
+def process_evidencia_request(command: Any, context: Dict[str, Any]) -> str:
+    """Process /evidencia command for querying reference sources.
+
+    Args:
+        command: Parsed command object
+        context: Loaded context dictionary
+
+    Returns:
+        Evidence query results string
+    """
+    from .commands import parse_evidencia_command
+    from .validator import CrossDocumentValidator
+    from .formatter import format_header, format_separator, CONTENT_EMOJI
+
+    evidencia_cmd = parse_evidencia_command(command)
+    if evidencia_cmd.error:
+        return evidencia_cmd.error_message or (
+            "Uso: /evidencia <termo> [opções]\n\n"
+            "Exemplos:\n"
+            "  /evidencia TEA                    # Fontes sobre TEA\n"
+            "  /evidencia CuidaSM --validation   # Dados de validação\n"
+            "  /evidencia --grade ALTA           # Apenas evidência alta"
+        )
+
+    # Initialize validator with reference index
+    index_path = Path.cwd() / "referencias/REFERENCE_INDEX.yaml"
+
+    validator = CrossDocumentValidator(
+        reference_index_path=index_path if index_path.exists() else None,
+    )
+
+    # Query reference index
+    results = validator.get_evidence_for_term(evidencia_cmd.search_term)
+
+    # Filter by evidence grade if specified
+    if evidencia_cmd.evidence_grade_filter:
+        results = [
+            r for r in results
+            if r.get('evidence_grade', '').lower() == evidencia_cmd.evidence_grade_filter
+        ]
+
+    # Format output
+    output = format_header(f"EVIDÊNCIA: {evidencia_cmd.search_term}")
+    output += "\n\n"
+
+    if not results:
+        output += f"Nenhuma fonte encontrada para '{evidencia_cmd.search_term}'.\n\n"
+        output += "Tente:\n"
+        output += "  • Usar termos diferentes (TEA, autismo, M-CHAT, CuidaSM)\n"
+        output += "  • Verificar se REFERENCE_INDEX.yaml existe\n"
+        return output
+
+    output += f"📚 Fontes encontradas: {len(results)}\n\n"
+
+    for result in results:
+        # Evidence grade emoji
+        grade = result.get('evidence_grade', 'nao_avaliada')
+        grade_emoji = {
+            'alta': '🟢',
+            'moderada': '🟡',
+            'baixa': '🟠',
+            'normativa': '🔵',
+        }.get(grade, '⚪')
+
+        output += f"{grade_emoji} **{result.get('name', 'Sem nome')}**\n"
+        output += f"   Tipo: {result.get('type', 'N/A')}\n"
+        output += f"   Evidência: {grade.upper()}\n"
+
+        # Show validation data if requested
+        if evidencia_cmd.show_validation and 'validation' in result:
+            validation = result['validation']
+            output += "   📊 Validação:\n"
+            if 'sensitivity' in validation:
+                output += f"      Sensibilidade: {validation['sensitivity']}\n"
+            if 'specificity' in validation:
+                output += f"      Especificidade: {validation['specificity']}\n"
+            if 'population' in validation:
+                output += f"      População: {validation['population']}\n"
+
+        # Show scoring if available
+        if 'scoring' in result:
+            output += "   📈 Pontuação:\n"
+            for level, info in result['scoring'].items():
+                if isinstance(info, dict):
+                    output += f"      {level}: {info.get('range', info.get('description', 'N/A'))}\n"
+
+        # Source files
+        if 'source_files' in result:
+            output += "   📄 Arquivos:\n"
+            for sf in result['source_files'][:2]:
+                path = sf.get('path', sf) if isinstance(sf, dict) else sf
+                output += f"      • {path}\n"
+
+        output += "\n"
+
+    output += format_separator()
+    output += "\n"
+    output += "Opções: --validation (dados validação) | --grade <nivel> (filtrar)\n"
+
+    return output
 
 # ---------------------------------------------------------------------------
 # Stage 5 – Output Validation
@@ -100,6 +436,80 @@ def validate_output(output: str) -> List[str]:
     return an empty list to indicate no problems.
     """
     return []
+
+
+# ---------------------------------------------------------------------------
+# Export Processing
+# ---------------------------------------------------------------------------
+
+def process_export_request(command: Any, context: Dict[str, Any]) -> str:
+    """Process /export command.
+
+    Args:
+        command: Parsed export command
+        context: Loaded context
+
+    Returns:
+        Export success message or error
+    """
+    from .commands import parse_export_command
+    from .main import get_last_output
+    from .exporter import CommandExporter, ExportFormat, ExportMetadata
+
+    export_cmd = parse_export_command(command)
+    if export_cmd.error:
+        return export_cmd.error_message or format_export_help()
+
+    # Get last command output from session state
+    last_output, last_command = get_last_output()
+    if not last_output:
+        return (
+            "Nenhum comando anterior para exportar.\n\n"
+            "Execute um comando primeiro, depois use /export.\n\n"
+            "Exemplo:\n"
+            "  /pips status meu_projeto\n"
+            "  /export md"
+        )
+
+    # Parse format
+    try:
+        export_format = ExportFormat.from_string(export_cmd.format)
+    except ValueError as e:
+        return format_export_error(str(e))
+
+    # Create metadata
+    metadata = ExportMetadata(
+        command_name=last_command,
+        timestamp=datetime.now().isoformat(),
+    )
+
+    # Determine output path
+    if export_cmd.output_path:
+        output_path = Path(export_cmd.output_path)
+    else:
+        # Auto-generate filename
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        extension = export_format.value
+        filename = f"{last_command}_{timestamp}.{extension}"
+        output_path = Path("./exports") / filename
+
+    # Export
+    exporter = CommandExporter()
+    result = exporter.export_to_file(
+        last_output,
+        export_format,
+        output_path,
+        metadata if export_cmd.include_metadata else None,
+    )
+
+    if result.success:
+        return format_export_success(
+            export_format.value,
+            str(result.file_path),
+            result.size_bytes,
+        )
+    else:
+        return format_export_error(result.error_message or "Erro desconhecido")
 
 
 # ---------------------------------------------------------------------------
@@ -136,6 +546,8 @@ def process_pips_request(command: Any, context: Dict[str, Any]) -> str:
         return _pips_finalize(pips_cmd)
     elif pips_cmd.subcommand == "delete":
         return _pips_delete(pips_cmd)
+    elif pips_cmd.subcommand == "memory":
+        return _pips_memory()
 
     return f"Subcomando PIPS não implementado: {pips_cmd.subcommand}"
 
@@ -186,14 +598,7 @@ def _pips_init(cmd: Any) -> str:
             trigger_reason="criado via /pips init",
         )
 
-        return (
-            f"Projeto PIPS '{project_name}' criado com sucesso!\n\n"
-            f"Objetivo: {objective}\n\n"
-            "Próximos passos:\n"
-            f"1. Adicione arquivos fonte em: .pips/projeto_{project_name}/_source/\n"
-            f"2. Execute /pips resume {project_name} para iniciar processamento\n"
-            f"3. Use /pips status {project_name} para acompanhar progresso"
-        )
+        return format_pips_init_success(project_name, objective)
 
     except ValueError as e:
         return f"Erro ao criar projeto: {e}"
@@ -228,47 +633,15 @@ def _pips_status(cmd: Any) -> str:
 
         config, state = engine.load_project()
 
-        progress = state.get_progress_percentage()
-        pending = len(state.get_pending_items())
-        total = len(state.queue)
-        completed = total - pending
+        # Use centralized formatter
+        output = format_pips_status(project_name, config, state)
 
-        status_emoji = {
-            "nao_iniciado": "⏸️",
-            "em_progresso": "▶️",
-            "pausado": "⏸️",
-            "validando": "🔍",
-            "concluido": "✅",
-            "erro": "❌",
-        }.get(state.status.value, "❓")
-
-        output = f"""
-═══════════════════════════════════════════════════
-  PIPS: {project_name}
-═══════════════════════════════════════════════════
-
-{status_emoji} Status: {state.status.value.upper()}
-📊 Progresso: {progress:.1f}% ({completed}/{total} itens)
-🔄 Ciclo atual: {state.current_cycle}
-
-📝 Objetivo:
-{config.objective[:200]}{'...' if len(config.objective) > 200 else ''}
-
-📁 Arquivos na fila: {total}
-✅ Processados: {completed}
-⏳ Pendentes: {pending}
-
-🕐 Última atualização: {state.last_updated.strftime('%Y-%m-%d %H:%M')}
-"""
-
-        if state.errors:
-            output += f"\n⚠️ Erros registrados: {len(state.errors)}\n"
-
+        # Add checkpoint info if available
         last_checkpoint = engine.get_last_checkpoint()
         if last_checkpoint:
-            output += f"\n📍 Último checkpoint: {last_checkpoint.action} ({last_checkpoint.notes})\n"
+            output += f"\n\n📍 Último checkpoint: {last_checkpoint.action} ({last_checkpoint.notes})"
 
-        return output.strip()
+        return output
 
     except Exception as e:
         return f"Erro ao carregar status: {e}"
@@ -298,22 +671,7 @@ def _pips_resume(cmd: Any) -> str:
                 f"Use /pips finalize {project_name} para gerar entrega final."
             )
 
-        progress = state.get_progress_percentage()
-
-        return f"""
-Projeto '{project_name}' retomado com sucesso!
-
-📊 Progresso: {progress:.1f}%
-🔄 Ciclo: {state.current_cycle}
-
-Próximo item a processar:
-  📄 Arquivo: {next_item.source_file.name}
-  📦 Chunk: {next_item.chunk_index + 1}/{next_item.total_chunks}
-  📏 Tokens estimados: {next_item.token_estimate:,}
-
-Para processar o próximo item, carregue o arquivo e use:
-  engine.work() → processe → engine.save(item_id, resultado)
-"""
+        return format_pips_resume(project_name, state, next_item)
 
     except Exception as e:
         return f"Erro ao retomar projeto: {e}"
@@ -323,44 +681,27 @@ def _pips_list() -> str:
     """List all PIPS projects."""
     from .pips import PIPSEngine, list_projects
 
-    projects = list_projects()
+    projects_names = list_projects()
 
-    if not projects:
+    if not projects_names:
         return (
             "Nenhum projeto PIPS encontrado.\n\n"
             "Para criar um novo projeto:\n"
             "  /pips init <nome> <objetivo>"
         )
 
-    output = "═══════════════════════════════════════════════════\n"
-    output += "  PROJETOS PIPS\n"
-    output += "═══════════════════════════════════════════════════\n\n"
-
-    for project_name in projects:
+    # Collect project data for formatter
+    projects_data = []
+    for project_name in projects_names:
         try:
             engine = PIPSEngine(project_name)
-            _, state = engine.load_project()
-            progress = state.get_progress_percentage()
-            status = state.status.value
-
-            status_emoji = {
-                "nao_iniciado": "⏸️",
-                "em_progresso": "▶️",
-                "pausado": "⏸️",
-                "validando": "🔍",
-                "concluido": "✅",
-                "erro": "❌",
-            }.get(status, "❓")
-
-            output += f"  {status_emoji} {project_name}\n"
-            output += f"     Status: {status} | Progresso: {progress:.1f}%\n\n"
+            config, state = engine.load_project()
+            projects_data.append((project_name, config, state))
         except Exception:
-            output += f"  ❓ {project_name} (erro ao carregar)\n\n"
+            # Create minimal mock for error case
+            projects_data.append((project_name, None, None))
 
-    output += "───────────────────────────────────────────────────\n"
-    output += "Comandos: /pips status <nome> | /pips resume <nome>\n"
-
-    return output
+    return format_pips_list(projects_data)
 
 
 def _pips_validate(cmd: Any) -> str:
@@ -475,6 +816,72 @@ def _pips_delete(cmd: Any) -> str:
         return f"Erro ao remover projeto: {e}"
 
 
+def _pips_memory() -> str:
+    """Show Infinite Memory Protocol status.
+
+    Displays all resumable projects and protocol status information.
+    """
+    from .pips import get_all_resumable_projects
+    from .formatter import BOX_WIDTH, STATUS_EMOJI
+
+    resumable = get_all_resumable_projects()
+
+    # Header
+    output = "\n"
+    output += "═" * BOX_WIDTH + "\n"
+    output += "  PROTOCOLO DE MEMÓRIA INFINITA\n"
+    output += "═" * BOX_WIDTH + "\n\n"
+
+    if not resumable:
+        output += "✅ Nenhum projeto com trabalho pendente.\n\n"
+        output += "O protocolo está ativo e irá:\n"
+        output += "  • Salvar estado automaticamente antes de compactação (PreCompact)\n"
+        output += "  • Alertar sobre projetos ativos ao iniciar sessão (SessionStart)\n"
+        output += "  • Manter auditoria de todas as ações automáticas\n\n"
+        output += "─" * BOX_WIDTH + "\n"
+        output += "Para criar novo projeto: /pips init <nome> <objetivo>\n"
+        return output
+
+    output += f"📋 Projetos com trabalho resumível: {len(resumable)}\n\n"
+
+    # Mapeamento de status para emoji
+    status_map = {
+        'nao_iniciado': '🔵',
+        'em_progresso': '▶️',
+        'pausado': '⏸️',
+        'validando': '🔍',
+        'concluido': '✅',
+        'erro': '❌',
+    }
+
+    for proj in resumable:
+        emoji = status_map.get(proj['status'], '❓')
+        output += f"{emoji} {proj['project_name']}\n"
+
+        if proj.get('objective'):
+            obj_short = proj['objective'][:80] + "..." if len(proj['objective']) > 80 else proj['objective']
+            output += f"   Objetivo: {obj_short}\n"
+
+        output += f"   Progresso: {proj['pending_count']}/{proj['total_count']} pendentes "
+        output += f"({proj['progress_pct']:.1f}% concluído)\n"
+        output += f"   Ciclo: {proj['current_cycle']} | "
+        output += f"Atualizado: {proj['last_updated'][:16]}\n"
+
+        if proj.get('next_item'):
+            next_item = proj['next_item']
+            output += f"   Próximo: {next_item['file']} (chunk {next_item['chunk']}, ~{next_item['tokens']} tokens)\n"
+
+        output += "\n"
+
+    output += "─" * BOX_WIDTH + "\n"
+    output += "Comandos disponíveis:\n"
+    output += "  /pips resume <nome>  - Retomar processamento\n"
+    output += "  /pips status <nome>  - Ver status detalhado\n"
+    output += "  /pips validate <nome> - Validar integridade\n"
+
+    return output
+
+
 # ---------------------------------------------------------------------------
 # Contexto Processing
 # ---------------------------------------------------------------------------
@@ -512,16 +919,7 @@ def process_contexto_request(command: Any, context: Dict[str, Any]) -> str:
     if show_stats:
         processor = CachedContextProcessor()
         stats = processor.get_cache_stats()
-        return (
-            "═══════════════════════════════════════════════════\n"
-            "  ESTATÍSTICAS DO CACHE DE CONTEXTO\n"
-            "═══════════════════════════════════════════════════\n\n"
-            f"📊 Hits: {stats.get('hits', 0)}\n"
-            f"📊 Misses: {stats.get('misses', 0)}\n"
-            f"📊 Taxa de acerto: {stats.get('hit_rate', 0):.1%}\n"
-            f"📁 Entradas em cache: {stats.get('entries', 0)}\n"
-            f"💾 Tamanho total: {stats.get('size_mb', 0):.2f} MB"
-        )
+        return format_contexto_stats(stats)
 
     target_path = Path(path_arg)
 
@@ -538,14 +936,14 @@ def process_contexto_request(command: Any, context: Dict[str, Any]) -> str:
         if target_path.is_file():
             # Process single file
             doc = processor.process_file(target_path, force_reload=force_reload)
-            return _format_document_result(doc)
+            return format_contexto_document(doc)
 
         elif target_path.is_dir():
             # Process directory
             documents, index = processor.process_directory(
                 target_path, force_reload=force_reload
             )
-            return _format_directory_result(documents, index, target_path)
+            return format_contexto_directory(documents, index, target_path)
 
         else:
             return f"Erro: Caminho inválido: {path_arg}"
@@ -554,80 +952,3 @@ def process_contexto_request(command: Any, context: Dict[str, Any]) -> str:
         return f"Erro ao processar: {e}"
     except ValueError as e:
         return f"Erro de validação: {e}"
-
-
-def _format_document_result(doc: Any) -> str:
-    """Format single document processing result."""
-    output = (
-        "═══════════════════════════════════════════════════\n"
-        f"  CONTEXTO: {doc.metadata.file_path.name}\n"
-        "═══════════════════════════════════════════════════\n\n"
-    )
-
-    output += f"📄 Tipo: {doc.metadata.file_type}\n"
-    output += f"📏 Linhas: {doc.metadata.lines_count}\n"
-    output += f"🔢 Tokens estimados: {doc.metadata.tokens_estimate:,}\n"
-    output += f"⏱️ Tempo de processamento: {doc.metadata.processing_time_ms:.1f}ms\n\n"
-
-    if doc.sections:
-        output += "📑 Seções:\n"
-        for section in doc.sections[:10]:
-            indent = "  " * section.level
-            output += f"  {indent}• {section.title}\n"
-        if len(doc.sections) > 10:
-            output += f"  ... e mais {len(doc.sections) - 10} seções\n"
-        output += "\n"
-
-    if doc.concepts:
-        output += f"💡 Conceitos extraídos: {len(doc.concepts)}\n"
-        top_concepts = doc.get_top_concepts(5)
-        for concept in top_concepts:
-            output += f"  • [{concept.type.value}] {concept.text[:50]}...\n"
-        output += "\n"
-
-    if doc.relationships:
-        output += f"🔗 Relacionamentos: {len(doc.relationships)}\n"
-
-    if doc.summary:
-        output += f"\n📝 Resumo:\n{doc.summary[:500]}{'...' if len(doc.summary) > 500 else ''}\n"
-
-    return output
-
-
-def _format_directory_result(documents: List[Any], index: Any, directory: Path) -> str:
-    """Format directory processing result."""
-    output = (
-        "═══════════════════════════════════════════════════\n"
-        f"  CONTEXTO: {directory.name}/\n"
-        "═══════════════════════════════════════════════════\n\n"
-    )
-
-    output += f"📁 Arquivos processados: {len(documents)}\n"
-
-    total_concepts = sum(len(d.concepts) for d in documents)
-    total_relationships = sum(len(d.relationships) for d in documents)
-    total_tokens = sum(d.metadata.tokens_estimate for d in documents)
-
-    output += f"💡 Total de conceitos: {total_concepts}\n"
-    output += f"🔗 Total de relacionamentos: {total_relationships}\n"
-    output += f"🔢 Tokens estimados: {total_tokens:,}\n\n"
-
-    # Concepts by type summary
-    if index.concepts_by_type:
-        output += "📊 Conceitos por tipo:\n"
-        for concept_type, concept_ids in sorted(index.concepts_by_type.items()):
-            output += f"  • {concept_type}: {len(concept_ids)}\n"
-        output += "\n"
-
-    # Top keywords
-    if index.concepts_by_keyword:
-        sorted_keywords = sorted(
-            index.concepts_by_keyword.items(),
-            key=lambda x: len(x[1]),
-            reverse=True
-        )[:10]
-        output += "🏷️ Palavras-chave frequentes:\n"
-        for keyword, concept_ids in sorted_keywords:
-            output += f"  • {keyword}: {len(concept_ids)} ocorrências\n"
-
-    return output

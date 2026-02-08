@@ -1,0 +1,219 @@
+cache_metadata:
+  cached_at: '2026-01-23T07:53:27.214775'
+  content_hash: 2dbe84659dbdba3afdff6c27bbac9388
+  file_modified: '2026-01-23T03:59:16.411010'
+  file_path: src\context_engine\pipeline.py
+document:
+  concepts:
+  - confidence: 0.8
+    id: b5986fe07948
+    keywords:
+    - classification
+    - stage
+    line_number: 13
+    section: imports
+    text: Stage 1 – Classification
+    type: conceito_chave
+  - confidence: 0.8
+    id: a7cc150fc165
+    keywords:
+    - validation
+    - stage
+    - input
+    line_number: 25
+    section: def classify_request
+    text: Stage 2 – Input Validation
+    type: conceito_chave
+  - confidence: 0.8
+    id: 1588aa822af8
+    keywords:
+    - stage
+    - load
+    - context
+    - resources
+    line_number: 39
+    section: def validate_input
+    text: Stage 3 – Load Context / Resources
+    type: conceito_chave
+  - confidence: 0.8
+    id: a26855a7dbc5
+    keywords:
+    - core
+    - stage
+    - processing
+    line_number: 70
+    section: def load_context
+    text: Stage 4 – Core Processing
+    type: conceito_chave
+  - confidence: 0.8
+    id: 3e723b178cdb
+    keywords:
+    - validation
+    - stage
+    - output
+    line_number: 93
+    section: def process_request
+    text: Stage 5 – Output Validation
+    type: conceito_chave
+  - confidence: 0.8
+    id: b30c82803e8d
+    keywords:
+    - pips
+    - processing
+    line_number: 106
+    section: def validate_output
+    text: PIPS Processing
+    type: conceito_chave
+  - confidence: 0.8
+    id: e1d7aeef922a
+    keywords:
+    - síntese
+    - consolidada
+    line_number: 431
+    section: def _pips_finalize
+    text: Síntese Consolidada
+    type: conceito_chave
+  - confidence: 0.8
+    id: e00979874bf1
+    keywords:
+    - contexto
+    - processing
+    line_number: 479
+    section: def _pips_delete
+    text: Contexto Processing
+    type: conceito_chave
+  - confidence: 0.7
+    id: 5064c5b7e0e9
+    keywords:
+    - pipeline
+    line_number: 1
+    section: ''
+    text: src/context_engine/pipeline.py
+    type: conceito_chave
+  - confidence: 0.7
+    id: d702fa2bbe4f
+    keywords: []
+    line_number: 12
+    section: imports
+    text: '---------------------------------------------------------------------------'
+    type: conceito_chave
+  - confidence: 0.6000000000000001
+    id: 0ec3d97ea8d7
+    keywords:
+    - objetivo
+    line_number: 428
+    section: def _pips_finalize
+    text: Objetivo
+    type: conceito_chave
+  - confidence: 0.6
+    id: ffb748bd2926
+    keywords:
+    - taxa
+    - acerto
+    line_number: 521
+    section: def process_contexto_request
+    text: Taxa de acerto
+    type: metrica
+  - confidence: 0.5700000000000001
+    id: 59dcfb5fd252
+    keywords:
+    - protocolo
+    line_number: 435
+    section: def _pips_finalize
+    text: Protocolo de
+    type: procedimento
+  metadata:
+    file_path: src\context_engine\pipeline.py
+    file_type: py
+    hash_md5: 2dbe84659dbdba3afdff6c27bbac9388
+    lines_count: 634
+    processed_at: '2026-01-23T07:53:27.186583'
+    processing_time_ms: 0.7877000025473535
+    size_bytes: 23294
+    tokens_estimate: 5320
+  relationships:
+  - evidence: 'Co-ocorrência na seção: imports'
+    line_number: 12
+    source_id: b5986fe07948
+    target_id: d702fa2bbe4f
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: def _pips_finalize'
+    line_number: 428
+    source_id: e1d7aeef922a
+    target_id: 0ec3d97ea8d7
+    type: relacionado
+    weight: 0.55
+  sections:
+  - end_line: 493
+    level: 1
+    start_line: 9
+    title: imports
+  - end_line: 27
+    level: 2
+    start_line: 16
+    title: def classify_request
+  - end_line: 41
+    level: 2
+    start_line: 28
+    title: def validate_input
+  - end_line: 72
+    level: 2
+    start_line: 42
+    title: def load_context
+  - end_line: 95
+    level: 2
+    start_line: 73
+    title: def process_request
+  - end_line: 108
+    level: 2
+    start_line: 96
+    title: def validate_output
+  - end_line: 142
+    level: 2
+    start_line: 109
+    title: def process_pips_request
+  - end_line: 203
+    level: 2
+    start_line: 143
+    title: def _pips_init
+  - end_line: 276
+    level: 2
+    start_line: 204
+    title: def _pips_status
+  - end_line: 321
+    level: 2
+    start_line: 277
+    title: def _pips_resume
+  - end_line: 365
+    level: 2
+    start_line: 322
+    title: def _pips_list
+  - end_line: 399
+    level: 2
+    start_line: 366
+    title: def _pips_validate
+  - end_line: 450
+    level: 2
+    start_line: 400
+    title: def _pips_finalize
+  - end_line: 481
+    level: 2
+    start_line: 451
+    title: def _pips_delete
+  - end_line: 558
+    level: 2
+    start_line: 482
+    title: def process_contexto_request
+  - end_line: 596
+    level: 2
+    start_line: 559
+    title: def _format_document_result
+  - end_line: 634
+    level: 2
+    start_line: 597
+    title: def _format_directory_result
+  summary: 'Estrutura: imports, def classify_request, def validate_input, def load_context,
+    def process_request. Conceito_chave: Stage 1 – Classification, Stage 2 – Input
+    Validation, Stage 3 – Load Context / Resources. Metrica: Taxa de acerto. Procedimento:
+    Protocolo de'

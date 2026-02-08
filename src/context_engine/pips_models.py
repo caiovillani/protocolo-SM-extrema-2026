@@ -101,6 +101,9 @@ class Insight:
     """Insight individual extraído durante processamento.
 
     Armazenado em _output/insights_raw.md.
+
+    Para garantir confiabilidade científica, cada insight deve ser
+    rastreável à sua fonte original via source_hash e source_section.
     """
     id: str
     cycle_number: int
@@ -109,6 +112,10 @@ class Insight:
     evidence: Optional[str] = None
     flags: List[str] = field(default_factory=list)  # AMBIGUIDADE, CONTRADICAO, VALIDAR
     timestamp: datetime = field(default_factory=datetime.now)
+    # Campos de rastreabilidade científica (Protocolo de Memória Infinita)
+    source_hash: Optional[str] = None    # MD5 do arquivo fonte no momento da extração
+    source_page: Optional[int] = None    # Página (para PDFs)
+    source_section: Optional[str] = None # Seção/capítulo do documento
 
 
 @dataclass
@@ -162,6 +169,7 @@ SOURCE_DIR = "_source"
 # Nomes de arquivos padrão
 CONTEXT_FILE = "context.md"
 SCHEMA_FILE = "schema.yaml"
+SOURCE_HASHES_FILE = "source_hashes.yaml"  # Hashes MD5 para verificação de integridade
 CHECKPOINTS_FILE = "checkpoints.log"
 TODOS_FILE = "todos.md"
 QUEUE_FILE = "queue.md"

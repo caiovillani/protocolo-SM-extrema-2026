@@ -45,6 +45,7 @@ Este compêndio reúne os protocolos, fluxos operacionais e instrumentos normati
 | PCC-02 | Demanda Espontânea → APS → NIRSM-R → AE Saúde Mental | `02_PROTOCOLO_DEMANDA_ESPONTANEA_APS_NIRSM_AES.md` |
 | PCC-03 | AES Ambulatorial → APS → NIRSM-R → AE Saúde Mental | `03_PROTOCOLO_CONTRARREFERENCIA_AES_APS_NIRSM.md` |
 | PCC-04 | APS → RUE (SAMU/PS) → AE Saúde Mental | `04_PROTOCOLO_URGENCIA_EMERGENCIA_SM.md` |
+| PCC-06 | **Macrofluxo Narrativo DI/TEA** — Cascata completa de eventos para suspeição, detecção e acompanhamento | `Protocolos_Clinicos/MACROFLUXO_NARRATIVO_DI_TEA.md` |
 
 ### Protocolos de Regulação
 
@@ -58,10 +59,16 @@ Este compêndio reúne os protocolos, fluxos operacionais e instrumentos normati
 | Código | Protocolo | Arquivo |
 |--------|-----------|---------|
 | CLI-01 | Transtornos Mentais Comuns na APS | `07_PROTOCOLO_TRANSTORNOS_COMUNS_APS.md` |
-| CLI-02 | Transtorno do Espectro Autista (TEA) | `08_PROTOCOLO_TEA_LINHA_CUIDADO.md` |
+| CLI-02 | Transtorno do Espectro Autista (TEA) **v2.6** | `Protocolos_Clinicos/CLI_02_TRANSTORNO_ESPECTRO_AUTISTA.md` |
 | CLI-03 | Suicidalidade e Autolesão | `09_PROTOCOLO_SUICIDALIDADE.md` |
-| CLI-04 | Álcool e Outras Drogas | `10_PROTOCOLO_ALCOOL_DROGAS.md` |
+| CLI-04 | Álcool e Outras Drogas | `Protocolos_Clinicos/CLI_04_ALCOOL_OUTRAS_DROGAS.md` |
 | CLI-05 | Emergências Psiquiátricas | `11_PROTOCOLO_EMERGENCIAS_PSIQUIATRICAS.md` |
+
+### Guias Narrativos
+
+| Código | Guia | Arquivo |
+|--------|------|---------|
+| GN-01 | **Guia Narrativo: Coordenação do Cuidado DI/TEA na APS** — Passo a passo detalhado para equipes e-ESF, e-Multi e ACS | `Protocolos_Clinicos/GUIA_NARRATIVO_APS_DI_TEA.md` |
 
 ### POPs (Protocolos Operacionais Padrão)
 
@@ -89,6 +96,12 @@ Este compêndio reúne os protocolos, fluxos operacionais e instrumentos normati
 | ESC-01 | Guia de Referência NIRSM-R (Formulário) | `Escalas_Instrumentos/GUIA_REFERENCIA_NIRSM.md` |
 | ESC-02 | Ficha de Contrarreferência | `Escalas_Instrumentos/FICHA_CONTRARREFERENCIA.md` |
 | ESC-03 | Checklist de Critérios para Encaminhamento | `Escalas_Instrumentos/CHECKLIST_ENCAMINHAMENTO.md` |
+
+### Análises Técnicas e Comparativos
+
+| Código | Documento | Arquivo |
+|--------|-----------|---------|
+| ANA-01 | Análise Comparativa Einstein TEA vs. CLI-02 | `../../exports/ANALISE_EINSTEIN_TEA_vs_CLI02.md` |
 
 ---
 

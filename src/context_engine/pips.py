@@ -7,6 +7,7 @@ de longa duração com persistência de estado em arquivos externos.
 """
 
 import hashlib
+import os
 import re
 import shutil
 import uuid
@@ -32,6 +33,7 @@ from .pips_models import (
     QUEUE_FILE,
     SCHEMA_FILE,
     SOURCE_DIR,
+    SOURCE_HASHES_FILE,
     STATE_DIR,
     TODOS_FILE,
     Checkpoint,
@@ -144,8 +146,14 @@ class PIPSEngine:
         self._save_config()
         self._save_state()
 
+        # Calcular e armazenar hashes dos arquivos fonte para verificação de integridade
+        hash_count = self.store_initial_hashes()
+
         # Registrar checkpoint inicial
-        self.create_checkpoint("init", "Projeto inicializado com sucesso.")
+        self.create_checkpoint(
+            "init",
+            f"Projeto inicializado com sucesso. {hash_count} arquivo(s) com hash registrado."
+        )
 
         return self._state
 
@@ -378,6 +386,489 @@ class PIPSEngine:
         )
 
         return state
+
+    # =========================================================================
+    # Infinite Memory Protocol Methods
+    # =========================================================================
+
+    def snapshot(
+        self,
+        trigger: str = "manual",
+        include_context_summary: bool = True,
+    ) -> Dict[str, Any]:
+        """Cria snapshot rápido do estado atual para persistência.
+
+        Chamado automaticamente pelo PreCompact hook ou manualmente.
+
+        Args:
+            trigger: Motivo do snapshot ('pre_compact', 'manual', 'periodic')
+            include_context_summary: Se True, inclui resumo de contexto
+
+        Returns:
+            Dict com metadados do snapshot para auditoria
+        """
+        # Garantir que config E state estejam carregados (evita race condition)
+        if self._state is None or self._config is None:
+            self.load_project()
+
+        timestamp = datetime.now()
+
+        # Salvar estado atual
+        self._save_state()
+
+        # Criar checkpoint de snapshot
+        progress_pct = self._state.get_progress_percentage()
+        checkpoint = self.create_checkpoint(
+            action=f"snapshot_{trigger}",
+            notes=f"Snapshot automático - {progress_pct:.1f}% concluído",
+        )
+
+        # Metadados para auditoria
+        snapshot_meta = {
+            'timestamp': timestamp.isoformat(),
+            'trigger': trigger,
+            'project_name': self.project_name,
+            'cycle': self._state.current_cycle,
+            'progress_pct': progress_pct,
+            'pending_items': len(self._state.get_pending_items()),
+            'checkpoint_id': checkpoint.timestamp.isoformat(),
+        }
+
+        # Opcional: salvar resumo de contexto para reconstrução
+        if include_context_summary:
+            snapshot_meta['context_summary'] = self._generate_context_summary()
+
+        # Registrar ação automatizada
+        self.log_automated_action('snapshot', trigger, snapshot_meta)
+
+        return snapshot_meta
+
+    def _generate_context_summary(self) -> str:
+        """Gera resumo compacto do contexto atual para reconstrução."""
+        if self._config is None or self._state is None:
+            return ""
+
+        pending = self._state.get_pending_items()
+        next_item = pending[0] if pending else None
+
+        summary = f"""## Contexto PIPS: {self.project_name}
+Objetivo: {self._config.objective[:200]}...
+Progresso: {self._state.get_progress_percentage():.1f}%
+Ciclo: {self._state.current_cycle}
+"""
+
+        if next_item:
+            summary += f"""
+Próximo item:
+- Arquivo: {next_item.source_file.name}
+- Chunk: {next_item.chunk_index + 1}/{next_item.total_chunks}
+"""
+
+        # Adicionar últimos insights se disponíveis
+        if self._state.insights_consolidated:
+            summary += f"""
+Última síntese:
+{self._state.insights_consolidated[:500]}...
+"""
+
+        return summary
+
+    def get_resumable_status(self) -> Optional[Dict[str, Any]]:
+        """Verifica se projeto tem trabalho resumível.
+
+        Returns:
+            Dict com informações de retomada, ou None se não existir.
+            Se o projeto existir mas estiver corrompido, retorna dict com
+            'error' key indicando o problema.
+        """
+        if not self.project_exists():
+            return None
+
+        try:
+            self.load_project()
+        except Exception as e:
+            # Projeto existe mas está corrompido - retornar status de erro
+            # para visibilidade em vez de silenciosamente ignorar
+            return {
+                'project_name': self.project_name,
+                'status': 'erro',
+                'error': f"Falha ao carregar projeto: {str(e)[:100]}",
+                'recoverable': True,  # Tentar recover_from_corruption()
+            }
+
+        # Verificar se está em estado resumível
+        resumable_states = {
+            PIPSStatus.EM_PROGRESSO,
+            PIPSStatus.PAUSADO,
+            PIPSStatus.NAO_INICIADO,
+        }
+
+        if self._state.status not in resumable_states:
+            return None
+
+        pending = self._state.get_pending_items()
+        if not pending:
+            return None
+
+        # Carregar últimos checkpoints
+        checkpoints_path = self.project_path / CONFIG_DIR / CHECKPOINTS_FILE
+        last_checkpoints = []
+        if checkpoints_path.exists():
+            try:
+                lines = checkpoints_path.read_text(encoding='utf-8').strip().split('\n')
+                # Filtrar linhas vazias e headers
+                checkpoint_lines = [
+                    ln for ln in lines
+                    if ln.strip() and not ln.startswith('#')
+                ]
+                last_checkpoints = checkpoint_lines[-5:] if len(checkpoint_lines) >= 5 else checkpoint_lines
+            except Exception:
+                pass
+
+        return {
+            'project_name': self.project_name,
+            'status': self._state.status.value,
+            'objective': self._config.objective[:200] if self._config else '',
+            'progress_pct': self._state.get_progress_percentage(),
+            'pending_count': len(pending),
+            'total_count': len(self._state.queue),
+            'current_cycle': self._state.current_cycle,
+            'last_updated': self._state.last_updated.isoformat(),
+            'next_item': {
+                'file': str(pending[0].source_file.name),
+                'chunk': f"{pending[0].chunk_index + 1}/{pending[0].total_chunks}",
+                'tokens': pending[0].token_estimate,
+            } if pending else None,
+            'last_checkpoints': last_checkpoints,
+        }
+
+    def verify_source_integrity(self) -> Tuple[bool, List[str]]:
+        """Verifica integridade dos arquivos fonte via hash MD5.
+
+        Compara hashes atuais com hashes registrados. Se nenhum hash
+        estiver armazenado, cria o arquivo de hashes para futuras verificações.
+
+        Returns:
+            Tupla (is_valid, list_of_issues)
+        """
+        issues = []
+
+        if self._config is None:
+            self.load_project()
+
+        if not self._config or not self._config.source_files:
+            return True, []
+
+        # Carregar hashes armazenados
+        stored_hashes = self._load_source_hashes()
+        hashes_updated = False
+
+        for source_file in self._config.source_files:
+            file_key = str(source_file.name)
+
+            if not source_file.exists():
+                issues.append(f"AUSENTE: {file_key}")
+                continue
+
+            # Calcular hash atual
+            try:
+                current_hash = self._calculate_file_hash(source_file)
+                if not current_hash:
+                    issues.append(f"ILEGÍVEL: {file_key}")
+                    continue
+
+                # Comparar com hash armazenado
+                if file_key in stored_hashes:
+                    stored_hash = stored_hashes[file_key]
+                    if current_hash != stored_hash:
+                        issues.append(
+                            f"MODIFICADO: {file_key} "
+                            f"(esperado: {stored_hash[:8]}..., atual: {current_hash[:8]}...)"
+                        )
+                else:
+                    # Arquivo novo - registrar hash
+                    stored_hashes[file_key] = current_hash
+                    hashes_updated = True
+
+            except Exception as e:
+                issues.append(f"ERRO ao verificar {file_key}: {e}")
+
+        # Salvar hashes atualizados se houve novos arquivos
+        if hashes_updated:
+            self._save_source_hashes(stored_hashes)
+
+        is_valid = len(issues) == 0
+
+        if not is_valid:
+            self.log_error(f"Verificação de integridade falhou: {len(issues)} problema(s)")
+
+        return is_valid, issues
+
+    def _load_source_hashes(self) -> Dict[str, str]:
+        """Carrega hashes armazenados de arquivos fonte."""
+        hashes_path = self.project_path / CONFIG_DIR / SOURCE_HASHES_FILE
+        if not hashes_path.exists():
+            return {}
+
+        try:
+            with open(hashes_path, 'r', encoding='utf-8') as f:
+                data = yaml.safe_load(f) or {}
+                return data.get('hashes', {})
+        except Exception:
+            return {}
+
+    def _save_source_hashes(self, hashes: Dict[str, str]) -> None:
+        """Salva hashes de arquivos fonte para verificação futura."""
+        hashes_path = self.project_path / CONFIG_DIR / SOURCE_HASHES_FILE
+
+        data = {
+            'version': 1,
+            'created_at': datetime.now().isoformat(),
+            'hashes': hashes,
+        }
+
+        try:
+            with open(hashes_path, 'w', encoding='utf-8') as f:
+                yaml.dump(data, f, allow_unicode=True, default_flow_style=False)
+                f.flush()
+                os.fsync(f.fileno())
+        except Exception as e:
+            self.log_error(f"Erro ao salvar hashes: {e}")
+
+    def store_initial_hashes(self) -> int:
+        """Calcula e armazena hashes de todos os arquivos fonte.
+
+        Chamado na inicialização do projeto para estabelecer baseline.
+
+        Returns:
+            Número de arquivos com hash calculado
+        """
+        if self._config is None:
+            self.load_project()
+
+        if not self._config or not self._config.source_files:
+            return 0
+
+        hashes = {}
+        for source_file in self._config.source_files:
+            if source_file.exists():
+                file_hash = self._calculate_file_hash(source_file)
+                if file_hash:
+                    hashes[str(source_file.name)] = file_hash
+
+        if hashes:
+            self._save_source_hashes(hashes)
+
+        return len(hashes)
+
+    def _calculate_file_hash(self, file_path: Path) -> str:
+        """Calcula hash MD5 de arquivo para verificação de integridade."""
+        hash_md5 = hashlib.md5()
+        try:
+            with open(file_path, 'rb') as f:
+                for chunk in iter(lambda: f.read(4096), b''):
+                    hash_md5.update(chunk)
+            return hash_md5.hexdigest()
+        except Exception:
+            return ''
+
+    def _serialize_for_json(self, obj: Any) -> Any:
+        """Serializa objetos para JSON de forma segura.
+
+        Converte datetime e Path para strings.
+        """
+        if isinstance(obj, datetime):
+            return obj.isoformat()
+        if isinstance(obj, Path):
+            return str(obj)
+        if isinstance(obj, dict):
+            return {k: self._serialize_for_json(v) for k, v in obj.items()}
+        if isinstance(obj, (list, tuple)):
+            return [self._serialize_for_json(item) for item in obj]
+        return obj
+
+    def log_automated_action(
+        self,
+        action_type: str,
+        trigger: str,
+        details: Dict[str, Any],
+    ) -> None:
+        """Registra ação automatizada no log de auditoria.
+
+        Args:
+            action_type: Tipo de ação ('snapshot', 'pre_compact', 'session_resume')
+            trigger: O que disparou a ação ('hook', 'manual', 'scheduled')
+            details: Detalhes adicionais
+        """
+        import json
+
+        timestamp = datetime.now().isoformat()
+        cycle = self._state.current_cycle if self._state else 0
+
+        # Serializar details para evitar TypeError com datetime/Path
+        safe_details = self._serialize_for_json(details)
+
+        audit_path = self.project_path / CONFIG_DIR / 'audit.log'
+        try:
+            with open(audit_path, 'a', encoding='utf-8') as f:
+                f.write(
+                    f"[{timestamp}] {action_type.upper()} | {trigger} | "
+                    f"cycle={cycle} | {json.dumps(safe_details, ensure_ascii=False)}\n"
+                )
+        except Exception:
+            # Falha silenciosa - não deve interromper operação principal
+            pass
+
+    def snapshot_with_recovery(self, trigger: str) -> Dict[str, Any]:
+        """Snapshot com recuperação automática em caso de falha.
+
+        Args:
+            trigger: Motivo do snapshot
+
+        Returns:
+            Dict com metadados do snapshot ou informações de erro
+        """
+        try:
+            return self.snapshot(trigger)
+        except PermissionError as e:
+            self.log_error(f"Permissão negada ao salvar snapshot: {e}")
+            return self._emergency_snapshot(trigger)
+        except IOError as e:
+            self.log_error(f"Erro de I/O ao salvar snapshot: {e}")
+            # IOError também tenta snapshot de emergência para consistência
+            return self._emergency_snapshot(trigger)
+        except Exception as e:
+            self.log_error(f"Erro inesperado no snapshot: {e}")
+            return self._emergency_snapshot(trigger)
+
+    def _emergency_snapshot(self, trigger: str) -> Dict[str, Any]:
+        """Snapshot de emergência em localização alternativa."""
+        import tempfile
+
+        emergency_data = {
+            'timestamp': datetime.now().isoformat(),
+            'project': self.project_name,
+            'cycle': self._state.current_cycle if self._state else 0,
+            'queue_count': len(self._state.queue) if self._state else 0,
+            'trigger': trigger,
+            'emergency': True,
+        }
+
+        # Tentar salvar em diretório temporário
+        try:
+            emergency_path = Path(tempfile.gettempdir()) / f"pips_emergency_{self.project_name}.yaml"
+            with open(emergency_path, 'w', encoding='utf-8') as f:
+                yaml.dump(emergency_data, f, allow_unicode=True)
+            emergency_data['emergency_path'] = str(emergency_path)
+        except Exception:
+            pass
+
+        return emergency_data
+
+    def recover_from_corruption(self) -> Tuple[bool, str]:
+        """Tenta recuperar projeto de estado corrompido.
+
+        Estratégias de recuperação (em ordem):
+        1. Restaurar do backup (progress.yaml.bak)
+        2. Reconstruir estado + fila do config + checkpoints
+        3. Estado mínimo com fila reconstruída
+
+        Returns:
+            Tupla (success, message)
+        """
+        progress_path = self.project_path / STATE_DIR / PROGRESS_FILE
+        backup_path = progress_path.with_suffix('.yaml.bak')
+
+        # 1. Tentar restaurar do backup
+        if backup_path.exists():
+            try:
+                shutil.copy(backup_path, progress_path)
+                self.load_project()
+                self.log_automated_action(
+                    'recovery', 'backup_restore',
+                    {'source': str(backup_path)}
+                )
+                return True, "Restaurado do backup progress.yaml.bak"
+            except Exception:
+                pass
+
+        # Tentar carregar config para reconstruir fila
+        try:
+            self._load_config()
+        except Exception:
+            self._config = None
+
+        # 2. Tentar reconstruir do checkpoints.log com fila reconstruída
+        checkpoints_path = self.project_path / CONFIG_DIR / CHECKPOINTS_FILE
+        if checkpoints_path.exists():
+            try:
+                # Detectar último ciclo conhecido
+                content = checkpoints_path.read_text(encoding='utf-8')
+                last_cycle = 0
+                for line in content.split('\n'):
+                    if 'ciclo' in line.lower():
+                        match = re.search(r'ciclo\s+(\d+)', line.lower())
+                        if match:
+                            last_cycle = max(last_cycle, int(match.group(1)))
+
+                # Reconstruir fila dos arquivos fonte se config disponível
+                queue = []
+                if self._config and self._config.source_files:
+                    queue = self._create_initial_queue(
+                        self._config.source_files,
+                        self._config.chunk_size,
+                    )
+
+                self._state = PIPSState(
+                    project_name=self.project_name,
+                    status=PIPSStatus.PAUSADO,
+                    current_cycle=last_cycle,
+                    todos=[],
+                    queue=queue,
+                    checkpoints=[],
+                    errors=["Estado reconstruído de checkpoints.log"],
+                )
+                self._save_state()
+                self.log_automated_action(
+                    'recovery', 'checkpoint_reconstruction',
+                    {'last_cycle': last_cycle, 'queue_items': len(queue)}
+                )
+                return True, (
+                    f"Reconstruído a partir do checkpoints.log (ciclo {last_cycle}, "
+                    f"{len(queue)} itens na fila)"
+                )
+            except Exception:
+                pass
+
+        # 3. Último recurso - estado mínimo com fila reconstruída
+        try:
+            # Tentar reconstruir fila mesmo no último recurso
+            queue = []
+            if self._config and self._config.source_files:
+                queue = self._create_initial_queue(
+                    self._config.source_files,
+                    self._config.chunk_size,
+                )
+
+            self._state = PIPSState(
+                project_name=self.project_name,
+                status=PIPSStatus.ERRO if not queue else PIPSStatus.PAUSADO,
+                current_cycle=0,
+                todos=[],
+                queue=queue,
+                checkpoints=[],
+                errors=["Estado corrompido - reconstruído com fila inicial"],
+            )
+            self._save_state()
+            self.log_automated_action(
+                'recovery', 'minimal_state',
+                {'reason': 'all_recovery_methods_failed', 'queue_items': len(queue)}
+            )
+            if queue:
+                return True, f"Reconstruído com fila inicial ({len(queue)} itens)"
+            return True, "Reinicializado com estado mínimo (config ausente - requer reconstrução manual)"
+        except Exception as e:
+            return False, f"Falha na recuperação: {e}"
 
     # =========================================================================
     # Queue Management
@@ -755,6 +1246,8 @@ class PIPSEngine:
 
         with open(progress_path, 'w', encoding='utf-8') as f:
             yaml.dump(state_dict, f, allow_unicode=True, default_flow_style=False)
+            f.flush()                    # Force Python buffer to OS
+            os.fsync(f.fileno())         # Force OS buffer to disk
 
         # Atualizar todos.md (formato legível)
         self._update_todos_md()
@@ -1159,3 +1652,42 @@ def delete_project(
     """
     engine = PIPSEngine(project_name, pips_root)
     return engine.delete_project(confirm=confirm)
+
+
+def get_all_resumable_projects(pips_root: Optional[Path] = None) -> List[Dict[str, Any]]:
+    """Retorna todos os projetos com trabalho resumível.
+
+    Usado pelo Protocolo de Memória Infinita para detectar projetos ativos
+    no início de sessão ou antes de compactação de contexto.
+
+    Args:
+        pips_root: Raiz do diretório PIPS (opcional)
+
+    Returns:
+        Lista de dicts com status de cada projeto resumível, ordenada
+        por última atualização (mais recente primeiro)
+    """
+    projects = list_projects(pips_root)
+    resumable = []
+
+    for project_name in projects:
+        try:
+            engine = PIPSEngine(project_name, pips_root)
+            status = engine.get_resumable_status()
+            if status:
+                # Incluir tanto projetos resumíveis quanto corrompidos
+                # para dar visibilidade ao usuário
+                resumable.append(status)
+        except Exception as e:
+            # Falha crítica na instanciação - reportar como erro
+            resumable.append({
+                'project_name': project_name,
+                'status': 'erro',
+                'error': f"Projeto inacessível: {str(e)[:100]}",
+                'recoverable': False,
+            })
+
+    # Ordenar por última atualização (mais recente primeiro)
+    resumable.sort(key=lambda x: x.get('last_updated', ''), reverse=True)
+
+    return resumable

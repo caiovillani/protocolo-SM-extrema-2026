@@ -1,0 +1,477 @@
+/**
+ * PRINT STYLESHEET - Sistema de Protocolos RAPS Extrema/MG
+ *
+ * Estilos otimizados para impressão de documentos clínicos.
+ * Garante boa legibilidade, economia de tinta e estrutura profissional.
+ */
+
+@media print {
+  /* ============================================
+     RESET PARA IMPRESSÃO
+     ============================================ */
+
+  *,
+  *::before,
+  *::after {
+    background: white !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* ============================================
+     CONFIGURAÇÃO DE PÁGINA
+     ============================================ */
+
+  @page {
+    size: A4;
+    margin: 2cm 2.5cm;
+  }
+
+  @page :first {
+    margin-top: 3cm;
+  }
+
+  /* Cabeçalho e rodapé de página */
+  @page {
+    @top-center {
+      content: "Protocolos de Saúde Mental - SMS Extrema/MG";
+      font-size: 9pt;
+      color: #666;
+    }
+
+    @bottom-center {
+      content: "Página " counter(page) " de " counter(pages);
+      font-size: 9pt;
+      color: #666;
+    }
+  }
+
+  /* Primeira página sem cabeçalho */
+  @page :first {
+    @top-center {
+      content: none;
+    }
+  }
+
+  /* ============================================
+     BODY E LAYOUT
+     ============================================ */
+
+  html {
+    font-size: 11pt;
+  }
+
+  body {
+    font-family: "Times New Roman", Times, Georgia, serif;
+    line-height: 1.4;
+    max-width: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .layout {
+    display: block;
+    padding: 0;
+    max-width: none;
+  }
+
+  .content {
+    max-width: none;
+  }
+
+  /* ============================================
+     OCULTAR ELEMENTOS DE NAVEGAÇÃO
+     ============================================ */
+
+  .toc,
+  .breadcrumb,
+  .skip-link,
+  .btn-toc-toggle,
+  nav:not(.breadcrumb--print),
+  .doc-header__meta,
+  footer:not(.doc-footer--print) {
+    display: none !important;
+  }
+
+  /* ============================================
+     HEADER INSTITUCIONAL (VERSÃO PRINT)
+     ============================================ */
+
+  .doc-header {
+    background: none !important;
+    color: black !important;
+    border: 2px solid black;
+    border-radius: 0;
+    margin-bottom: 1cm;
+    padding: 0.5cm;
+    page-break-after: avoid;
+  }
+
+  .doc-header__logo {
+    filter: grayscale(100%);
+  }
+
+  .doc-header__status {
+    border: 1px solid black;
+    background: none !important;
+  }
+
+  /* ============================================
+     TIPOGRAFIA PARA IMPRESSÃO
+     ============================================ */
+
+  h1 {
+    font-size: 18pt;
+    border-bottom: 2pt solid black;
+    page-break-after: avoid;
+  }
+
+  h2 {
+    font-size: 14pt;
+    border-bottom: 1pt solid black;
+    margin-top: 1cm;
+    page-break-after: avoid;
+  }
+
+  h3 {
+    font-size: 12pt;
+    page-break-after: avoid;
+  }
+
+  h4, h5, h6 {
+    font-size: 11pt;
+    page-break-after: avoid;
+  }
+
+  p {
+    orphans: 3;
+    widows: 3;
+    text-align: justify;
+  }
+
+  /* ============================================
+     LINKS
+     ============================================ */
+
+  a {
+    text-decoration: underline;
+  }
+
+  /* Mostrar URLs de links externos */
+  a[href^="http"]:after,
+  a[href^="https"]:after {
+    content: " (" attr(href) ")";
+    font-size: 8pt;
+    color: #666 !important;
+    word-break: break-all;
+  }
+
+  /* Não mostrar URLs de links internos */
+  a[href^="#"]:after,
+  a[href^="/"]:after {
+    content: none;
+  }
+
+  /* ============================================
+     TABELAS
+     ============================================ */
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 9pt;
+    page-break-inside: auto;
+  }
+
+  thead {
+    display: table-header-group; /* Repetir cabeçalho em páginas */
+  }
+
+  tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+
+  th,
+  td {
+    border: 1pt solid black !important;
+    padding: 4pt 6pt;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  th {
+    background: #f0f0f0 !important;
+    font-weight: bold;
+  }
+
+  /* Tabelas de classificação de risco */
+  .table--risco tr[data-risco] {
+    background: none !important;
+    border-left-width: 3pt !important;
+  }
+
+  /* Indicador visual de cor (sem cor) */
+  .table--risco tr[data-risco="vermelho"] { border-left-color: #D32F2F !important; }
+  .table--risco tr[data-risco="laranja"] { border-left-color: #F57C00 !important; }
+  .table--risco tr[data-risco="amarelo"] { border-left-color: #FBC02D !important; }
+  .table--risco tr[data-risco="verde"] { border-left-color: #388E3C !important; }
+  .table--risco tr[data-risco="azul"] { border-left-color: #1976D2 !important; }
+
+  /* ============================================
+     FORMULÁRIOS ASCII
+     ============================================ */
+
+  .form-ascii {
+    border: 1pt solid black !important;
+    background: white !important;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 9pt;
+    page-break-inside: avoid;
+    margin: 0.5cm 0;
+  }
+
+  .form-ascii__header {
+    border-bottom: 1pt solid black !important;
+    background: #f0f0f0 !important;
+    padding: 3pt;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .form-ascii__section {
+    padding: 3pt 6pt;
+    border-bottom: 0.5pt solid #ccc !important;
+  }
+
+  .form-ascii__field-value {
+    border-bottom: 0.5pt solid black !important;
+    min-width: 3cm;
+    display: inline-block;
+  }
+
+  /* Preservar ASCII art para preenchimento manual */
+  .form-ascii--raw {
+    white-space: pre;
+    font-size: 8pt;
+    line-height: 1.1;
+  }
+
+  /* ============================================
+     DIAGRAMAS
+     ============================================ */
+
+  .diagram {
+    page-break-inside: avoid;
+    margin: 0.5cm 0;
+  }
+
+  .diagram__wrapper {
+    border: 1pt solid black !important;
+    padding: 0.5cm;
+  }
+
+  .mermaid svg {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Fluxogramas ASCII */
+  .flowchart-ascii {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 7pt;
+    line-height: 1.1;
+    border: 1pt solid black !important;
+    padding: 0.3cm;
+    page-break-inside: avoid;
+  }
+
+  /* ============================================
+     LISTAS
+     ============================================ */
+
+  ul,
+  ol {
+    page-break-inside: avoid;
+  }
+
+  li {
+    page-break-inside: avoid;
+  }
+
+  /* ============================================
+     BLOCKQUOTES E ALERTAS
+     ============================================ */
+
+  blockquote {
+    border-left: 3pt solid black !important;
+    background: none !important;
+    padding-left: 0.5cm;
+    margin: 0.3cm 0;
+    font-style: italic;
+  }
+
+  .alert {
+    border: 1pt solid black !important;
+    background: none !important;
+    padding: 0.3cm;
+    margin: 0.3cm 0;
+    page-break-inside: avoid;
+  }
+
+  .alert--danger,
+  .alert--warning {
+    border-width: 2pt !important;
+  }
+
+  /* ============================================
+     CARDS
+     ============================================ */
+
+  .card {
+    border: 1pt solid black !important;
+    padding: 0.3cm;
+    margin: 0.3cm 0;
+    page-break-inside: avoid;
+  }
+
+  /* ============================================
+     CÓDIGO
+     ============================================ */
+
+  pre,
+  code {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 9pt;
+  }
+
+  pre {
+    border: 1pt solid black !important;
+    padding: 0.3cm;
+    page-break-inside: avoid;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  /* ============================================
+     FOOTER (VERSÃO PRINT)
+     ============================================ */
+
+  .doc-footer--print {
+    display: block !important;
+    margin-top: 1cm;
+    padding-top: 0.5cm;
+    border-top: 1pt solid black;
+    page-break-inside: avoid;
+  }
+
+  .doc-footer__signature {
+    page-break-before: avoid;
+  }
+
+  .doc-footer__signer-line {
+    border-top: 1pt solid black !important;
+    min-width: 5cm;
+    margin-top: 1.5cm;
+    padding-top: 0.2cm;
+  }
+
+  /* ============================================
+     QUEBRAS DE PÁGINA
+     ============================================ */
+
+  /* Forçar quebra antes de seções principais */
+  h2 {
+    page-break-before: auto;
+  }
+
+  /* Primeira seção não precisa de quebra */
+  h2:first-of-type {
+    page-break-before: avoid;
+  }
+
+  /* Evitar elementos órfãos */
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+  }
+
+  /* Manter imagens com suas legendas */
+  figure {
+    page-break-inside: avoid;
+  }
+
+  figcaption {
+    page-break-before: avoid;
+  }
+
+  /* ============================================
+     IMAGENS
+     ============================================ */
+
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+    filter: grayscale(50%);
+  }
+
+  /* Logo deve manter cores (se possível) */
+  .doc-header__logo {
+    filter: none;
+  }
+
+  /* ============================================
+     UTILITÁRIOS PRINT
+     ============================================ */
+
+  /* Mostrar apenas na impressão */
+  .print-only {
+    display: block !important;
+  }
+
+  /* Ocultar na impressão */
+  .no-print,
+  .screen-only {
+    display: none !important;
+  }
+
+  /* Forçar quebra de página */
+  .page-break-before {
+    page-break-before: always;
+  }
+
+  .page-break-after {
+    page-break-after: always;
+  }
+
+  /* Evitar quebra */
+  .no-break {
+    page-break-inside: avoid;
+  }
+}
+
+/* ============================================
+   PREVIEW DE IMPRESSÃO (tela)
+   Aplica alguns estilos de print na tela
+   para preview antes de imprimir
+   ============================================ */
+
+.print-preview {
+  max-width: 21cm;
+  margin: 0 auto;
+  padding: 2cm;
+  background: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.print-preview h1 {
+  font-size: 18pt;
+}
+
+.print-preview h2 {
+  font-size: 14pt;
+}
+
+.print-preview p {
+  text-align: justify;
+}

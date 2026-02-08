@@ -1,0 +1,130 @@
+cache_metadata:
+  cached_at: '2026-01-23T07:53:27.319797'
+  content_hash: 3d0092b7c7c6ab5708391876d070b832
+  file_modified: '2026-01-23T01:59:11.598456'
+  file_path: src\context_engine\pips_models.py
+document:
+  concepts:
+  - confidence: 0.8
+    id: bc585df4f9ac
+    keywords:
+    - constantes
+    - diretórios
+    - estrutura
+    line_number: 155
+    section: class PIPSState
+    text: Constantes para estrutura de diretórios
+    type: conceito_chave
+  - confidence: 0.8
+    id: 086ad9bd8c43
+    keywords:
+    - padrão
+    - nomes
+    - arquivos
+    line_number: 162
+    section: class PIPSState
+    text: Nomes de arquivos padrão
+    type: conceito_chave
+  - confidence: 0.7
+    id: 29c6aaebd4b5
+    keywords: []
+    line_number: 1
+    section: ''
+    text: src/context_engine/pips_models.py
+    type: conceito_chave
+  - confidence: 0.6
+    id: 616f29cc36bd
+    keywords:
+    - percentual
+    - fila
+    - baseado
+    - progresso
+    line_number: 139
+    section: class PIPSState
+    text: percentual de progresso baseado na fila
+    type: metrica
+  - confidence: 0.5700000000000001
+    id: 6fee7fc6897d
+    keywords:
+    - protocolo
+    line_number: 3
+    section: ''
+    text: Protocolo de
+    type: procedimento
+  - confidence: 0.5
+    id: 9ee8238ac8a3
+    keywords:
+    - dados
+    line_number: 3
+    section: ''
+    text: de dados para o
+    type: fluxo
+  metadata:
+    file_path: src\context_engine\pips_models.py
+    file_type: py
+    hash_md5: 3d0092b7c7c6ab5708391876d070b832
+    lines_count: 172
+    processed_at: '2026-01-23T07:53:27.314582'
+    processing_time_ms: 23.782799995387904
+    size_bytes: 4697
+    tokens_estimate: 1169
+  relationships:
+  - evidence: 'Co-ocorrência na seção: '
+    line_number: 1
+    source_id: 29c6aaebd4b5
+    target_id: 6fee7fc6897d
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: '
+    line_number: 1
+    source_id: 29c6aaebd4b5
+    target_id: 9ee8238ac8a3
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: '
+    line_number: 3
+    source_id: 6fee7fc6897d
+    target_id: 9ee8238ac8a3
+    type: relacionado
+    weight: 0.55
+  sections:
+  - end_line: 13
+    level: 1
+    start_line: 9
+    title: imports
+  - end_line: 25
+    level: 1
+    start_line: 16
+    title: class PIPSStatus
+  - end_line: 34
+    level: 1
+    start_line: 26
+    title: class TodoStatus
+  - end_line: 52
+    level: 1
+    start_line: 35
+    title: class PIPSConfig
+  - end_line: 68
+    level: 1
+    start_line: 53
+    title: class TodoItem
+  - end_line: 84
+    level: 1
+    start_line: 69
+    title: class QueueItem
+  - end_line: 99
+    level: 1
+    start_line: 85
+    title: class Checkpoint
+  - end_line: 114
+    level: 1
+    start_line: 100
+    title: class Insight
+  - end_line: 172
+    level: 1
+    start_line: 115
+    title: class PIPSState
+  summary: 'Estrutura: imports, class PIPSStatus, class TodoStatus, class PIPSConfig,
+    class TodoItem. Conceito_chave: Constantes para estrutura de diretórios, Nomes
+    de arquivos padrão, src/context_engine/pips_models.py. Metrica: percentual de
+    progresso baseado na fila. Procedimento: Protocolo de. Fluxo: de dados para o'

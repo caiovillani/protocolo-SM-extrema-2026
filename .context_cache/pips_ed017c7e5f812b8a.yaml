@@ -1,0 +1,252 @@
+cache_metadata:
+  cached_at: '2026-01-23T07:53:27.283035'
+  content_hash: 51767e7fa8daf0a3bb9d02e15ee7a160
+  file_modified: '2026-01-23T02:52:18.538201'
+  file_path: src\context_engine\pips.py
+document:
+  concepts:
+  - confidence: 0.8
+    id: 24e9f7b4b56c
+    keywords:
+    - objetivo
+    - principal
+    line_number: 819
+    section: class PIPSEngine
+    text: Objetivo Principal
+    type: conceito_chave
+  - confidence: 0.8
+    id: 1a4ad16dcd70
+    keywords:
+    - critérios
+    - sucesso
+    line_number: 823
+    section: class PIPSEngine
+    text: Critérios de Sucesso
+    type: conceito_chave
+  - confidence: 0.8
+    id: 255feaf28dfc
+    keywords:
+    - execução
+    - parâmetros
+    line_number: 829
+    section: class PIPSEngine
+    text: Parâmetros de Execução
+    type: conceito_chave
+  - confidence: 0.8
+    id: 4cdb384f330c
+    keywords:
+    - fonte
+    - arquivos
+    line_number: 835
+    section: class PIPSEngine
+    text: Arquivos Fonte
+    type: conceito_chave
+  - confidence: 0.8
+    id: 2fae2055cbdc
+    keywords:
+    - insights
+    - coletados
+    line_number: 1064
+    section: class PIPSEngine
+    text: Insights Coletados
+    type: conceito_chave
+  - confidence: 0.8
+    id: f8602a0e4d5a
+    keywords:
+    - helper
+    - functions
+    line_number: 1085
+    section: class PIPSEngine
+    text: Helper Functions
+    type: conceito_chave
+  - confidence: 0.75
+    id: 56ca678a9e71
+    keywords:
+    - processados
+    - itens
+    line_number: 1061
+    section: class PIPSEngine
+    text: '**Itens processados:**'
+    type: definicao
+  - confidence: 0.75
+    id: 1511e7703873
+    keywords:
+    - atual
+    - ciclo
+    line_number: 1062
+    section: class PIPSEngine
+    text: '**Ciclo atual:**'
+    type: definicao
+  - confidence: 0.7
+    id: 7652e3baaa42
+    keywords:
+    - pips
+    line_number: 1
+    section: ''
+    text: src/context_engine/pips.py
+    type: conceito_chave
+  - confidence: 0.7
+    id: 8ed4ee99f1c6
+    keywords:
+    - restrições
+    line_number: 839
+    section: class PIPSEngine
+    text: Restrições
+    type: conceito_chave
+  - confidence: 0.7
+    id: 0ab0b9277153
+    keywords:
+    - insight
+    line_number: 996
+    section: class PIPSEngine
+    text: Insight [{insight.id}]
+    type: conceito_chave
+  - confidence: 0.7
+    id: a6d4b7f007ff
+    keywords: []
+    line_number: 1084
+    section: class PIPSEngine
+    text: =============================================================================
+    type: conceito_chave
+  - confidence: 0.65
+    id: 554f375ff4a2
+    keywords:
+    - fonte
+    line_number: 997
+    section: class PIPSEngine
+    text: '**Fonte:**'
+    type: definicao
+  - confidence: 0.65
+    id: 10548a1b76c3
+    keywords:
+    - ciclo
+    line_number: 998
+    section: class PIPSEngine
+    text: '**Ciclo:**'
+    type: definicao
+  - confidence: 0.6000000000000001
+    id: 86e8d5acfe6c
+    keywords:
+    - tarefas
+    line_number: 929
+    section: class PIPSEngine
+    text: Tarefas
+    type: conceito_chave
+  - confidence: 0.6000000000000001
+    id: 468cadeb4070
+    keywords:
+    - itens
+    line_number: 960
+    section: class PIPSEngine
+    text: Itens
+    type: conceito_chave
+  - confidence: 0.6
+    id: 64dd51978908
+    keywords:
+    - pips
+    - gerenciamento
+    line_number: 46
+    section: class PIPSEngine
+    text: do PIPS para gerenciamento
+    type: fluxo
+  - confidence: 0.6
+    id: e630e40553f2
+    keywords:
+    - persistência
+    - config
+    line_number: 720
+    section: class PIPSEngine
+    text: da config para persistência
+    type: fluxo
+  - confidence: 0.5700000000000001
+    id: 2fcf84b8a50e
+    keywords:
+    - protocolo
+    line_number: 3
+    section: ''
+    text: Protocolo de
+    type: procedimento
+  metadata:
+    file_path: src\context_engine\pips.py
+    file_type: py
+    hash_md5: 51767e7fa8daf0a3bb9d02e15ee7a160
+    lines_count: 1162
+    processed_at: '2026-01-23T07:53:27.246410'
+    processing_time_ms: 25.590299992472865
+    size_bytes: 40022
+    tokens_estimate: 9951
+  relationships:
+  - evidence: 'Co-ocorrência na seção: class PIPSEngine'
+    line_number: 1061
+    source_id: 2fae2055cbdc
+    target_id: 56ca678a9e71
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class PIPSEngine'
+    line_number: 1062
+    source_id: 2fae2055cbdc
+    target_id: 1511e7703873
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class PIPSEngine'
+    line_number: 1084
+    source_id: f8602a0e4d5a
+    target_id: a6d4b7f007ff
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class PIPSEngine'
+    line_number: 1061
+    source_id: 56ca678a9e71
+    target_id: 1511e7703873
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: '
+    line_number: 1
+    source_id: 7652e3baaa42
+    target_id: 2fcf84b8a50e
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class PIPSEngine'
+    line_number: 996
+    source_id: 0ab0b9277153
+    target_id: 554f375ff4a2
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class PIPSEngine'
+    line_number: 996
+    source_id: 0ab0b9277153
+    target_id: 10548a1b76c3
+    type: relacionado
+    weight: 0.55
+  - evidence: 'Co-ocorrência na seção: class PIPSEngine'
+    line_number: 997
+    source_id: 554f375ff4a2
+    target_id: 10548a1b76c3
+    type: relacionado
+    weight: 0.55
+  sections:
+  - end_line: 19
+    level: 1
+    start_line: 9
+    title: imports
+  - end_line: 1088
+    level: 1
+    start_line: 45
+    title: class PIPSEngine
+  - end_line: 1126
+    level: 2
+    start_line: 1089
+    title: def should_trigger_pips
+  - end_line: 1144
+    level: 2
+    start_line: 1127
+    title: def list_projects
+  - end_line: 1162
+    level: 2
+    start_line: 1145
+    title: def delete_project
+  summary: 'Estrutura: imports, class PIPSEngine, def should_trigger_pips, def list_projects,
+    def delete_project. Conceito_chave: Objetivo Principal, Critérios de Sucesso,
+    Parâmetros de Execução. Definicao: **Itens processados:**, **Ciclo atual:**, **Fonte:**.
+    Fluxo: do PIPS para gerenciamento, da config para persistência. Procedimento:
+    Protocolo de'

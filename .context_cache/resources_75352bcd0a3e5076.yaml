@@ -1,0 +1,72 @@
+cache_metadata:
+  cached_at: '2026-01-23T07:53:27.349564'
+  content_hash: d2709c401120c2a5ec031c2c5399871c
+  file_modified: '2026-01-22T21:34:47.707449'
+  file_path: src\context_engine\resources.py
+document:
+  concepts:
+  - confidence: 0.8
+    id: 73bf2719f00b
+    keywords:
+    - base
+    - directory
+    - overridden
+    - environment
+    - resources
+    - variable
+    line_number: 14
+    section: ''
+    text: Base directory for resources – can be overridden by environment variable
+    type: conceito_chave
+  - confidence: 0.8
+    id: 6457fb126df7
+    keywords:
+    - memory
+    - cache
+    - simple
+    line_number: 20
+    section: ''
+    text: Simple in‑memory cache
+    type: conceito_chave
+  - confidence: 0.7
+    id: 6d3fd73dc7bd
+    keywords:
+    - resources
+    line_number: 1
+    section: ''
+    text: src/context_engine/resources.py
+    type: conceito_chave
+  metadata:
+    file_path: src\context_engine\resources.py
+    file_type: py
+    hash_md5: d2709c401120c2a5ec031c2c5399871c
+    lines_count: 62
+    processed_at: '2026-01-23T07:53:27.346983'
+    processing_time_ms: 22.440000000642613
+    size_bytes: 1943
+    tokens_estimate: 469
+  relationships: []
+  sections:
+  - end_line: 12
+    level: 1
+    start_line: 10
+    title: imports
+  - end_line: 39
+    level: 2
+    start_line: 24
+    title: def _load_yaml
+  - end_line: 47
+    level: 2
+    start_line: 40
+    title: def get_normativa
+  - end_line: 55
+    level: 2
+    start_line: 48
+    title: def get_taxonomia
+  - end_line: 62
+    level: 2
+    start_line: 56
+    title: def get_template
+  summary: 'Estrutura: imports, def _load_yaml, def get_normativa, def get_taxonomia,
+    def get_template. Conceito_chave: Base directory for resources – can be ov, Simple
+    in‑memory cache, src/context_engine/resources.py'

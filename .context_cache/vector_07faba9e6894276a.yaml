@@ -1,0 +1,41 @@
+cache_metadata:
+  cached_at: '2026-01-23T07:53:27.404356'
+  content_hash: 51f6dd8cd8b27caaf164196dbbd99709
+  file_modified: '2026-01-19T20:03:23.928963'
+  file_path: src\context_engine\integrations\vector.py
+document:
+  concepts:
+  - confidence: 0.8
+    id: 179fa37703a9
+    keywords:
+    - vector
+    - integrations
+    line_number: 1
+    section: ''
+    text: src/context_engine/integrations/vector.py
+    type: conceito_chave
+  metadata:
+    file_path: src\context_engine\integrations\vector.py
+    file_type: py
+    hash_md5: 51f6dd8cd8b27caaf164196dbbd99709
+    lines_count: 30
+    processed_at: '2026-01-23T07:53:27.402426'
+    processing_time_ms: 13.328900007763878
+    size_bytes: 934
+    tokens_estimate: 226
+  relationships: []
+  sections:
+  - end_line: 10
+    level: 1
+    start_line: 10
+    title: imports
+  - end_line: 21
+    level: 2
+    start_line: 13
+    title: def map_to_vector
+  - end_line: 30
+    level: 2
+    start_line: 22
+    title: def export_to_vector
+  summary: 'Estrutura: imports, def map_to_vector, def export_to_vector. Conceito_chave:
+    src/context_engine/integrations/vector.p'
