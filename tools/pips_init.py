@@ -21,8 +21,14 @@ Dependências:
 """
 
 import argparse
+import io
 import sys
 from pathlib import Path
+
+# Fix Windows console encoding for UTF-8
+if sys.platform == "win32":
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
+    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8', errors='replace')
 
 # Adicionar src ao path para imports
 PROJECT_ROOT = Path(__file__).parent.parent

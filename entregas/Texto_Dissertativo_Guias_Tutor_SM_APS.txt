@@ -1,0 +1,457 @@
+FORMACAO TUTORIAL EM SAUDE MENTAL NA ATENCAO PRIMARIA
+Analise Dissertativa dos Guias de Desenvolvimento do Tutor (MS/SBIBAE, PROADI-SUS 2021-2023)
+
+[Este texto é base estruturante para a reflexão necessária à elaboração, planificação, desenvolvimento e revisão dos protocolos e fluxogramas municipais relacionados ao cuidado em saúde mental no território]
+================================================================================
+
+PARTE I -- RESUMO EXECUTIVO
+
+O Material
+----------
+
+Este documento analisa os quatro Guias de Desenvolvimento do Tutor produzidos pelo Ministerio da Saude em parceria com a Sociedade Beneficente Israelita Brasileira Albert Einstein (SBIBAE), no ambito do projeto "Saude Mental na APS" (PROADI-SUS, trienio 2021-2023). Os guias totalizam 129 paginas e compoem um curriculo progressivo de formacao tutorial para implementacao da linha de cuidado em Saude Mental na Atencao Primaria a Saude, utilizando a metodologia de Planificacao da Atencao a Saude (PAS).
+
+O publico-alvo primario sao analistas de tutoria e profissionais de referencia estaduais, regionais e municipais responsaveis por desenvolver tutores em planificacao. O publico-alvo secundario sao os proprios tutores da APS que facilitarao workshops e oficinas tutoriais junto as equipes de saude locais.
+
+Mapa de Aprendizagem Rapida
+----------------------------
+
+Etapa 1
+  Tema Central: Organizacao da Linha de Cuidado em SM na APS
+  Conceitos-Chave: MACC, condicao cronica vs. doenca cronica, diagnostico situacional
+  Atividade Principal: Atividade das Esferas + Estudos de Caso (Maria/Joao)
+  Competencia Resultante: Compreender SM como condicao cronica e realizar diagnostico situacional
+
+Etapa 2
+  Tema Central: Territorio e Gestao de Base Populacional
+  Conceitos-Chave: Territorializacao, macroprocessos basicos, intersetorialidade, ACS
+  Atividade Principal: "Cantando o Territorio" (Chico Buarque) + Role-playing intersetorial
+  Competencia Resultante: Mapear territorio, identificar vulnerabilidades, articular intersetorialmente
+
+Etapa 3
+  Tema Central: Acesso a RAPS pela APS
+  Conceitos-Chave: Estigma (4 tipos), barreiras/facilitadores, matriciamento, competencia cultural
+  Atividade Principal: Jogo do Acesso (tabuleiro com 3 personagens-caso)
+  Competencia Resultante: Reconhecer barreiras de acesso, combater estigma, facilitar cuidado colaborativo
+
+Etapa 4
+  Tema Central: Gestao do Cuidado em SM
+  Conceitos-Chave: MACC 5 niveis detalhados, escalonamento, eventos agudos, seguranca do paciente
+  Atividade Principal: Jogo Mental MACC (100 cartas) + Caso Planapolis (eventos agudos)
+  Competencia Resultante: Programar cuidado escalonado, classificar risco, implantar Time de Seguranca
+
+Competencias Desenvolvidas por Dominio
+---------------------------------------
+
+Conhecimento (Saber) -- 8 competencias: MACC aplicado a SM (K1), macroprocessos da APS (K2), barreiras/facilitadores de acesso (K3), classificacao de risco em eventos agudos (K4), escalonamento do cuidado (K5), seguranca do paciente (K6), MI-mhGAP (K7), determinantes sociais por ciclo de vida (K8).
+
+Habilidade (Saber-Fazer) -- 8 competencias: diagnostico situacional (H1), facilitacao com metodologias ativas (H2), mapeamento territorial (H3), planos de acao Esforco x Impacto/5W2H (H4), fluxograma de eventos agudos (H5), programacao por escalonamento (H6), implantacao de Time de Seguranca (H7), monitoramento via e-Planifica/PDSA (H8).
+
+Atitude (Saber-Ser) -- 5 competencias: combate ao estigma (A1), escuta qualificada (A2), postura reflexiva-critica freireana (A3), valorizacao do trabalho intersetorial (A4), competencia cultural (A5).
+
+Percurso de Estudo Recomendado
+-------------------------------
+
+Gestor/Coordenador APS
+  Sequencia: Resumo > Secao 2 > Secao 5 > Secao 7
+  Justificativa: Prioriza modelo de atencao (MACC), gestao do cuidado e checklist de competencias
+
+Tutor em formacao
+  Sequencia: Resumo > Secao 1 > Secao 6 > Secoes 2-5 > Secao 7
+  Justificativa: Prioriza compreensao do papel tutorial e das metodologias pedagogicas antes do conteudo tecnico
+
+Profissional eSF/eMulti
+  Sequencia: Resumo > Secao 3 > Secao 4 > Secao 5 > Secao 2
+  Justificativa: Prioriza territorio, acesso e gestao do cuidado -- o operacional antes do conceitual
+
+Estudo completo
+  Sequencia: Sequencial (Secoes 1 a 8)
+  Justificativa: Percorre a espiral de complexidade crescente conforme desenhada nos guias originais
+
+================================================================================
+
+PARTE II -- TEXTO DISSERTATIVO
+
+================================================================================
+
+1. INTRODUCAO -- O Paradigma da Formacao Tutorial em Saude Mental na APS
+
+A Rede de Atencao Psicossocial (RAPS) brasileira enfrenta um paradoxo estruturante: embora a Atencao Primaria a Saude (APS) seja reconhecida como ordenadora do cuidado e porta de entrada preferencial do Sistema Unico de Saude (SUS), a implementacao efetiva da linha de cuidado em saude mental neste nivel de atencao permanece fragmentada e heterogenea entre municipios. Fatores como a persistencia do modelo biomedico centrado na doenca, a insuficiencia de formacao profissional em saude mental para equipes generalistas e a dificuldade de articulacao entre pontos de atencao da rede contribuem para esse cenario (1).
+
+E nesse contexto que o projeto "Saude Mental na APS", executado pela Sociedade Beneficente Israelita Brasileira Albert Einstein (SBIBAE) com financiamento do Programa de Apoio ao Desenvolvimento Institucional do SUS (PROADI-SUS, Lei 12.101/2009, Portaria 3.362/2017), propoe uma estrategia de transformacao por meio da formacao tutorial. O projeto, desenvolvido ao longo do trienio 2021-2023, tem como objetivo organizar a linha de cuidado em saude mental em unidades de APS utilizando a metodologia de Planificacao da Atencao a Saude (PAS) em regioes de saude das Unidades Federativas (2).
+
+A Metodologia PAS como Veiculo de Transformacao
+................................................
+
+A PAS constitui uma estrategia de gestao, planejamento e organizacao da Rede de Atencao a Saude (RAS) que opera por meio de oficinas, tutorias e capacitacoes de curta duracao para profissionais assistenciais da APS e gestores das secretarias de saude. Seu objetivo primario e desenvolver a competencia das equipes para organizacao da atencao, com foco nas necessidades das pessoas sob sua responsabilidade, baseando-se em diretrizes clinicas de acordo com o Modelo de Atencao as Condicoes Cronicas -- MACC (3).
+
+O processo de tutoria na PAS e composto por quatro componentes articulados:
+
+1. Workshop: momento de aproximacao das equipes locais com a base teorica da planificacao
+2. Oficina Tutorial: espaco de transformacao da teoria em acoes concretas nos servicos
+3. Atividade de Dispersao: periodo de implementacao pratica nas unidades entre oficinas
+4. Monitoramento: acompanhamento continuo das acoes implementadas via ciclo PDSA
+
+A essa estrutura, o projeto "Saude Mental na APS" acrescentou dois momentos estrategicos: o alinhamento pre-tutoria (preparacao dos tutores antes de cada processo) e o alinhamento pos-tutoria (avaliacao reflexiva apos a execucao). Essa adicao reconhece que o tutor nao e apenas um replicador de conteudo, mas um mediador de processos de ensino-aprendizagem que necessita de espacos proprios de desenvolvimento.
+
+O Conceito de "Formar o Formador"
+..................................
+
+A decisao de investir na formacao de tutores -- e nao diretamente nas equipes clinicas -- revela uma compreensao sistemica da mudanca organizacional. O tutor em planificacao opera como catalisador: um profissional que, ao dominar simultaneamente o conteudo tecnico (o que ensinar), as metodologias pedagogicas (como facilitar) e a leitura do contexto local (onde intervir), multiplica a capacidade de transformacao do modelo de atencao. As caracteristicas esperadas do tutor, reiteradas em todos os quatro guias, incluem: conhecer a metodologia PAS e os processos da APS; facilitar a construcao de conhecimentos; ter atitude critica e criativa; possuir capacidade de inovacao; estabelecer relacoes empaticas; estimular a resolucao de problemas; apresentar atitude pesquisadora; possibilitar aprendizagem dinamica; abrir caminhos para expressao e comunicacao; e fundamentar-se na producao de conhecimentos (4).
+
+A Estrutura Progressiva em 4 Etapas
+....................................
+
+Os quatro guias seguem uma logica pedagogica de complexidade crescente que espelha a propria organizacao do cuidado em saude mental na APS:
+
+- Etapa 1 -- Estabelece os fundamentos: o que e saude mental como condicao cronica, como se organiza a linha de cuidado, qual o papel da APS nesse arranjo. E o alicerce conceitual.
+- Etapa 2 -- Avanca para o territorio: quem sao as pessoas, onde vivem, quais vulnerabilidades enfrentam. Operacionaliza os macroprocessos basicos da APS.
+- Etapa 3 -- Aborda o acesso: como as pessoas chegam (ou nao) a rede, quais barreiras enfrentam, quais facilitadores existem. Trata do encontro entre pessoa e servico.
+- Etapa 4 -- Consolida a gestao do cuidado: como programar a assistencia, escalonar necessidades, manejar eventos agudos e garantir seguranca. E a operacionalizacao plena.
+
+Essa progressao nao e linear, mas espiral: conceitos introduzidos em etapas iniciais sao revisitados e aprofundados nas seguintes. O MACC, por exemplo, e apresentado na Etapa 1, reaparece como estrutura territorial na Etapa 2, fundamenta a logica de acesso na Etapa 3 e e detalhado em 100 perguntas tecnicas na Etapa 4.
+
+A Etapa 4 referencia explicitamente a Taxonomia de Bloom para graduar seus objetivos de aprendizagem: (1) compreender os conceitos relacionados a gestao do cuidado; (2) apontar a transversalidade da seguranca do paciente; (3) implantar o Nucleo de Seguranca no contexto local (5). A progressao de "compreender" a "implantar" evidencia o salto da cognicao a acao -- marca distintiva de um curriculo orientado a transformacao da pratica.
+
+================================================================================
+
+2. FUNDAMENTOS CONCEITUAIS -- O MACC e a Saude Mental como Condicao Cronica
+
+A Distincao Fundante: Condicao Cronica =/= Doenca Cronica
+..........................................................
+
+A Etapa 1 inaugura o percurso formativo com uma provocacao conceitual aparentemente simples, mas de implicacoes profundas: saude mental e uma condicao cronica, e condicao cronica nao e sinonimo de doenca cronica. A atividade pedagogica que operacionaliza essa distincao -- a "Atividade das Esferas" -- utiliza diagramas visuais com 10 placares representando condicoes (hipertensao arterial sistemica, diabetes mellitus, HIV, saude mental, entre outras), solicitando aos participantes que classifiquem cada uma como doenca cronica, condicao cronica ou ambas (6).
+
+O conceito de condicao cronica, conforme operacionalizado nos guias, e mais amplo que o de doenca: engloba situacoes que persistem ao longo do tempo e requerem resposta continua, proativa e integrada do sistema de saude -- incluindo fatores de risco, condicoes de saude mental, deficiencias e condicoes ligadas aos ciclos de vida. Essa ampliacao conceitual e estrategica porque desloca a saude mental do nicho especializado (centrado no transtorno) para o campo das condicoes cronicas gerenciaveis na APS (centrado na pessoa e em seu territorio).
+
+O Modelo de Atencao as Condicoes Cronicas (MACC)
+.................................................
+
+O MACC, desenvolvido por Mendes (2019), constitui o modelo teorico central dos quatro guias. Sua estrutura piramidal de 5 niveis integra tres modelos: a Piramide de Riscos, o Modelo de Atencao Cronica e o Modelo de Determinacao Social da Saude (7). Aplicado a saude mental, os niveis se organizam da seguinte forma:
+
+NIVEL 1 -- Intervencoes de Promocao da Saude: dirigidas a populacao total, com foco nos determinantes sociais intermediarios -- condicoes de vida e trabalho (educacao, emprego, renda, habitacao, saneamento). Neste nivel, nao ha fatores de risco ou transtornos estabelecidos. As intervencoes sao intersetoriais: Programa Saude na Escola, acoes culturais, articulacao com CRAS, caminhadas comunitarias, campanhas de combate a estigmatizacao.
+
+NIVEL 2 -- Intervencoes de Prevencao: dirigidas a subpopulacao com fatores de risco ligados a comportamentos e estilos de vida (determinantes proximais). Incluem fatores que influenciam o desenvolvimento emocional e desencadeiam transtornos mentais: exposicao a violencia, violacao de direitos humanos, extrema pobreza. As intervencoes psicossociais de baixa intensidade sao a abordagem de primeira escolha -- podem ser realizadas por diversas categorias profissionais e incluem psicoeducacao, tecnicas de relaxamento, gerenciamento de estresse e terapia de manejo de problemas.
+
+NIVEL 3 -- Gestao de Condicoes de Saude Mental Simples: subpopulacao com transtornos mentais comuns (TMC) -- quadros leves e moderados de alta prevalencia territorial, incluindo transtornos depressivo-ansiosos, problemas de sono, abordagem do uso problematico de alcool e somatizacao cronica. Intervencoes nao farmacologicas sao a primeira escolha. Dado relevante: 30% das pessoas com condicoes simples apresentam remissao espontanea quando apoiadas pelas equipes (acolhimento, escuta, grupos). O locus do cuidado e a APS, com suporte do NASF via matriciamento. O autocuidado apoiado assume papel central.
+
+NIVEL 4 -- Gestao de Condicoes de Saude Mental Complexas: subpopulacao com quadros moderados com comprometimento clinico e funcional significativo -- representa 12% a 17% das pessoas com transtorno mental na populacao adulta de um territorio. Pessoas ainda nao estabilizadas, com necessidade de ajustes frequentes de medicacao psicotropica que excedem a competencia esperada do medico de familia. O cuidado e compartilhado entre APS e Equipe Ambulatorial Especializada em Saude Mental, mediante PTS com vistas a estabilizacao. Quando estabilizadas (sem modificacao de medicacao, sem necessidade de psicoterapia especializada), retornam ao acompanhamento exclusivo da APS com retaguarda matricial.
+
+NIVEL 5 -- Gestao de Condicoes de Saude Mental Muito Complexas: subpopulacao com transtornos mentais graves e persistentes -- aproximadamente 3% da populacao geral. Pessoas muito graves ou em crise, com alto comprometimento funcional e pouca insercao em atividades comunitarias e sociais. Necessitam de frequencia regular a unidade especializada (minimo 1-2 vezes por semana). O cuidado e centrado nos CAPS (I, II, III para transtornos mentais; AD, ADIII e IV para alcool e drogas), com enfase em reabilitacao psicossocial. O cuidado profissional assume papel preponderante sobre o autocuidado, sem nunca abandonar o foco na autonomia.
+
+Escalonamento do Cuidado
+.........................
+
+O conceito de escalonamento (stepped care) e o principio organizador que conecta os cinco niveis: a pessoa que se apresenta ao sistema de saude e encaminhada ao nivel de cuidado menos intensivo que mais se adapta a sua necessidade atual de tratamento, considerando o equilibrio entre beneficios pretendidos e riscos potenciais. Intervencoes de maior intensidade so sao mobilizadas quando esgotadas as possibilidades terapeuticas de menor intensidade. O escalonamento possibilita "a terapia certa, no momento certo, para a pessoa certa" -- por meio de dados objetivos que apoiam a decisao clinica (8).
+
+A relacao entre autocuidado apoiado e cuidado profissional se modifica ao longo da piramide: nos niveis 1, 2 e 3, o estimulo ao autocuidado apoiado assume papel central; nos niveis 4 e 5, o cuidado profissional cresce em concentracao relativa, mantendo sempre o foco na promocao da autonomia e na reabilitacao psicossocial.
+
+================================================================================
+
+3. O TERRITORIO COMO PONTO DE PARTIDA -- Territorializacao e Gestao de Base Populacional
+
+Territorio Vivo
+................
+
+A Etapa 2 desloca o foco dos modelos conceituais para o chao onde o cuidado acontece. O territorio, conforme trabalhado nos guias, nao e uma delimitacao geografica estatica: e um espaco dinamico, vivo, atravessado por relacoes sociais, culturais, economicas e politicas que determinam as condicoes de saude de quem nele habita. A atividade "Caca ao Tesouro" utiliza videos para descascar progressivamente as camadas do territorio -- da superficie cartografica as dinamicas invisiveis que configuram vulnerabilidades e potencialidades (9).
+
+A atividade "Cantando o Territorio" emprega a cancao "Construcao" de Chico Buarque para explorar elementos territoriais por meio da analise musical -- uma estrategia pedagogica que reconhece na arte um veiculo de compreensao das dinamicas territoriais. Kong (2009) fundamenta essa abordagem ao demonstrar que a musica popular expressa e constitui identidades territoriais, funcionando como ferramenta analitica para a geografia social (10).
+
+Os Quatro Macroprocessos Basicos
+................................
+
+A gestao de base populacional na APS opera por meio de quatro macroprocessos sequenciais e interdependentes:
+
+1. Territorializacao: processo de mapeamento que delimita a area de abrangencia, identifica equipamentos sociais, barreiras geograficas, dinamicas comunitarias e riscos ambientais. E o ponto de partida para o conhecimento da populacao com necessidades de cuidado em saude mental.
+
+2. Cadastramento Individual e Familiar: processo que vincula a populacao, organizada socialmente em familias, a cada equipe da APS. A partir dele, define-se quem sao as pessoas sob responsabilidade de cada equipe -- condicao previa para qualquer acao de cuidado programado.
+
+3. Estratificacao de Risco/Vulnerabilidade Familiar: aplicacao de instrumentos (como a Escala de Coelho & Savassi) para classificar familias segundo grau de risco e vulnerabilidade. O cadastro familiar e a estratificacao de risco sao aliados na identificacao de fatores que possam repercutir no desenvolvimento de transtornos mentais.
+
+4. Identificacao de Subpopulacoes-Alvo: a partir da estratificacao, reconhecer grupos com necessidades similares para padronizar condutas por meio de diretrizes clinicas e distribuir recursos especificos. Sem estratificacao, corre-se o risco de sobreofertar cuidados desnecessarios a pessoas com condicoes simples e subofertar cuidados necessarios a pessoas com condicoes complexas.
+
+Determinantes Sociais e Ciclos de Vida
+......................................
+
+Os guias enfatizam que quanto pior a qualidade de vida de uma populacao, maiores as possibilidades de sofrimento psiquico -- impactos negativos exercem influencia no desenvolvimento de agravos de saude mental ao longo de toda a vida. Os fatores de risco variam por fase do ciclo vital:
+
+- Infancia: desnutricao, abuso sexual, fraco suporte social, negligencia parental
+- Adolescencia: bullying, uso precoce de substancias, exclusao escolar, violacao de direitos
+- Adultez: desemprego, violencia domestica, condicoes precarias de trabalho, extrema pobreza
+- Terceira idade: perda da atividade laboral por aposentadoria, perda de autonomia, fragilidade no suporte social, doencas cronicas
+
+Grupos em situacao de vulnerabilidade especial merecem atencao diferenciada: vitimas de abuso, idosos em situacao de negligencia, criancas abandonadas, populacao privada de liberdade, populacao em situacao de rua e grupos excluidos por questoes etnicas, financeiras, de genero e sexualidade (11).
+
+O ACS como Mediador Territorial
+................................
+
+O Agente Comunitario de Saude (ACS) emerge nos guias como figura central da construcao de vinculo entre servico e territorio. A Etapa 2 dedica a atividade "Sentimentos e Opcoes" a exploracao do papel do ACS, enquanto a Etapa 3 o posiciona como facilitador-chave de acesso a rede. O ACS e quem percebe que o idoso que frequenta o bar diariamente pode estar em sofrimento (como no caso de Joao, 73 anos, no Jogo do Acesso); e quem conecta a adolescente gestante ao profissional que ela confia (caso de Maria, 14 anos); e quem identifica a fragilidade da rede de apoio social (caso de Tereza, 55 anos). Waidman, Costa e Paiano (2012) fundamentam esse papel como mediador de comunicacao interpessoal efetiva, promotor de dignidade e respeito (12).
+
+Intersetorialidade Estrutural
+..............................
+
+A articulacao intersetorial nao e apresentada como aspiracao, mas como condicao operacional para o cuidado em saude mental. As atividades da Etapa 2 incluem role-playing entre equipe de Saude da Familia e Associacao Comunitaria para exercitar o desenho de acoes conjuntas. A Etapa 3 demonstra intersetorialidade em acao nos casos do Jogo do Acesso: Joao e conectado a um grupo de xadrez no centro comunitario; Maria recebe articulacao com a escola para manter-se estudando; Tereza e inserida em grupo de mulheres que a reconecta a atividades na igreja. A intersetorialidade opera em multiplas direcoes: Saude-Educacao (PSE, Psicopedagogia), Saude-Assistencia Social (CRAS/CREAS), Saude-Cultura-Comunidade (grupos, atividades comunitarias) (13).
+
+================================================================================
+
+4. ACESSO E BARREIRAS -- O Desafio de Chegar a RAPS pela APS
+
+Acesso como Atributo Essencial
+..............................
+
+A Etapa 3 toma o acesso e o primeiro contato como atributo essencial da APS para garantir acesso universal e equitativo as acoes de cuidado em saude mental. A discussao nao se limita a disponibilidade de agenda ou horario de funcionamento: trata de como as pessoas efetivamente conseguem (ou sao impedidas de) receber cuidado quando dele necessitam.
+
+Taxonomia das Barreiras de Acesso
+.................................
+
+O Jogo do Acesso -- um jogo de tabuleiro com dados, peoes e cartas ilustradas -- sistematiza tres categorias de barreiras, cada uma demonstrada por meio de narrativas vividas pelos tres personagens-caso:
+
+ESTIGMA (Pescosolido & Martin, 2015): O guia diferencia quatro dimensoes: (a) autoestigma -- a pessoa internaliza crencas negativas sobre si mesma; (b) estigma publico -- a comunidade mantem preconceitos; (c) estigma do profissional -- o trabalhador de saude reproduz julgamentos; (d) estigma estrutural -- o proprio sistema de saude cria barreiras institucionais (14). Nos casos do jogo: Joao e chamado de "pe de cana" e o medico desprioriza sua visita domiciliar; Maria e julgada como adolescente gravida e a enfermeira minimiza seus sintomas cardiacos; Tereza e rotulada como "poliqueixosa" e suas queixas sao sistematicamente invalidadas.
+
+DEFICIT DE COMPETENCIAS PROFISSIONAIS (Vieira & Delgado, 2021): A persistencia da divisao mente-corpo na pratica clinica, a inseguranca profissional diante do sofrimento psiquico e as falhas de comunicacao criam barreiras concretas (15). No jogo: o profissional diz a Joao que "APS nao trata alcoolismo, procure o CAPS AD"; Maria com dor toracica e ansiedade e encaminhada a emergencia porque a enfermeira "nao sabia o que fazer"; os sintomas emocionais de Tereza sao ignorados no atendimento de Hiperdia, focado exclusivamente na renovacao de receitas.
+
+GESTAO DA OFERTA (Mendes, 2011): Quando a agenda e centrada na equipe (e nao nas necessidades reais da populacao), cria-se um modelo de acesso que invisibiliza demandas de saude mental (16). No jogo: o uso de alcool por Joao nao e priorizado porque ele "nao tem prejuizo funcional"; Maria e colocada em lista de espera do psicologo (agenda lotada); as multiplas queixas de Tereza nao sao abordadas porque o atendimento de Hiperdia so trata hipertensao e diabetes.
+
+Taxonomia dos Facilitadores de Acesso
+......................................
+
+Simetricamente, o jogo apresenta tres categorias de facilitadores:
+
+ACS COMO FACILITADOR (Waidman, Costa & Paiano, 2012): O agente comunitario opera como ponte entre a pessoa e o servico, utilizando comunicacao interpessoal efetiva e conhecimento territorial. Nos casos: o ACS alerta a enfermeira sobre as idas diarias de Joao ao bar e o risco de queda; oferece empatia a Maria e a conecta ao dentista (profissional em quem ela confia); percebe a fragilidade da rede de apoio de Tereza e articula visita domiciliar multiprofissional.
+
+MATRICIAMENTO/CUIDADO COLABORATIVO (Costa, 2007): A troca de saberes interdisciplinar entre pontos de atencao viabiliza o cuidado compartilhado. Nos casos: equipe da APS + psicologo do CAPS AD fazem visita conjunta a Joao e desenvolvem abordagem escalonada; consulta conjunta medico + psicologo para Maria com capacitacao em abordagem familiar; visita multiprofissional a Tereza com insercao em grupo de mulheres e articulacao com CAPS para o filho (17).
+
+INTERSETORIALIDADE (Warschauer & Carvalho, 2014): A articulacao multi-setorial com diferentes saberes, poderes e experiencias amplia o leque de respostas. Nos casos: Joao e conectado a grupo de xadrez no centro comunitario (construcao de rede social); escola articula com psicopedagogo para manter Maria estudando; grupo de mulheres reconecta Tereza a atividades na igreja (18).
+
+Competencia Cultural
+....................
+
+O modelo de Campinha-Bacote (2002) e referenciado para fundamentar a necessidade de competencia cultural como pre-requisito para um cuidado efetivo -- compreender que cada pessoa traz consigo um universo de significados culturais que influencia como percebe, nomeia e busca ajuda para o sofrimento psiquico (19).
+
+================================================================================
+
+5. GESTAO DO CUIDADO -- Da Classificacao de Risco a Programacao Assistencial
+
+Acolhimento e Eventos Agudos em Saude Mental na APS
+....................................................
+
+A Etapa 4 enfrenta diretamente uma das maiores insegurancas das equipes de APS: o que fazer quando alguem chega em sofrimento mental agudo? O fluxograma de classificacao de risco/vulnerabilidade, baseado na Nota Tecnica de Saude Mental para Organizacao da RAS, estabelece quatro niveis de resposta:
+
+1. ATENDIMENTO MEDICO IMEDIATO: pessoa com comprometimento de vias aereas, confusao mental, convulsao, agitacao psicomotora, agressividade ou alteracao do nivel de consciencia -> estabilizacao + acionamento de servico movel de urgencia (SAMU)
+
+2. ATENDIMENTO PRIORITARIO: sinais de embriaguez ou intoxicacao por uso de substancia, tremores, tontura, choro inconsolavel, palpitacoes -> avaliacao de enfermagem + atendimento no mesmo turno, retorno breve
+
+3. ATENDIMENTO NO DIA: pensamento de desesperanca, pessoa em uso cronico de psicotropico sem medicacao, recidiva sem sinais de gravidade, busca de ajuda para parar de beber, sintomas somaticos, relatos de agressividade domiciliar -> avaliacao de enfermagem + atendimento no dia
+
+4. INTERVENCAO PROGRAMADA (NAO URGENTE): avaliacao inicial de enfermagem e orientacoes, agendamento de consulta medica se necessario, orientacao de retorno em caso de agravamento
+
+O caso de Planapolis operacionaliza esse fluxograma: a Sra. Angela, 56 anos, chega a UBS dias apos o falecimento da mae, com choro inconsolavel, tontura e palpitacao, preocupada com sua pressao arterial. As perguntas disparadoras conduzem a reflexao: como acolher? Em que nivel classificar? Por que ter um fluxo definido? (20)
+
+MI-mhGAP como Ferramenta de Manejo
+...................................
+
+O Manual de Intervencoes Mental Health Gap Action Programme (MI-mhGAP) e posicionado como ferramenta pratica e objetiva para o manejo integrado de condicoes prioritarias em saude mental na APS, com protocolos especificos para tomada de decisao. A associacao entre classificacao de risco, MI-mhGAP e escalonamento do cuidado viabiliza uma proposta organizacional completa para a APS (21).
+
+Da Programacao a Pratica
+........................
+
+A Estacao D da Etapa 4 sistematiza como cada macroprocesso se conecta a programacao do cuidado em saude mental, utilizando a tecnica de Giro Colaborativo (rotacao entre grupos com feedback cruzado):
+
+- Como a territorializacao esta relacionada a programacao do cuidado em SM?
+- Como o cadastro familiar esta relacionado a programacao?
+- Como a estratificacao de risco familiar esta relacionada?
+- Como a identificacao de subpopulacoes esta relacionada?
+- Como o escalonamento da necessidade de cuidado esta relacionado?
+- Como a organizacao da linha de cuidado esta relacionada?
+
+Essa atividade forca a explicitacao das conexoes entre processos que frequentemente sao executados de forma fragmentada nas unidades. A programacao do cuidado nao e uma etapa adicional -- e o resultado integrado de todos os macroprocessos anteriores convergindo para uma oferta assistencial adequada as necessidades reais da populacao (22).
+
+Cuidado Compartilhado e Criterios de Transicao
+...............................................
+
+O compartilhamento do cuidado entre APS, Equipes Multiprofissionais Especializadas em Saude Mental e CAPS segue criterios operacionais definidos. Devem ser compartilhados com equipes especializadas os casos de: pessoas sem remissao/controle dos sintomas com tratamento na APS; pessoas com nivel leve ou moderado de autoagressao; transtornos mentais graves agudizados sem risco de hetero ou autoagressao; gestantes usuarias de substancias psicoativas.
+
+Os criterios de estabilidade para retorno ao acompanhamento exclusivo pela APS incluem: medicacao psicotropica de maior complexidade sem necessidade de modificacao, ausencia de necessidade de psicoterapia especializada e sem comprometimento significativo na autonomia. Mesmo apos o retorno, o apoio do matriciador se mantem disponivel -- a APS pode acionar retaguarda matricial a qualquer momento diante da necessidade de discussao ou nova avaliacao conjunta (23).
+
+Seguranca do Paciente na APS
+............................
+
+A Etapa 4 introduz a seguranca do paciente como dimensao transversal a gestao do cuidado em saude mental. A atividade de implantacao do Time de Seguranca na APS, utilizando a matriz 5W2H, operacionaliza:
+
+- Composicao do Time de Seguranca
+- Atribuicoes do lider e dos integrantes
+- Periodicidade dos encontros
+- Formalizacao via portaria ou diretriz municipal
+- Definicao de diretrizes e regimento
+- Cadastro no Sistema de Notificacao em Vigilancia Sanitaria (NOTIVISA)
+
+A discussao conecta seguranca do paciente a programacao do cuidado em saude mental, questionando: quais metas de seguranca podem ser aplicadas nos processos de territorializacao, cadastro, estratificacao e escalonamento? A seguranca nao e um protocolo paralelo -- e uma lente que atravessa todos os macroprocessos (24).
+
+================================================================================
+
+6. A PEDAGOGIA COMO TECNOLOGIA DE CUIDADO -- Metodologias Ativas na Formacao em Saude Mental
+
+Paulo Freire como Alicerce
+..........................
+
+A pedagogia freireana atravessa os quatro guias de forma estruturante, nao ornamental. O Circulo de Cultura -- composto por tres movimentos: identificacao do vocabulario, tematizacao e problematizacao -- e a metodologia de base para os momentos de monitoramento do processo de tutoria em todas as etapas. A reflexao, para Freire, e o "movimento realizado entre o fazer e o pensar, entre o pensar e o fazer, ou seja, no 'pensar para o fazer' e no 'pensar sobre o fazer'" (25). Essa concepcao fundamenta a estrutura de pre-tutoria (pensar para fazer) e pos-tutoria (pensar sobre o fazer) que permeia todo o curriculo.
+
+Bloom como Framework Avaliativo
+...............................
+
+A Etapa 4 explicita a Taxonomia de Bloom como referencia para a graduacao dos objetivos de aprendizagem. Os tres objetivos da etapa -- compreender, apontar, implantar -- correspondem a niveis crescentes de complexidade cognitiva: da compreensao (reproduzir informacao com palavras proprias) a aplicacao (recolher e aplicar informacao em situacoes concretas). Essa explicitacao diferencia o curriculo de abordagens meramente informativas: o objetivo nao e que o tutor saiba, mas que o tutor faca (26).
+
+Inventario de Metodologias Ativas
+..................................
+
+Os guias empregam um repertorio diversificado de estrategias pedagogicas, cada uma selecionada por sua adequacao ao tipo de aprendizagem pretendido:
+
+GAMIFICACAO: Duas aplicacoes distintas -- o Jogo do Acesso (Etapa 3) utiliza narrativa imersiva com personagens-caso para desenvolver empatia e reconhecimento de barreiras sistemicas; o Jogo Mental MACC (Etapa 4) utiliza competicao fisica (arremesso de bola em copos coloridos) combinada com quiz de 100 perguntas para consolidar conhecimento tecnico sobre os 5 niveis do MACC. Ambos os jogos operam no principio de que o engajamento ludico facilita a retencao e a transferencia de conhecimento para a pratica.
+
+SALA DE AULA INVERTIDA: A "Plataforma de Embarque" da Etapa 4 exige 8 horas de estudo previo no Ambiente Virtual de Aprendizagem (EaD) antes do encontro presencial. O tutor chega ao alinhamento pre-tutoria ja munido de base conceitual, permitindo que o tempo coletivo seja dedicado a aplicacao e problematizacao -- nao a transmissao passiva de conteudo.
+
+APRENDIZAGEM BASEADA EM CASOS: Presente em todas as etapas -- dos casos de Maria e Joao (Etapa 1) ao municipio ficticio de Planificopolis (Etapa 1), dos tres personagens do Jogo do Acesso (Etapa 3) ao caso de Planapolis com a Sra. Angela (Etapa 4). Os casos sao desenhados para serem verossimeis e provocar identificacao com situacoes reais.
+
+ROLE-PLAYING: A Etapa 2 propoe encenacao entre equipe de Saude da Familia e Associacao Comunitaria para exercitar o desenho de acoes intersetoriais -- a troca de papeis desenvolve a capacidade de compreender perspectivas diferentes e negociar interesses.
+
+ARTES COMO RECURSO PEDAGOGICO: A analise de "Construcao" de Chico Buarque (Etapa 2) como ferramenta de exploracao territorial e o video em formato "Animacao do Quadro Branco" (Etapa 4) para explicar escalonamento do cuidado demonstram que a compreensao de conceitos complexos pode ser mediada por linguagens nao academicas.
+
+METODO DO DILEMA: A atividade "Sentimentos e Opcoes" (Etapa 2) emprega um metodo de quatro passos -- Identificar > Sentir > Imaginar > Dizer -- para desenvolver a capacidade de lidar com situacoes complexas que envolvem conflitos de valores e emocoes contraditorias.
+
+DECISAO RELAMPAGO COM MATRIZ ESFORCO x IMPACTO: A Etapa 4 emprega essa tecnica para priorizacao rapida de solucoes para problemas do monitoramento via e-Planifica. A sequencia e: (1) identificar problemas (7min, sem debate); (2) apresentar individualmente (4min cada); (3) votar os dois mais pertinentes (2min); (4) propor solucoes (7min, sem debate); (5) votar solucoes (10min); e (6) classificar na Matriz Esforco x Impacto. A priorizacao de solucoes de baixo esforco e alto impacto gera planos de acao imediatamente executaveis.
+
+GIRO COLABORATIVO: A rotacao de grupos com feedback cruzado (Etapa 4) amplifica perspectivas -- cada grupo ve, analisa e complementa as respostas dos demais, gerando construcao coletiva de conhecimento.
+
+5W2H: Ferramenta de planejamento operacional utilizada na Etapa 4 para a implantacao do Time de Seguranca do Paciente -- transforma decisoes conceituais em acoes com responsaveis, prazos, locais, metodos e custos definidos.
+
+Reflexao Pos-Tutoria como Metacognicao
+......................................
+
+Em todas as etapas, o alinhamento pos-tutoria emprega quatro perguntas reflexivas:
+
+1. O que eu repetiria ou fortaleceria em etapas/processos anteriores?
+2. O que eu faria diferente e por que?
+3. Na operacionalizacao, eu senti falta de (recursos, apoio, instrumentos)?
+4. O que eu preciso compartilhar com outros atores para garantir continuidade?
+
+Esse instrumento funciona como mecanismo de metacognicao -- o tutor aprende a pensar sobre seu proprio processo de facilitacao, identificando padroes de sucesso e fracasso que alimentam o proximo ciclo.
+
+================================================================================
+
+7. MAPA DE COMPETENCIAS -- O que se Aprende Efetivamente
+
+Dominio Conhecimento (Saber)
+----------------------------
+
+K1 | MACC aplicado a SM -- 5 niveis com criterios, prevalencias e intervencoes correspondentes | Etapas 1, 4 | Indicador: Responder corretamente questoes do Jogo Mental MACC
+
+K2 | Macroprocessos da APS -- territorializacao, cadastro, estratificacao, identificacao de subpopulacoes | Etapas 2, 4 | Indicador: Conectar cada macroprocesso a programacao do cuidado
+
+K3 | Taxonomia de barreiras (estigma, deficit de competencias, gestao da oferta) e facilitadores (ACS, matriciamento, intersetorialidade) de acesso a RAPS | Etapa 3 | Indicador: Identificar barreiras e facilitadores nos casos-personagem
+
+K4 | Classificacao de risco em eventos agudos de SM -- 4 niveis com conduta correspondente | Etapa 4 | Indicador: Classificar corretamente o caso da Sra. Angela
+
+K5 | Escalonamento do cuidado -- principios, criterios de transicao, estabilidade clinica | Etapa 4 | Indicador: Determinar nivel de cuidado adequado para um caso
+
+K6 | Seguranca do paciente -- Time de Seguranca, NOTIVISA, metas aplicadas a SM | Etapa 4 | Indicador: Listar componentes do Time e processo de implantacao
+
+K7 | MI-mhGAP -- finalidade, aplicacao e relacao com escalonamento | Etapa 4 | Indicador: Indicar quando e como utilizar o MI-mhGAP na pratica
+
+K8 | Determinantes sociais da saude mental por ciclo de vida -- fatores de risco e grupos vulneraveis | Etapas 2, 4 | Indicador: Citar fatores de risco especificos por faixa etaria
+
+Dominio Habilidade (Saber-Fazer)
+--------------------------------
+
+H1 | Realizar diagnostico situacional municipal em SM | Etapa 1 | Indicador: Completar diagnostico de Planificopolis com dados fornecidos
+
+H2 | Facilitar oficinas com metodologias ativas (Freire, jogos, casos, role-playing) | Etapas 1-4 | Indicador: Conduzir ao menos uma atividade com supervisao
+
+H3 | Mapear territorio e identificar vulnerabilidades para SM | Etapa 2 | Indicador: Produzir mapa de vulnerabilidades com equipe
+
+H4 | Construir planos de acao com Decisao Relampago e 5W2H | Etapa 4 | Indicador: Gerar plano com acoes de baixo esforco/alto impacto
+
+H5 | Aplicar fluxograma de classificacao de risco em eventos agudos | Etapa 4 | Indicador: Classificar 3 cenarios clinicos corretamente
+
+H6 | Programar cuidado por escalonamento de necessidades | Etapa 4 | Indicador: Elaborar programacao para subpopulacao identificada
+
+H7 | Implantar Time de Seguranca do Paciente na APS | Etapa 4 | Indicador: Completar matriz 5W2H de implantacao
+
+H8 | Monitorar processos via e-Planifica e ciclo PDSA | Etapas 1-4 | Indicador: Manter registro atualizado e gerar analise de indicadores
+
+Dominio Atitude (Saber-Ser)
+---------------------------
+
+A1 | Reconhecer e combater estigma em suas 4 dimensoes | Etapa 3 | Indicador: Identificar situacoes de estigma na propria pratica
+
+A2 | Praticar escuta qualificada e acolhimento integral | Etapas 3, 4 | Indicador: Demonstrar acolhimento em simulacao de caso
+
+A3 | Adotar postura reflexiva-critica freireana sobre a propria pratica de tutoria | Etapas 1-4 | Indicador: Completar reflexao pos-tutoria com autoavaliacao fundamentada
+
+A4 | Valorizar intersetorialidade e trabalho colaborativo como condicao do cuidado | Etapas 2, 3 | Indicador: Propor acao intersetorial concreta para caso discutido
+
+A5 | Exercer competencia cultural no cuidado em SM | Etapa 3 | Indicador: Adaptar abordagem considerando contexto cultural da pessoa
+
+================================================================================
+
+8. CONSIDERACOES FINAIS -- Sintese e Horizonte de Aplicacao
+
+O Curriculo como Sistema Coerente
+..................................
+
+Os quatro Guias de Desenvolvimento do Tutor constituem um sistema pedagogico internamente coerente, nao uma colecao de materiais avulsos. A progressao Etapa 1 (fundamentos) > Etapa 2 (territorio) > Etapa 3 (acesso) > Etapa 4 (gestao do cuidado) replica a propria logica do cuidado em saude mental na APS: primeiro compreender o modelo, depois conhecer quem precisa de cuidado e onde vive, entao garantir que consiga chegar a rede, e finalmente programar o cuidado adequado as suas necessidades.
+
+Cada etapa herda e aprofunda conceitos das anteriores: o MACC introduzido na Etapa 1 e operacionalizado territorialmente na Etapa 2, problematizado em termos de acesso na Etapa 3 e detalhado em 100 perguntas clinicas na Etapa 4. O monitoramento via Circulo de Cultura de Paulo Freire aparece em todas as quatro etapas, evoluindo de exercicio inicial a pratica reflexiva consolidada.
+
+A diversidade de metodologias ativas -- jogos de tabuleiro, musica popular, role-playing, sala de aula invertida, matriz esforco x impacto, giro colaborativo -- nao e acidental: cada estrategia foi selecionada por sua adequacao ao tipo de aprendizagem pretendida naquela etapa. Jogos que mobilizam empatia narrativa (Jogo do Acesso) servem a Etapa 3, onde o desafio e reconhecer barreiras invisiveis; jogos que mobilizam conhecimento tecnico sob pressao (Jogo Mental MACC) servem a Etapa 4, onde o desafio e dominar os criterios de escalonamento.
+
+O Tutor como Agente de Transformacao
+.....................................
+
+O investimento na formacao de tutores -- e nao diretamente nas equipes clinicas -- aposta na multiplicacao: cada tutor capacitado pode transformar multiplas equipes em seu territorio. Essa estrategia e coerente com o principio de que a mudanca do modelo de atencao nao se faz por decreto normativo, mas por transformacao das praticas cotidianas nos servicos, mediada por profissionais que dominam simultaneamente conteudo tecnico, metodo pedagogico e leitura contextual.
+
+Translacao para o Contexto Local
+.................................
+
+[Secao pendente de contribuicao humana: redigir 1-2 paragrafos sobre como este curriculo de formacao tutorial pode ser adaptado e aplicado ao contexto especifico de Extrema-MG, considerando: (a) os dispositivos de saude mental disponiveis no municipio (CAPS, NIRSM-R, equipes APS/eSF/eMulti); (b) os protocolos ja desenvolvidos neste projeto (PCC, CLI, POP, GN); (c) as lacunas ou potencialidades especificas do territorio.]
+
+Lacunas Identificadas e Complementacao Sugerida
+................................................
+
+Os guias apresentam lacunas que podem ser complementadas com materiais adicionais:
+
+- Saude mental infanto-juvenil: embora mencionada (Etapa 4, CAPSi), nao ha etapa dedicada a especificidade do cuidado em SM para criancas e adolescentes
+- Uso de substancias psicoativas: tratado marginalmente nos casos e no MACC nivel 5, sem aprofundamento em reducao de danos ou manejo especifico
+- Teleatendimento e tecnologias digitais: ausentes no material, apesar da crescente relevancia pos-pandemia
+- Indicadores de resultado: o curriculo foca em processos (implantar, monitorar), mas oferece pouca orientacao sobre como medir impacto clinico das acoes implementadas
+- PTS estruturado: mencionado como instrumento-chave no MACC nivel 4 e 5, mas sem detalhamento operacional nos guias (disponivel nos POPs do projeto)
+
+================================================================================
+
+REFERENCIAS
+
+1. Brasil. Ministerio da Saude. Nota Tecnica de Saude Mental para Organizacao da Rede de Atencao a Saude com Foco nos Processos da Atencao Primaria a Saude e da Atencao Especializada. Brasilia: MS; 2023.
+2. Sociedade Beneficente Israelita Brasileira Albert Einstein. Guia para Desenvolvimento do Tutor -- Etapas 1-4. Sao Paulo: SBIBAE/MS; 2023. PROADI-SUS, Portaria 3.362/2017.
+3. Mendes EV. O cuidado das condicoes cronicas na atencao primaria a saude: o imperativo da consolidacao da estrategia da saude da familia. Brasilia: OPAS; 2012.
+4. Mendes EV. A construcao social da Atencao Primaria a Saude. Brasilia: CONASS; 2015.
+5. Anderson LW, Krathwohl DR. A taxonomy for learning, teaching, and assessing: a revision of Bloom's taxonomy of educational objectives. New York: Longman; 2001.
+6. SBIBAE. Guia para Desenvolvimento do Tutor -- Etapa 1: A Organizacao da Linha de Cuidado em Saude Mental na APS. Sao Paulo: SBIBAE/MS; 2023. p. 14-15.
+7. Mendes EV et al. O Modelo de Atencao as Condicoes Cronicas. In: Organizacao Pan-Americana da Saude. Brasilia: OPAS; 2019.
+8. SBIBAE. Guia para Desenvolvimento do Tutor -- Etapa 4: Gestao do Cuidado em Saude Mental. Sao Paulo: SBIBAE/MS; 2023. p. 31-52. [Jogo Mental MACC -- 100 perguntas e respostas].
+9. SBIBAE. Guia para Desenvolvimento do Tutor -- Etapa 2: Territorio e Gestao de Base Populacional em Saude Mental. Sao Paulo: SBIBAE/MS; 2023. p. 18-22.
+10. Kong L. Musica popular nas analises geograficas. In: Correa RL, Rosendahl Z (org.). Cinema, musica e espaco. Rio de Janeiro: EdUERJ; 2009.
+11. SBIBAE. Guia para Desenvolvimento do Tutor -- Etapa 4. Op. cit. p. 33-35. [Perguntas MACC sobre fatores de risco por ciclo de vida].
+12. Waidman MAP, Costa B da, Paiano M. Percepcoes e atuacao do Agente Comunitario de Saude em saude mental. Rev Esc Enferm USP. 2012;46(5):1170-7.
+13. Warschauer M, Carvalho YM de. O conceito de intersetorialidade: contribuicoes ao debate a partir do Programa Saude na Escola. In: Saude e Sociedade. 2014;23(4):1048-61.
+14. Pescosolido BA, Martin JK. The stigma complex. Annu Rev Sociol. 2015;41:87-116.
+15. Vieira VB, Delgado PGG. Estigma e saude mental na atencao basica: uma revisao integrativa da literatura. Saude Debate. 2021;45(128):246-62.
+16. Mendes EV. As redes de atencao a saude. Brasilia: OPAS; 2011.
+17. Costa RP. Interdisciplinaridade e equipes de saude: concepcoes. Mental. 2007;5(8):107-24.
+18. Warschauer M, Carvalho YM de. Op. cit.
+19. Campinha-Bacote J. The process of cultural competence in the delivery of healthcare services: a model of care. J Transcult Nurs. 2002;13(3):181-4.
+20. SBIBAE. Guia para Desenvolvimento do Tutor -- Etapa 4. Op. cit. p. 20-22. [Caso Planapolis -- Sra. Angela].
+21. World Health Organization. mhGAP Intervention Guide for mental, neurological and substance use disorders in non-specialized health settings. 2nd ed. Geneva: WHO; 2016.
+22. SBIBAE. Guia para Desenvolvimento do Tutor -- Etapa 4. Op. cit. p. 25-26. [Estacao D -- Giro Colaborativo].
+23. SBIBAE. Guia para Desenvolvimento do Tutor -- Etapa 4. Op. cit. p. 38-42. [Gestao de condicoes complexas -- criterios de transicao].
+24. SBIBAE. Guia para Desenvolvimento do Tutor -- Etapa 4. Op. cit. p. 24. [Atividade 2 -- Seguranca do Paciente].
+25. Freire P. Pedagogia da autonomia: saberes necessarios a pratica educativa. Sao Paulo: Paz e Terra; 2001. p. 38.
+26. Anderson LW, Krathwohl DR. Op. cit.

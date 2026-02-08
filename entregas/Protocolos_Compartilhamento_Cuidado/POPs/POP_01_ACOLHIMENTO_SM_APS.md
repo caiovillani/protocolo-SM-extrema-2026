@@ -44,8 +44,8 @@ Todas as Unidades Básicas de Saúde do município.
 | Passo | Ação | Observação |
 |-------|------|------------|
 | 2.1 | Perguntar: "O que traz você aqui hoje?" | Pergunta aberta |
-| 2.2 | Permitir que fale livremente | Não interromper |
-| 2.3 | Demonstrar interesse (olhar, postura) | Comunicação não-verbal |
+| 2.2 | Permitir que fale livremente | Evitar interrupções desnecessárias |
+| 2.3 | Demonstrar interesse (olhar, postura) | Atenção à comunicação não-verbal |
 | 2.4 | Validar sentimentos: "Percebo que está difícil..." | Empatia |
 | 2.5 | Investigar: tempo, intensidade, impacto | Completar informações |
 

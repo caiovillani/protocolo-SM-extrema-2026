@@ -6,7 +6,7 @@
 ---
 
 ## 1. OBJETIVO
-Padronizar a classificação de risco em saúde mental para definição de prioridade e conduta.
+Padronizar a classificação de risco psicossocial em saúde mental para definição de prioridade e conduta.
 
 ## 2. APLICAÇÃO
 Todos os pontos de atenção da RAPS e RUE municipal.
@@ -49,7 +49,7 @@ Todos os pontos de atenção da RAPS e RUE municipal.
 | Depressão grave com prostração | Impossibilidade de autocuidado; recusa alimentar |
 | Intoxicação moderada | Alteração comportamental sem risco vital |
 
-**CONDUTA:** Avaliação médica imediata. CAPS Porta Aberta ou regulação prioritária.
+**CONDUTA:** Avaliação AE Saúde Mental com prioridade. CAPS Porta Aberta para ACOLHIMENTO e revisão da classificação de risco psicossocial em saúde mental ou regulação prioritária via Regula RAPS.
 
 ---
 
