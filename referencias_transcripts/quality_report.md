@@ -22,7 +22,7 @@ O processamento de 72 PDFs de referência clínica foi concluído com sucesso em
 | `doc_id` | 72/72 | 100% | 100% | ATINGIDO |
 | `title` | 72/72 | 100% | 100% | ATINGIDO |
 | `summary` | 70/72 | 97% | 100% | PARCIAL |
-| `topics` | 67/72 | 93% | 100% | PARCIAL |
+| `topics` | 66/72 | 92% | 100% | PARCIAL |
 | `authors` | 60/72 | 83% | — | — |
 | `year` | 59/72 | 82% | — | — |
 | `references_count` | 55/72 | 76% | — | — |
@@ -129,8 +129,8 @@ Os 2 documentos escritos diretamente foram: **Clínica Ampliada na Atenção Bá
 
 2 documentos (2.8%) permanecem com `needs_human_review: true`. Histórico de resolução:
 
-- **8→6 (sessão anterior):** RAPS (2).md (OCR 0.03 era falso negativo — texto completo) e Fluxogramas Classificação Risco SM.md (limitações auto-documentadas) — flags resolvidos como falso-positivos
-- **6→2 (sessão atual):** 4 flags resolvidos após verificação de conteúdo:
+- **8→6 (commit 66da373):** RAPS (2).md (OCR 0.03 era falso negativo — texto completo) e Fluxogramas Classificação Risco SM.md (limitações auto-documentadas) — flags resolvidos como falso-positivos
+- **6→2 (commit 8f02864):** 4 flags resolvidos após verificação de conteúdo:
   - **Linha de Cuidado (caderno nº1):** Diacríticos (è→é) e page numbers soltos verificados como NÃO presentes no conteúdo enriquecido; 4.724 linhas, 27 H2 → `false`
   - **Reforma Psiquiátrica (Caracas):** Texto invertido verificado como NÃO presente; gráficos representados como tabelas estruturadas; 816 linhas, 10 H2 → `false`
   - **Emergências Psiquiátricas:** 32.559 linhas com 32 H2 verificadas como substancialmente completas (27 capítulos confirmados); OCR 0.16 não reflete cobertura real → `false`

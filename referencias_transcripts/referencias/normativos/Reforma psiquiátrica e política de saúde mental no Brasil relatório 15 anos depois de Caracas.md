@@ -62,7 +62,7 @@ tables_validated: true
 completeness_check: passed
 quality_flags:
   needs_human_review: false
-  review_resolution: "Inverted text artifacts (sotiel ed oremúN) verified as NOT present in enriched content (Grep scan 2026-02-08); all 4 graphs represented as structured markdown tables with headers and source citations; 816 lines with 10 H2 sections covering full document scope (6 chapters + 2 annexes + references); OCR 0.53 metric compensated by Phase 2 enrichment"
+  review_resolution: "Artefatos de texto invertido (sotiel ed oremúN) verificados como NAO presentes no conteudo enriquecido (Grep scan 2026-02-08); 4 graficos representados como tabelas markdown estruturadas com cabecalhos e citacoes de fonte; 816 linhas com 10 secoes H2 cobrindo escopo completo do documento (6 capitulos + 2 anexos + referencias); metrica OCR 0.53 compensada pelo enriquecimento Fase 2"
   known_limitations:
     - "Grafico 3 (migracao de leitos) representado como descricao textual — original era grafico visual de barras empilhadas"
     - "Formato misto nas referencias — uso de travessao para obras repetidas do mesmo autor institucional (padrao ABNT, nao Vancouver)"
