@@ -1,5 +1,5 @@
 metadata:
-  generated_at: '2026-02-08T20:31:28.664222'
+  generated_at: '2026-02-08T22:50:34.744774'
   total_documents: 72
   generator: tools/generate_reference_index.py
   project: Protocolo SM Extrema 2026
@@ -45,7 +45,7 @@ summary:
     with_title: 72
     with_topics: 66
     with_summary: 70
-    needs_human_review: 42
+    needs_human_review: 2
 documents:
 - doc_id: REF-ART-001
   title: Gestão do Trabalho em Saúde Mental
@@ -113,7 +113,7 @@ documents:
   - profissionais de Educação Permanente em Saúde
   - pesquisadores em saúde coletiva e micropolítica do trabalho
   references_count: 3
-  needs_review: true
+  needs_review: false
 - doc_id: REF-ART-003
   title: 'Saude Mental: como as equipes de Saude da Familia podem integrar esse cuidado
     na Atencao Basica?'
@@ -186,7 +186,7 @@ documents:
   - coordenadores_sm
   - residentes_mfc
   references_count: 20
-  needs_review: true
+  needs_review: false
 - doc_id: REF-ART-005
   title: Construção de um Projeto de Cuidado em Saúde Mental na Atenção Básica
   transcript_file: referencias\artigos\Construção de um Projeto de Cuidado em Saúde
@@ -343,7 +343,7 @@ documents:
   - equipes_multiprofissionais
   - gestao_municipal_saude
   references_count: 35
-  needs_review: true
+  needs_review: false
 - doc_id: REF-ART-008
   title: 'Demanda em Saúde Mental: uma proposta de Classificação de Risco em Saúde
     Mental'
@@ -536,7 +536,7 @@ documents:
   - docentes de graduação e pós-graduação em saúde coletiva
   - profissionais envolvidos com educação em saúde e educação permanente
   references_count: 41
-  needs_review: true
+  needs_review: false
 - doc_id: REF-ART-010
   title: A práxis do enfermeiro no Programa Saúde da Família na atenção à saúde mental
   transcript_file: referencias\artigos\A práxis do enfermeiro no programa saúde da
@@ -611,7 +611,7 @@ documents:
   - Gestores de atenção primária
   - Pesquisadores em enfermagem psiquiátrica e saúde coletiva
   references_count: 13
-  needs_review: true
+  needs_review: false
 - doc_id: REF-ART-010
   title: 'Diálogos entre Saúde Mental e Atenção Básica: relato de experiência do PET-Saúde
     no município de Parnaíba-PI'
@@ -699,7 +699,7 @@ documents:
   - profissionais de Educação Permanente em Saúde
   - docentes e estudantes em formação para o SUS
   references_count: 20
-  needs_review: true
+  needs_review: false
 - doc_id: REF-ART-011
   title: 'Formação para o trabalho em Saúde Mental: reflexões a partir das concepções
     de Sujeito, Coletivo e Instituição'
@@ -836,7 +836,7 @@ documents:
   - profissionais de planejamento e avaliação em saúde
   - pesquisadores em Saúde Coletiva e Políticas de Saúde
   references_count: 11
-  needs_review: true
+  needs_review: false
 - doc_id: REF-CC-001
   title: Caso Marina — Etilismo e Escalonamento do Cuidado em Saúde Mental
   transcript_file: referencias\casos_clinicos\Caso Marina Etilismo Escalonamento do
@@ -896,7 +896,7 @@ documents:
   - enfermagem_aps
   - psicologia_aps
   references_count: 0
-  needs_review: true
+  needs_review: false
 - doc_id: REF-CC-002
   title: 'Caso Patrícia: Depressão e Escalonamento do Cuidado em Saúde Mental'
   transcript_file: referencias\casos_clinicos\Caso Patrícia Depressão Escalonamento
@@ -1378,7 +1378,7 @@ documents:
   - equipes_ambulatoriais_especializadas
   - coordenadores_raps
   references_count: 51
-  needs_review: true
+  needs_review: false
 - doc_id: REF-CLI-007
   title: 'Abordagem a Problemas de Saude Mental - Modulo 14 (Eixo 4: Atencao a Saude)'
   transcript_file: clinicos\abordagens\Eixo 04 - Mód. 14 - Abordagem a Problemas de
@@ -1481,7 +1481,7 @@ documents:
   - Profissionais da RAPS
   - Residentes em Medicina de Familia e Comunidade
   references_count: 63
-  needs_review: true
+  needs_review: false
 - doc_id: REF-CLI-008
   title: Integralidade e Clínica Ampliada na Promoção do Direito à Saúde das Pessoas
     em Situação de Rua
@@ -1558,7 +1558,7 @@ documents:
   - gestores_saude
   - consultorio_na_rua
   references_count: 22
-  needs_review: true
+  needs_review: false
 - doc_id: REF-CLI-009
   title: 'Linhas do Cuidado Integral: Uma Proposta de Organização da Rede de Saúde'
   transcript_file: clinicos\abordagens\Linha-cuidado-integral (1).md
@@ -1631,7 +1631,7 @@ documents:
   - profissionais_saude_mental
   - equipes_esf
   references_count: 8
-  needs_review: true
+  needs_review: false
 - doc_id: REF-CLI-010
   title: 'Clínica ampliada na atenção básica e processos de subjetivação: relato de
     uma experiência'
@@ -1730,7 +1730,7 @@ documents:
   - coordenadores_aps
   - secretarias_estaduais_saude
   references_count: 3
-  needs_review: true
+  needs_review: false
 - doc_id: REF-CLI-011
   title: Modelos clínicos e psicossocial de atenção ao indivíduo e à família na assistência
     domiciliar - bases conceituais
@@ -1863,7 +1863,7 @@ documents:
   - Tutores de APS em planificacao
   - Gestores de saude mental municipal
   references_count: 7
-  needs_review: true
+  needs_review: false
 - doc_id: REF-FOR-003
   title: 'Saude Mental na APS: Guia para Desenvolvimento do Tutor - Etapa 3 - Acesso
     a Rede de Atencao Psicossocial pela APS'
@@ -1934,7 +1934,7 @@ documents:
   - Tutores de APS em processo de capacitacao pela PAS
   - Gestores da RAPS envolvidos em processos de planificacao
   references_count: 8
-  needs_review: true
+  needs_review: false
 - doc_id: REF-FOR-005
   title: 'Saude Mental na APS: Guia para Gerenciamento da Etapa 1 - A organizacao
     da linha de cuidado em Saude Mental na APS'
@@ -1999,7 +1999,7 @@ documents:
   - Coordenadores de APS
   - Tutores do programa Saude Mental na APS
   references_count: 6
-  needs_review: true
+  needs_review: false
 - doc_id: REF-FOR-006
   title: 'Guia para Desenvolvimento do Tutor - Etapa 2: Território e Gestão de Base
     Populacional em Saúde Mental'
@@ -2126,7 +2126,7 @@ documents:
   - Tutores do programa Saude Mental na APS
   - Equipes de Atencao Primaria a Saude (eSF, eMulti)
   references_count: 3
-  needs_review: true
+  needs_review: false
 - doc_id: REF-FOR-007
   title: 'Saude Mental na APS: Guia para Desenvolvimento do Tutor - Etapa 4 - Gestao
     do Cuidado em Saude Mental'
@@ -2238,7 +2238,7 @@ documents:
   - Gestores da RAPS envolvidos em processos de planificacao
   - Coordenadores de saude mental municipais
   references_count: 5
-  needs_review: true
+  needs_review: false
 - doc_id: REF-FOR-007
   title: 'Saude Mental na APS: Guia para Gerenciamento da Etapa 3 - Acesso a Rede
     de Atencao Psicossocial pela APS'
@@ -2315,7 +2315,7 @@ documents:
   - Grupos Condutores Estaduais e Regionais
   - Tutores e analistas de tutoria do Saude Mental na APS
   references_count: 1
-  needs_review: true
+  needs_review: false
 - doc_id: REF-FOR-008
   title: 'Saúde Mental na APS: Guia para Gerenciamento da Etapa 4 - Gestão do Cuidado
     em Saúde Mental'
@@ -2372,7 +2372,7 @@ documents:
   - Tutores do Saúde Mental na APS
   - Equipes de Estratégia Saúde da Família (eSF)
   references_count: 1
-  needs_review: true
+  needs_review: false
 - doc_id: REF-FOR-009
   title: 'Saude Mental na APS: Guia de Orientacao para a Tutoria da Etapa 1 - A organizacao
     da linha de cuidado em Saude Mental na APS'
@@ -2440,7 +2440,7 @@ documents:
   - Gestores municipais de saude mental
   - Referencia Tecnica (RT) municipal de saude mental
   references_count: 8
-  needs_review: true
+  needs_review: false
 - doc_id: REF-FOR-010
   title: 'Saude Mental na APS: Guia de Orientacao para a Tutoria da Etapa 3 - Acesso
     a Rede de Atencao Psicossocial pela APS'
@@ -2501,7 +2501,7 @@ documents:
   - Gestores de unidades de APS
   - Secretarias Estaduais e Municipais de Saude
   references_count: 3
-  needs_review: true
+  needs_review: false
 - doc_id: REF-FOR-011
   title: 'PlanificaSUS: Guia de Orientacao para a Tutoria da Etapa 4 -- Gestao do
     Cuidado'
@@ -2576,7 +2576,7 @@ documents:
   - coordenadores de APS e AAE
   - consultores regionais e analistas de tutoria
   references_count: 8
-  needs_review: true
+  needs_review: false
 - doc_id: REF-FOR-012
   title: 'Saude Mental na APS: Guia de Orientacao para a Tutoria da Etapa 4 - Gestao
     do Cuidado em Saude Mental'
@@ -2635,7 +2635,7 @@ documents:
   - Gestores de APS nas secretarias estaduais e municipais
   - Coordenadores de unidades basicas de saude
   references_count: 5
-  needs_review: true
+  needs_review: false
 - doc_id: REF-FOR-013
   title: Guia de Orientação para a Tutoria da Etapa 4 - Gestão do Cuidado em Saúde
     Mental na APS
@@ -2700,7 +2700,7 @@ documents:
   - gestores de Secretarias Estaduais e Municipais de Saúde
   - analistas de tutoria e tutores regionais
   references_count: 5
-  needs_review: true
+  needs_review: false
 - doc_id: REF-FOR-014
   title: 'Saúde Mental na APS: Guia de Orientação para a Etapa Preparatória'
   transcript_file: formacao\oficinas\Guia de orientação para a etapa preparatoria.md
@@ -2795,7 +2795,7 @@ documents:
   - Profissionais da APS envolvidos em saúde mental
   - Tutores da PAS
   references_count: 16
-  needs_review: true
+  needs_review: false
 - doc_id: REF-FOR-015
   title: 'Saude Mental na APS: Guia para a Etapa Controle'
   transcript_file: formacao\oficinas\Guia para a Etapa Controle.md
@@ -2879,7 +2879,7 @@ documents:
   - Coordenadores de servicos de saude mental
   - Profissionais envolvidos no gerenciamento da PlanificaSUS
   references_count: 0
-  needs_review: true
+  needs_review: false
 - doc_id: REF-FOR-016
   title: 'Saude Mental na APS: Manual para Organizacao da Oficina sobre Escalonamento
     do Cuidado em Saude Mental'
@@ -2945,7 +2945,7 @@ documents:
   - equipes da Rede de Atencao Psicossocial (RAPS)
   - gestores municipais de saude mental
   references_count: 4
-  needs_review: true
+  needs_review: false
 - doc_id: REF-FOR-017
   title: Manual para Utilização do Instrumento de Autoavaliação dos Processos Estratégicos
     da Linha de Cuidado em Saúde Mental
@@ -3005,7 +3005,7 @@ documents:
   - tutores PlanificaSUS
   - agentes comunitários de saúde (ACS)
   references_count: 2
-  needs_review: true
+  needs_review: false
 - doc_id: REF-FOR-018
   title: Orientações para Realização de Análise FOFA (Matriz SWOT) em Serviços de
     Saúde
@@ -3056,7 +3056,7 @@ documents:
     (eMulti)
   - Apoiadores institucionais e facilitadores de oficinas de planejamento
   references_count: 0
-  needs_review: true
+  needs_review: false
 - doc_id: REF-FOR-019
   title: Orientações para organização do trabalho interdisciplinar em saúde mental
     na APS
@@ -3107,7 +3107,7 @@ documents:
   - gestores de saúde mental
   - profissionais envolvidos em matriciamento
   references_count: 3
-  needs_review: true
+  needs_review: false
 - doc_id: REF-FOR-020
   title: 'Proposta de Programação MI-mhGAP: Treino dos Profissionais de Saude (ToHP)
     - Saude Mental na APS'
@@ -3165,7 +3165,7 @@ documents:
   - Equipes Multiprofissionais (eMulti)
   - Profissionais de APS nao especialistas em saude mental
   references_count: 0
-  needs_review: true
+  needs_review: false
 - doc_id: REF-FOR-021
   title: 'Roteiro para Rodada de Fechamento: Escalonamento do Cuidado em Saúde Mental'
   transcript_file: formacao\oficinas\Roteiro Rodada de Fechamento  Escalonamento do
@@ -3210,7 +3210,7 @@ documents:
   - Facilitadores de oficinas de formação em saúde mental
   - Coordenadores de saúde mental municipal
   references_count: 0
-  needs_review: true
+  needs_review: false
 - doc_id: REF-FOR-022
   title: 'Saude Mental na APS - Workshop 1: A organizacao da linha de cuidado em Saude
     Mental na APS'
@@ -3289,7 +3289,7 @@ documents:
   - Tutores e facilitadores da PAS
   - Agentes Comunitarios de Saude (ACS)
   references_count: 34
-  needs_review: true
+  needs_review: false
 - doc_id: REF-FOR-023
   title: 'Saude Mental na APS - Workshop 2: Territorio e Gestao de Base Populacional
     em Saude Mental'
@@ -3361,7 +3361,7 @@ documents:
   - Gestores e coordenadores da APS
   - Tutores e facilitadores do Saude Mental na APS
   references_count: 24
-  needs_review: true
+  needs_review: false
 - doc_id: REF-FOR-024
   title: 'Saúde Mental na APS - Workshop 3: Acesso à Rede de Atenção Psicossocial
     pela APS'
@@ -3489,7 +3489,7 @@ documents:
   - Gestores e coordenadores de APS
   - Tutores do Saúde Mental na APS
   references_count: 27
-  needs_review: true
+  needs_review: false
 - doc_id: REF-FOR-026
   title: 'Saude Mental na APS - Workshop 4: Gestao do Cuidado em Saude Mental'
   transcript_file: formacao\workshops\Guia Workshop 4_e-Planifica.md
@@ -3578,7 +3578,7 @@ documents:
   - profissionais_CAPS
   - equipes_ambulatoriais_especializadas
   references_count: 8
-  needs_review: true
+  needs_review: false
 - doc_id: REF-INS-002
   title: Orientação para Implantação do Time de Resposta Rápida (TRR)
   transcript_file: referencias\instrumentos\11. Orientação para implantação do time
@@ -3605,7 +3605,7 @@ documents:
   clinical_relevance: alta
   target_audience: []
   references_count: 0
-  needs_review: true
+  needs_review: false
 - doc_id: REF-INS-003
   title: A Utilização da Escala CuidaSM para Apoiar o Processo de Escalonamento do
     Cuidado em Saúde Mental
@@ -3811,7 +3811,7 @@ documents:
   - medicos_aps
   - facilitadores_oficina
   references_count: 0
-  needs_review: true
+  needs_review: false
 - doc_id: REF-INS-007
   title: Direcionadores para Organização de Grupos na Atenção Primária à Saúde
   transcript_file: referencias\instrumentos\5. Direcionadores para organização de
@@ -3987,7 +3987,7 @@ documents:
   clinical_relevance: ''
   target_audience: []
   references_count: 0
-  needs_review: true
+  needs_review: false
 - doc_id: REF-INS-011
   title: Escala de Risco Familiar de Coelho-Savassi
   transcript_file: referencias\instrumentos\8. Escala de Risco Familiar de Coelho-Savassi.md

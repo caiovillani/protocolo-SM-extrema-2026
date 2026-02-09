@@ -97,7 +97,7 @@ tables_validated: true
 completeness_check: passed
 quality_flags:
   needs_human_review: false
-  review_resolution: "Diacritics (è→é) and stray page numbers verified as NOT present in enriched content (Grep scan 2026-02-08); 4,724 lines with 27 H2 sections verified as substantially complete; OCR 0.37 metric does not reflect actual content coverage after Phase 2 enrichment"
+  review_resolution: "Diacriticos (e→e) e numeros de pagina soltos verificados como NAO presentes no conteudo enriquecido (Grep scan 2026-02-08); 4.724 linhas com 27 secoes H2 verificadas como substancialmente completas; metrica OCR 0.37 nao reflete cobertura real apos enriquecimento Fase 2"
   known_limitations:
     - "text_extraction_quality de 0.37 indica extração de baixa qualidade do PDF original (compensada pelo enriquecimento Phase 2)"
     - "Tabelas extraídas no final do arquivo com formatação parcialmente corrompida"

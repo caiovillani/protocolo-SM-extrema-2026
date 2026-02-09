@@ -194,19 +194,14 @@ def generate_index(transcripts_dir: Path) -> dict:
         key_concepts = frontmatter.get("key_concepts", frontmatter.get("conceitos_chave", []))
         related_protocols = frontmatter.get("related_protocols", frontmatter.get("protocolos_relacionados", []))
 
-        # Quality flags
-        # TODO(human): Rewrite needs_review extraction logic
-        # Current bug: list-format quality_flags (40/72 files) are treated as needs_review=True
-        # Three scenarios to handle:
-        #   1. dict schema (new): extract quality_flags.needs_human_review
-        #   2. list schema (legacy): known limitations, not review flags
-        #   3. absent/empty: no flags at all
+        # Quality flags — needs_review only when explicitly flagged via dict schema
         quality_flags = frontmatter.get("quality_flags", {})
         needs_review = False
         if isinstance(quality_flags, dict):
             needs_review = quality_flags.get("needs_human_review", False)
-        elif quality_flags:
-            needs_review = True
+        elif isinstance(quality_flags, list):
+            # Legacy list schema: documented limitations, not review flags
+            print(f"  [!] Legacy list schema: {rel_path}", file=sys.stderr)
 
         # Track metrics
         if doc_id:

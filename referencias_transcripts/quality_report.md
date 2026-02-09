@@ -149,8 +149,8 @@ Os 2 documentos escritos diretamente foram: **Clínica Ampliada na Atenção Bá
 
 ### 8.1 Ações Imediatas
 1. **Complementar campos ausentes** nos 5 documentos identificados (seção 4)
-2. **Revisar** os 8 documentos com `needs_human_review: true` — priorizar normativos e clínicos
-3. **Padronizar formato de referências** — 2 documentos com ABNT (flagged), restante em Vancouver ou misto
+2. **Revisar** os 2 documentos remanescentes com `needs_human_review: true` (ver seção 7 para detalhes)
+3. **Padronizar formato de referências** — documentos com ABNT misto, restante em Vancouver
 
 ### 8.2 Melhorias Futuras (v1.1)
 1. **Reprocessar 2 PDFs falhos** com fix de encoding (UTF-8 explicit no pdfplumber)

@@ -53,22 +53,15 @@ tables_validated: false
 completeness_check: failed
 quality_flags:
   needs_human_review: true
-  ocr_confidence_issues:
-    - "Extracao textual retornou 0,00% — documento inteiramente escaneado como imagem"
-    - "Razao extracao/tamanho: 0,01% (esperado >5%)"
-    - "Todas as 29 paginas retornaram vazias na extracao automatica"
-    - "Arquivo de 14,7 MB sugere conteudo visual denso (imagens, diagramas, infograficos)"
-    - "OCR aplicado mas sem resultados — provavel scan em baixa resolucao ou formato incompativel"
-    - "Re-extraction tentada 2026-02-08 com pdfplumber: confirmado zero chars em todas as 29 paginas — requer OCR externo (tesseract, ABBYY, Google Document AI)"
-  table_structure_issues:
-    - "Impossivel avaliar — nenhum conteudo textual extraido"
-  reference_format_issues:
-    - "Impossivel avaliar — nenhum conteudo textual extraido"
-  completeness_issues:
-    - "Conteudo textual zero extraido de 29 paginas"
+  review_justification: "OCR 0.00 — zero texto extraido em 29 paginas (14,7 MB). Extracao automatica e re-extracao via pdfplumber (2026-02-08) confirmaram 0 chars. Documento inteiramente escaneado como imagem, provavel scan em baixa resolucao. Requer OCR externo (tesseract, ABBYY, Google Document AI) ou transcricao manual."
+  intact_sections: []
+  compromised_sections:
+    - "Documento inteiro — nenhum conteudo textual extraivel em todas as 29 paginas"
     - "Metadados bibliograficos (autores, ano, editora, ISBN) nao identificaveis"
+  known_limitations:
+    - "Razao extracao/tamanho: 0,01% (esperado >5%)"
     - "Estrutura de capitulos e sumario desconhecidos"
-    - "Documento requer re-processamento com OCR de alta qualidade ou transcricao manual"
+    - "Tabelas, referencias e conteudo impossivel de avaliar sem re-OCR"
 processed_at: "2026-02-08"
 processor: PIPS/projeto_referencias_sm_transcricao
 phase: 2_semantic_enrichment
