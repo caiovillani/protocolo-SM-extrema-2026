@@ -206,11 +206,11 @@ STATUS_EMOJI = {"concluido": "✅", "erro": "❌", "em_progresso": "▶️", ...
 
 Three interconnected documents for Intellectual Disability and Autism Spectrum Disorder:
 
-1. **CLI-02** (`Protocolos_Clinicos/CLI_02_TRANSTORNO_ESPECTRO_AUTISTA.md`) — **v2.6**
+1. **CLI-02** (`Protocolos_Clinicos/CLI_02_TRANSTORNO_ESPECTRO_AUTISTA.md`) — **v2.7**
    - Clinical reference: DSM-5-TR criteria, M-CHAT-R/F protocol, intervention approaches
    - **~1,925 lines, 21 sections + visual annexes, 34 Vancouver references**
    - Key sections: 3.1 Fundamentação (10 subseções), 7.3 NIRSM-R, 9.2.4 Algoritmo intervenção, 11.3.1 Transição adulto, 12.4-12.6 Rede expandida
-   - **v2.6 additions:** Anexo F (Mermaid flowcharts by age), Anexo G (M-CHAT pocket card)
+   - **v2.6-v2.7 additions:** Anexo F (Mermaid flowcharts by age), Anexo G (M-CHAT pocket card)
 
 2. **PCC-06 MACROFLUXO** (`Protocolos_Clinicos/MACROFLUXO_NARRATIVO_DI_TEA.md`)
    - 10-phase patient navigation cascade: Surveillance → Diagnosis → Intervention → Discharge

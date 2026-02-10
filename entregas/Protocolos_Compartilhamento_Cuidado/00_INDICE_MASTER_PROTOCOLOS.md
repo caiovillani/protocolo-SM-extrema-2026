@@ -59,7 +59,7 @@ Este compêndio reúne os protocolos, fluxos operacionais e instrumentos normati
 | Código | Protocolo | Arquivo |
 |--------|-----------|---------|
 | CLI-01 | Transtornos Mentais Comuns na APS | `07_PROTOCOLO_TRANSTORNOS_COMUNS_APS.md` |
-| CLI-02 | Transtorno do Espectro Autista (TEA) **v2.6** | `Protocolos_Clinicos/CLI_02_TRANSTORNO_ESPECTRO_AUTISTA.md` |
+| CLI-02 | Transtorno do Espectro Autista (TEA) **v2.7** | `Protocolos_Clinicos/CLI_02_TRANSTORNO_ESPECTRO_AUTISTA.md` |
 | CLI-03 | Suicidalidade e Autolesão | `09_PROTOCOLO_SUICIDALIDADE.md` |
 | CLI-04 | Álcool e Outras Drogas | `Protocolos_Clinicos/CLI_04_ALCOOL_OUTRAS_DROGAS.md` |
 | CLI-05 | Emergências Psiquiátricas | `11_PROTOCOLO_EMERGENCIAS_PSIQUIATRICAS.md` |

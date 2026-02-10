@@ -1,0 +1,724 @@
+metadata:
+  title: REFERENCE INDEX - Acervo CRIE / Licitacoes e Contratos
+  project: Protocolo SM Extrema 2026
+  generated_at: '2026-02-09T23:18:08.091013'
+  total_documents: 27
+  generator: claude-code (manual)
+summary:
+  by_taxonomy:
+    normativos_mrosc: 7
+    projeto_crie: 4
+    sinteses_analise: 11
+    benchmarks: 5
+  by_doc_type:
+    compilacao: 1
+    decreto: 1
+    resolucao: 1
+    legislacao: 3
+    portaria: 1
+    planilha: 1
+    plano_trabalho: 2
+    relatorio_tecnico: 1
+    termo_referencia: 1
+    analise: 3
+    extracao: 1
+    checklist: 1
+    log: 1
+    planejamento: 1
+    minuta: 1
+    relatorio: 2
+    analise_risco: 1
+    benchmark: 2
+    etp: 1
+    template: 1
+  by_format:
+    PDF: 12
+    TXT: 1
+    DOCX: 3
+    MD: 11
+  by_extraction_method:
+    pdfplumber: 10
+    read: 1
+    python-docx: 3
+    copy: 11
+    ocr_manual: 2
+  needs_human_review: 3
+  total_body_chars: 1183857
+  total_body_lines: 18718
+documents:
+- doc_id: CRIE-NOR-006
+  title: Compilacao - Leis, Decretos e Normas do MS sobre OSCs
+  file_path: 01_normativos_mrosc\COMPILACAO_OSC_NORMAS_MS.md
+  taxonomy: normativos_mrosc
+  doc_type: compilacao
+  original_format: PDF
+  source_file: normativos/OSC_Leis, Decretos e Normas do Ministério da Saúde.pdf
+  year: null
+  publisher: Ministerio da Saude
+  language: pt-BR
+  topics:
+  - OSC
+  - normas MS
+  - parcerias saude
+  - MROSC saude
+  related_documents: []
+  extraction_method: pdfplumber
+  extraction_date: '2026-02-09'
+  file_hash: d27bf78822a297dcfa16ce86cc8dea0f
+  pages_total: 10
+  needs_human_review: false
+  review_notes: ''
+  body_lines: 435
+  body_chars: 33644
+- doc_id: CRIE-NOR-001
+  title: Decreto MG n. 47.132/2017 - Regulamenta parcerias com OSCs (MROSC estadual)
+  file_path: 01_normativos_mrosc\DECRETO_MG_47132_2017.md
+  taxonomy: normativos_mrosc
+  doc_type: decreto
+  original_format: TXT
+  source_file: normativos/DECRETO Nº 47.132, DE 20 DE JANEIRO.txt
+  year: 2017
+  publisher: Governo do Estado de Minas Gerais
+  language: pt-BR
+  topics:
+  - MROSC
+  - parcerias
+  - OSC
+  - termo de colaboracao
+  - termo de fomento
+  related_documents: []
+  extraction_method: read
+  extraction_date: '2026-02-09'
+  file_hash: 7955d260f0afc7560a5d110bba227a80
+  pages_total: null
+  needs_human_review: false
+  review_notes: ''
+  body_lines: 2789
+  body_chars: 234828
+- doc_id: CRIE-NOR-002
+  title: Deliberacao CIB-SUS/MG n. 1.403/2013
+  file_path: 01_normativos_mrosc\DELIBERACAO_CIB_SUS_MG_1403_2013.md
+  taxonomy: normativos_mrosc
+  doc_type: resolucao
+  original_format: PDF
+  source_file: normativos/DELIBERAÇÃO_CIB_SUS_MG_1403_2013.pdf
+  year: 2013
+  publisher: CIB-SUS/MG
+  language: pt-BR
+  topics:
+  - SUS
+  - governanca
+  - saude
+  - CIB
+  - Minas Gerais
+  related_documents: []
+  extraction_method: pdfplumber
+  extraction_date: '2026-02-09'
+  file_hash: ffb8f391cb6ba35763cdbd22058d3da8
+  pages_total: 44
+  needs_human_review: false
+  review_notes: ''
+  body_lines: 2085
+  body_chars: 106001
+- doc_id: CRIE-NOR-003
+  title: Lei Federal n. 12.764/2012 - Politica Nacional de Protecao dos Direitos da Pessoa com TEA
+  file_path: 01_normativos_mrosc\LEI_12764_2012_BERENICE_PIANA.md
+  taxonomy: normativos_mrosc
+  doc_type: legislacao
+  original_format: PDF
+  source_file: normativos/L12764.pdf
+  year: 2012
+  publisher: Presidencia da Republica
+  language: pt-BR
+  topics:
+  - TEA
+  - autismo
+  - direitos
+  - protecao
+  - Berenice Piana
+  related_documents: []
+  extraction_method: pdfplumber
+  extraction_date: '2026-02-09'
+  file_hash: a060232a60e6a44552677abf77a07357
+  pages_total: 3
+  needs_human_review: false
+  review_notes: ''
+  body_lines: 116
+  body_chars: 9553
+- doc_id: CRIE-NOR-005
+  title: Lei Federal n. 14.133/2021 - Nova Lei de Licitacoes e Contratos Administrativos
+  file_path: 01_normativos_mrosc\LEI_14133_2021_LICITACOES.md
+  taxonomy: normativos_mrosc
+  doc_type: legislacao
+  original_format: PDF
+  source_file: normativos/licitacoes_e_contratos_administrativos_L14133.pdf
+  year: 2021
+  publisher: Presidencia da Republica
+  language: pt-BR
+  topics:
+  - licitacoes
+  - contratos
+  - compras publicas
+  - pregao
+  - concorrencia
+  related_documents: []
+  extraction_method: pdfplumber
+  extraction_date: '2026-02-09'
+  file_hash: 59f83d08e36b1f7d68590bc36619e2a2
+  pages_total: 63
+  needs_human_review: false
+  review_notes: ''
+  body_lines: 3159
+  body_chars: 274275
+- doc_id: CRIE-NOR-004
+  title: Lei Federal - Entidades Beneficentes de Assistencia Social
+  file_path: 01_normativos_mrosc\LEI_ENTIDADES_BENEFICENTES.md
+  taxonomy: normativos_mrosc
+  doc_type: legislacao
+  original_format: PDF
+  source_file: normativos/Lei Entidades Beneficentes.pdf
+  year: null
+  publisher: Presidencia da Republica
+  language: pt-BR
+  topics:
+  - entidades beneficentes
+  - assistencia social
+  - CEBAS
+  - imunidade tributaria
+  related_documents: []
+  extraction_method: pdfplumber
+  extraction_date: '2026-02-09'
+  file_hash: 18d8636b28c81e40541f0c65c1b83f6e
+  pages_total: 9
+  needs_human_review: false
+  review_notes: ''
+  body_lines: 368
+  body_chars: 28624
+- doc_id: CRIE-NOR-007
+  title: Portaria Interministerial SG/MGI/AGU n. 197/2025 - Transferegov.br
+  file_path: 01_normativos_mrosc\PORTARIA_197_2025_TRANSFEREGOV.md
+  taxonomy: normativos_mrosc
+  doc_type: portaria
+  original_format: PDF
+  source_file: normativos/PORTARIA INTERMINISTERIAL SG_MGI_AGU Nº 197, DE 11 DE AGOSTO DE 2025 — Transferegov.br.pdf
+  year: 2025
+  publisher: SG/MGI/AGU
+  language: pt-BR
+  topics:
+  - transferencias
+  - Transferegov
+  - convenios
+  - parcerias federais
+  related_documents: []
+  extraction_method: pdfplumber
+  extraction_date: '2026-02-09'
+  file_hash: cb23a7a98e05fa54de9e3624f9488c99
+  pages_total: 1
+  needs_human_review: false
+  review_notes: ''
+  body_lines: 44
+  body_chars: 2438
+- doc_id: CRIE-PRJ-001
+  title: Planilha de Custos - Funcionarios CRIE (com Educador Fisico)
+  file_path: 02_projeto_crie\CUSTO_FUNCIONARIO_CRIE.md
+  taxonomy: projeto_crie
+  doc_type: planilha
+  original_format: PDF
+  source_file: projeto_crie/CUSTO FUNCIONARIO com educador fisico 2.pdf
+  year: 2025
+  publisher: CRIE/APAE Extrema
+  language: pt-BR
+  topics:
+  - custos
+  - RH
+  - encargos
+  - fisioterapeuta
+  - psicologo
+  - educador fisico
+  related_documents:
+  - CRIE-PRJ-002
+  - CRIE-SIN-006
+  extraction_method: pdfplumber
+  extraction_date: '2026-02-09'
+  file_hash: 321c67b95b06171c9c9b20d4527c80ad
+  pages_total: 3
+  needs_human_review: true
+  review_notes: Valores reconstruidos a partir de extracao com colunas desalinhadas. Validacao cruzada por FGTS 8% confirmou
+    consistencia. Conferir com planilha original.
+  body_lines: 30
+  body_chars: 1105
+- doc_id: CRIE-PRJ-002
+  title: Plano de Trabalho - Parceria SMS Extrema x CRIE
+  file_path: 02_projeto_crie\PLANO_TRABALHO_CRIE.md
+  taxonomy: projeto_crie
+  doc_type: plano_trabalho
+  original_format: DOCX
+  source_file: projeto_crie/PLANO DE TRABALHO CRIE.docx
+  year: 2026
+  publisher: CRIE - Centro de Integracao Especial
+  language: pt-BR
+  topics:
+  - plano de trabalho
+  - parceria
+  - MROSC
+  - CRIE
+  - PCD
+  - TEA
+  related_documents: []
+  extraction_method: python-docx
+  extraction_date: '2026-02-09'
+  file_hash: e6568da04bfe13db6768e94b05843189
+  pages_total: null
+  needs_human_review: false
+  review_notes: ''
+  body_lines: 189
+  body_chars: 18271
+- doc_id: CRIE-PRJ-003
+  title: Relatorio Tecnico - CAPS I e II Extrema
+  file_path: 02_projeto_crie\RELATORIO_TECNICO_CAPS_I_II.md
+  taxonomy: projeto_crie
+  doc_type: relatorio_tecnico
+  original_format: DOCX
+  source_file: projeto_crie/RELATÓRIO_TÉCNICO_CAPS_I e II.docx
+  year: 2025
+  publisher: SMS Extrema
+  language: pt-BR
+  topics:
+  - CAPS
+  - saude mental
+  - capacidade
+  - demanda
+  - parceria CRIE
+  related_documents: []
+  extraction_method: python-docx
+  extraction_date: '2026-02-09'
+  file_hash: fa5786e13670329ea700935d61951d15
+  pages_total: null
+  needs_human_review: false
+  review_notes: ''
+  body_lines: 596
+  body_chars: 71736
+- doc_id: CRIE-PRJ-004
+  title: Termo de Referencia - Parceria SMS Extrema x CRIE
+  file_path: 02_projeto_crie\TR_CRIE.md
+  taxonomy: projeto_crie
+  doc_type: termo_referencia
+  original_format: DOCX
+  source_file: projeto_crie/TR - CRIE.docx
+  year: 2026
+  publisher: SMS Extrema
+  language: pt-BR
+  topics:
+  - termo de referencia
+  - parceria
+  - MROSC
+  - dispensa
+  - PCD
+  - TEA
+  related_documents: []
+  extraction_method: python-docx
+  extraction_date: '2026-02-09'
+  file_hash: 9abc7c59564c5d5b610d80e0c8e5796d
+  pages_total: null
+  needs_human_review: false
+  review_notes: ''
+  body_lines: 251
+  body_chars: 12940
+- doc_id: CRIE-SIN-001
+  title: Banco de Conhecimento Tecnico - Parceria CRIE
+  file_path: 03_sinteses_analise\BANCO_CONHECIMENTO_TECNICO.md
+  taxonomy: sinteses_analise
+  doc_type: analise
+  original_format: MD
+  source_file: sinteses_ia/BANCO_CONHECIMENTO_TECNICO.md
+  year: 2026
+  publisher: Analise Tecnica IA
+  language: pt-BR
+  topics:
+  - base legal
+  - custos
+  - MROSC
+  - vedacoes
+  - capacidade CRIE
+  related_documents: []
+  extraction_method: copy
+  extraction_date: '2026-02-09'
+  file_hash: 47de8ec973bb9c49a849fe9c5e1f0e3b
+  pages_total: null
+  needs_human_review: false
+  review_notes: ''
+  body_lines: 299
+  body_chars: 11374
+- doc_id: CRIE-SIN-002
+  title: Contexto Estrategico - Parceria CRIE x SMS Extrema
+  file_path: 03_sinteses_analise\CONTEXTO_ESTRATEGICO_EXTREMA.md
+  taxonomy: sinteses_analise
+  doc_type: analise
+  original_format: MD
+  source_file: sinteses_ia/CONTEXTO_ESTRATEGICO_EXTREMA.md
+  year: 2026
+  publisher: Analise Tecnica IA
+  language: pt-BR
+  topics:
+  - contexto
+  - riscos
+  - validacao
+  - parceria CRIE
+  related_documents: []
+  extraction_method: copy
+  extraction_date: '2026-02-09'
+  file_hash: dbb5b7dc98736ae43898eb3bc68f74d9
+  pages_total: null
+  needs_human_review: false
+  review_notes: ''
+  body_lines: 141
+  body_chars: 5555
+- doc_id: CRIE-SIN-003
+  title: Extracao de Dados - Documentos CRIE
+  file_path: 03_sinteses_analise\EXTRACAO_DADOS_CRIE.md
+  taxonomy: sinteses_analise
+  doc_type: extracao
+  original_format: MD
+  source_file: sinteses_ia/EXTRACAO_DADOS_CRIE.md
+  year: 2026
+  publisher: Analise Tecnica IA
+  language: pt-BR
+  topics:
+  - extracao
+  - dados
+  - TR
+  - plano trabalho
+  - CRIE
+  related_documents: []
+  extraction_method: copy
+  extraction_date: '2026-02-09'
+  file_hash: 09aba9bb1f3dac0269f046782a3be45a
+  pages_total: null
+  needs_human_review: false
+  review_notes: ''
+  body_lines: 749
+  body_chars: 34909
+- doc_id: CRIE-SIN-004
+  title: Lista de Exigencias de Complementacao - CRIE
+  file_path: 03_sinteses_analise\LISTA_EXIGENCIAS_COMPLEMENTACAO.md
+  taxonomy: sinteses_analise
+  doc_type: checklist
+  original_format: MD
+  source_file: sinteses_ia/LISTA_EXIGENCIAS_COMPLEMENTACAO.md
+  year: 2026
+  publisher: Analise Tecnica IA
+  language: pt-BR
+  topics:
+  - exigencias
+  - documentacao
+  - CAGEC
+  - certidoes
+  - compliance
+  related_documents: []
+  extraction_method: copy
+  extraction_date: '2026-02-09'
+  file_hash: 845188af05988da38dfec340072fc389
+  pages_total: null
+  needs_human_review: false
+  review_notes: ''
+  body_lines: 525
+  body_chars: 19489
+- doc_id: CRIE-SIN-005
+  title: Log de Auditoria de Tarefas - Projeto CRIE
+  file_path: 03_sinteses_analise\LOG_AUDITORIA_TAREFAS.md
+  taxonomy: sinteses_analise
+  doc_type: log
+  original_format: MD
+  source_file: sinteses_ia/LOG_AUDITORIA_TAREFAS.md
+  year: 2026
+  publisher: Analise Tecnica IA
+  language: pt-BR
+  topics:
+  - auditoria
+  - tarefas
+  - progresso
+  - fases
+  related_documents: []
+  extraction_method: copy
+  extraction_date: '2026-02-09'
+  file_hash: 9ba32d02a1cfb0d1e04b62a1f351acd5
+  pages_total: null
+  needs_human_review: false
+  review_notes: ''
+  body_lines: 141
+  body_chars: 4971
+- doc_id: CRIE-SIN-006
+  title: Memoria de Calculo Orcamentario - Parceria CRIE
+  file_path: 03_sinteses_analise\MEMORIA_CALCULO_ORCAMENTO.md
+  taxonomy: sinteses_analise
+  doc_type: analise
+  original_format: MD
+  source_file: sinteses_ia/MEMORIA_CALCULO_ORCAMENTO.md
+  year: 2026
+  publisher: Analise Tecnica IA
+  language: pt-BR
+  topics:
+  - orcamento
+  - custos
+  - INSS
+  - FGTS
+  - encargos
+  related_documents: []
+  extraction_method: copy
+  extraction_date: '2026-02-09'
+  file_hash: 951f3c0ded140fabe25504f194b0d931
+  pages_total: null
+  needs_human_review: false
+  review_notes: ''
+  body_lines: 250
+  body_chars: 9232
+- doc_id: CRIE-SIN-007
+  title: Planejamento Executivo - Diretoria de Contratos e Licitacoes SMS Extrema
+  file_path: 03_sinteses_analise\PLANEJAMENTO_EXECUTIVO_DIRETORIA.md
+  taxonomy: sinteses_analise
+  doc_type: planejamento
+  original_format: MD
+  source_file: sinteses_ia/planejamento-executivo-diretoria_contrato_compras_licitacoes-extrema.md
+  year: 2026
+  publisher: Analise Tecnica IA
+  language: pt-BR
+  topics:
+  - planejamento
+  - licitacoes
+  - contratos
+  - L14133
+  - governanca
+  - KPIs
+  related_documents: []
+  extraction_method: copy
+  extraction_date: '2026-02-09'
+  file_hash: ba4f758cb3779c317ae069690752671e
+  pages_total: null
+  needs_human_review: false
+  review_notes: ''
+  body_lines: 996
+  body_chars: 41637
+- doc_id: CRIE-SIN-008
+  title: Rascunho de Instrumentos Juridicos - TR e PT Parceria CRIE
+  file_path: 03_sinteses_analise\RASCUNHO_INSTRUMENTOS_JURIDICOS.md
+  taxonomy: sinteses_analise
+  doc_type: minuta
+  original_format: MD
+  source_file: sinteses_ia/RASCUNHO_INSTRUMENTOS_JURIDICOS.md
+  year: 2026
+  publisher: Analise Tecnica IA
+  language: pt-BR
+  topics:
+  - termo referencia
+  - plano trabalho
+  - minuta
+  - MROSC
+  - Decreto MG 47.132
+  related_documents: []
+  extraction_method: copy
+  extraction_date: '2026-02-09'
+  file_hash: 8e24fcea75fc59baf576e0f92e50dd0e
+  pages_total: null
+  needs_human_review: false
+  review_notes: ''
+  body_lines: 1285
+  body_chars: 68046
+- doc_id: CRIE-SIN-009
+  title: Relatorio de Entrega de Documentos Oficiais - Projeto CRIE
+  file_path: 03_sinteses_analise\RELATORIO_ENTREGA_DOCUMENTOS.md
+  taxonomy: sinteses_analise
+  doc_type: relatorio
+  original_format: MD
+  source_file: sinteses_ia/RELATORIO_ENTREGA_DOCUMENTOS_OFICIAIS.md
+  year: 2026
+  publisher: Analise Tecnica IA
+  language: pt-BR
+  topics:
+  - entrega
+  - documentos
+  - oficiais
+  - CRIE
+  related_documents: []
+  extraction_method: copy
+  extraction_date: '2026-02-09'
+  file_hash: 2aacb02215525774c5c994b7523cd172
+  pages_total: null
+  needs_human_review: false
+  review_notes: ''
+  body_lines: 555
+  body_chars: 19688
+- doc_id: CRIE-SIN-010
+  title: Relatorio Final de Entrega - Projeto CRIE
+  file_path: 03_sinteses_analise\RELATORIO_FINAL_ENTREGA.md
+  taxonomy: sinteses_analise
+  doc_type: relatorio
+  original_format: MD
+  source_file: sinteses_ia/RELATORIO_FINAL_ENTREGA.md
+  year: 2026
+  publisher: Analise Tecnica IA
+  language: pt-BR
+  topics:
+  - entrega final
+  - qualidade
+  - conformidade
+  - proximos passos
+  related_documents: []
+  extraction_method: copy
+  extraction_date: '2026-02-09'
+  file_hash: 174b739d4f16fd223f4e1f4f8832a350
+  pages_total: null
+  needs_human_review: false
+  review_notes: ''
+  body_lines: 501
+  body_chars: 19097
+- doc_id: CRIE-SIN-011
+  title: Relatorio de Nao-Conformidades - Parceria CRIE
+  file_path: 03_sinteses_analise\RELATORIO_NAO_CONFORMIDADES.md
+  taxonomy: sinteses_analise
+  doc_type: analise_risco
+  original_format: MD
+  source_file: sinteses_ia/RELATORIO_NAO_CONFORMIDADES.md
+  year: 2026
+  publisher: Analise Tecnica IA
+  language: pt-BR
+  topics:
+  - riscos
+  - nao-conformidades
+  - dispensa
+  - CAGEC
+  - objeto hibrido
+  related_documents: []
+  extraction_method: copy
+  extraction_date: '2026-02-09'
+  file_hash: f90e4098f9f3dc7515484419a0733268
+  pages_total: null
+  needs_human_review: false
+  review_notes: ''
+  body_lines: 347
+  body_chars: 14084
+- doc_id: CRIE-BEN-001
+  title: Benchmark - Plano de Trabalho Instituto Filippo Smaldone (Pouso Alegre) - Infraestrutura
+  file_path: 04_benchmarks\APAE_POUSO_ALEGRE_INFRAESTRUTURA.md
+  taxonomy: benchmarks
+  doc_type: benchmark
+  original_format: PDF
+  source_file: benchmarks/exemplo_apae_pouso_alegre.pdf
+  year: 2023
+  publisher: Instituto Filippo Smaldone / Pouso Alegre-MG
+  language: pt-BR
+  topics:
+  - APAE
+  - infraestrutura
+  - acessibilidade
+  - SCFV
+  - PCD
+  - revitalizacao
+  related_documents: []
+  extraction_method: ocr_manual
+  extraction_date: '2026-02-09'
+  file_hash: manual_transcription
+  pages_total: 6
+  needs_human_review: true
+  review_notes: Transcricao manual de PDF escaneado (imagem). Verificar dados financeiros.
+  body_lines: 158
+  body_chars: 9826
+- doc_id: CRIE-BEN-002
+  title: Benchmark - Plano de Trabalho Instituto Avante Social - SCFV Pouso Alegre
+  file_path: 04_benchmarks\AVANTE_SOCIAL_SCFV_POUSO_ALEGRE.md
+  taxonomy: benchmarks
+  doc_type: benchmark
+  original_format: PDF
+  source_file: benchmarks/exemplo_apae_2.pdf
+  year: 2025
+  publisher: Instituto Avante Social / Pouso Alegre-MG
+  language: pt-BR
+  topics:
+  - SCFV
+  - assistencia social
+  - 720 usuarios
+  - 4 centros
+  - 24 meses
+  related_documents: []
+  extraction_method: ocr_manual
+  extraction_date: '2026-02-09'
+  file_hash: manual_transcription
+  pages_total: 56
+  needs_human_review: true
+  review_notes: PDF escaneado sem camada de texto -- extracao automatica falhou (pdfplumber e PyMuPDF retornaram vazio em
+    todas as 56 paginas). Transcricao baseada em leitura visual anterior. Verificar valores financeiros, dados cadastrais,
+    CNPJ e composicao de equipe contra o documento original.
+  body_lines: 613
+  body_chars: 27054
+- doc_id: CRIE-BEN-004
+  title: Estudo Tecnico Preliminar n. 000004/2025
+  file_path: 04_benchmarks\ETP_000004_2025.md
+  taxonomy: benchmarks
+  doc_type: etp
+  original_format: PDF
+  source_file: benchmarks/Estudo+Tecnico+Preliminar+000004+2025.pdf
+  year: 2025
+  publisher: Administracao Municipal
+  language: pt-BR
+  topics:
+  - ETP
+  - estudo tecnico
+  - licitacao
+  - planejamento
+  related_documents: []
+  extraction_method: pdfplumber
+  extraction_date: '2026-02-09'
+  file_hash: b98914d16297b4741af6fc47ab72ca65
+  pages_total: 18
+  needs_human_review: false
+  review_notes: ''
+  body_lines: 520
+  body_chars: 28054
+- doc_id: CRIE-BEN-003
+  title: Template - Anexo IV Modelo de Plano de Trabalho (Ministerio da Cultura)
+  file_path: 04_benchmarks\MODELO_PLANO_TRABALHO_MINC.md
+  taxonomy: benchmarks
+  doc_type: template
+  original_format: PDF
+  source_file: benchmarks/copy_of_ANEXO_IV_MODELO_DE_PLANO_DE_TRABALHO_ajustada_27.09.2023.pdf
+  year: 2023
+  publisher: Ministerio da Cultura
+  language: pt-BR
+  topics:
+  - template
+  - plano trabalho
+  - OSC
+  - cultura
+  - modelo
+  related_documents: []
+  extraction_method: pdfplumber
+  extraction_date: '2026-02-09'
+  file_hash: 9b2e78a3c941d4e7b66276828fd712d4
+  pages_total: 16
+  needs_human_review: false
+  review_notes: ''
+  body_lines: 1225
+  body_chars: 54913
+- doc_id: CRIE-BEN-005
+  title: Plano de Trabalho - Saude (Manutencao e Educador Fisico)
+  file_path: 04_benchmarks\PLANO_TRABALHO_SAUDE_EDUC_FISICO.md
+  taxonomy: benchmarks
+  doc_type: plano_trabalho
+  original_format: PDF
+  source_file: benchmarks/Plano_de_trabalho_Saude_para_manutencao_de_pagamento_e_educador_fisico_assinado.pdf
+  year: 2025
+  publisher: Administracao Municipal
+  language: pt-BR
+  topics:
+  - plano trabalho
+  - saude
+  - educador fisico
+  - manutencao
+  related_documents: []
+  extraction_method: pdfplumber
+  extraction_date: '2026-02-09'
+  file_hash: ee7e88afe1740065616ac5c5fef615ed
+  pages_total: 8
+  needs_human_review: false
+  review_notes: ''
+  body_lines: 351
+  body_chars: 22513

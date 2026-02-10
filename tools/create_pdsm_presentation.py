@@ -551,7 +551,7 @@ def create_protocolos_desenvolvidos_slide(prs):
     valid_text = slide.shapes.add_textbox(Inches(0.7), Inches(5.1), Inches(11.5), Inches(1))
     tf = valid_text.text_frame
     p = tf.paragraphs[0]
-    p.text = "CLI-02 v2.7 avaliado como tecnicamente SUPERIOR às referências internacionais:"
+    p.text = "CLI-02 v2.7 avaliado como tecnicamente alinhado e complementar às referências internacionais:"
     p.font.size = Pt(13)
     p.font.color.rgb = CINZA_ESCURO
 

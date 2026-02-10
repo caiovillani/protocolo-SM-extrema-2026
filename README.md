@@ -98,7 +98,7 @@ Protocolo SM Extrema 2026/
 | Código | Nome | Status | Versão |
 |--------|------|--------|--------|
 | CLI-01 | Transtornos Mentais Comuns | Pendente | - |
-| CLI-02 | Transtorno do Espectro Autista | **Concluído** | v2.6 (~1.925 linhas) |
+| CLI-02 | Transtorno do Espectro Autista | **Concluído** | v2.7 (~1.928 linhas) |
 | CLI-03 | Suicidalidade | Pendente | - |
 | CLI-04 | Álcool e Outras Drogas | **Concluído** | v1.0 (900+ linhas) |
 | CLI-05 | Emergências Psiquiátricas | Pendente | - |
@@ -142,4 +142,4 @@ Protocolo SM Extrema 2026/
 
 ---
 
-*Última atualização: 24 Janeiro 2026 | CLI-02 TEA v2.6 | CLI-04 AOD v1.0*
+*Última atualização: 24 Janeiro 2026 | CLI-02 TEA v2.7 | CLI-04 AOD v1.0*
