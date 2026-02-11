@@ -441,6 +441,20 @@ A análise econômica de James Heckman (Prêmio Nobel de Economia, 2000) demonst
 
 Estudos longitudinais de 20 anos na Jamaica documentaram que crianças expostas a intervenção precoce de qualidade apresentaram salários 25% superiores na vida adulta, comparadas a controles. A lógica é objetiva: cada real investido em prevenção e desenvolvimento infantil economiza múltiplos reais em educação remediativa, assistência social e sistema de justiça nas décadas seguintes — fundamentando a racionalidade econômica da parceria proposta.
 
+### 9.6. Referências Científicas
+
+1. Vivanti G, Kasari C, Green J, Mandell D, Maye M, Hudry K. Implementing and evaluating early intervention for children with autism: where are the gaps and what should we do? *Autism Res*. 2020;13(1):16-23. doi:10.1002/aur.2260
+
+2. Fuller EA, Kaiser AP. The effects of early intervention on social communication outcomes for children with autism spectrum disorder: A meta-analysis. *J Autism Dev Disord*. 2020;50(5):1683-1700. doi:10.1007/s10803-019-03927-z
+
+3. Dawson G, Rogers S, Munson J, Smith M, Winter J, Greenson J, et al. Randomized, controlled trial of an intervention for toddlers with autism: the Early Start Denver Model. *Pediatrics*. 2010;125(1):e17-e23. doi:10.1542/peds.2009-0958
+
+4. Heckman JJ. Policies to foster human capital. *Research in Economics*. 2000;54(1):3-56. doi:10.1006/reec.1999.0225
+
+5. Walker SP, Chang SM, Powell CA, Grantham-McGregor SM. Effects of early childhood psychosocial stimulation and nutritional supplementation on cognition and education in growth-stunted Jamaican children: prospective cohort study. *Lancet*. 2005;366(9499):1804-1807. doi:10.1016/S0140-6736(05)67574-5
+
+6. Harvard Center on the Developing Child. *Brain Architecture* [Internet]. Cambridge (MA): Harvard University; 2024 [acesso em 2026 fev 11]. Disponível em: https://developingchild.harvard.edu/science/key-concepts/brain-architecture/
+
 ---
 
 ## 10. Obrigações da Administração Pública (Secretaria Municipal de Saúde de Extrema)
@@ -636,7 +650,7 @@ A lacuna assistencial é estrutural: o município não dispõe de serviço de re
 | M3 | Procedimentos SERDI faturados | Volume de produção | Procedimentos faturados BPA / mês | Vector/BPA-I | Mensal | ≥ 900 proc/mês |
 | M4 | Frequência dos usuários | Taxa de adesão | (Presenças / Sessões agendadas) × 100 | Registro de frequência | Bimestral | ≥ 75% |
 | M5 | Faturamento vs. realizados | Eficiência de registro | (Procedimentos faturados / Procedimentos realizados) × 100 | BPA vs. registro interno | Quadrimestral | ≥ 80% |
-| M6 | Neonatos de risco captados (PIPA) | Captação PIPA | Neonatos em acompanhamento / Neonatos de risco notificados | PIPA / e-SUS | Semestral | [A PREENCHER] |
+| M6 | Neonatos de risco captados (PIPA) | Captação PIPA | Neonatos em acompanhamento / Neonatos de risco notificados | PIPA / e-SUS | Semestral | **≥30% Ano 1**, ≥70% Ano 2+ |
 
 > **Nota:** A meta M3 (≥ 900 procedimentos/mês) corresponde a aproximadamente 69% da meta de referência para SERDI habilitados (1.300 procedimentos/mês, Resolução SES/MG n.º 10.687/2025). A progressão para 100% da meta de referência será pactuada a partir do Ano 2, condicionada à habilitação estadual e à maturação operacional da equipe.
 
@@ -702,7 +716,7 @@ Conforme detalhamento nas Seções 4, 5 e 6 (Composição de Custos).
 | Fonte | Valor Mensal | Valor Anual | Observação |
 |-------|-------------|-------------|------------|
 | Repasse SMS (FRENTE I + II) | R$ 38.860,41 | R$ 466.324,92 | Fonte primária |
-| Cofinanciamento estadual (SERDI) | [A PREENCHER — condicionado à habilitação] | [A PREENCHER] | Fonte complementar |
+| Cofinanciamento estadual (SERDI) | [A PREENCHER — condicionado à habilitação] | [A PREENCHER] | Fonte complementar. **Em caso de não habilitação até M6/2026, repasse municipal permanece vigente e metas de produção serão ajustadas via Termo Aditivo** |
 | Contrapartida OSC (estimada) | R$ 8.000 a R$ 12.000 | R$ 96.000 a R$ 144.000 | Infraestrutura, equipe apoio, manutenção |
 
 ---
@@ -745,7 +759,7 @@ a) **Listas de presença** — registro diário de frequência dos usuários e p
 
 b) **Prontuários** — registro clínico individualizado com PTS, atualizado a cada atendimento (acesso restrito conforme LGPD);
 
-c) **Pesquisa de satisfação** — questionário padronizado aplicado semestralmente às famílias (meta Q1: ≥ 70% positivas);
+c) **Pesquisa de satisfação** — questionário padronizado aplicado semestralmente às famílias, **mediante consentimento informado para tratamento de dados pessoais com finalidade de pesquisa (Art. 11, I, LGPD)**, com meta Q1: ≥ 70% de avaliações positivas;
 
 d) **Faturamento BPA-I** — registro mensal de procedimentos no Vector/SIA-SUS, com campos individualizados (Art. 12, § 6.º, Deliberação 1.403);
 
@@ -839,7 +853,7 @@ b) A base legal primária para tratamento desses dados é a **tutela da saúde**
 
 c) O tratamento para finalidades secundárias (pesquisa de satisfação, uso de imagem institucional, produção acadêmica) dependerá de **consentimento informado** do titular ou responsável legal (Art. 11, I, LGPD);
 
-d) A OSC designará um **Encarregado de Dados** (Data Protection Officer — DPO), cuja identidade será comunicada à SMS e mantida pública (Art. 41, LGPD);
+d) A OSC designará um **Encarregado de Dados** (Data Protection Officer — DPO): **[A PREENCHER — Nome e CPF do DPO]**, cuja identidade será comunicada à SMS e mantida pública conforme Art. 41 da LGPD;
 
 e) O compartilhamento de dados entre as partes será regido por **Acordo de Compartilhamento de Dados** específico, firmado previamente ao início das atividades;
 
