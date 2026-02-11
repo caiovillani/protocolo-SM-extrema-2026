@@ -29,19 +29,19 @@ O município de Extrema, inserido na Rede de Atenção Psicossocial (RAPS) e na 
 
 A presente consulta decorre da necessidade de **ampliação da oferta de serviços** de reabilitação no município, com foco em:
 
-- Estimulação precoce (0-3 anos)
+- Estimulação precoce (0-3 anos ; 4-6 anos)
 - Reabilitação multidisciplinar (fisioterapia, fonoaudiologia, psicologia, terapia ocupacional)
 - Atividades aquáticas terapêuticas
 - Acompanhamento psicossocial integrado
-- Elaboração e acompanhamento de Plano Terapêutico Individual (PTI)
+- Elaboração e acompanhamento de Plano Terapêutico Singular (PTS)
 
 ### 2. JUSTIFICATIVA PARA CONSULTA DIRETA
 
 A consulta direta a essa instituição fundamenta-se nos seguintes elementos técnicos, em conformidade com o Art. 31 da Lei Federal nº 13.019/2014, que prevê a dispensa de chamamento público quando a natureza singular do objeto ou as condições específicas da organização da sociedade civil tornam inviável a competição:
 
-**a) Singularidade da atuação:** [NOME DA INSTITUIÇÃO] é a única organização da sociedade civil no município de Extrema que reúne, simultaneamente: infraestrutura física adequada (incluindo piscina terapêutica e sala de estimulação sensorial), equipe multidisciplinar com experiência em reabilitação de DI/TEA, e modelo de atendimento integral — diferenciando-se de clínicas privadas que oferecem atendimento fragmentado por especialidade (sessões isoladas de ABA, fonoaudiologia etc.), sem abordagem de cuidado contínuo e integrado.
+**a) Singularidade da atuação:** [CRIE — Centro de Integração Especial] é a única organização da sociedade civil no município de Extrema que reúne, simultaneamente: infraestrutura física adequada (incluindo piscina terapêutica e sala de estimulação sensorial), equipe multidisciplinar com experiência em reabilitação de DI/TEA, e modelo de atendimento integral — diferenciando-se de clínicas privadas que oferecem atendimento fragmentado por especialidade (sessões isoladas de ABA, fonoaudiologia etc.), sem abordagem de cuidado contínuo e integrado.
 
-**b) Histórico de parceria:** A instituição manteve parceria anterior com o município para prestação de serviços similares, demonstrando capacidade operacional, aderência às normas do SUS e conhecimento do perfil epidemiológico local.
+**b) Histórico de parceria:** A instituição já mantém parceria  com o município para prestação de serviços direcionados à população TEA/DI na área da educação e de proteção social. Tem experiência acumulada em atendimentos na área da saúde para essa mesma população, demonstrando capacidade operacional, aderência às normas do SUS, conhecimento do perfil epidemiológico local, forte demonstração de interesse e conhecimento a respeito dos direitos das pessoas com deficiência.
 
 **c) Modelo de cuidado integral:** O modelo praticado pela instituição alinha-se às diretrizes da Linha de Cuidado TEA do Ministério da Saúde (2025), que preconiza atendimento multidisciplinar, intervenção precoce baseada em evidências, elaboração de PTS/PTI e articulação com a rede intersetorial — elementos que não estão disponíveis de forma integrada em nenhum outro prestador do município.
 
@@ -58,6 +58,12 @@ Celebração de Termo de Colaboração, nos termos da Lei Federal nº 13.019/201
 | **Modelo** | Cuidado integral com PTI, acompanhamento longitudinal, articulação intersetorial |
 | **Vigência estimada** | 12 meses, prorrogável conforme legislação |
 | **Valor mensal** | O valor mensal junto a esta Secretaria é de R$ 38.860,41 (trinta e oito mil, oitocentos e sessenta reais e quarenta e um centavos). |
+
+| Escopo financeiro | Valor Mensal | Valor Anual (12 meses) |
+|------|-----------|----------------------|
+| Escopo 1 — SERDI | R$ 35.247,57 | R$ 422.970,84 |
+| Escopo 2 — Suplementar | R$ 3.612,84 | R$ 43.354,08 |
+| **TOTAL** | **R$ 38.860,41** | **R$ 466.324,92** |
 
 **Fontes de custeio previstas:** (i) recursos próprios municipais, vinculados à dotação orçamentária da SMS, observado o piso constitucional de aplicação em saúde (Art. 7.º, LC n.º 141/2012); e (ii) cofinanciamento estadual, condicionado à habilitação do serviço como SERDI junto à SES/MG.
 

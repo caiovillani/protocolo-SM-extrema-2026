@@ -1,6 +1,6 @@
 # PROMPT — ELABORAÇÃO DO TERMO DE REFERÊNCIA PARA TERMO DE COLABORAÇÃO (CRI/INEX)
 
-> **Finalidade:** Prompt estruturado para que o Claude elabore, passo a passo e com rigor técnico-jurídico, o Termo de Referência completo do Termo de Colaboração entre a Secretaria Municipal de Saúde de Extrema/MG e a instituição parceira (CRI), por inexigibilidade de chamamento público.
+> **Finalidade:** Prompt estruturado para que o Claude elabore, passo a passo e com rigor técnico-jurídico, o Termo de Referência completo do Termo de Colaboração entre a Secretaria Municipal de Saúde de Extrema/MG e a instituição parceira (CRIe), por inexigibilidade de chamamento público.
 >
 > **Modo de uso:** Copiar integralmente este prompt em uma sessão Claude. Cada etapa gera uma seção do documento. O usuário deve validar a saída de cada etapa antes de prosseguir para a seguinte.
 
@@ -8,7 +8,7 @@
 
 ## CONTEXTO COMPLETO PARA O CLAUDE
 
-Você é um redator técnico-jurídico especializado em direito administrativo municipal e parcerias com organizações da sociedade civil. Sua tarefa é elaborar o **Termo de Referência** para a celebração de um Termo de Colaboração por inexigibilidade de chamamento público, em conformidade com a legislação brasileira.
+Você é um redator técnico-jurídico especializado em direito administrativo municipal e parcerias com organizações da sociedade civil. Sua tarefa é elaborar o **Termo de Referência** para a contratualização de um Termo de Colaboração por inexigibilidade de chamamento público, em conformidade com a legislação brasileira. Você deve estruturar o documento com qualidade textual acima da média, garantindo uma estrutura textual fundamentada, com encadeamento e progressão de idéias refinado e acima da média, garantindo boa legibilidade, compreensibilidade do texto e fluidez de leitura. 
 
 ### Situação
 
@@ -26,8 +26,8 @@ A Secretaria Municipal de Saúde de Extrema/MG, por meio da Coordenação de Sa�
 | **CNPJ** | [A PREENCHER] |
 | **Valor mensal** | R$ 38.860,41 (trinta e oito mil, oitocentos e sessenta reais e quarenta e um centavos) |
 | **Vigência** | 12 meses, prorrogável conforme Art. 55, Lei 13.019/2014 |
-| **Público-alvo** | Crianças (0-18 anos) e adultos com DI e/ou TEA, referenciados pela rede municipal |
-| **Fontes de custeio** | (i) Recursos próprios municipais (Fonte 1), dotação SMS, observado Art. 7º, LC 141/2012; (ii) Cofinanciamento estadual, condicionado à habilitação como SERDI/SES-MG |
+| **Público-alvo** | Crianças (0-3 anos; 4-6 anos; 7-12 anos), Adolescentes (13-17 anos), adultos com DI e adultos com DI e/ou TEA, referenciados pela rede municipal |
+| **Fontes de custeio** | (i) Recursos próprios municipais (Fonte 1), dotação SMS, observado Art. 7º, LC 141/2012; 
 
 ### Marco Regulatório Aplicável
 
@@ -41,7 +41,7 @@ A Secretaria Municipal de Saúde de Extrema/MG, por meio da Coordenação de Sa�
 | LC nº 141/2012 | Regulamenta EC 29 — financiamento SUS |
 | Legislação municipal | [Verificar se há regulamentação local da Lei 13.019 — inserir se houver] |
 | Portarias MS | Linha de Cuidado TEA (2025), RAPS (Portaria 3.088/2011) |
-| Programa SERDI/SES-MG | Habilitação estadual para serviço de reabilitação intelectual |
+
 
 ### Equipe Prevista no Plano de Trabalho
 
@@ -61,19 +61,19 @@ A Secretaria Municipal de Saúde de Extrema/MG, por meio da Coordenação de Sa�
 
 | Rubrica | Valor mensal estimado |
 |---------|----------------------|
-| Recursos Humanos (equipe multidisciplinar + encargos) | ~R$ 28.000 |
-| Coordenação técnica (20h) | ~R$ 3.000 |
-| Material de consumo | ~R$ 500 |
-| Transporte (van + motorista) | ~R$ 5.000 (a confirmar) |
-| Reserva administrativa/impostos | Diferença para R$ 38.860,41 |
-| **TOTAL** | **R$ 38.860,41** |
+| Recursos Humanos (equipe multidisciplinar + encargos) | ~R$  |
+| Coordenação técnica (20h) | ~R$  |
+| Material de consumo | ~R$  |
+| Transporte (van + motorista) | ~R$ (a confirmar) |
+| Reserva administrativa/impostos | Diferença para R$  |
+| **TOTAL** | **R$ ** |
 
 ### Metas e Indicadores Acordados
 
 **Quantitativas:**
 - Satisfação de usuários e familiares: ≥70%
 - Vagas preenchidas conforme termo: 100%
-- Atendidos com PTI: 100%
+- Atendidos com PTS: 100%
 
 **Qualitativas:**
 - Pesquisa de satisfação: aplicada semestralmente
@@ -97,6 +97,10 @@ A Secretaria Municipal de Saúde de Extrema/MG, por meio da Coordenação de Sa�
 4. **Referências normativas:** Sempre citar artigo, lei e ano. Ex.: "nos termos do Art. 31 da Lei Federal nº 13.019/2014".
 5. **Não inventar:** Não gerar números de CNPJ, CPF, processos ou dotações fictícios.
 6. **Formato:** Markdown com tabelas. Seções numeradas sequencialmente.
+7. **Qualidade textual:** Sessões com elevado padrão de coerência, estrutura dissertativa, estrutura narrativa, encadeamento de idéias, progressão textual, legibilidade, acionabilidade e fluidez de leitura. Fundamentar a argumentação de maneira clara e objetiva sem provocar prejuízos à densidade textual adequada.
+8. **Assertividade:** Estabelecer os objetivos de cada sessão do termo de referência e estruturar a densidade textual de acordo com o contexto da sessão, do documento, da análise situacional do município (quando pertinente), das características.
+9. **Exemplos:** revisar e analisar exemplos de benchmark, como por exemplo @C:\Users\caiov\OneDrive\Desktop\MEMÓRIA TÉCNICA AI\SAÚDE MENTAL\PLANEJAMENTO\Protocolo SM Extrema 2026\referencias_crie\04_benchmarks\APAE_POUSO_ALEGRE_INFRAESTRUTURA.md ou outros termos de referência disponibilizados em sites oficiais na internet e que tenham escopo semelhante a este que está em desenvolvimento (contratualização via termo de colaboração de entidade sociedade civil para atendimentos em saúde para população TEA/DI)
+10. **Repositório de CONTEÚDO PARA REFLEXÃO psicossocial no contexto de Extrema/MG e conhecimento sobre TEA:** C:\Users\caiov\OneDrive\Desktop\MEMÓRIA TÉCNICA AI\SAÚDE MENTAL\PLANEJAMENTO\Protocolo SM Extrema 2026\referencias_preprocessed\clinicos\manuais\A_Criança_no_Centro_da_Rede.md ; C:\Users\caiov\OneDrive\Desktop\MEMÓRIA TÉCNICA AI\SAÚDE MENTAL\PLANEJAMENTO\Protocolo SM Extrema 2026\referencias_transcripts\clinicos\abordagens\Integralidade e clinica ampliada.md ;C:\Users\caiov\OneDrive\Desktop\MEMÓRIA TÉCNICA AI\SAÚDE MENTAL\PLANEJAMENTO\Protocolo SM Extrema 2026\analises\BIBLIOGRAFIA_TEA_DI_COMPLETA_2026.md ; **Lei 15.256/2025** — TEA adultos/idosos | 2025 | Extensão de direitos; ~2,4 milhões sem diagnóstico formal |;Resolução SES-MG 8.971/2023 (Diretrizes TEA no SUS-MG) ; C:\Users\caiov\OneDrive\Desktop\MEMÓRIA TÉCNICA AI\SAÚDE MENTAL\PLANEJAMENTO\Protocolo SM Extrema 2026\analises\TRIANGULACAO_TEA_OFICIAL_vs_LOCAL_2026.md
 
 ---
 
@@ -142,9 +146,9 @@ A Secretaria Municipal de Saúde de Extrema/MG, por meio da Coordenação de Sa�
 - Repasse financeiro mensal (R$ 38.860,41) com fonte orçamentária
 - Cessão de profissional médico (8h/sem) — posterior, via apostilamento
 - Acesso ao sistema Vector para faturamento BPA, com cláusula LGPD
-- Referenciamento de pacientes pela rede (APS, CAPS, intersetorial)
-- Articulação para habilitação SERDI junto à SES/MG
-- Monitoramento e avaliação via comissão MIROSC
+- Referenciamento de pacientes pela rede municipal para compartilhamento do cuidado em intervenção precoce, habilitação e reabilitação intelectual especializada (APS, CAPS, intersetorial)
+- Articulação para manutenção de equipe mínima que atenda aos padrões de qualidade de serviços modelo de reabilitação intelectual
+- Monitoramento e avaliação via comissão MROSC
 - Não interferência na gestão operacional da OSC (autonomia, Art. 5º da Lei 13.019)
 
 ---
@@ -155,13 +159,13 @@ A Secretaria Municipal de Saúde de Extrema/MG, por meio da Coordenação de Sa�
 
 **Conteúdo obrigatório:**
 - Manter equipe conforme plano de trabalho (com substituição em caso de vacância)
-- Elaborar PTI para 100% dos atendidos
+- Elaborar PTS para 100% dos atendidos
 - Garantir separação de centros de custo (Saúde ≠ Assistência Social)
-- Designar coordenador técnico (20h) responsável pela gestão e prestação de contas
+- Designar coordenador técnico responsável pela gestão e prestação de contas
 - Manter CNES atualizado
 - Aplicar pesquisa de satisfação semestral
 - Realizar 1 ação de educação permanente/mês
-- Apresentar prestação de contas conforme MIROSC (periodicidade e modelo a definir)
+- Apresentar prestação de contas conforme MROSC (periodicidade e modelo a definir)
 - Faturar procedimentos via BPA quando habilitado
 - Garantir transporte dos pacientes (se acordado) — van + motorista
 - Cumprir LGPD no manejo de dados do Vector e prontuários
@@ -249,7 +253,7 @@ Após gerar todas as 8 etapas, verificar:
 - [ ] LGPD mencionada em pelo menos 3 pontos (Vector, prontuários, pesquisa)
 - [ ] Linguagem é pessoa-primeiro ("pessoa com TEA", não "autista")
 - [ ] Metas correspondem ao acordado na reunião de 29/01/2026
-- [ ] Monitoramento segue MIROSC / Lei 13.019
+- [ ] Monitoramento segue MROSC / Lei 13.019
 - [ ] Não há decisões clínicas atribuídas ao instrumento (apenas ao profissional)
 
 ---
@@ -259,7 +263,7 @@ Após gerar todas as 8 etapas, verificar:
 | Ponto | Etapa | O que validar |
 |-------|-------|--------------|
 | V1 | Etapa 1 | Argumentos de singularidade — dados reais da instituição |
-| V2 | Etapa 2 | Critérios de elegibilidade — confirmar CIDs e faixa etária |
+| V2 | Etapa 2 | Critérios de elegibilidade — confirmar CIDs (cid 11) e faixa etária |
 | V3 | Etapa 5 | Diagnóstico da realidade — dados epidemiológicos locais |
 | V4 | Etapa 6 | Composição de custos — conferir com planilha real |
 | V5 | Etapa 8 | Condição sobre prestação de contas anterior — verificar status |

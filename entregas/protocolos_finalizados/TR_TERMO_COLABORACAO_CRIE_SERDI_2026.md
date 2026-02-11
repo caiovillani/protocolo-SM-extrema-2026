@@ -338,7 +338,7 @@ c) Designar Coordenador(a) Técnico(a) com carga horária de 20 (vinte) horas se
 
 d) Garantir que nenhum profissional tenha carga horária sobreposta entre o centro de custo Saúde (presente Termo) e o centro de custo Assistência Social (se houver parceria paralela). Caso o mesmo profissional atue nos dois escopos, os horários devem ser distintos, documentados em instrumentos separados e comprovados mediante registro de ponto segregado;
 
-e) Observar a Cláusula de Blindagem das Horas SERDI: os profissionais alocados ao Escopo 1 (SERDI) não poderão, sob qualquer hipótese, ter sua carga horária mínima redirecionada para atividades não previstas na Deliberação CIB-SUS/MG n.º 1.403/2013 e na Resolução SES/MG n.º 10.687/2025.
+e) Observar a Cláusula de Blindagem das Horas: os profissionais alocados ao Escopo 1 (SERDI) não poderão, sob qualquer hipótese, ter sua carga horária mínima redirecionada para atividades não previstas na Deliberação CIB-SUS/MG n.º 1.403/2013 e na Resolução SES/MG n.º 10.687/2025.
 
 ### 4.2. Atendimento e Plano Terapêutico
 
