@@ -45,7 +45,7 @@
 
 | Critério | Avaliação |
 |----------|-----------|
-| **Ideação suicida atual** | ( ) Ausente ( ) Passiva ( ) Ativa sem plano ( ) Ativa com plano |
+| **Ideação suicida atual** | ( ) Ausente ( ) Passiva ( ) Ativa sem plano ( ) Ativa com plano, sem acesso a método ( ) Ativa com plano e *COM* acesso a método |
 | **Plano suicida** | ( ) Ausente ( ) Vago ( ) Específico ( ) Detalhado |
 | **Acesso a meios letais** | ( ) Não ( ) Sim, quais: _________________ |
 | **Intenção declarada** | ( ) Não ( ) Ambivalente ( ) Sim |
@@ -73,16 +73,16 @@
 
 ---
 
-### 1.3 Risco de Autoagressão (não-suicida)
+### 1.3 Risco de Lesão Auto Provocada (não-suicida)
 
 | Critério | Avaliação |
 |----------|-----------|
 | **Comportamento autolesivo atual** | ( ) Ausente ( ) Presente |
-| **Tipo de autolesão** | ( ) Cortes ( ) Queimaduras ( ) Outros: _______ |
-| **Frequência** | ( ) Esporádica ( ) Frequente ( ) Diária |
-| **Gravidade das lesões** | ( ) Superficial ( ) Moderada ( ) Grave |
+| **Tipo de autolesão** | ( ) Ausente ( ) Cortes ( ) Queimaduras ( ) Outros: _____________ |
+| **Frequência** | ( ) Esporádica [último episódio há_____________] ( )  Frequente [frequência: ____________] ( ) Diária |
+| **Gravidade das lesões** | ( ) Superficial ( ) Moderada ( ) Grave (coloca em risco importante)|
 
-**Classificação do Risco de Autoagressão:**
+**Percepção do Risco de LAP:**
 | ( ) Ausente | ( ) Baixo | ( ) Moderado | ( ) Alto |
 
 ---
@@ -131,6 +131,7 @@
 | Critério | Avaliação |
 |----------|-----------|
 | **Ansiedade atual** | ( ) Ausente ( ) Leve ( ) Moderada ( ) Grave |
+| **Somatização da ansiedade** | ( ) Ausente ( ) Leve ( ) Moderada ( ) Grave |
 | **Ataques de pânico** | ( ) Ausentes ( ) Presentes — Frequência: _______ |
 | **Evitação fóbica** | ( ) Ausente ( ) Parcial ( ) Significativa |
 
@@ -141,8 +142,9 @@
 | Critério | Avaliação |
 |----------|-----------|
 | **Intoxicação atual** | ( ) Não ( ) Sim — Substância: _________________ |
-| **Síndrome de abstinência** | ( ) Ausente ( ) Leve ( ) Moderada ( ) Grave |
-| **Substâncias em uso** | |
+| **Síndrome de abstinência** | ( ) Ausente ( ) Leve ( ) Moderada ( ) Grave 
+|**Síndrome de abstinência** | CIWA-AR:___________________________
+| **Substâncias em uso** |_________________________________________________ |
 | **Padrão de uso** | ( ) Experimental ( ) Ocasional ( ) Abuso ( ) Dependência |
 
 ---
@@ -162,7 +164,7 @@
 
 ## PARTE 3: FATORES MODULADORES
 
-### 3.1 Fatores de Agravamento
+### 3.1 Fatores de Agravamento/Piora
 
 | Fator | Presente |
 |-------|----------|
@@ -216,7 +218,7 @@ Considerando todos os elementos avaliados, a **CLASSIFICAÇÃO GLOBAL DE RISCO**
 |---------------|--------|-------------------|---------|
 | 🔴 **VERMELHO — Gravíssimo** | ( ) | Imediato | PS/UPA via SAMU |
 | 🟠 **LARANJA — Alto Risco** | ( ) | 24-72h | CAPS I / CSM |
-| 🟡 **AMARELO — Moderado** | ( ) | 7-14 dias | CSM / CAPS I |
+| 🟡 **AMARELO — Moderado** | ( ) | 7-14 dias | **CSM** / CAPS I |
 | 🟢 **VERDE — Baixo Risco** | ( ) | 15-30 dias | APS + Matriciamento |
 | 🔵 **AZUL — Crônico Estável** | ( ) | Agendamento regular | APS |
 
