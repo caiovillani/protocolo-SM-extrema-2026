@@ -375,3 +375,9 @@ All clinical protocols use **Vancouver (ICMJE)** format with DOIs for scientific
 - Store hashes at project init (`store_initial_hashes()` in `init_project()`)
 - Compare stored vs current hashes for modification detection
 - Report both MODIFIED and MISSING files distinctly
+
+### MCP Server Configuration
+- Context7 uses `@upstash/context7-mcp` (NOT `@anthropic-ai/context7-mcp` which doesn't exist)
+- On Windows, MCP stdio servers need `cmd /c npx` wrapper in `.mcp.json`
+- Debug MCP failures: test package directly with `npx -y <package> --help` before editing config
+- Plugin `external_plugins/context7/` also provides context7 — check `/mcp` for duplicates
