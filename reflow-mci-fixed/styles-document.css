@@ -1,0 +1,318 @@
+/* ============================================
+   Estilos para Páginas de Documento (Pandoc)
+   Portal SMS Extrema/MG - v1.0.0
+   ============================================ */
+
+/* Container principal */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #1a1a1a;
+  background-color: #fdfdfd;
+  margin: 0 auto;
+  max-width: 48rem; /* ~768px */
+  padding: 1rem;
+  line-height: 1.6;
+  hyphens: auto;
+  overflow-wrap: break-word;
+  text-rendering: optimizeLegibility;
+  font-kerning: normal;
+}
+
+/* Breadcrumb Navigation */
+.breadcrumb {
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  color: #5a6c7d;
+  border-bottom: 1px solid #e2e8f0;
+  margin-bottom: 2rem;
+}
+
+.breadcrumb a {
+  color: #1a365d;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.breadcrumb a:hover {
+  color: #3182ce;
+  text-decoration: underline;
+}
+
+.breadcrumb a:focus-visible {
+  outline: 2px solid #3182ce;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Header do documento */
+header#title-block-header {
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #e2e8f0;
+  margin-bottom: 2rem;
+}
+
+header#title-block-header h1.title {
+  font-size: 2rem;
+  color: #1a365d;
+  margin: 0 0 0.5rem;
+  line-height: 1.2;
+}
+
+header#title-block-header .subtitle {
+  font-size: 1.2rem;
+  color: #5a6c7d;
+  font-weight: 300;
+  margin: 0.5rem 0;
+}
+
+header#title-block-header .date {
+  font-size: 0.9rem;
+  color: #718096;
+  margin-top: 1rem;
+}
+
+/* Tipografia */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #1a365d;
+}
+
+h1 { font-size: 1.8rem; }
+h2 { font-size: 1.5rem; border-bottom: 1px solid #e2e8f0; padding-bottom: 0.5rem; }
+h3 { font-size: 1.3rem; }
+h4 { font-size: 1.1rem; }
+h5, h6 { font-size: 1rem; font-style: italic; }
+h6 { font-weight: normal; }
+
+p {
+  margin: 1rem 0;
+  color: #333;
+}
+
+/* Links */
+a {
+  color: #3182ce;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:visited {
+  color: #2c5aa0;
+}
+
+a:hover {
+  color: #1a365d;
+  text-decoration: underline;
+}
+
+a:focus-visible {
+  outline: 2px solid #3182ce;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Listas */
+ol, ul {
+  padding-left: 2rem;
+  margin: 1rem 0;
+}
+
+li {
+  margin: 0.5rem 0;
+}
+
+li > ol, li > ul {
+  margin-top: 0.5rem;
+}
+
+/* Blockquotes */
+blockquote {
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid #3182ce;
+  background-color: #f7fafc;
+  color: #2d3748; /* Contraste melhorado: 8.59:1 */
+  font-style: italic;
+}
+
+/* Código */
+code {
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-size: 0.9em;
+  background-color: #f7fafc;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  color: #c7254e;
+}
+
+pre {
+  background-color: #f7fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  padding: 1rem;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+pre code {
+  background-color: transparent;
+  padding: 0;
+  color: #1a1a1a;
+}
+
+/* Tabelas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.9rem;
+}
+
+thead {
+  background-color: #1a365d;
+  color: #fff;
+}
+
+th {
+  padding: 0.75rem;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 2px solid #3182ce;
+}
+
+td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+tbody tr:hover {
+  background-color: #f7fafc;
+}
+
+/* Imagens */
+img, svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+  border-radius: 4px;
+}
+
+/* Separador horizontal */
+hr {
+  border: none;
+  border-top: 2px solid #e2e8f0;
+  margin: 2rem 0;
+}
+
+/* Footer */
+footer {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid #e2e8f0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #5a6c7d;
+}
+
+footer a {
+  color: #1a365d;
+  font-weight: 600;
+}
+
+footer .legal {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: #a0aec0;
+}
+
+/* Responsividade */
+@media (max-width: 640px) {
+  body {
+    font-size: 0.95rem;
+    padding: 0.75rem;
+  }
+
+  header#title-block-header h1.title {
+    font-size: 1.5rem;
+  }
+
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.3rem; }
+  h3 { font-size: 1.1rem; }
+
+  table {
+    font-size: 0.85rem;
+  }
+
+  th, td {
+    padding: 0.5rem;
+  }
+
+  .breadcrumb {
+    font-size: 0.85rem;
+  }
+}
+
+/* Impressão */
+@media print {
+  body {
+    background-color: white;
+    color: black;
+    font-size: 12pt;
+    max-width: 100%;
+  }
+
+  .breadcrumb,
+  footer a {
+    display: none;
+  }
+
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+
+  h1, h2, h3, h4 {
+    page-break-after: avoid;
+  }
+
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  table {
+    page-break-inside: avoid;
+  }
+
+  blockquote {
+    border-left-color: #333;
+    background-color: #f0f0f0;
+  }
+}
+
+/* Acessibilidade */
+*:focus-visible {
+  outline: 2px solid #3182ce;
+  outline-offset: 2px;
+}
+
+/* Skip to content (para leitores de tela) */
+.skip-to-content {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: #1a365d;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  z-index: 1000;
+}
+
+.skip-to-content:focus {
+  left: 0;
+}

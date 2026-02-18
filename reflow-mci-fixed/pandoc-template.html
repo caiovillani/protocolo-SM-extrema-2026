@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR"$if(dir)$ dir="$dir$"$endif$>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta name="generator" content="pandoc">
+$if(author-meta)$
+  <meta name="author" content="$author-meta$">
+$endif$
+$if(date-meta)$
+  <meta name="dcterms.date" content="$date-meta$">
+$endif$
+$if(keywords)$
+  <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$">
+$endif$
+
+  <!-- SEO -->
+  <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
+$if(description-meta)$
+  <meta name="description" content="$description-meta$">
+$else$
+  <meta name="description" content="Documento técnico do Portal de Contratações Públicas da Secretaria Municipal de Saúde de Extrema/MG.">
+$endif$
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="$pagetitle$ - Portal SMS Extrema/MG">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://oficina.reflowmci.cloud/$if(url)$$url$$endif$">
+$if(description-meta)$
+  <meta property="og:description" content="$description-meta$">
+$else$
+  <meta property="og:description" content="Documento técnico - SMS Extrema/MG">
+$endif$
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- PWA -->
+  <meta name="theme-color" content="#1a365d">
+  <link rel="manifest" href="/manifest.json">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+  <!-- Stylesheet Global + Documento -->
+  <link rel="stylesheet" href="/styles.css?v=1.0.0">
+  <link rel="stylesheet" href="/styles-document.css?v=1.0.0">
+
+$for(css)$
+  <link rel="stylesheet" href="$css$">
+$endfor$
+$if(math)$
+  $math$
+$endif$
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+$for(header-includes)$
+  $header-includes$
+$endfor$
+</head>
+<body>
+$for(include-before)$
+$include-before$
+$endfor$
+
+  <!-- Breadcrumb Navigation -->
+  <nav class="breadcrumb" aria-label="Navegação estrutural">
+    <a href="/" aria-label="Voltar à página inicial">← Portal SMS</a>
+$if(category)$
+    <span aria-hidden="true">/</span>
+    <a href="/$category$/">$category$</a>
+$endif$
+  </nav>
+
+  <!-- Document Header -->
+$if(title)$
+<header id="title-block-header">
+  <h1 class="title">$title$</h1>
+$if(subtitle)$
+  <p class="subtitle">$subtitle$</p>
+$endif$
+$for(author)$
+  <p class="author">$author$</p>
+$endfor$
+$if(date)$
+  <p class="date">$date$</p>
+$endif$
+$if(abstract)$
+<div class="abstract">
+  <div class="abstract-title">$abstract-title$</div>
+  $abstract$
+</div>
+$endif$
+</header>
+$endif$
+
+  <!-- Main Content -->
+  <main>
+$body$
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      <a href="/" aria-label="Voltar à página inicial">← Voltar ao Portal</a>
+    </p>
+    <p class="legal">Lei 14.133/2021 · Prefeitura de Extrema-MG</p>
+  </footer>
+
+$for(include-after)$
+$include-after$
+$endfor$
+</body>
+</html>

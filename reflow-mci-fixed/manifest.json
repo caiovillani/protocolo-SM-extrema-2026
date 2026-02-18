@@ -1,0 +1,34 @@
+{
+  "name": "Portal de Documentos - SMS Extrema/MG",
+  "short_name": "Docs SMS",
+  "description": "Documentos de Contratações Públicas da Secretaria Municipal de Saúde de Extrema/MG",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f5f5f5",
+  "theme_color": "#1a365d",
+  "orientation": "portrait-primary",
+  "categories": ["government", "public-services"],
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

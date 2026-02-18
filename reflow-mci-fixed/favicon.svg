@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <!-- Background -->
+  <rect width="32" height="32" rx="6" fill="#1a365d"/>
+
+  <!-- Cruz da Saúde (símbolo universal) -->
+  <path d="M16 8v16M8 16h16" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Detalhe: pequeno ponto para representar "documento/arquivo" -->
+  <circle cx="22" cy="10" r="2" fill="#3182ce"/>
+</svg>

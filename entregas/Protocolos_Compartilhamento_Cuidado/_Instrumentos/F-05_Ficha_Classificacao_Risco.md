@@ -45,7 +45,7 @@
 
 | Critério | Avaliação |
 |----------|-----------|
-| **Ideação suicida atual** | ( ) Ausente ( ) Passiva ( ) Ativa sem plano ( ) Ativa com plano, sem acesso a método ( ) Ativa com plano e *COM* acesso a método |
+| **Ideação suicida atual** | ( ) Ausente ( ) Passiva ( ) Ativa sem plano ( ) Ativa com plano, sem acesso a método ( ) Ativa com plano e **COM** acesso a método |
 | **Plano suicida** | ( ) Ausente ( ) Vago ( ) Específico ( ) Detalhado |
 | **Acesso a meios letais** | ( ) Não ( ) Sim, quais: _________________ |
 | **Intenção declarada** | ( ) Não ( ) Ambivalente ( ) Sim |

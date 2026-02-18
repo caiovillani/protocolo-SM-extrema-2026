@@ -409,7 +409,7 @@ O NICE CG128 organiza-se em **boxes de sinais de alerta por faixa etária**:
 │     NICE: Não especifica                                        │
 │     Einstein: M-CHAT + CDC                                      │
 │     CDC: Marcos gerais                                          │
-│     CLI-02: IRDI + M-CHAT-R/F + MDI                             │
+│     CLI-02: IRDI + M-CHAT-R/F + MDI + CDC                           │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
